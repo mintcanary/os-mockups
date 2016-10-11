@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="app-container">
+  <aside>
+      {{ this.aside }}
+  </aside>
+  <div class="content">
+    <h2>{{ this.title }}</h2>
+    {{ this.body }}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+.banner {
+  background-color: $dark-grey;
+  color: #fff;
+  padding: $base-spacing*2 $base-spacing;
+  position: relative;
+
+  h1, h2 {
+    color: inherit;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .cta {
+    @extend .btn;
+    @include button-variant(#fff, transparent, #fff);
+    padding: 9px 18px;
+    min-width: 150px;
+    margin-top: $base-spacing * 0.75;
+
+    &:hover {
+      @include button-variant($grey, #fff, #fff);
+    }
+  }
+}

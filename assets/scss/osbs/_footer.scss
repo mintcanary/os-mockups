@@ -1,0 +1,234 @@
+.subscribe-footer {
+  background-color: $grey;
+  color: rgba(#fff, 0.7);
+  text-align: center;
+  padding: $base-spacing;
+
+  h3 {
+    color: #fff;
+  }
+
+  input[type="text"] {
+    color: $grey;
+    border-color: #fff;
+  }
+
+  .btn {
+    @include button-variant(#fff, transparent, #fff);
+    margin: $base-spacing /2;
+  }
+}
+
+
+$footer-background: $dark-grey;
+$footer-color: white;
+$footer-link-color: transparentize($footer-color, .4);
+$footer-disclaimer-color: transparentize($footer-color, .6);
+
+html,
+.site-footer {
+  background: $footer-background;
+}
+
+.site-footer {
+  width: 100%;
+  position:relative;
+  color:$footer-color;
+  text-align: center;
+
+  @media (min-width: $screen-md-min) {
+    text-align: left;
+  }
+
+  .wrapper {
+    padding: $base-spacing;
+
+    .footer-logo {
+      margin-right: 1em;
+      margin-bottom: 1em;
+      margin-top:-4px;
+    }
+
+    .footer-logo {
+      object {
+        height: 24px;
+      }
+
+      svg {
+        fill: $footer-color;
+      }
+
+      &.ok {
+        opacity: 0.6;
+
+        img {
+          height: 2em;
+        }
+        svg {
+          height: 2em;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    ul {
+      margin: 0 0 1em 0;
+      padding: 0;
+
+      @media (min-width: $screen-md-min) {
+        float: left;
+        margin-left: 1em;
+        margin-bottom: 0;
+      }
+    }
+
+    ul li {
+      padding-right: 1em;
+      display: block;
+
+      @media (min-width: $screen-md-min) {
+        display: inline;
+        text-align: left;
+      }
+    }
+
+    a {
+      color: $footer-link-color;
+
+      &:hover {
+        color: transparentize($footer-color, 0);
+      }
+
+      &[rel~="external"]:after {
+        display:none;
+      }
+    }
+
+    .footer-primary-links,
+    .footer-secondary-links {
+      @media (min-width: $screen-md-min) {
+        float: right;
+      }
+
+      li {
+        font-size: .8em;
+        font-weight: 400;
+        line-height: 2em;
+      }
+
+      ul.footer-social {
+        margin-top: 1em;
+
+        @media (min-width: $screen-md-min) {
+          float: right;
+          margin-top: 0;
+        }
+
+        li {
+          font-size: 1em;
+          padding-right: .7em;
+          display: inline-block;
+
+          @media (min-width: $screen-md-min) {
+            float: left;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+
+        img {
+          opacity: .7;
+          height: 1.6em;
+          padding: 1px;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .footer-primary-links {
+      svg {
+        height: 16px;
+        position: relative;
+        top: 4px;
+        fill: $footer-color;
+      }
+
+      li {
+        @media (min-width: $screen-md-min) {
+          padding-right: 0;
+          padding-left: $base-spacing /2;
+        }
+      }
+
+      .viewer {
+        svg {
+          height: 13px;
+          top: 1px;
+        }
+      }
+
+      a {
+        opacity: 0.8;
+
+        &:link:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  hr {
+    border-color:$footer-disclaimer-color;
+    clear: both;
+  }
+
+  p {
+    font-size:0.7em;
+    color:$footer-disclaimer-color;
+  }
+
+  .supporters {
+    h6 {
+      font-size: 12px;
+      color: rgba(#fff, 0.3);
+      font-weight: 400;
+      margin: 0 0 0.2em 0;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0 0 $base-spacing /2 0;
+
+        img {
+          max-height: 40px;
+        }
+      }
+
+      @media (min-width: $screen-md-min) {
+        display: table;
+        width: 100%;
+
+        li {
+          display: table-cell;
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

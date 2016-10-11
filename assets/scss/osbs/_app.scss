@@ -1,0 +1,35 @@
+.app {
+  .app-container {
+    @media (min-width: $screen-sm-min) {
+      display: table;
+      width: 100%;
+    }
+
+    & > aside {
+      background-color: $grey;
+      color: #fff;
+      position: relative;
+
+      @media (min-width: $screen-sm-min) {
+        display: table-cell;
+        width: 215px;
+        vertical-align: top;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        height: 52px;
+        position: absolute;
+        top: -52px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: $dark-grey;
+      }
+    }
+    .content {
+      display: table-cell;
+    }
+  }
+}

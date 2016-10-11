@@ -1,0 +1,132 @@
+.feature-list,
+.step-list {
+  margin: 0;
+  padding: 0;
+}
+
+.feature-list {
+  @include make-row();
+  li {
+    display: block;
+    @include make-md-column(6);
+    @include make-lg-column(4);
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      &:nth-child(2n+3) {
+        clear: both;
+      }
+    }
+
+    @media (min-width: $screen-lg-min) {
+      &:nth-child(3n+4) {
+        clear: both;
+      }
+    }
+
+    & > :first-child {
+      display: block;
+      padding: $base-spacing * 1.5 $base-spacing $base-spacing $base-spacing;
+      border-radius: 5px;
+
+      @media (min-width: $screen-md-min) {
+        margin: $base-spacing $base-spacing 0 $base-spacing;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 22px;
+      }
+
+      img {
+        height: 82px;
+      }
+
+      & + a {
+        position: absolute;
+        top: 20px;
+        right: 20px + ($grid-gutter-width /2);
+        display: inline-block;
+        background-color: rgba($green, 0.1);
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 26px;
+        height: 24px;
+        padding: 0 10px;
+        border-radius: 12px;
+        font-weight: 500;
+        text-decoration: none;
+
+        @media (min-width: $screen-md-min) {
+          top: 45px;
+          right: 45px + ($grid-gutter-width /2);
+        }
+
+        &:hover {
+          background-color: $primary-colour;
+          color: #fff;
+        }
+      }
+    }
+
+    &.highlight {
+      & > :first-child {
+        @include gradient-vertical(rgba($green, 0.1), rgba($blue, 0.1), 0%, 100%);
+
+        & + a {
+          background-color: #fff;
+
+          &:hover {
+            background-color: $primary-colour;
+          }
+        }
+      }
+    }
+  }
+}
+
+.step-list {
+  li {
+    display: block;
+    @include make-md-column(6);
+    @include make-lg-column(3);
+    margin-top: $base-spacing;
+
+    @media (min-width: $screen-md-min) {
+      text-align: left;
+      padding-left: 68px;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 22px;
+        color: $primary-colour;
+        border: solid 3px $primary-colour;
+      }
+
+      &:nth-child(1):before {
+        content: '1';
+      }
+      &:nth-child(2):before {
+        content: '2';
+      }
+      &:nth-child(3):before {
+        content: '3';
+      }
+      &:nth-child(4):before {
+        content: '4';
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 0.3em;
+    }
+  }
+
+}

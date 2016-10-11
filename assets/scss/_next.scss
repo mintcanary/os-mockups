@@ -1,0 +1,42 @@
+.next {
+  .banner {
+    text-align: center;
+    background-image: url("../img/next/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #232429;
+
+    .next-logo {
+      width: 108px;
+      display: inline-block;
+      margin-bottom: $base-spacing * 1.5;
+    }
+
+    .container {
+      max-width: 945px;
+    }
+
+  }
+  & > section {
+    text-align: center;
+    padding: $base-spacing*2 $base-spacing;
+
+    &:nth-child(even) {
+      background-color: $lighter-grey;
+    }
+  }
+
+  .wrapper {
+    @include container-fixed();
+
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-lg;
+    }
+  }
+}

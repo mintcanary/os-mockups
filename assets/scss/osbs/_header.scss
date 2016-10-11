@@ -1,0 +1,105 @@
+.site-header,
+.app-header {
+  background-color: $grey;
+  color: #fff;
+  position: relative;
+
+  a {
+    color: inherit;
+  }
+}
+
+.site-header {
+  .wrapper {
+    position: relative;
+    @include clearfix();
+  }
+
+  .logo {
+    position: relative;
+    z-index: 2;
+
+    &.small {
+      display: inline-block;
+      fill: currentColor;
+
+      &.small {
+        width: 56px;
+        height: 52px;
+        background-color: #fff;
+        float: left;
+        text-align: center;
+        padding-top: 15px;
+
+        svg {
+          fill: $grey;
+          width: 32px;
+        }
+
+        @if $primary-colour != $default-primary-colour {
+          background-color: $primary-colour;
+
+          svg {
+            fill: #fff;
+          }
+        }
+
+        & + .logo {
+          display: none;
+          margin-top: 14px;
+          padding-left:12px;
+          height: 26px;
+
+          @media (min-width: $screen-sm-min) {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.app-header {
+  height: 50px;
+
+  & > a {
+    display: block;
+    height: 50px;
+
+    &:hover {
+      background-color: darken($grey, 4);
+    }
+
+    svg {
+      fill: currentColor;
+      height: 50px;
+    }
+
+    &:first-of-type {
+      background-color: $primary-colour;
+      width: 50px;
+      float: left;
+      text-align: center;
+
+      svg {
+        width: 30px;
+      }
+
+      & + a {
+        margin-left: 50px;
+        width: 155px;
+        padding-left: 10px;
+
+        svg {
+          width: 90px;
+        }
+      }
+    }
+  }
+
+  .secondary-nav {
+    @media (min-width: $screen-md-min) {
+      top: 19px;
+    }
+  }
+}
