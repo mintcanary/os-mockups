@@ -8,12 +8,16 @@
   }
 
   .accordion {
-    padding-top: $base-spacing;
+    padding: $base-spacing 0 0 0;
+    margin: 0;
 
     li {
       margin-bottom: $base-spacing / 3;
 
       .submenu {
+        margin: 0;
+        padding: 0;
+        
         li {
           margin-bottom: 0;
         }
@@ -22,7 +26,7 @@
       &.is-expanded {
         .js-accordion-trigger {
           &:after {
-            @include transform(rotate(90deg));
+            @include rotate(90deg);
           }
         }
       }

@@ -9,11 +9,16 @@
       background-color: $grey;
       color: #fff;
       position: relative;
+      font-size: 0.9em;
 
       @media (min-width: $screen-sm-min) {
         display: table-cell;
         width: 215px;
         vertical-align: top;
+      }
+
+      @media (min-width: $screen-md-min) {
+        width: 230px;
       }
 
       &:before {
