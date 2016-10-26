@@ -38,6 +38,21 @@
       {{ logo.brand('OpenSpending') }}
       {% endif %}
 
+      <ul class="secondary-nav">
+        {% if this.links %}
+        {{ this.links }}
+        {% else %}
+				<li class="user dropdown">
+					<a href="#">Sam Smith</a>
+					<ul class="user-menu" style="background-image: url('{{ bag('user.avatar') }}');">
+			      <li class="name">{{ bag('user.name') }}</li>
+			      <li class="date">User since 25/01/2016</li>
+			      <li class="packages"><span>8</span> packages on OpenSpending</li>
+			      <li class="logout"><a href="#">Logout</a></li>
+			    </ul>
+				</li>
+			</ul>
+      {% endif %}
     </div>
   </div>
 
@@ -126,6 +141,8 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script>window.jQuery || document.write('<script src="{{ '/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js'|url }}"><\/script>')</script>
-  <script src="{{ '/vendor/jquery/dist/jquery.min.js'|url }}"></script>
+  <script>window.jQuery || document.write('<script src="{{ '/vendor/jquery/dist/jquery.min.js'|url }}"><\/script>')</script>
+  <script src="{{ '/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js'|url }}"></script>
+  <script src="{{ '/js/main.js'|url }}"></script>
+
 </body>

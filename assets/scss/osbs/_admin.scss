@@ -1,0 +1,43 @@
+.admin {
+  .app-container {
+    & > aside {
+      .user {
+        text-align: center;
+        padding: $grid-gutter-width $padding-base-horizontal;
+
+        .avatar {
+          display: none;
+
+          @media (min-width: $screen-sm-min) {
+            display: inline-block;
+            width: 70%;
+            padding-top: 70%;
+            border-radius: 50%;
+            border: solid 2px #fff;
+            background-color: $primary-colour;
+            background-position: center;
+            background-size: 100% auto;
+          }
+        }
+
+        .name {
+          margin-bottom: 0;
+        }
+
+        .datasets {
+          opacity: 0.6;
+
+          span {
+            background-color: #fff;
+            color: $grey;
+            display: inline-block;
+            padding: 0 0.2em;
+            line-height: 1;
+            border-top: solid #fff 0.25em;
+            border-radius: 1px;
+          }
+        }
+      }
+    }
+  }
+}

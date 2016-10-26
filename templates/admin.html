@@ -1,0 +1,19 @@
+{% extends "app.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="app-container">
+  <aside>
+    <div class="user">
+      <span class="avatar" style="background-image: url('{{ bag('user.avatar') }}')"></span>
+      <h4 class="name">{{ bag('user.name') }}</h4>
+      <p class="datasets">
+        <span class="">{{ bag('user.uploaded_datasets') }}</span> Dataset{% if bag('user.uploaded_datasets') != '1' %}s{% endif %}
+      </p>
+      <a>Edit profile</a>
+    </div>
+  </aside>
+  <div class="content">
+    {{ this.body }}
+  </div>
+</div>
+{% endblock %}

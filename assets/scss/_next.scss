@@ -1,4 +1,13 @@
 .next {
+  .secondary-nav {
+    a {
+      border: solid 1px #fff;
+      border-radius: $border-radius-base;
+      position: relative;
+      top: -1px;
+    }
+  }
+
   .banner {
     text-align: center;
     background-image: url("../img/next/banner.jpg");

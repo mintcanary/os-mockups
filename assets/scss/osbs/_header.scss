@@ -43,7 +43,7 @@
       }
 
       &.adminbrand {
-        @include gradient-vertical($green, $blue, 0%, 100%);
+        @include grad;
 
         svg {
           fill: #fff;

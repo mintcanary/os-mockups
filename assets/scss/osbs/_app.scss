@@ -1,40 +1,42 @@
-.app {
-  .app-container {
+.app-container {
+  @media (min-width: $screen-sm-min) {
+    display: table;
+    width: 100%;
+  }
+
+  & > aside {
+    background-color: $grey;
+    color: #fff;
+    position: relative;
+    font-size: 0.9em;
+
     @media (min-width: $screen-sm-min) {
-      display: table;
-      width: 100%;
-    }
-
-    & > aside {
-      background-color: $grey;
-      color: #fff;
-      position: relative;
-      font-size: 0.9em;
-
-      @media (min-width: $screen-sm-min) {
-        display: table-cell;
-        width: 215px;
-        vertical-align: top;
-      }
-
-      @media (min-width: $screen-md-min) {
-        width: 230px;
-      }
-
-      &:before {
-        content: '';
-        display: block;
-        height: 52px;
-        position: absolute;
-        top: -52px;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        background-color: $dark-grey;
-      }
-    }
-    .content {
       display: table-cell;
+      width: 215px;
+      vertical-align: top;
     }
+
+    @media (min-width: $screen-md-min) {
+      width: 230px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      height: 52px;
+      position: absolute;
+      top: -52px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-color: $dark-grey;
+    }
+
+    * {
+      max-width: 100%;
+    }
+  }
+  .content {
+    display: table-cell;
   }
 }

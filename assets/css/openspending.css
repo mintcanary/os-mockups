@@ -5884,6 +5884,7 @@ button.close {
       fill: #2a2d34;
       width: 32px; }
     .site-header .logo.small.adminbrand {
+      background-color: #32a6ba;
       background-image: -webkit-linear-gradient(top, #2abb9c 0%, #3a99d9 100%);
       background-image: -o-linear-gradient(top, #2abb9c 0%, #3a99d9 100%);
       background-image: linear-gradient(to bottom, #2abb9c 0%, #3a99d9 100%);
@@ -5991,14 +5992,14 @@ button.close {
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
     position: absolute;
     text-align: left;
     z-index: 9;
     background-color: #32a6ba;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    display: none; }
     .dropdown .dropdown-menu.show-menu,
     .dropdown .user-menu.show-menu {
       display: block; }
@@ -6126,12 +6127,9 @@ button.close {
 
 .secondary-nav {
   position: absolute;
-  top: 16px;
-  right: 16px; }
-  @media (min-width: 992px) {
-    .secondary-nav {
-      top: 1.5em;
-      right: 1.5em; } }
+  top: 0.9em;
+  right: 1em;
+  z-index: 2; }
   .secondary-nav a {
     text-decoration: none; }
   .secondary-nav li {
@@ -6141,6 +6139,9 @@ button.close {
       text-transform: uppercase;
       display: block;
       margin-left: 1.5em; }
+    .secondary-nav li > a {
+      padding: 0.5em;
+      line-height: 1; }
     .secondary-nav li.user a:before {
       /* use !important to prevent issues with browser extensions that change fonts */
       font-family: 'os-icons' !important;
@@ -6478,23 +6479,23 @@ p a {
         transition: all 0.2s ease-in-out; }
 
 @media (min-width: 768px) {
-  .app .app-container {
+  .app-container {
     display: table;
     width: 100%; } }
-.app .app-container > aside {
+.app-container > aside {
   background-color: #2a2d34;
   color: #fff;
   position: relative;
   font-size: 0.9em; }
   @media (min-width: 768px) {
-    .app .app-container > aside {
+    .app-container > aside {
       display: table-cell;
       width: 215px;
       vertical-align: top; } }
   @media (min-width: 992px) {
-    .app .app-container > aside {
+    .app-container > aside {
       width: 230px; } }
-  .app .app-container > aside:before {
+  .app-container > aside:before {
     content: '';
     display: block;
     height: 52px;
@@ -6504,8 +6505,38 @@ p a {
     right: 0;
     z-index: 1;
     background-color: #22242a; }
-.app .app-container .content {
+  .app-container > aside * {
+    max-width: 100%; }
+.app-container .content {
   display: table-cell; }
+
+.admin .app-container > aside .user {
+  text-align: center;
+  padding: 30px 12px; }
+  .admin .app-container > aside .user .avatar {
+    display: none; }
+    @media (min-width: 768px) {
+      .admin .app-container > aside .user .avatar {
+        display: inline-block;
+        width: 70%;
+        padding-top: 70%;
+        border-radius: 50%;
+        border: solid 2px #fff;
+        background-color: #32a6ba;
+        background-position: center;
+        background-size: 100% auto; } }
+  .admin .app-container > aside .user .name {
+    margin-bottom: 0; }
+  .admin .app-container > aside .user .datasets {
+    opacity: 0.6; }
+    .admin .app-container > aside .user .datasets span {
+      background-color: #fff;
+      color: #2a2d34;
+      display: inline-block;
+      padding: 0 0.2em;
+      line-height: 1;
+      border-top: solid #fff 0.25em;
+      border-radius: 1px; }
 
 .subscribe-footer {
   background-color: #2a2d34;
@@ -6681,6 +6712,11 @@ html,
           .site-footer .supporters ul li:last-child {
             text-align: right; } }
 
+.next .secondary-nav a {
+  border: solid 1px #fff;
+  border-radius: 2px;
+  position: relative;
+  top: -1px; }
 .next .banner {
   text-align: center;
   background-image: url("../img/next/banner.jpg");

@@ -12,7 +12,6 @@
   .dropdown-menu,
   .user-menu {
     @include transition (all 0.2s ease-in-out);
-    cursor: pointer;
     position: absolute;
     text-align: left;
     z-index: 9;
@@ -20,6 +19,7 @@
     padding-top: $base-spacing /2;
     padding-bottom: $base-spacing /2;
     box-sizing: border-box;
+    display: none;
 
     &.show-menu {
       display: block;
@@ -199,13 +199,9 @@
 
 .secondary-nav {
   position: absolute;
-  top: 16px;
-  right: 16px;
-
-  @media (min-width: $screen-md-min) {
-    top: $base-spacing;
-    right: $base-spacing;
-  }
+  top: 0.9em;
+  right: 1em;
+  z-index: 2;
 
   a {
   	text-decoration: none;
@@ -219,6 +215,11 @@
       text-transform: uppercase;
       display: block;
       margin-left: $base-spacing;
+    }
+
+    & > a {
+      padding: 0.5em;
+      line-height: 1;
     }
 
     &.user {
