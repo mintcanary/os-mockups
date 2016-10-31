@@ -1,2 +1,22 @@
 [project]
 name = OpenSpending
+
+[servers.ghpages]
+target = ghpages://smth/os-mockups
+default = yes
+
+[servers.admin]
+target = ghpages://smth/os-mockup-admin
+default = no
+
+[servers.packager]
+target = ghpages://smth/os-mockup-packager
+default = no
+
+[servers.viewer]
+target = ghpages://smth/os-mockup-viewer
+default = no
+
+[servers.explorer]
+target = ghpages://smth/os-mockup-explorer
+default = no
