@@ -5879,7 +5879,7 @@ button.close {
     background-color: #fff;
     float: left;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 16px;
     background-color: #7d4e92; }
     .site-header .logo.small svg {
       fill: #2a2d34;
@@ -5897,7 +5897,7 @@ button.close {
         fill: #fff; }
     .site-header .logo.small + .logo {
       display: none;
-      margin-top: 14px;
+      margin-top: 15px;
       padding-left: 12px;
       height: 26px; }
       @media (min-width: 768px) {
