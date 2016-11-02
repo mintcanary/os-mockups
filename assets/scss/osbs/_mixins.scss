@@ -1,0 +1,11 @@
+@mixin grad {
+  background-color: $default-primary-colour;
+  @include gradient-vertical($green, $blue, 0%, 100%);
+}
+
+@mixin dark-module($bg:$grey) {
+  background-color: $bg;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

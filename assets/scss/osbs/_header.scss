@@ -1,7 +1,6 @@
 .site-header,
 .app-header {
-  background-color: $grey;
-  color: #fff;
+  @include dark-module;
   position: relative;
 
   a {

@@ -5,8 +5,7 @@
   }
 
   & > aside {
-    background-color: $grey;
-    color: #fff;
+    @include dark-module;
     position: relative;
     font-size: 0.9em;
 

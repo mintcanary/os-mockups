@@ -17,8 +17,8 @@ $gray-lighter:           $lighter-grey;
 
 $brand-primary:         $primary-colour;
 $brand-success:         $green;
-$brand-info:            $blue;
-$brand-warning:         $purple;
+$brand-info:            $dark-grey;
+$brand-warning:         $yellow;
 $brand-danger:          $red;
 
 //== Scaffolding
@@ -103,9 +103,9 @@ $headings-line-height:    1.3;
 // $line-height-large:         1.3333333 // extra decimals for Win 8.1 Chrome
 // $line-height-small:         1.5
 
-$border-radius-base:        2px;
-$border-radius-large:       3px;
-$border-radius-small:       1px;
+// $border-radius-base:        4px;
+// $border-radius-large:       6px;
+// $border-radius-small:       3px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 // $component-active-color:    #fff
@@ -143,29 +143,29 @@ $border-radius-small:       1px;
 
 // $btn-font-weight:                normal
 
-$btn-default-color:              $grey;
+$btn-default-color:              $primary-colour;
 $btn-default-bg:                 transparent;
-$btn-default-border:             $grey;
+$btn-default-border:             $primary-colour;
 
 // $btn-primary-color:              #fff
 // $btn-primary-bg:                 $brand-primary
-// $btn-primary-border:             darken($btn-primary-bg, 5%)
+$btn-primary-border:             $brand-primary;
 
 // $btn-success-color:              #fff
 // $btn-success-bg:                 $brand-success
-// $btn-success-border:             darken($btn-success-bg, 5%)
+$btn-success-border:             $brand-success;
 
 // $btn-info-color:                 #fff
 // $btn-info-bg:                    $brand-info
-// $btn-info-border:                darken($btn-info-bg, 5%)
+$btn-info-border:                $brand-info;
 
 // $btn-warning-color:              #fff
 // $btn-warning-bg:                 $brand-warning
-// $btn-warning-border:             darken($btn-warning-bg, 5%)
+$btn-warning-border:             $brand-warning;
 
 // $btn-danger-color:               #fff
 // $btn-danger-bg:                  $brand-danger
-// $btn-danger-border:              darken($btn-danger-bg, 5%)
+$btn-danger-border:              $brand-danger;
 
 // $btn-link-disabled-color:        $gray-light
 
@@ -217,7 +217,7 @@ $input-border-focus:             $primary-colour;
 // $legend-border-color:            #e5e5e5
 
 //** Background color for textual input addons
-// $input-group-addon-bg:           $gray-lighter
+$input-group-addon-bg:           transparent;
 //** Border color for textual input addons
 // $input-group-addon-border-color: $input-border
 
@@ -436,13 +436,13 @@ $input-border-focus:             $primary-colour;
 //
 //##
 
-// $pagination-color:                     $link-color
+$pagination-color:                     $grey;
 // $pagination-bg:                        #fff
-// $pagination-border:                    #ddd
+$pagination-border:                    #fff;
 
 // $pagination-hover-color:               $link-hover-color
-// $pagination-hover-bg:                  $gray-lighter
-// $pagination-hover-border:              #ddd
+$pagination-hover-bg:                  #fff;
+$pagination-hover-border:              $brand-primary;
 
 // $pagination-active-color:              #fff
 // $pagination-active-bg:                 $brand-primary
@@ -450,7 +450,7 @@ $input-border-focus:             $primary-colour;
 
 // $pagination-disabled-color:            $gray-light
 // $pagination-disabled-bg:               #fff
-// $pagination-disabled-border:           #ddd
+$pagination-disabled-border:           #fff;
 
 //== Pager
 //
@@ -578,23 +578,23 @@ $input-border-focus:             $primary-colour;
 // $modal-title-line-height:     $line-height-base
 
 //** Background color of modal content area
-// $modal-content-bg:                             #fff
+//$modal-content-bg:                             $grey;
 //** Modal content border color
-// $modal-content-border-color:                   rgba(0,0,0,.2)
+$modal-content-border-color:                   $grey;
 //** Modal content border color **for IE8**
-// $modal-content-fallback-border-color:          #999
+$modal-content-fallback-border-color:          $grey;
 
 //** Modal backdrop background color
-// $modal-backdrop-bg:           #000
+$modal-backdrop-bg:           $grey;
 //** Modal backdrop opacity
 // $modal-backdrop-opacity:      .5
 //** Modal header border color
-// $modal-header-border-color:   #e5e5e5
+$modal-header-border-color:   $grey;
 //** Modal footer border color
 // $modal-footer-border-color:   $modal-header-border-color
 
 // $modal-lg:                    900px
-// $modal-md:                    600px
+$modal-md:                    700px;
 // $modal-sm:                    300px
 
 //== Alerts
@@ -630,7 +630,7 @@ $input-border-focus:             $primary-colour;
 //** Progress bar text color
 // $progress-bar-color:          #fff
 //** Variable for setting rounded corners on progress bar.
-// $progress-border-radius:      $border-radius-base
+$progress-border-radius:      2px;
 
 //** Default progress bar color
 // $progress-bar-bg:             $brand-primary
@@ -764,11 +764,11 @@ $input-border-focus:             $primary-colour;
 // $breadcrumb-padding-vertical:   8px
 // $breadcrumb-padding-horizontal: 15px
 //** Breadcrumb background color
-// $breadcrumb-bg:                 #f5f5f5
+$breadcrumb-bg:                 #fff;
 //** Breadcrumb text color
-// $breadcrumb-color:              #ccc
+$breadcrumb-color:              $gray-light;
 //** Text color of current page in the breadcrumb
-// $breadcrumb-active-color:       $gray-light
+$breadcrumb-active-color:       $grey;
 //** Textual separator for between breadcrumb elements
 // $breadcrumb-separator:          "/"
 

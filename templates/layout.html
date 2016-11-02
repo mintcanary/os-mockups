@@ -144,5 +144,8 @@
   <script>window.jQuery || document.write('<script src="{{ '/vendor/jquery/dist/jquery.min.js'|url }}"><\/script>')</script>
   <script src="{{ '/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js'|url }}"></script>
   <script src="{{ '/js/main.js'|url }}"></script>
+  {% if this._model == 'style-guide' %}
+  <script src="{{ '/js/style-guide.js'|url }}"></script>
+  {% endif %}
 
 </body>

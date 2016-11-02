@@ -1,0 +1,311 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="container">
+  {{ this.body }}
+
+  <section id="branding" class="branding">
+    <h2>Sub-branding</h2>
+
+    <ul class="boxes">
+      <li><img src="{{ '/os-assets/branding/packager-logo.png'|url }}" alt="OS Packager logo"></li>
+      <li><img src="{{ '/os-assets/branding/packager-logo-rev.png'|url }}" alt="OS Packager logo reversed"></li>
+    </ul>
+
+    <ul class="boxes">
+      <li><img src="{{ '/os-assets/branding/viewer-logo.png'|url }}" alt="OS Viewer logo"></li>
+      <li><img src="{{ '/os-assets/branding/viewer-logo-rev.png'|url }}" alt="OS Viewer logo reversed"></li>
+    </ul>
+
+    <ul>
+      <li><img src="{{ '/os-assets/branding/os-touch-icon.png'|url }}" alt="Touch Icon"></li>
+      <li><img src="{{ '/os-assets/branding/os-touch-icon.png'|url }}" alt="Favicon"></li>
+
+      <li><img src="{{ '/os-assets/branding/packager-touch-icon.png'|url }}" alt="Touch Icon"></li>
+      <li><img src="{{ '/os-assets/branding/packager-touch-icon.png'|url }}" alt="Favicon"></li>
+
+      <li><img src="{{ '/os-assets/branding/viewer-touch-icon.png'|url }}" alt="Touch Icon"></li>
+      <li><img src="{{ '/os-assets/branding/viewer-touch-icon.png'|url }}" alt="Favicon"></li>
+    </ul>
+  </section>
+
+  <section id="colors" class="colors">
+    <h2>Colors</h2>
+
+    <ul class="boxes">
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Standard grey</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Standard accent</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Viewer blue</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Packager green</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Explorer purple</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Unassigned yellow</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Alert red</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Light grey</h6>
+      </li>
+    </ul>
+  </section>
+
+  <section class="side">
+    <h2>Sidebar</h2>
+    <div class="sidebar">
+
+      <ul class="accordion">
+        <li class="filter is-expanded">
+          <a href="javascript:void(0)" class="js-accordion-trigger">Accordion Item</a>
+          <ul class="submenu">
+            <li>
+              <a class="active" href="javascript:void(0)">Sub Item 1</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Sub Item 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="filter">
+          <a href="javascript:void(0)" class="js-accordion-trigger">Another Item</a>
+          <ul class="submenu">
+            <li>
+              <a href="javascript:void(0)">Sub Item 1</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Sub Item 2</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section id="typography" class="typography">
+    <h2>Typography</h2>
+
+    <div class="box">
+      <h1>Heading, <span></span></h1>
+      <p>Aa - <span></span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p>
+    </div>
+  </section>
+
+  <section id="icons" class="icons">
+    <h2>Icons</h2>
+
+    <ul class="box">
+      <li class="icon-1"></li>
+      <li class="icon-2"></li>
+      <li class="icon-3"></li>
+      <li class="icon-4"></li>
+      <li class="icon-5"></li>
+      <li class="icon-6"></li>
+      <li class="icon-7"></li>
+      <li class="icon-8"></li>
+      <li class="icon-9"></li>
+      <li class="icon-10"></li>
+      <li class="icon-11"></li>
+      <li class="icon-12"></li>
+      <li class="icon-13"></li>
+      <li class="icon-14"></li>
+      <li class="icon-15"></li>
+      <li class="icon-16"></li>
+      <li class="icon-17"></li>
+      <li class="icon-18"></li>
+    </ul>
+  </section>
+
+  <section id="ui" class="form">
+    <h2>Inputs</h2>
+
+    <div class="box">
+      <form class="form">
+        <fieldset>
+          <input type="text" placeholder="Text input">
+          <input type="text" placeholder="Required input" required>
+          <div class="input-group">
+            <div class="user input-group-addon"></div>
+            <input class="user icon" type="text" placeholder="Input with icon">
+          </div>
+          <input class="success" type="text" placeholder="Input with success">
+          <input class="alert" type="text" placeholder="Input with error" required>
+          <input type="text" placeholder="Disabled input" disabled>
+        </fieldset>
+
+        <fieldset>
+          <div class="input-wrapper">
+            <input type="radio" name="radioButton" id="radio1">
+            <label class="radio-label" for="radio1">Choice 1</label>
+          </div>
+          <div class="input-wrapper">
+            <input type="radio" name="radioButton" id="radio2">
+            <label class="radio-label" for="radio2">Choice 2</label>
+          </div>
+
+          <div class="input-wrapper">
+            <input type="checkbox" id="checkbox1">
+            <label class="checkbox-label" for="checkbox1">Option 1</label>
+          </div>
+
+          <div class="input-wrapper select">
+            <select name="select-this" id="select-this">
+              <option value="0">Select</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="2">Option 3</option>
+            </select>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <section id="buttons" class="buttons">
+    <h2>Buttons</h2>
+
+    <div class="box">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-info">Secondary</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-default">Outline</button>
+    </div>
+
+  </section>
+
+  <section class="typography">
+    <h2>Containers</h2>
+    <div class="box">
+      <p>Here is a <a data-toggle="modal" data-target="#myModal">modal</a>.</p>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Heading</h4>
+          </div>
+          <div class="modal-body">
+            Content
+          </div>
+          <div class="modal-footer">
+            Footer
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form">
+    <h2>Progress bars</h2>
+    <div class="box">
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          <span class="sr-only">60% Complete</span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+          <span class="sr-only">45% Complete</span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          60%
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          <span class="sr-only">80% Complete (danger)</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="typography">
+    <h2>Pagination</h2>
+    <div class="box">
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="disabled">
+            <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span> Previous</a>
+          </li>
+          <li class="active">
+            <a href="#">1 <span class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Next">Next <span aria-hidden="true">&raquo;</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="typography">
+    <h2>Labels</h2>
+    <div class="box">
+      <span class="label label-primary">Primary Label</span>
+      <span class="label label-info">Secondary Label</span>
+      <span class="label label-danger">Alert Label</span>
+    </div>
+  </section>
+
+  <section class="typography">
+    <h2>Breadcrumbs</h2>
+    <div class="box">
+      <ol class="breadcrumb">
+        <li><a href="#">Provide your data</a></li>
+        <li><a href="#">Describe your data</a></li>
+        <li class="active">Provide metadata</li>
+      </ol>
+    </div>
+  </section>
+
+</div>
+
+
+{% endblock %}

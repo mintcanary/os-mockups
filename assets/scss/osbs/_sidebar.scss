@@ -13,11 +13,12 @@
 
     li {
       margin-bottom: $base-spacing / 3;
+      display: block;
 
       .submenu {
         margin: 0;
         padding: 0;
-        
+
         li {
           margin-bottom: 0;
         }

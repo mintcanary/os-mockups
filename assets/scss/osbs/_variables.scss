@@ -7,15 +7,12 @@ $blue: #3a99d9;
 $green: #2abb9c;
 $purple: #7d4e92;
 $red: #d93d3a;
+$yellow: #f1ba22;
 
 $default-primary-colour: #32a6ba;
 
 $primary-colour: $default-primary-colour !default;
 
-@mixin grad {
-  background-color: $default-primary-colour;
-  @include gradient-vertical($green, $blue, 0%, 100%);
-}
 
 // Font
 $font-family: 'Hind', sans-serif;
