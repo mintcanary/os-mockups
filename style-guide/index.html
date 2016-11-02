@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>OpenSpending</title>
+    <title>Style Guide</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='//fonts.googleapis.com/css?family=Hind:400,500,600' rel='stylesheet' type='text/css'>
@@ -12,7 +12,7 @@
     
     <script src="../js/modernizr-2.8.3.min.js"></script>
   </head>
-<body class="next">
+<body class="style-guide">
   <div class="site-header">
     <div class="wrapper">
       <a class="small nonebrand logo">
@@ -28,138 +28,320 @@
 
       <ul class="secondary-nav">
         
-        <li><a href="http://docs.openspending.org/" rel="external">Documentation</a></li>
+        <li><a href="https://github.com/openspending/os-style-guide/archive/assets.zip" class="download"><span>Download assets</span></a></li>
         
     </div>
   </div>
 
   
-<div class="banner">
-  <div class="container">
-    <img src="../img/next/next.png" alt="OS Next Alpha" class="next-logo" />
-    <p>OpenSpending is back after months of hard work, and we’re super happy and excited to release the alpha version of OpenSpending Next. OS Next will help you to easily publish your budget data in a standard format, and create multiple visualisations.</p>
 
-    <a href="#" class="cta">Give it a try!</a>
-  </div>
-</div>
+<div class="container">
+  <h1>Style Guide 1.0</h1>
 
-<section id="features">
-  <div class="container">
-    <h2>Take your budget data to the next level</h2>
-    <ul class="feature-list">
-      <li>
-        <span>
-          <img src="../img/next/upload.png" alt="" />
-          <h4>A Simple Import Tool</h4>
-          <p>
-            Upload your CSV file in a few clicks with a simplified workflow.
-          </p>
-        </span>
+
+  <section id="branding" class="branding">
+    <h2>Sub-branding</h2>
+
+    <ul class="boxes">
+      <li><img src="../os-assets/branding/packager-logo.png" alt="OS Packager logo"></li>
+      <li><img src="../os-assets/branding/packager-logo-rev.png" alt="OS Packager logo reversed"></li>
+    </ul>
+
+    <ul class="boxes">
+      <li><img src="../os-assets/branding/viewer-logo.png" alt="OS Viewer logo"></li>
+      <li><img src="../os-assets/branding/viewer-logo-rev.png" alt="OS Viewer logo reversed"></li>
+    </ul>
+
+    <ul>
+      <li><img src="../os-assets/branding/os-touch-icon.png" alt="Touch Icon"></li>
+      <li><img src="../os-assets/branding/os-touch-icon.png" alt="Favicon"></li>
+
+      <li><img src="../os-assets/branding/packager-touch-icon.png" alt="Touch Icon"></li>
+      <li><img src="../os-assets/branding/packager-touch-icon.png" alt="Favicon"></li>
+
+      <li><img src="../os-assets/branding/viewer-touch-icon.png" alt="Touch Icon"></li>
+      <li><img src="../os-assets/branding/viewer-touch-icon.png" alt="Favicon"></li>
+    </ul>
+  </section>
+
+  <section id="colors" class="colors">
+    <h2>Colors</h2>
+
+    <ul class="boxes">
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Standard grey</h6>
       </li>
-      <li class="highlight">
-        <span>
-          <img src="../img/next/package.png" alt="" />
-          <h4>Fiscal Data Package</h4>
-          <p>
-            A simple, open technical specification for government budget and spending data.
-          </p>
-        </span>
-        <a href="http://fiscal.dataprotocols.org/spec/" rel="external">Spec</a>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Standard accent</h6>
       </li>
-      <li>
-        <span>
-          <img src="../img/next/model.png" alt="" />
-          <h4>A Data Modeller</h4>
-          <p>
-            Edit and map your budget data to enable the power of filters and visualisations.
-          </p>
-        </span>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Viewer blue</h6>
       </li>
-      <li>
-        <span>
-          <img src="../img/next/visualisation.png" alt="" />
-          <h4>Visualisation Framework</h4>
-          <p>
-            Treemaps, pie charts, bar charts, geolocation, line charts, tables, you name it!
-          </p>
-        </span>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Packager green</h6>
       </li>
-      <li>
-        <span>
-          <img src="../img/next/api.png" alt="" />
-          <h4>New API</h4>
-          <p>
-            Build powerful apps and connect external data to your budget file.
-          </p>
-        </span>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Explorer purple</h6>
       </li>
-      <li>
-        <span>
-          <img src="../img/next/embed.png" alt="" />
-          <h4>Embed Visualisations</h4>
-          <p>
-            Share and embed any visualisation in your website or portal!
-          </p>
-        </span>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Unassigned yellow</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Alert red</h6>
+      </li>
+
+      <li class="box">
+        <div class="color-swatch"></div>
+        <h6>Light grey</h6>
       </li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section id="participate">
-  <div class="container">
-    <h2>How to participate</h2>
-    <ol class="step-list">
-      <li>
-        <h4>Prepare &amp; upload your budget CSV</h4>
-        <p>
-          To correctly map the data, we need an ‘Amount’ data column, free of commas and spaces. Get started <a href="#">here</a>.
-        </p>
-      </li>
-      <li>
-        <h4>Create and map a Fiscal Data Package</h4>
-        <p>
-          Use our <a href="#">new tools</a> to create a Fiscal Data Package and map the data from your CSV file.
-        </p>
-      </li>
-      <li>
-        <h4>Found an issue or bug?</h4>
-        <p>
-          Your feedback goes a long way towards improving our applications. Please report any issues <a href="#">here</a>.
-        </p>
-      </li>
-      <li>
-        <h4>Suggest an improvement</h4>
-        <p>
-          Submit suggestions <a href="#">here</a>. Please describe your improvement, giving as much context as possible.
-        </p>
-      </li>
-    </ol>
-  </div>
-</section>
+  <section class="side">
+    <h2>Sidebar</h2>
+    <div class="sidebar">
 
-<section id="contribute">
-  <div class="container">
-    <h3>More ways to contribute</h3>
-    <p>
-      At Open Knowledge, open and public participation is part of the process. We want to hear from you. <br />
-      Visit the <a href="http://community.openspending.org/" rel="external">OpenSpending Community</a> to find out more.
-    </p>
-  </div>
-</section>
+      <ul class="accordion">
+        <li class="filter is-expanded">
+          <a href="javascript:void(0)" class="js-accordion-trigger">Accordion Item</a>
+          <ul class="submenu">
+            <li>
+              <a class="active" href="javascript:void(0)">Sub Item 1</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Sub Item 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="filter">
+          <a href="javascript:void(0)" class="js-accordion-trigger">Another Item</a>
+          <ul class="submenu">
+            <li>
+              <a href="javascript:void(0)">Sub Item 1</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Sub Item 2</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-<div class="subscribe-footer">
-  <div class="container">
-    <h3>Stay in touch</h3>
-    <p>
-      Receive regular updates through our mailing-list and be part of our community!
-    </p>
-      <form class="form-inline" method="POST" action="http://lists.okfn.org/mailman/subscribe/openspending">
-        <input type="text" placeholder="Email" name="email" class="form-control">
-        <button onclick="_gaq.push(['_trackEvent', 'Mailing lists', 'Register', 'Discussion direct']);" class="btn" type="submit">Subscribe</button>
+    </div>
+  </section>
+
+  <section id="typography" class="typography">
+    <h2>Typography</h2>
+
+    <div class="box">
+      <h1>Heading, <span></span></h1>
+      <p>Aa - <span></span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p>
+    </div>
+  </section>
+
+  <section id="icons" class="icons">
+    <h2>Icons</h2>
+
+    <ul class="box">
+      <li class="icon-1"></li>
+      <li class="icon-2"></li>
+      <li class="icon-3"></li>
+      <li class="icon-4"></li>
+      <li class="icon-5"></li>
+      <li class="icon-6"></li>
+      <li class="icon-7"></li>
+      <li class="icon-8"></li>
+      <li class="icon-9"></li>
+      <li class="icon-10"></li>
+      <li class="icon-11"></li>
+      <li class="icon-12"></li>
+      <li class="icon-13"></li>
+      <li class="icon-14"></li>
+      <li class="icon-15"></li>
+      <li class="icon-16"></li>
+      <li class="icon-17"></li>
+      <li class="icon-18"></li>
+    </ul>
+  </section>
+
+  <section id="ui" class="form">
+    <h2>Inputs</h2>
+
+    <div class="box">
+      <form class="form">
+        <fieldset>
+          <input type="text" placeholder="Text input">
+          <input type="text" placeholder="Required input" required>
+          <div class="input-group">
+            <div class="user input-group-addon"></div>
+            <input class="user icon" type="text" placeholder="Input with icon">
+          </div>
+          <input class="success" type="text" placeholder="Input with success">
+          <input class="alert" type="text" placeholder="Input with error" required>
+          <input type="text" placeholder="Disabled input" disabled>
+        </fieldset>
+
+        <fieldset>
+          <div class="input-wrapper">
+            <input type="radio" name="radioButton" id="radio1">
+            <label class="radio-label" for="radio1">Choice 1</label>
+          </div>
+          <div class="input-wrapper">
+            <input type="radio" name="radioButton" id="radio2">
+            <label class="radio-label" for="radio2">Choice 2</label>
+          </div>
+
+          <div class="input-wrapper">
+            <input type="checkbox" id="checkbox1">
+            <label class="checkbox-label" for="checkbox1">Option 1</label>
+          </div>
+
+          <div class="input-wrapper select">
+            <select name="select-this" id="select-this">
+              <option value="0">Select</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="2">Option 3</option>
+            </select>
+          </div>
+        </fieldset>
       </form>
-  </div>
+    </div>
+  </section>
+
+  <section id="buttons" class="buttons">
+    <h2>Buttons</h2>
+
+    <div class="box">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-info">Secondary</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-default">Outline</button>
+    </div>
+
+  </section>
+
+  <section class="typography">
+    <h2>Containers</h2>
+    <div class="box">
+      <p>Here is a <a data-toggle="modal" data-target="#myModal">modal</a>.</p>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Heading</h4>
+          </div>
+          <div class="modal-body">
+            Content
+          </div>
+          <div class="modal-footer">
+            Footer
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form">
+    <h2>Progress bars</h2>
+    <div class="box">
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          <span class="sr-only">60% Complete</span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+          <span class="sr-only">45% Complete</span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          60%
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          <span class="sr-only">80% Complete (danger)</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="typography">
+    <h2>Pagination</h2>
+    <div class="box">
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="disabled">
+            <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span> Previous</a>
+          </li>
+          <li class="active">
+            <a href="#">1 <span class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Next">Next <span aria-hidden="true">&raquo;</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="typography">
+    <h2>Labels</h2>
+    <div class="box">
+      <span class="label label-primary">Primary Label</span>
+      <span class="label label-info">Secondary Label</span>
+      <span class="label label-danger">Alert Label</span>
+    </div>
+  </section>
+
+  <section class="typography">
+    <h2>Breadcrumbs</h2>
+    <div class="box">
+      <ol class="breadcrumb">
+        <li><a href="#">Provide your data</a></li>
+        <li><a href="#">Describe your data</a></li>
+        <li class="active">Provide metadata</li>
+      </ol>
+    </div>
+  </section>
+
 </div>
+
+
 
 
   <div class="site-footer">
@@ -250,6 +432,8 @@
   <script>window.jQuery || document.write('<script src="../vendor/jquery/dist/jquery.min.js"><\/script>')</script>
   <script src="../vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
   <script src="../js/main.js"></script>
+  
+  <script src="../js/style-guide.js"></script>
   
 
 </body>
