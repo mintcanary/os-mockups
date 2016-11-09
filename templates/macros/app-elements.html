@@ -1,0 +1,6 @@
+{% macro search(name, label='Search datasets', placeholder='') -%}
+<div class="app-search">
+  <label for="{{ name }}">{{ label }}</label>
+  <input id="{{ name }}" class="search-field" placeholder="{{ placeholder }}" type="text">
+</div>
+{%- endmacro %}

@@ -3,10 +3,16 @@
 {% block body %}
 <div class="app-container">
   <aside>
-      {{ this.aside }}
+    {% block aside %}
+    {{ this.aside }}
+    {% endblock %}
   </aside>
   <div class="content">
-    {{ this.body }}
+    <div>
+      {% block content %}
+      {{ this.body }}
+      {% endblock %}
+    </div>
   </div>
 </div>
 {% endblock %}

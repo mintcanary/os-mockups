@@ -36,6 +36,26 @@
     }
   }
   .content {
-    display: table-cell;
+    background-color: $gray-lighter;
+
+    @media (min-width: $screen-sm-min) {
+      display: table-cell;
+    }
+
+    & > div {
+      padding: $grid-gutter-width;
+    }
+  }
+
+  //Search
+  .app-search {
+    label {
+      font-size: 20px;
+    }
+
+    .search-field {
+      @extend .form-control;
+      @extend .input-lg;
+    }
   }
 }

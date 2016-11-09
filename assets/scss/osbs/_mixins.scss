@@ -9,3 +9,74 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// Copied from the BS .btn class, because BS doesn't have a mixin for this!
+@mixin btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  @include user-select(none);
+  padding: .65em 2em .45em 2em;
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+    @include opacity(.65);
+    @include box-shadow(none);
+  }
+
+  // [converter] extracted a& to a.btn
+}
+
+
+@mixin context-menu($postion: right) {
+  @include dark-module;
+  position: absolute;
+  border-radius: $border-radius-base;
+  margin: 0;
+  padding: $grid-gutter-width/2;
+  @if $postion == left {
+    right:0;
+  }
+
+  li {
+    display: block;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

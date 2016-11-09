@@ -1,19 +1,118 @@
 {% extends "app.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-<div class="app-container">
-  <aside>
-    <div class="user">
-      <span class="avatar" style="background-image: url('{{ bag('user.avatar') }}')"></span>
-      <h4 class="name">{{ bag('user.name') }}</h4>
-      <p class="datasets">
-        <span class="">{{ bag('user.uploaded_datasets') }}</span> Dataset{% if bag('user.uploaded_datasets') != '1' %}s{% endif %}
-      </p>
-      <a>Edit profile</a>
-    </div>
-  </aside>
-  <div class="content">
-    {{ this.body }}
+
+{% block aside %}
+  <div class="user">
+    <span class="avatar" style="background-image: url('{{ bag('user.avatar') }}')"></span>
+    <h4 class="name">{{ bag('user.name') }}</h4>
+    <p class="datasets">
+      <span class="">{{ bag('user.uploaded_datasets') }}</span> Dataset{% if bag('user.uploaded_datasets') != '1' %}s{% endif %}
+    </p>
+    <a>Edit profile</a>
   </div>
-</div>
+{% endblock %}
+
+{% block content %}
+  {% import 'macros/app-elements.html' as app_elements %}
+  {{ app_elements.search('datasets', placeholder='enter keywords from dataset title') }}
+
+  <div class="dataset-list">
+    <table>
+       <tr>
+         <th class="title"><span>Title</span></th>
+         <th class="status"><span>Publication status</span></th>
+         <th class="actions"><span>Actions</span></th>
+       </tr>
+       <tr>
+         <td class="title"><span>ESIF finance details</span></td>
+         <td class="status"><span class="label label-primary">Published</span></td>
+         <td class="actions">
+           <ul>
+             <li class="make-private">
+               <a>Make private</a>
+             </li>
+             <li class="edit">
+               <a><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+             </li>
+             <li class="view">
+               <a><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+             </li>
+             <li class="download">
+               <a>
+                 <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+               </a>
+             </li>
+             <li class="more">
+               <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+               <ul>
+                  <li class="run">
+                    <a>Run external hooks</a>
+                  </li>
+                </ul>
+             </li>
+           </ul>
+         </td>
+       </tr>
+       <tr>
+         <td class="title"><span>Isreali Reserves over the years</span></td>
+         <td class="status"><span class="label label-warning">Private</span></td>
+         <td class="actions">
+           <ul>
+             <li class="publish">
+               <a>Publish</a>
+             </li>
+             <li class="edit">
+               <a><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+             </li>
+             <li class="view">
+               <a><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+             </li>
+             <li class="download">
+               <a>
+                 <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+               </a>
+             </li>
+             <li class="more">
+               <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+               <ul>
+                  <li class="run">
+                    <a>Run external hooks</a>
+                  </li>
+                </ul>
+             </li>
+           </ul>
+         </td>
+       </tr>
+       <tr>
+         <td class="title"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies pharetra aliquet. Donec ut scelerisque risus, rutrum condimentum enim</span></td>
+         <td class="status"><span class="label label-warning">Private</span></td>
+         <td class="actions">
+           <ul>
+             <li class="publish">
+               <a>Publish</a>
+             </li>
+             <li class="edit">
+               <a><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+             </li>
+             <li class="view">
+               <a><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+             </li>
+             <li class="download">
+               <a>
+                 <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+               </a>
+             </li>
+             <li class="more">
+               <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+               <ul>
+                  <li class="run">
+                    <a>Run external hooks</a>
+                  </li>
+                </ul>
+             </li>
+           </ul>
+         </td>
+       </tr>
+     </table>
+  </div>
+
 {% endblock %}

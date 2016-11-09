@@ -1,6 +1,8 @@
 .form-control {
   padding: .65em 1em .45em 1em;
   height: 2.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   &:focus {
     box-shadow: none;
@@ -9,6 +11,10 @@
 
 .btn {
   padding: .65em 2em .45em 2em;
+}
+
+label {
+  font-weight: 500;
 }
 
 .form {

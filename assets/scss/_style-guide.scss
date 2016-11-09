@@ -12,7 +12,7 @@
 
   /* --------------------------------
 
-  xPatterns
+  Patterns
 
   -------------------------------- */
   .boxes {
@@ -32,7 +32,7 @@
 
   /* --------------------------------
 
-  xTypography
+  Typography
 
   -------------------------------- */
 
@@ -87,28 +87,28 @@
   	}
   }
 
-  /* --------------------------------
-
-  xButtons
-
-  -------------------------------- */
-
-
-  .buttons .box:nth-of-type(2) span {
-  	/* CSS class name colour */
-  	color: $primary-colour;
-  }
 
   /* --------------------------------
 
-  xIcons
+  Icons
 
   -------------------------------- */
 
-  .icons li {
-  	/* icons size */
-  	width: 32px;
-  	height: 32px;
+  .icons {
+    ul {
+      li {
+      	width: 32px;
+      	height: 32px;
+        display: inline-block;
+        margin: 1em;
+
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: desaturate(lighten($grey, 33), 7);
+        }
+      }
+    }
   }
 
 
@@ -438,31 +438,6 @@
   	}
   }
 
-  /* xIcons section - basic style */
-
-  $icon-list: arrow_down arrow_drop_down box braces bulb checkmark chevron_with_circle_left circle_plus download embed file filter location remove share trashcan upload user;
-
-  @mixin icons {
-  	$icon-number: 1;
-  	@each $icon in $icon-list {
-  		.icon-#{$icon-number} {
-  			background-image: url("../os-assets/icons/#{$icon}.svg");
-  		}
-  		$icon-number: $icon-number+ 1;
-  	}
-  }
-
-  .icons {
-  	li {
-  		display: inline-block;
-  		background-position: center center;
-  		background-repeat: no-repeat;
-  		margin: 1em;
-  		background-size: contain;
-  		opacity: 0.5;
-  	}
-  	@include icons;
-  }
 
   /* xForm section - basic style */
 

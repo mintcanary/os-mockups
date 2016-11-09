@@ -75,4 +75,6 @@ jQuery(document).ready(function($){
 	}
 
 
+	$('#icons li').popover();
+
 });
