@@ -8022,6 +8022,9 @@ label {
                   @media (min-width: 768px) {
                     .admin .app-container .dataset-list > table tr td.actions > ul > li.more > a {
                       display: inline-block; } }
+                  @media (min-width: 768px) and (max-width: 991px) {
+                    .admin .app-container .dataset-list > table tr td.actions > ul > li.more > a {
+                      color: #3a99d9; } }
                   .admin .app-container .dataset-list > table tr td.actions > ul > li.more > a:after {
                     content: ''; }
               .admin .app-container .dataset-list > table tr td.actions > ul > li ul {
