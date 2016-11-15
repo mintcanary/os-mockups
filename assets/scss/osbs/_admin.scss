@@ -121,13 +121,16 @@
                 & > li {
                   display: inline-block;
 
+                  a {
+                    font-size: 0.9em;
+                  }
+
                   & > a {
                     position: relative;
 
                     &:after {
-                      content: '|';
+                      content: ' |';
                     }
-                    font-size: 0.9em;
 
                     svg {
                       display: none;
@@ -167,12 +170,26 @@
 
                     & > a {
                       @include button-variant($grey, transparent, transparent);
+                      display: none;
+
+                      @media (min-width: $screen-sm-min) {
+                        display: inline-block;
+                      }
+
+                      &:after {
+                        content: '';
+                      }
                     }
                   }
 
                   ul {
-                    @include context-menu (left);
-                    margin-top: -6px;
+                    margin: 0;
+                    padding: 0;
+
+                    @media (min-width: $screen-sm-min) {
+                      @include context-menu (left);
+                      margin-top: -6px;
+                    }
 
                     li {
                       display: block;
