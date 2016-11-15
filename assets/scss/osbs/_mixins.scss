@@ -66,8 +66,27 @@
 
 
 @mixin context-menu($postion: right) {
-  @extend .popover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $zindex-popover;
+  display: none;
+  max-width: $popover-max-width;
+  padding: 1px;
+  @include reset-text;
+  font-size: $font-size-base;
+  background-color: $popover-bg;
+  background-clip: padding-box;
+  border: 1px solid $popover-fallback-border-color;
+  border: 1px solid $popover-border-color;
+  border-radius: $border-radius-large;
+  @include box-shadow(0 5px 10px rgba(0,0,0,.2));
+  @include light-text;
   margin: 0;
+
+  a {
+    color: inherit;
+  }
 
   @if $postion == right {
     //margin-left: -$popover-arrow-width;
