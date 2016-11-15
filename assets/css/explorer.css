@@ -7898,6 +7898,9 @@ label {
                   margin-top: -5px; } }
               .admin .app-container .dataset-list > table tbody tr td.actions > ul > li {
                 display: inline-block; }
+                @media (min-width: 992px) {
+                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li {
+                    margin-left: 10px; } }
                 .admin .app-container .dataset-list > table tbody tr td.actions > ul > li a {
                   font-size: 0.9em; }
                 .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a {
@@ -7927,8 +7930,8 @@ label {
                       -ms-user-select: none;
                       user-select: none;
                       padding: .65em 2em .45em 2em;
-                      color: #2a2d34;
-                      background-color: transparent;
+                      color: #fff;
+                      background-color: #2a2d34;
                       border-color: #2a2d34;
                       padding: 0.5em 12px 0.25em 12px;
                       font-size: 0.8em;
@@ -7956,29 +7959,29 @@ label {
                         -webkit-box-shadow: none;
                         box-shadow: none; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.focus {
-                        color: #2a2d34;
-                        background-color: transparent;
+                        color: #fff;
+                        background-color: #131518;
                         border-color: black; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:hover {
-                        color: #2a2d34;
-                        background-color: transparent;
+                        color: #fff;
+                        background-color: #131518;
                         border-color: #0f1012; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.dropdown-toggle {
-                        color: #2a2d34;
-                        background-color: transparent;
+                        color: #fff;
+                        background-color: #131518;
                         border-color: #0f1012; }
                         .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:active.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.active.focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.dropdown-toggle:hover, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.dropdown-toggle:focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.dropdown-toggle.focus {
-                          color: #2a2d34;
-                          background-color: transparent;
+                          color: #fff;
+                          background-color: #030304;
                           border-color: black; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.dropdown-toggle {
                         background-image: none; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.disabled:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.disabled:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.disabled.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a[disabled]:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a[disabled]:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a[disabled].focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:hover, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a:focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a.focus {
-                        background-color: transparent;
+                        background-color: #2a2d34;
                         border-color: #2a2d34; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a .badge {
-                        color: transparent;
-                        background-color: #2a2d34; }
+                        color: #2a2d34;
+                        background-color: #fff; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li > a svg {
                         display: inline-block;
                         width: 20px;
@@ -7994,48 +7997,135 @@ label {
                           text-shadow: none;
                           background-color: transparent;
                           border: 0; } }
-                .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more {
-                  position: relative; }
-                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a {
-                    color: #2a2d34;
+                @media (min-width: 992px) {
+                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a {
+                    color: #7d4e92;
                     background-color: transparent;
-                    border-color: transparent;
-                    display: none; }
-                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.focus {
-                      color: #2a2d34;
+                    border-color: #7d4e92; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.focus {
+                      color: #7d4e92;
                       background-color: transparent;
-                      border-color: transparent; }
-                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:hover {
-                      color: #2a2d34;
+                      border-color: #36223f; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:hover {
+                      color: #7d4e92;
                       background-color: transparent;
-                      border-color: transparent; }
-                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle {
-                      color: #2a2d34;
+                      border-color: #5b396a; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.dropdown-toggle {
+                      color: #7d4e92;
                       background-color: transparent;
-                      border-color: transparent; }
-                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active.focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle:hover, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle:focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle.focus {
-                        color: #2a2d34;
+                      border-color: #5b396a; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:active.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.active.focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.dropdown-toggle:hover, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.dropdown-toggle:focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.dropdown-toggle.focus {
+                        color: #7d4e92;
                         background-color: transparent;
-                        border-color: transparent; }
-                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle {
+                        border-color: #36223f; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.dropdown-toggle {
                       background-image: none; }
-                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.disabled:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.disabled:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.disabled.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a[disabled]:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a[disabled]:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a[disabled].focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:hover, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.focus {
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.disabled:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.disabled:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.disabled.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a[disabled]:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a[disabled]:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a[disabled].focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:hover, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a:focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a.focus {
                       background-color: transparent;
-                      border-color: transparent; }
-                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a .badge {
+                      border-color: #7d4e92; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.publish > a .badge {
                       color: transparent;
-                      background-color: #2a2d34; }
-                    @media (min-width: 768px) {
-                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a {
-                        display: inline-block; } }
-                    @media (min-width: 768px) and (max-width: 991px) {
-                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a {
-                        color: #7d4e92; } }
-                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:after {
-                      content: ''; }
+                      background-color: #7d4e92; } }
+                @media (min-width: 992px) {
+                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a {
+                    color: #6e7689;
+                    background-color: transparent;
+                    border-color: #a6abb7; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.focus {
+                      color: #6e7689;
+                      background-color: transparent;
+                      border-color: #636a7b; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:hover {
+                      color: #6e7689;
+                      background-color: transparent;
+                      border-color: #848b9c; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.dropdown-toggle {
+                      color: #6e7689;
+                      background-color: transparent;
+                      border-color: #848b9c; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:active.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.active.focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.dropdown-toggle:hover, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.dropdown-toggle:focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.dropdown-toggle.focus {
+                        color: #6e7689;
+                        background-color: transparent;
+                        border-color: #636a7b; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.dropdown-toggle {
+                      background-image: none; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.disabled:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.disabled:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.disabled.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a[disabled]:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a[disabled]:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a[disabled].focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:hover, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a:focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a.focus {
+                      background-color: transparent;
+                      border-color: #a6abb7; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.make-private > a .badge {
+                      color: transparent;
+                      background-color: #6e7689; } }
+                @media (min-width: 992px) {
+                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a {
+                    color: #fff;
+                    background-color: #2abb9c;
+                    border-color: #2abb9c; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.focus {
+                      color: #fff;
+                      background-color: #219179;
+                      border-color: #135345; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:hover {
+                      color: #fff;
+                      background-color: #219179;
+                      border-color: #1f8972; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.dropdown-toggle {
+                      color: #fff;
+                      background-color: #219179;
+                      border-color: #1f8972; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:active.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.active.focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.dropdown-toggle:hover, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.dropdown-toggle:focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.dropdown-toggle.focus {
+                        color: #fff;
+                        background-color: #1a7461;
+                        border-color: #135345; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.dropdown-toggle {
+                      background-image: none; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.disabled:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.disabled:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.disabled.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a[disabled]:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a[disabled]:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a[disabled].focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:hover, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a:focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a.focus {
+                      background-color: #2abb9c;
+                      border-color: #2abb9c; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit > a .badge {
+                      color: #2abb9c;
+                      background-color: #fff; } }
+                .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit .tooltip-inner {
+                  background-color: #219179; }
+                .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.edit .tooltip-arrow {
+                  border-top-color: #219179; }
+                @media (min-width: 992px) {
+                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a {
+                    color: #fff;
+                    background-color: #3a99d9;
+                    border-color: #3a99d9; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.focus {
+                      color: #fff;
+                      background-color: #247fbc;
+                      border-color: #18537c; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:hover {
+                      color: #fff;
+                      background-color: #247fbc;
+                      border-color: #2379b3; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.dropdown-toggle {
+                      color: #fff;
+                      background-color: #247fbc;
+                      border-color: #2379b3; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:active.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.active.focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.dropdown-toggle:hover, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.dropdown-toggle:focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.dropdown-toggle.focus {
+                        color: #fff;
+                        background-color: #1e6b9e;
+                        border-color: #18537c; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.dropdown-toggle {
+                      background-image: none; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.disabled:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.disabled:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.disabled.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a[disabled]:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a[disabled]:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a[disabled].focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:hover, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a:focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a.focus {
+                      background-color: #3a99d9;
+                      border-color: #3a99d9; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view > a .badge {
+                      color: #3a99d9;
+                      background-color: #fff; } }
+                .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view .tooltip-inner {
+                  background-color: #247fbc; }
+                .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.view .tooltip-arrow {
+                  border-top-color: #247fbc; }
                 .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul {
                   margin: 0;
                   padding: 0; }
+                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul li {
+                    display: inline-block; }
                   @media (min-width: 768px) {
                     .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul {
                       position: absolute;
@@ -8112,10 +8202,55 @@ label {
                         right: -8px; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul:after {
                         border-color: transparent transparent transparent #2a2d34;
-                        right: -7px; } }
-                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul li {
-                    display: block;
-                    white-space: nowrap; }
+                        right: -7px; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul li {
+                        display: block;
+                        white-space: nowrap; } }
+                .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.download {
+                  position: relative;
+                  display: none; }
+                  @media (min-width: 768px) {
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.download {
+                      display: inline-block; } }
+                .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more {
+                  position: relative; }
+                  .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a {
+                    color: #2a2d34;
+                    background-color: transparent;
+                    border-color: transparent;
+                    display: none; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.focus {
+                      color: #2a2d34;
+                      background-color: transparent;
+                      border-color: transparent; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:hover {
+                      color: #2a2d34;
+                      background-color: transparent;
+                      border-color: transparent; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle {
+                      color: #2a2d34;
+                      background-color: transparent;
+                      border-color: transparent; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active.focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle:hover, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle:focus, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle.focus {
+                        color: #2a2d34;
+                        background-color: transparent;
+                        border-color: transparent; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:active, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.active, .open > .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.dropdown-toggle {
+                      background-image: none; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.disabled:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.disabled:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.disabled.focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a[disabled]:hover, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a[disabled]:focus, .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a[disabled].focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:hover, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:focus, fieldset[disabled] .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a.focus {
+                      background-color: transparent;
+                      border-color: transparent; }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a .badge {
+                      color: transparent;
+                      background-color: #2a2d34; }
+                    @media (min-width: 768px) {
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a {
+                        display: inline-block; } }
+                    @media (min-width: 768px) and (max-width: 991px) {
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a {
+                        color: #7d4e92; } }
+                    .admin .app-container .dataset-list > table tbody tr td.actions > ul > li.more > a:after {
+                      content: ''; }
 
 .modal-content {
   border-radius: 0;
