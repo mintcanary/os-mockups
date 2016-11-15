@@ -50,160 +50,159 @@
     }
 
     .dataset-list {
-      margin: $padding-base-vertical (-$grid-gutter-width) $grid-gutter-width;
+      margin: $padding-base-vertical (-$grid-gutter-width) 0;
 
       & > table {
         display: block;
 
-        tbody {
-          display: block;
+        th {
+          span {
+            @include text-hide;
+          }
         }
 
-        tr {
+        tbody {
           display: block;
-          clear: both;
-          padding-left: $grid-gutter-width;
-          padding-right: $grid-gutter-width;
 
-          &:nth-child(even) {
-            background-color: #fff;
+          tr {
+            display: block;
+            clear: both;
+            padding: 20px $grid-gutter-width 15px $grid-gutter-width;
+            position: relative;
 
-            td > ul:before {
-              content: '';
+            &:nth-child(odd) {
               background-color: #fff;
-              width: 100vw;
-              position: absolute;
-              left: -15px;
-              right: -$grid-gutter-width;
-              bottom: -14px;
-              z-index: -1;
-            }
-          }
 
-          th {
-            span {
-              @include text-hide;
-            }
-          }
-
-          td {
-            padding: ($grid-gutter-width/2 + $padding-small-vertical) $padding-base-horizontal/2 $grid-gutter-width/2 0;
-            display: inline-block;
-
-
-            span {
-              position: relative;
-              z-index: 2;
-            }
-
-            &.title {
-              font-size: 18px;
-              font-weight: 500;
-            }
-            &.status {
-              .label {
-                position: relative;
-                top: -2px;
+              td > ul:before {
+                content: '';
+                background-color: #fff;
+                width: 100vw;
+                position: absolute;
+                right: -$grid-gutter-width;
+                bottom: -20px;
+                top: 0;
               }
             }
-            &.actions {
-              padding-right: 0;
-              display: block;
 
-              @media (min-width: $screen-md-min) {
-                float: right;
-                text-align: right;
+            td {
+              padding: $padding-small-vertical $padding-base-horizontal/2 $padding-small-vertical 0;
+              display: inline-block;
+
+
+              span {
+                position: relative;
+                z-index: 2;
               }
 
-              & > ul {
-                padding: 0;
-                margin: -20px 0 0 0;
-                position: relative;
+              &.title {
+                font-size: 18px;
+                font-weight: 500;
+              }
+              &.status {
+                .label {
+                  position: relative;
+                  top: -2px;
+                }
+              }
+              &.actions {
+                padding-right: 0;
+                display: block;
 
                 @media (min-width: $screen-md-min) {
-                  margin-top: -5px;
+                  float: right;
+                  text-align: right;
                 }
 
-                & > li {
-                  display: inline-block;
+                & > ul {
+                  padding: 0;
+                  margin: 0;
+                  position: relative;
 
-                  a {
-                    font-size: 0.9em;
+                  @media (min-width: $screen-md-min) {
+                    margin-top: -5px;
                   }
 
-                  & > a {
-                    position: relative;
+                  & > li {
+                    display: inline-block;
 
-                    &:after {
-                      content: ' |';
+                    a {
+                      font-size: 0.9em;
                     }
 
-                    svg {
-                      display: none;
-                    }
+                    & > a {
+                      position: relative;
 
-                    @media (min-width: $screen-md-min) {
                       &:after {
-                        content: '';
+                        content: ' |';
                       }
-                      @include btn;
-                      @include button-variant($grey, transparent, $grey);
-                      padding: .5em $padding-base-horizontal .25em $padding-base-horizontal;
-                      font-size: 0.8em;
-                      background-repeat: no-repeat;
-                      background-size: auto 18px;
-                      background-position: center center;
-                      min-width: 32px;
 
                       svg {
-                        display: inline-block;
-                        width: 20px;
-                        height: 20px;
-                        fill: currentColor;
-                        position: absolute;
-                        left: 5px;
-                        top: 50%;
-                        margin-top: -10px;
+                        display: none;
+                      }
 
-                        & + span {
-                          @include text-hide;
+                      @media (min-width: $screen-md-min) {
+                        &:after {
+                          content: '';
+                        }
+                        @include btn;
+                        @include button-variant($grey, transparent, $grey);
+                        padding: .5em $padding-base-horizontal .25em $padding-base-horizontal;
+                        font-size: 0.8em;
+                        background-repeat: no-repeat;
+                        background-size: auto 18px;
+                        background-position: center center;
+                        min-width: 32px;
+
+                        svg {
+                          display: inline-block;
+                          width: 20px;
+                          height: 20px;
+                          fill: currentColor;
+                          position: absolute;
+                          left: 5px;
+                          top: 50%;
+                          margin-top: -10px;
+
+                          & + span {
+                            @include text-hide;
+                          }
                         }
                       }
                     }
-                  }
-                  &.more {
-                    position: relative;
+                    &.more {
+                      position: relative;
 
-                    & > a {
-                      @include button-variant($grey, transparent, transparent);
-                      display: none;
+                      & > a {
+                        @include button-variant($grey, transparent, transparent);
+                        display: none;
+
+                        @media (min-width: $screen-sm-min) {
+                          display: inline-block;
+                        }
+
+                        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                          color: $primary-colour;
+                        }
+
+                        &:after {
+                          content: '';
+                        }
+                      }
+                    }
+
+                    ul {
+                      margin: 0;
+                      padding: 0;
 
                       @media (min-width: $screen-sm-min) {
-                        display: inline-block;
+                        @include context-menu (left);
+                        margin-top: -6px;
                       }
 
-                      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-                        color: $primary-colour;
+                      li {
+                        display: block;
+                        white-space: nowrap;
                       }
-
-                      &:after {
-                        content: '';
-                      }
-                    }
-                  }
-
-                  ul {
-                    margin: 0;
-                    padding: 0;
-
-                    @media (min-width: $screen-sm-min) {
-                      @include context-menu (left);
-                      margin-top: -6px;
-                    }
-
-                    li {
-                      display: block;
-                      white-space: nowrap;
                     }
                   }
                 }
