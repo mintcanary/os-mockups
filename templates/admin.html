@@ -7,7 +7,9 @@
     <p class="datasets">
       <span class="">{{ bag('user.uploaded_datasets') }}</span> Dataset{% if bag('user.uploaded_datasets') != '1' %}s{% endif %}
     </p>
-    <a>Edit profile</a>
+    <a class="edit" data-toggle="modal" data-target="#edit_profile">
+      Edit profile
+    </a>
   </div>
 {% endblock %}
 
@@ -142,6 +144,35 @@
        </tbody>
 
      </table>
+
+     <!-- Modal -->
+     <div class="modal fade" id="edit_profile" tabindex="-1" role="dialog">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             <h4 class="modal-title">Edit Profile</h4>
+             <hr />
+           </div>
+           <div class="modal-body">
+             <div class="form">
+               <label for="profile-email">Email</label>
+               <input id="profile-email" placeholder="myem@il.address" type="email">
+               <p class="help-block">This is the email address which you use as login.</p>
+
+               <label for="profile-username">Username</label>
+               <input id="profile-username" placeholder="{{ bag('user.name') }}" type="text">
+
+               <p class="help-block ng-scope">You can change your username only once!</p>
+             </div>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+           </div>
+         </div>
+       </div>
+     </div>
   </div>
 
 {% endblock %}

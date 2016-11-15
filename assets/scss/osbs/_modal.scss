@@ -1,21 +1,39 @@
 .modal-content {
   border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  @include box-shadow (0 5px 15px rgba(0, 0, 0, 0.3));
   @include dark-module;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
 
   a {
     color: inherit;
     font-weight: 600;
   }
 
-  .modal-title {
-    font-size: 1em;
+  hr {
+    border-top-color: rgba(#fff,0.1);
+  }
+
+  .modal-header {
+    padding: 0 $grid-gutter-width $grid-gutter-width/2 $grid-gutter-width;
+
+    hr {
+      margin-bottom: $padding-small-vertical;
+    }
+  }
+
+  .modal-body {
+    padding: 0 $grid-gutter-width;
   }
 
   .modal-footer {
     text-align: left;
     font-size: 0.9em;
+    color: rgba(#fff, 0.6);
+    padding: $grid-gutter-width/2 $grid-gutter-width 0 $grid-gutter-width;
+  }
+
+  .help-block {
     color: rgba(#fff, 0.6);
   }
 
