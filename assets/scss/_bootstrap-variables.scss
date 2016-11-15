@@ -520,11 +520,11 @@ $pagination-disabled-border:           #fff;
 //##
 
 //** Popover body background color
-// $popover-bg:                          #fff
+$popover-bg:                          $grey;
 //** Popover maximum width
 // $popover-max-width:                   276px
 //** Popover border color
-// $popover-border-color:                rgba(0,0,0,.2)
+$popover-border-color:                $dark-grey;
 //** Popover fallback border color
 // $popover-fallback-border-color:       #ccc
 

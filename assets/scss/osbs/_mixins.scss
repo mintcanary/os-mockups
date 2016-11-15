@@ -3,11 +3,15 @@
   @include gradient-vertical($green, $blue, 0%, 100%);
 }
 
-@mixin dark-module($bg:$grey) {
-  background-color: $bg;
-  color: #fff;
+@mixin light-text($col:#fff) {
+  color: $col;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin dark-module($bg:$grey) {
+  background-color: $bg;
+  @include light-text;
 }
 
 // Copied from the BS .btn class, because BS doesn't have a mixin for this!
@@ -62,21 +66,73 @@
 
 
 @mixin context-menu($postion: right) {
-  @include dark-module;
-  position: absolute;
-  border-radius: $border-radius-base;
+  @extend .popover;
   margin: 0;
-  padding: $grid-gutter-width/2;
+
+  @if $postion == right {
+    //margin-left: -$popover-arrow-width;
+  }
   @if $postion == left {
-    right:0;
+    left: auto;
+    right: 100%;
+    //margin-right: $popover-arrow-width;
+
+    &:before,
+    &:after {
+      border-width: 8px 0 8px 8px;
+      left: auto;
+    }
+    &:before {
+      border-color: transparent transparent transparent #007bff;
+      right: -8px;
+    }
+    &:after {
+      border-color: transparent transparent transparent $popover-bg;
+      right: -7px;
+    }
   }
 
-  li {
+  &.active {
     display: block;
+  }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+  & > * {
+    padding: 9px 14px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 8px 8px 0;
+    top: 12px;
+  }
+
+  &:before {
+    border-color: transparent  $popover-border-color transparent transparent;
+    left: -8px;
+  }
+  &:after {
+    border-color: transparent  $popover-bg transparent transparent;
+    left: -7px;
+  }
+
+  @if $postion == left {
+    &:before,
+    &:after {
+      border-width: 8px 0 8px 8px;
+      left: auto;
+    }
+    &:before {
+      border-color: transparent transparent transparent $popover-border-color;
+      right: -8px;
+    }
+    &:after {
+      border-color: transparent transparent transparent $popover-bg;
+      right: -7px;
     }
   }
 }

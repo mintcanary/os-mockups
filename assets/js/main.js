@@ -22,4 +22,16 @@ jQuery(document).ready(function($){
     });
   });
 
+
+  /*******************
+    context menus
+  ********************/
+  $( ".more.context > a" ).click(function(e) {
+    e.preventDefault();
+    var $button, $menu;
+    $button = $(this);
+    $menu = $button.siblings();
+    $menu.toggleClass("active");
+  });
+
 });
