@@ -22,4 +22,24 @@ jQuery(document).ready(function($){
     });
   });
 
+
+  /*******************
+    context menus
+  ********************/
+  $( ".context > a" ).click(function(e) {
+    e.preventDefault();
+    var $button, $menu;
+    $button = $(this);
+    $menu = $button.siblings();
+    $menu.toggleClass("active");
+  });
+
+
+  /*******************
+    initialize tooltips
+  ********************/  
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
 });

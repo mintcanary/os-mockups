@@ -30,7 +30,7 @@
         
 				<li class="user dropdown">
 					<a href="#">Sam Smith</a>
-					<ul class="user-menu" style="background-image: url('https://secure.gravatar.com/avatar/679cd9ae2110a6b20c3c74ac6a6af97d.jpg?s=512');">
+					<ul class="user-menu" style="background-image: url('https://0.gravatar.com/avatar/679cd9ae2110a6b20c3c74ac6a6af97d%3F?s=512');">
 			      <li class="name">Sam Smith</li>
 			      <li class="date">User since 25/01/2016</li>
 			      <li class="packages"><span>8</span> packages on OpenSpending</li>
@@ -47,12 +47,14 @@
   <aside>
     
   <div class="user">
-    <span class="avatar" style="background-image: url('https://secure.gravatar.com/avatar/679cd9ae2110a6b20c3c74ac6a6af97d.jpg?s=512')"></span>
+    <span class="avatar" style="background-image: url('https://0.gravatar.com/avatar/679cd9ae2110a6b20c3c74ac6a6af97d%3F?s=512')"></span>
     <h4 class="name">Sam Smith</h4>
     <p class="datasets">
       <span class="">0</span> Datasets
     </p>
-    <a>Edit profile</a>
+    <a class="edit" data-toggle="modal" data-target="#edit_profile">
+      Edit profile
+    </a>
   </div>
 
   </aside>
@@ -67,102 +69,160 @@
 
   <div class="dataset-list">
     <table>
-       <tr>
-         <th class="title"><span>Title</span></th>
-         <th class="status"><span>Publication status</span></th>
-         <th class="actions"><span>Actions</span></th>
-       </tr>
-       <tr>
-         <td class="title"><span>ESIF finance details</span></td>
-         <td class="status"><span class="label label-primary">Published</span></td>
-         <td class="actions">
-           <ul>
-             <li class="make-private">
-               <a>Make private</a>
-             </li>
-             <li class="edit">
-               <a><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
-             </li>
-             <li class="view">
-               <a><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
-             </li>
-             <li class="download">
-               <a>
-                 <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
-               </a>
-             </li>
-             <li class="more">
-               <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
-               <ul>
-                  <li class="run">
-                    <a>Run external hooks</a>
-                  </li>
-                </ul>
-             </li>
-           </ul>
-         </td>
-       </tr>
-       <tr>
-         <td class="title"><span>Isreali Reserves over the years</span></td>
-         <td class="status"><span class="label label-warning">Private</span></td>
-         <td class="actions">
-           <ul>
-             <li class="publish">
-               <a>Publish</a>
-             </li>
-             <li class="edit">
-               <a><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
-             </li>
-             <li class="view">
-               <a><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
-             </li>
-             <li class="download">
-               <a>
-                 <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
-               </a>
-             </li>
-             <li class="more">
-               <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
-               <ul>
-                  <li class="run">
-                    <a>Run external hooks</a>
-                  </li>
-                </ul>
-             </li>
-           </ul>
-         </td>
-       </tr>
-       <tr>
-         <td class="title"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies pharetra aliquet. Donec ut scelerisque risus, rutrum condimentum enim</span></td>
-         <td class="status"><span class="label label-warning">Private</span></td>
-         <td class="actions">
-           <ul>
-             <li class="publish">
-               <a>Publish</a>
-             </li>
-             <li class="edit">
-               <a><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
-             </li>
-             <li class="view">
-               <a><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
-             </li>
-             <li class="download">
-               <a>
-                 <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
-               </a>
-             </li>
-             <li class="more">
-               <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
-               <ul>
-                  <li class="run">
-                    <a>Run external hooks</a>
-                  </li>
-                </ul>
-             </li>
-           </ul>
-         </td>
-       </tr>
+      <thead>
+        <tr>
+          <th class="title"><span>Title</span></th>
+          <th class="status"><span>Publication status</span></th>
+          <th class="actions"><span>Actions</span></th>
+        </tr>
+      </thead>
+       <tbody>
+         <tr>
+           <td class="title"><span>ESIF finance details</span></td>
+           <td class="status"><span class="label label-primary">Published</span></td>
+           <td class="actions">
+             <ul>
+               <li class="make-private">
+                 <a>Make private</a>
+               </li>
+               <li class="edit">
+                 <a data-toggle="tooltip" data-placement="top" title="Edit"><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+               </li>
+               <li class="view">
+                 <a data-toggle="tooltip" data-placement="top" title="View"><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+               </li>
+               <li class="download context">
+                 <a data-toggle="tooltip" data-placement="top" title="Download">
+                   <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+                 </a>
+                 <ul>
+                   <li class="package">
+                     <a>Data package</a>
+                   </li>
+                   <li class="raw">
+                     <a>Raw source data</a>
+                   </li>
+                 </ul>
+               </li>
+               <li class="more context">
+                 <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+                 <ul>
+                    <li class="run">
+                      <a>Run external hooks</a>
+                    </li>
+                  </ul>
+               </li>
+             </ul>
+           </td>
+         </tr>
+         <tr>
+           <td class="title"><span>Isreali Reserves over the years</span></td>
+           <td class="status"><span class="label label-warning">Private</span></td>
+           <td class="actions">
+             <ul>
+               <li class="publish">
+                 <a>Publish</a>
+               </li>
+               <li class="edit">
+                 <a data-toggle="tooltip" data-placement="top" title="Edit"><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+               </li>
+               <li class="view">
+                 <a data-toggle="tooltip" data-placement="top" title="View"><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+               </li>
+               <li class="download context">
+                 <a data-toggle="tooltip" data-placement="top" title="Download">
+                   <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+                 </a>
+                 <ul>
+                   <li class="package">
+                     <a>Data package</a>
+                   </li>
+                   <li class="raw">
+                     <a>Raw source data</a>
+                   </li>
+                 </ul>
+               </li>
+               <li class="more context">
+                 <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+                 <ul>
+                    <li class="run">
+                      <a>Run external hooks</a>
+                    </li>
+                  </ul>
+               </li>
+             </ul>
+           </td>
+         </tr>
+         <tr>
+           <td class="title"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies pharetra aliquet. Donec ut scelerisque risus, rutrum condimentum enim</span></td>
+           <td class="status"><span class="label label-warning">Private</span></td>
+           <td class="actions">
+             <ul>
+               <li class="publish">
+                 <a>Publish</a>
+               </li>
+               <li class="edit">
+                 <a data-toggle="tooltip" data-placement="top" title="Edit"><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+               </li>
+               <li class="view">
+                 <a data-toggle="tooltip" data-placement="top" title="View"><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+               </li>
+               <li class="download context">
+                 <a data-toggle="tooltip" data-placement="top" title="Download">
+                   <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+                 </a>
+                 <ul>
+                   <li class="package">
+                     <a>Data package</a>
+                   </li>
+                   <li class="raw">
+                     <a>Raw source data</a>
+                   </li>
+                 </ul>
+               </li>
+               <li class="more context">
+                 <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+                 <ul>
+                    <li class="run">
+                      <a>Run external hooks</a>
+                    </li>
+                  </ul>
+               </li>
+             </ul>
+           </td>
+         </tr>
+       </tbody>
+
      </table>
+
+     <!-- Modal -->
+     <div class="modal fade" id="edit_profile" tabindex="-1" role="dialog">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             <h4 class="modal-title">Edit Profile</h4>
+             <hr />
+           </div>
+           <div class="modal-body">
+             <div class="form">
+               <label for="profile-email">Email</label>
+               <input id="profile-email" placeholder="myem@il.address" type="email">
+               <p class="help-block">This is the email address which you use as login.</p>
+
+               <label for="profile-username">Username</label>
+               <input id="profile-username" placeholder="Sam Smith" type="text">
+
+               <p class="help-block ng-scope">You can change your username only once!</p>
+             </div>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+           </div>
+         </div>
+       </div>
+     </div>
   </div>
 
 
