@@ -9,17 +9,23 @@
         }
 
         .avatar {
-          display: none;
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          float: left;
+          background-color: $primary-colour;
+          background-position: center;
+          background-size: 100% auto;
+          margin-right: $grid-gutter-width/2;
 
           @media (min-width: $screen-sm-min) {
-            display: inline-block;
             width: 70%;
+            height: auto;
             padding-top: 70%;
             border-radius: 50%;
             border: solid 2px #fff;
-            background-color: $primary-colour;
-            background-position: center;
-            background-size: 100% auto;
+            margin: 0;
+            float: none;
           }
         }
 

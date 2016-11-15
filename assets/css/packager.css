@@ -7813,17 +7813,23 @@ label {
       padding: 30px 12px;
       text-align: center; } }
   .admin .app-container > aside .user .avatar {
-    display: none; }
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: #2abb9c;
+    background-position: center;
+    background-size: 100% auto;
+    margin-right: 15px; }
     @media (min-width: 768px) {
       .admin .app-container > aside .user .avatar {
-        display: inline-block;
         width: 70%;
+        height: auto;
         padding-top: 70%;
         border-radius: 50%;
         border: solid 2px #fff;
-        background-color: #2abb9c;
-        background-position: center;
-        background-size: 100% auto; } }
+        margin: 0;
+        float: none; } }
   .admin .app-container > aside .user .name {
     margin-bottom: 0; }
   .admin .app-container > aside .user .datasets {
