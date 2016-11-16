@@ -7,10 +7,12 @@
     <p class="datasets">
       <span class="">{{ bag('user.uploaded_datasets') }}</span> Dataset{% if bag('user.uploaded_datasets') != '1' %}s{% endif %}
     </p>
-    <a class="edit" data-toggle="modal" data-target="#edit_profile">
-      Edit profile
-    </a>
   </div>
+  <footer>
+    <a class="edit" data-toggle="modal" data-target="#edit_profile">
+      <svg><use xlink:href="#icon-cog" /></svg> <span>Edit profile</span>
+    </a>
+  </footer>
 {% endblock %}
 
 {% block content %}
