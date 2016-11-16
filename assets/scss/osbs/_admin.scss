@@ -2,7 +2,8 @@
   .app-container {
     & > aside {
       .user {
-        padding: $grid-gutter-width;
+        padding: $grid-gutter-width 20px;
+        border-bottom: solid 1px rgba(#fff, 0.12);
         @media (min-width: $screen-sm-min) {
           padding: $grid-gutter-width $padding-base-horizontal;
           text-align: center;
@@ -10,41 +11,28 @@
 
         .avatar {
           display: inline-block;
-          width: 100px;
-          height: 100px;
+          width: 48px;
+          height: 48px;
           float: left;
           background-color: $primary-colour;
           background-position: center;
           background-size: 100% auto;
           margin-right: $grid-gutter-width/2;
+          border-radius: 50%;
+          border: solid 1px #fff;
 
           @media (min-width: $screen-sm-min) {
             width: 70%;
             height: auto;
             padding-top: 70%;
-            border-radius: 50%;
-            border: solid 2px #fff;
             margin: 0;
             float: none;
+            border-width: 2px;
           }
         }
 
         .name {
           margin-bottom: 0;
-        }
-
-        .datasets {
-          opacity: 0.6;
-
-          span {
-            background-color: #fff;
-            color: $grey;
-            display: inline-block;
-            padding: 0 0.2em;
-            line-height: 1;
-            border-top: solid #fff 0.25em;
-            border-radius: 1px;
-          }
         }
       }
     }

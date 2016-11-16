@@ -1,15 +1,8 @@
-.sidebar {
-  padding-bottom: $base-spacing;
-  font-size: em(15);
-
-  a {
-  	text-decoration: none;
-    color: #fff;
-  }
-
+aside {
   .accordion {
-    padding: $base-spacing 0 0 0;
+    padding: $base-spacing 0;
     margin: 0;
+    font-size: em(15);
 
     li {
       margin-bottom: $base-spacing / 3;
@@ -72,15 +65,27 @@
       display: block;
       padding: $base-spacing / 3 $base-spacing;
       position: relative;
+      text-decoration: none;
+      color: #fff;
 
       &:hover {
         background-color: rgba(0,0,0,0.15);
+      }
+
+      .label {
+        background-color: rgba(#fff, 0.2);
+        padding-bottom: 0;
+        margin-left: $padding-small-horizontal;
       }
 
       &.active {
         background-color: rgba(0,0,0,0.3);
         border-left: solid 0.4em $primary-colour;
         padding-left: $base-spacing - 0.4em;
+
+        .label {
+          background-color: $primary-colour;
+        }
       }
 
       &.js-accordion-trigger {

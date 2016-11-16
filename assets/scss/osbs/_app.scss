@@ -14,6 +14,7 @@
       display: table-cell;
       width: 215px;
       vertical-align: top;
+      padding-bottom: 2em;
     }
 
     @media (min-width: $screen-md-min) {
@@ -37,10 +38,14 @@
     }
 
     & > footer {
-      position: absolute;
-      bottom: $padding-large-vertical;
-      left: $grid-gutter-width/2;
       color: rgba(#fff, 0.6);
+      padding: 14px 21px;
+
+      @media (min-width: $screen-sm-min) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
 
       a {
         color: inherit;
