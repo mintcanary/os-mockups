@@ -1,8 +1,8 @@
 # OpenSpending Mockups
 
-This repository contains:
-- [Lektor](https://www.getlektor.com/docs/) based templates, for mockup purposes.
-- An OpenSpending SCSS framework, built on Bootstrap, adapted from [previous](https://github.com/openspending/os-style-guide) [Bourbon](http://bourbon.io/) version.
+This repository contains [Lektor](https://www.getlektor.com/docs/) based templates, for mockup purposes.
+
+It uses (and is used to create) an [OpenSpending SCSS](https://github.com/smth/os-bootstrap) framework, built on Bootstrap, adapted from [previous](https://github.com/openspending/os-style-guide) [Bourbon](http://bourbon.io/) version.
 
 The mockups below are built from this codebase.
 
