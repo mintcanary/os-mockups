@@ -8,4 +8,5 @@ The mockups below are built from this codebase.
 
 - [Style guide](https://smth.github.io/os-mockups/style-guide/)
 - ["Next" holding page](https://smth.github.io/os-mockups/next/)
-- [Admin (WIP)](https://smth.github.io/os-mockup-admin/)
+- [Admin](https://smth.github.io/os-mockup-admin/)
+- [Explorer (WIP)](https://smth.github.io/os-mockup-explorer/explorer/)
