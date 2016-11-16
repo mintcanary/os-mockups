@@ -7850,9 +7850,9 @@ aside .accordion {
     border: solid 1px #fff; }
     @media (min-width: 768px) {
       .admin .app-container > aside .user .avatar {
-        width: 70%;
+        width: 60%;
         height: auto;
-        padding-top: 70%;
+        padding-top: 60%;
         margin: 0;
         float: none;
         border-width: 2px; } }
