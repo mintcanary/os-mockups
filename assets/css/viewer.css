@@ -8092,8 +8092,7 @@ aside .accordion {
       .describe-columns > div > div .preview {
         background-color: #22242a;
         font-size: 14px;
-        padding: 10px 10px 0 10px;
-        min-height: 90px; }
+        padding: 10px 10px 0 10px; }
         .describe-columns > div > div .preview:not(.empty):hover + .field-info {
           bottom: -120px; }
         .describe-columns > div > div .preview ol {
@@ -8124,13 +8123,12 @@ aside .accordion {
           .describe-columns > div > div .preview li:first-child span {
             padding-top: 6px; }
         .describe-columns > div > div .preview.empty {
-          display: table;
           width: 100%;
           text-align: center; }
           .describe-columns > div > div .preview.empty span {
-            display: table-cell;
-            vertical-align: middle;
-            color: rgba(255, 255, 255, 0.5); }
+            color: rgba(255, 255, 255, 0.5);
+            display: block;
+            padding-top: 30px; }
       .describe-columns > div > div .field-info {
         padding: 10px;
         position: absolute;
