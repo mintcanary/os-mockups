@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="banner">
+
+  <div class="process-steps">
+    <ul class="steps">
+      {% for s in this.steps %}
+        <li{% if s|int == this.current_step %} class="current"{% endif %}><a>{{ s }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h1 class="step-title">
+    {{ this.title }}
+  </h1>
+
+  <div class="info">
+    <!-- info -->
+  </div>
+</div>
+{% block content %}
+process
+{% endblock %}
+{% endblock %}

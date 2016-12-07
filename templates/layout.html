@@ -18,7 +18,7 @@
     {% endif %}
     <script src="{{ '/js/modernizr-2.8.3.min.js'|url }}"></script>
   </head>
-<body class="{{ this._model }}">
+<body class="{% if this.class %}{{ this.class }}{% if this.class != this._model %} {{ this._model }}{% endif %}{% else %}{{ this._model }}{% endif %}">
   <div class="site-header">
     <div class="wrapper">
       <a class="small {{ bag('brand.brand') | lower }}brand logo">

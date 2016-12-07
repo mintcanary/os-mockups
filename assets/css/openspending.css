@@ -7373,10 +7373,58 @@ p a {
     margin-top: 0;
     margin-bottom: 0.3em; }
 
+.steps {
+  padding: 0;
+  margin: 0;
+  display: block;
+  padding-left: 32px; }
+  .steps li {
+    display: inline-block;
+    min-width: 40px;
+    position: relative;
+    text-align: left; }
+    .steps li a {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      line-height: 26px;
+      color: #32a6ba;
+      border: solid 2px #32a6ba;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: -32px; }
+    .steps li:before {
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      top: 13px;
+      left: -4px;
+      right: 26px;
+      background-color: #32a6ba; }
+    .steps li:last-child {
+      width: auto; }
+      .steps li:last-child:before {
+        display: none; }
+    .steps li.current:before {
+      background-color: #8a90a0; }
+    .steps li.current a {
+      color: #2a2d34;
+      border-color: #2a2d34; }
+    .steps li.current ~ li:not(.passed):before {
+      background-color: #8a90a0; }
+    .steps li.current ~ li:not(.passed) a {
+      color: #8a90a0;
+      border-color: #8a90a0; }
+
 .banner {
   background-color: #22242a;
   color: #fff;
-  padding: 3em 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 2.25em 1.5em;
   position: relative; }
   .banner h1, .banner h2 {
     color: inherit; }
@@ -7441,6 +7489,16 @@ p a {
       .banner .cta:hover .badge {
         color: #fff;
         background-color: #2a2d34; }
+  .banner .steps li.current:before {
+    background-color: #414550; }
+  .banner .steps li.current a {
+    color: #fff;
+    border-color: #fff; }
+  .banner .steps li.current ~ li:not(.passed):before {
+    background-color: #414550; }
+  .banner .steps li.current ~ li:not(.passed) a {
+    color: #414550;
+    border-color: #414550; }
 
 .breadcrumb {
   text-transform: uppercase;
@@ -7829,6 +7887,333 @@ aside .accordion {
     padding: 30px; }
 .app-container .app-search label {
   font-size: 20px; }
+
+.process {
+  background-color: #f7f7f7;
+  overflow-x: hidden; }
+  .process .banner {
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center; }
+    .process .banner:before, .process .banner:after {
+      content: " ";
+      display: table; }
+    .process .banner:after {
+      clear: both; }
+    .process .banner .process-steps {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .process .banner .process-steps {
+          float: left;
+          width: 50%; } }
+      @media (min-width: 768px) {
+        .process .banner .process-steps {
+          text-align: left; } }
+      @media (min-width: 992px) {
+        .process .banner .process-steps {
+          float: left;
+          width: 33.33333%; } }
+      @media (min-width: 768px) {
+        .process .banner .process-steps .steps li {
+          width: 30%; }
+          .process .banner .process-steps .steps li:last-child {
+            width: auto;
+            min-width: 0; } }
+    .process .banner .step-title {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .process .banner .step-title {
+          position: absolute;
+          left: 0;
+          bottom: 100%;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        .process .banner .step-title {
+          float: left;
+          width: 33.33333%; } }
+    .process .banner .info {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .process .banner .info {
+          float: left;
+          width: 50%; } }
+      @media (min-width: 768px) {
+        .process .banner .info {
+          text-align: right; } }
+      @media (min-width: 992px) {
+        .process .banner .info {
+          float: left;
+          width: 33.33333%; } }
+
+.describe-columns {
+  margin: 10px; }
+  .describe-columns:before, .describe-columns:after {
+    content: " ";
+    display: table; }
+  .describe-columns:after {
+    clear: both; }
+  .describe-columns > div {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px; }
+    @media (min-width: 768px) {
+      .describe-columns > div {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .describe-columns > div {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 1200px) {
+      .describe-columns > div {
+        float: left;
+        width: 25%; } }
+    @media (min-width: 2436px) {
+      .describe-columns > div {
+        width: 400px; } }
+    .describe-columns > div > div {
+      height: 320px;
+      background-color: #22242a;
+      overflow: hidden;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 0px 2px rgba(42, 45, 52, 0.1);
+      box-shadow: 0px 0px 0px 2px rgba(42, 45, 52, 0.1); }
+      .describe-columns > div > div header {
+        background-color: #2a2d34;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 10px 15px; }
+        .describe-columns > div > div header .toggle {
+          float: right;
+          position: relative;
+          width: 36px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          margin-top: 3px;
+          margin-right: -1px; }
+          .describe-columns > div > div header .toggle input {
+            display: none; }
+          .describe-columns > div > div header .toggle label {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid rgba(230, 230, 230, 0.2);
+            border-radius: 0px;
+            padding: 0;
+            margin: 0; }
+            .describe-columns > div > div header .toggle label .inner {
+              display: block;
+              width: 200%;
+              margin-left: -100%;
+              -webkit-transition: margin 0.3s ease-in 0s;
+              -o-transition: margin 0.3s ease-in 0s;
+              transition: margin 0.3s ease-in 0s; }
+              .describe-columns > div > div header .toggle label .inner:before, .describe-columns > div > div header .toggle label .inner:after {
+                display: block;
+                float: left;
+                width: 50%;
+                height: 14px;
+                padding: 0;
+                box-sizing: border-box;
+                border: 2px solid transparent;
+                background-clip: padding-box; }
+              .describe-columns > div > div header .toggle label .inner:before {
+                content: "";
+                padding-left: 10px; }
+              .describe-columns > div > div header .toggle label .inner:after {
+                content: "";
+                padding-right: 10px;
+                text-align: right; }
+            .describe-columns > div > div header .toggle label .switch {
+              display: block;
+              width: 18px;
+              margin: 0px;
+              background: #585e6c;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 18px;
+              -webkit-transition: all 0.3s ease-in 0s;
+              -o-transition: all 0.3s ease-in 0s;
+              transition: all 0.3s ease-in 0s; }
+          .describe-columns > div > div header .toggle input:checked + .label .inner {
+            margin-left: 0; }
+          .describe-columns > div > div header .toggle input:checked + .label .switch {
+            right: 0px;
+            background-color: #32a6ba; }
+        .describe-columns > div > div header h3 {
+          margin: 0;
+          font-size: 17px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+        .describe-columns > div > div header .description {
+          display: block;
+          font-size: 14px;
+          color: inherit;
+          opacity: 0.8; }
+          .describe-columns > div > div header .description.add {
+            opacity: 0.5; }
+      .describe-columns > div > div .preview {
+        background-color: #22242a;
+        font-size: 14px;
+        padding: 10px 10px 0 10px;
+        min-height: 90px; }
+        .describe-columns > div > div .preview:not(.empty):hover + .field-info {
+          bottom: -120px; }
+        .describe-columns > div > div .preview ol {
+          display: table;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          counter-reset: section;
+          border: solid 1px #dedede;
+          border-radius: 3px;
+          background-color: rgba(255, 255, 255, 0.9); }
+        .describe-columns > div > div .preview li {
+          display: table-row; }
+          .describe-columns > div > div .preview li:before {
+            display: table-cell;
+            counter-increment: section;
+            content: counter(section);
+            width: 30px;
+            text-align: center;
+            border-bottom: solid 1px #dedede;
+            border-right: solid 1px #dedede;
+            color: rgba(42, 45, 52, 0.7); }
+          .describe-columns > div > div .preview li span {
+            display: table-cell;
+            border-bottom: solid 1px #dedede;
+            padding: 3px 8px 1px 8px;
+            color: rgba(42, 45, 52, 0.7); }
+          .describe-columns > div > div .preview li:first-child span {
+            padding-top: 6px; }
+        .describe-columns > div > div .preview.empty {
+          display: table;
+          width: 100%;
+          text-align: center; }
+          .describe-columns > div > div .preview.empty span {
+            display: table-cell;
+            vertical-align: middle;
+            color: rgba(255, 255, 255, 0.5); }
+      .describe-columns > div > div .field-info {
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        -webkit-transition: bottom, 0.5s, ease-out;
+        -o-transition: bottom, 0.5s, ease-out;
+        transition: bottom, 0.5s, ease-out; }
+        .describe-columns > div > div .field-info label {
+          display: block;
+          font-size: 12px;
+          opacity: 0.5;
+          margin-top: 15px;
+          margin-bottom: 0;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .describe-columns > div > div .field-info label:first-child {
+            margin-top: 5px; }
+        .describe-columns > div > div .field-info input {
+          width: 100%;
+          outline: 0;
+          border-width: 0 0 1px 0;
+          padding: 0 5px;
+          font-size: 15px; }
+          .describe-columns > div > div .field-info input:focus {
+            border-color: #32a6ba; }
+        .describe-columns > div > div .field-info textarea {
+          width: 100%;
+          outline: 0;
+          border-width: 0 0 1px 0;
+          height: 26px;
+          resize: none;
+          overflow: hidden;
+          border-color: #e6e6e6;
+          -webkit-transition: height, 0.5s, ease-out;
+          -o-transition: height, 0.5s, ease-out;
+          transition: height, 0.5s, ease-out;
+          padding: 0 5px;
+          font-size: 15px; }
+          .describe-columns > div > div .field-info textarea:focus {
+            border-color: #32a6ba;
+            height: 120px;
+            overflow: auto;
+            padding: 5px; }
+        .describe-columns > div > div .field-info:before {
+          content: '';
+          display: block;
+          height: 15px;
+          background-image: -webkit-linear-gradient(top, transparent 0%, rgba(34, 36, 42, 0.1) 100%);
+          background-image: -o-linear-gradient(top, transparent 0%, rgba(34, 36, 42, 0.1) 100%);
+          background-image: linear-gradient(to bottom, transparent 0%, rgba(34, 36, 42, 0.1) 100%);
+          background-repeat: repeat-x;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1A22242A', GradientType=0);
+          position: absolute;
+          width: 100%;
+          top: -15px;
+          left: 0;
+          pointer-events: none; }
+    .describe-columns > div.disabled {
+      opacity: 0.5; }
+      .describe-columns > div.disabled > div {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+    .describe-columns > div.add > div {
+      display: table;
+      border: dashed 2px #e6e6e6;
+      text-align: center;
+      width: 100%;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .describe-columns > div.add > div:hover {
+        border-color: #32a6ba; }
+      .describe-columns > div.add > div > a {
+        display: table-cell;
+        vertical-align: middle;
+        color: #cdcdcd;
+        text-decoration: none; }
+        .describe-columns > div.add > div > a svg {
+          width: 100%;
+          height: 30px;
+          fill: currentColor; }
+        .describe-columns > div.add > div > a:hover {
+          color: #32a6ba; }
 
 .admin .app-container > aside .user {
   padding: 30px 20px;
@@ -8506,7 +8891,9 @@ html,
   background-image: url("../img/next/banner.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-color: #232429; }
+  background-color: #232429;
+  padding-top: 3em;
+  padding-bottom: 3em; }
   .next .banner .next-logo {
     width: 108px;
     display: inline-block;
@@ -8830,7 +9217,7 @@ html,
     .style-guide .buttons button {
       margin: 1em; } }
   .style-guide .form fieldset > *,
-  .style-guide .form .progress {
+  .style-guide .form .box > div {
     margin: 1em; }
   .style-guide .form fieldset > input[type=text],
   .style-guide .form .input-group,
