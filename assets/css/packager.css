@@ -8741,7 +8741,7 @@ aside .accordion {
     .popover[class*=tour-] .popover-navigation .btn-group:after {
       clear: both; }
     .popover[class*=tour-] .popover-navigation .btn-group .btn, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta {
-      width: 50%;
+      width: 100%;
       color: #fff;
       background-color: #2abb9c;
       border-color: #2a2d34; }
@@ -8769,6 +8769,9 @@ aside .accordion {
       .popover[class*=tour-] .popover-navigation .btn-group .btn .badge, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta .badge, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta .badge {
         color: #2abb9c;
         background-color: #fff; }
+      @media (min-width: 768px) {
+        .popover[class*=tour-] .popover-navigation .btn-group .btn, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta {
+          width: 50%; } }
   .popover[class*=tour-] .popover-navigation > .btn, .popover[class*=tour-] .banner .popover-navigation > .cta, .banner .popover[class*=tour-] .popover-navigation > .cta {
     position: absolute;
     top: 5px;
