@@ -8704,10 +8704,62 @@ aside .accordion {
   -moz-osx-font-smoothing: grayscale; }
   .popover a {
     color: inherit; }
+  .popover[class*=tour-] .btn, .popover[class*=tour-] .banner .cta, .banner .popover[class*=tour-] .cta {
+    outline: none; }
+  .popover[class*=tour-] .popover-navigation .btn-group {
+    margin: 0 13px 13px 13px;
+    display: block; }
+    .popover[class*=tour-] .popover-navigation .btn-group:before, .popover[class*=tour-] .popover-navigation .btn-group:after {
+      content: " ";
+      display: table; }
+    .popover[class*=tour-] .popover-navigation .btn-group:after {
+      clear: both; }
+    .popover[class*=tour-] .popover-navigation .btn-group .btn, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta {
+      width: 50%;
+      color: #fff;
+      background-color: #32a6ba;
+      border-color: #2a2d34; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .focus.cta {
+        color: #fff;
+        background-color: #278292;
+        border-color: black; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:hover {
+        color: #fff;
+        background-color: #278292;
+        border-color: #0f1012; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:active, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active, .popover[class*=tour-] .popover-navigation .btn-group .btn.active, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta {
+        color: #fff;
+        background-color: #278292;
+        border-color: #0f1012; }
+        .popover[class*=tour-] .popover-navigation .btn-group .btn:active:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn:active:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn:active.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active.focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active.focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.active:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn.active:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.active.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.focus.cta, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle:hover, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta:hover, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta:hover, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle:focus, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta:focus, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta:focus, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle.focus, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.focus.cta, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.focus.cta {
+          color: #fff;
+          background-color: #206976;
+          border-color: black; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:active, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active, .popover[class*=tour-] .popover-navigation .btn-group .btn.active, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta {
+        background-image: none; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn.disabled:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .disabled.cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .disabled.cta:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn.disabled:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .disabled.cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .disabled.cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.disabled.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .disabled.focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .disabled.focus.cta, .popover[class*=tour-] .popover-navigation .btn-group .btn[disabled]:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner [disabled].cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group [disabled].cta:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn[disabled]:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner [disabled].cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group [disabled].cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn[disabled].focus, .popover[class*=tour-] .popover-navigation .btn-group .banner [disabled].focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group [disabled].focus.cta, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .btn:hover, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:hover, .banner fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .cta:hover, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .btn:focus, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:focus, .banner fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .cta:focus, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .btn.focus, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .banner .focus.cta, .banner fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .focus.cta {
+        background-color: #32a6ba;
+        border-color: #2a2d34; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn .badge, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta .badge, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta .badge {
+        color: #32a6ba;
+        background-color: #fff; }
   .popover[class*=tour-] .popover-navigation > .btn, .popover[class*=tour-] .banner .popover-navigation > .cta, .banner .popover[class*=tour-] .popover-navigation > .cta {
     position: absolute;
-    top: 0;
-    right: 0; }
+    top: 5px;
+    right: 5px;
+    color: #22242a;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    padding: 6px;
+    line-height: 20px;
+    border: none; }
+    .popover[class*=tour-] .popover-navigation > .btn:before, .popover[class*=tour-] .banner .popover-navigation > .cta:before, .banner .popover[class*=tour-] .popover-navigation > .cta:before {
+      content: '×';
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      font-size: 30px; }
 
 .pagination > li > a {
   margin-left: 6px;
