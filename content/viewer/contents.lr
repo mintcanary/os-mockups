@@ -1,8 +1,9 @@
-_model: app
+_model: viewer
 ---
-title: Viewer
+title: Boost Paraguay
 ---
 aside:
+
 <div class="sidebar">
 
   <ul class="accordion">
@@ -34,4 +35,5 @@ aside:
 ---
 body:
 
-Viewer
+The description of the data package if it exists. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut lacus velit. Pellentesque non posuere mi. Praesent interdum, purus quis porta euismod, magna mi congue tortor, nec convallis nisl mauris sit amet sem.
+Donec massa nulla, dapibus porta pharetra eu, tincidunt in nunc. Fusce fringilla congue sodales. Nunc commodo elementum hendrerit. Morbi pulvinar leo odio, nec lobortis libero iaculis suscipit. Ut sem nisl, fringilla ac commodo id, ultricies et sapien. Duis pretium facilisis feugiat. Suspendisse pharetra pellentesque ligula, nec egestas ante hendrerit pellentesque.

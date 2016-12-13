@@ -1,0 +1,11 @@
+{% extends "app.html" %}
+{% block title %}Viewer - {{ this.title }}{% endblock %}
+{% block content %}
+<h2>{{ this.title }}</h2>
+{{ this.body }}
+
+<a class="add first visulisation">
+  <svg><use xlink:href="#icon-circle_plus" /></svg>
+  <span>Add visulisation</span>
+</a>
+{% endblock %}
