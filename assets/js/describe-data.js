@@ -56,4 +56,9 @@ jQuery(document).ready(function($){
     });
   });
 
+  // Remove button
+  $( "div[id*='column_'] .close" ).click(function() {
+    $(this).parents("div[id*='column_']").hide("slow");
+  });
+
 });
