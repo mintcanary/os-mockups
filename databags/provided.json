@@ -263,9 +263,13 @@
     },
     {
       "heading": "my_constant_value",
+      "title": "My Constant Value",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel convallis nulla, ac elementum nunc. Integer sit amet pulvinar est. Aliquam fermentum euismod quam in congue. In hendrerit vitae neque id tincidunt. Maecenas varius leo sit amet velit pharetra tempor. Pellentesque ac euismod lectus, eu elementum tortor. Aliquam suscipit ut dolor pellentesque sollicitudin. Nulla facilisi. Sed ut elementum justo, quis blandit felis. ",
       "constant": "100",
       "datatype": "string"
+    },
+    {
+      "constant": "blank"
     }
   ]
 }
