@@ -8023,8 +8023,8 @@ aside .accordion {
           -webkit-user-select: none;
           -moz-user-select: none;
           -ms-user-select: none;
-          margin-top: 3px;
-          margin-right: -1px; }
+          margin-top: 2px;
+          margin-right: -2px; }
           .describe-columns > div > div header .toggle input {
             display: none; }
           .describe-columns > div > div header .toggle label {
@@ -8075,6 +8075,12 @@ aside .accordion {
           .describe-columns > div > div header .toggle input:checked + .label .switch {
             right: 0px;
             background-color: #2abb9c; }
+        .describe-columns > div > div header .close {
+          color: #fff;
+          text-shadow: none;
+          opacity: 1;
+          font-size: 30px;
+          line-height: 0.9; }
         .describe-columns > div > div header h3 {
           margin: 0;
           font-size: 17px;
@@ -8710,7 +8716,7 @@ aside .accordion {
   .popover[class*=tour-] .btn, .popover[class*=tour-] .banner .cta, .banner .popover[class*=tour-] .cta {
     outline: none; }
   .popover[class*=tour-] .popover-navigation .btn-group {
-    margin: 0 13px 13px 13px;
+    margin-bottom: 5px;
     display: block; }
     .popover[class*=tour-] .popover-navigation .btn-group:before, .popover[class*=tour-] .popover-navigation .btn-group:after {
       content: " ";
