@@ -9,5 +9,6 @@ The mockups below are built from this codebase.
 - [Style guide](https://smth.github.io/os-mockups/style-guide/)
 - ["Next" holding page](https://smth.github.io/os-mockups/next/)
 - [Admin](https://smth.github.io/os-mockup-admin/)
-- [Packager - Describe your data (WIP)](https://smth.github.io/os-mockup-packager/packager/describe-data/)
+- [Packager - Describe your data](https://smth.github.io/os-mockup-packager/packager/describe-data/)
+- [Viewer (WIP)](https://smth.github.io/os-mockup-viewer/viewer/)
 - [Explorer (WIP)](https://smth.github.io/os-mockup-explorer/explorer/)
