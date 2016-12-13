@@ -8,7 +8,6 @@
     },
     {
       "heading": "cci_program_code",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel convallis nulla, ac elementum nunc. Integer sit amet pulvinar est. Aliquam fermentum euismod quam in congue. In hendrerit vitae neque id tincidunt. Maecenas varius leo sit amet velit pharetra tempor. Pellentesque ac euismod lectus, eu elementum tortor. Aliquam suscipit ut dolor pellentesque sollicitudin. Nulla facilisi. Sed ut elementum justo, quis blandit felis. ",
       "preview": {
         "line_one": "CZ.1.01/1.1.00/06.0019",
         "line_two": "CZ.1.01/1.1.00/06.0019",
@@ -20,9 +19,7 @@
         "line_eight": "CZ.1.01/1.1.00/06.0019",
         "line_nine": "CZ.1.01/1.1.00/06.0019",
         "line_ten": "CZ.1.01/1.1.00/06.0019"
-      },
-      "datatype": "string",
-      "complete": "true"
+      }
     },
     {
       "heading": "cci_program_title"
@@ -263,6 +260,12 @@
     },
     {
       "heading": "project_description"
+    },
+    {
+      "heading": "my_constant_value",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel convallis nulla, ac elementum nunc. Integer sit amet pulvinar est. Aliquam fermentum euismod quam in congue. In hendrerit vitae neque id tincidunt. Maecenas varius leo sit amet velit pharetra tempor. Pellentesque ac euismod lectus, eu elementum tortor. Aliquam suscipit ut dolor pellentesque sollicitudin. Nulla facilisi. Sed ut elementum justo, quis blandit felis. ",
+      "constant": "100",
+      "datatype": "string"
     }
   ]
 }

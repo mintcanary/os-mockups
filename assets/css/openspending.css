@@ -8137,6 +8137,23 @@ aside .accordion {
             color: rgba(255, 255, 255, 0.5);
             display: block;
             padding-top: 30px; }
+      .describe-columns > div > div .constant textarea {
+        width: 100%;
+        padding: 36px 10px 0 10px;
+        text-align: center;
+        background-color: rgba(34, 36, 42, 0.75);
+        outline: 0;
+        border: none;
+        resize: none;
+        color: #fff;
+        height: 100px;
+        -webkit-transition: background-color, 0.5s, ease-out;
+        -o-transition: background-color, 0.5s, ease-out;
+        transition: background-color, 0.5s, ease-out; }
+        .describe-columns > div > div .constant textarea:hover {
+          background-color: rgba(34, 36, 42, 0.8); }
+        .describe-columns > div > div .constant textarea:focus {
+          background-color: #22242a; }
       .describe-columns > div > div .field-info {
         padding: 10px;
         position: absolute;

@@ -42,6 +42,31 @@
 
     </div>
   </div>
+  {% elif c['constant'] %}
+  <div id="column_{{ counter  + loop.index0 }}"{% if c['complete'] %} class="complete"{% endif %}>
+    <div>
+      <header>
+        <button type="button" class="close" aria-label="Remove"><span aria-hidden="true">×</span></button>
+
+        <h3>{{ c['heading'] }}</h3>
+      </header>
+
+      <div class="constant">
+        <textarea id="constant_{{ counter + loop.index0 }}">{{ c['constant'] }}</textarea>
+      </div>
+
+      <div class="field-info">
+        <label for="title_{{ counter + loop.index0 }}">Title</label>
+        <input type="text" value="{{ c['heading'] | replace("_", " ") }}" id="title_{{ counter + loop.index0 }}">
+
+        <label for="description_{{ counter + loop.index0 }}">Description</label>
+        <textarea id="description_{{ counter + loop.index0 }}">{% if c['description'] %}{{ c['description'] }}{% endif %}</textarea>
+        <label for="type_{{ counter + loop.index0 }}">Data Type</label>
+        <input type="text" id="type_{{ counter + loop.index0 }}"{% if c['datatype'] %} value="{{ c['datatype'] }}"{% endif %}>
+
+      </div>
+    </div>
+  </div>
   {% endif %}
   {% endfor %}
   <div class="add">
@@ -53,6 +78,7 @@
   </div>
   {% for c in bag('provided')['data'] %}
   {% if c['preview'] is not defined %}
+  {% if c['constant'] is not defined %}
   <div class="disabled" id="column_{{ counter  + loop.index0 }}">
     <div>
       <header>
@@ -83,6 +109,7 @@
 
     </div>
   </div>
+  {% endif %}
   {% endif %}
   {% endfor %}
 </section>
