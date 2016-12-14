@@ -7885,7 +7885,8 @@ aside .accordion {
   background-color: #f7f7f7; }
   @media (min-width: 768px) {
     .app-container .content {
-      display: table-cell; } }
+      display: table-cell;
+      max-width: 1vw; } }
   .app-container .content > div {
     padding: 30px 0; }
     .app-container .content > div > * {
