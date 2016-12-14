@@ -8249,6 +8249,16 @@ aside .accordion {
         .describe-columns > div.add > div > a:hover {
           color: #3a99d9; }
 
+body.viewer h2 {
+  border-bottom: solid 1px #e6e6e6;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 30px; }
+body.viewer .description {
+  font-size: 15px;
+  margin-bottom: 30px; }
+  body.viewer .description :last-child {
+    margin-bottom: 0; }
 body.viewer a.add.visulisation {
   display: block;
   border: dashed 2px #e6e6e6;
@@ -8256,6 +8266,8 @@ body.viewer a.add.visulisation {
   text-decoration: none;
   color: #b3b3b3;
   padding: 30px;
+  background-color: #fcfcfc;
+  cursor: pointer;
   border-radius: 3px;
   margin-bottom: 30px;
   font-size: 14px; }
