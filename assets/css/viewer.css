@@ -8324,6 +8324,49 @@ body.viewer .table-view {
   body.viewer .table-view table tr:hover td {
     background-color: rgba(58, 153, 217, 0.1); }
 
+.visualisation-selection {
+  display: block;
+  padding: 0;
+  margin: 0 -10px; }
+  .visualisation-selection:before, .visualisation-selection:after {
+    content: " ";
+    display: table; }
+  .visualisation-selection:after {
+    clear: both; }
+  .visualisation-selection li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    line-height: 1; }
+    @media (min-width: 768px) {
+      .visualisation-selection li {
+        float: left;
+        width: 20%; } }
+    .visualisation-selection li svg {
+      fill: currentColor;
+      width: 100%;
+      height: 64px;
+      display: block;
+      margin-bottom: 4px; }
+    .visualisation-selection li a {
+      display: block;
+      border: solid 1px rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      text-decoration: none;
+      overflow: hidden;
+      font-weight: normal; }
+      @media (min-width: 768px) {
+        .visualisation-selection li a {
+          height: 113px;
+          padding-bottom: 0; } }
+      .visualisation-selection li a.disabled {
+        color: rgba(255, 255, 255, 0.3); }
+        .visualisation-selection li a.disabled svg {
+          fill: rgba(255, 255, 255, 0.1); }
+      .visualisation-selection li a:not(.disabled):hover {
+        color: #3a99d9;
+        border-color: #3a99d9; }
+
 .admin .app-container > aside .user {
   padding: 30px 20px;
   border-bottom: solid 1px rgba(255, 255, 255, 0.12); }
