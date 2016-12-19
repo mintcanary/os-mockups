@@ -8249,11 +8249,36 @@ aside .accordion {
         .describe-columns > div.add > div > a:hover {
           color: #7d4e92; }
 
-body.viewer h2 {
+body.viewer .share-page {
+  float: right;
+  width: 26px;
+  color: #2a2d34; }
+  body.viewer .share-page svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor; }
+    body.viewer .share-page svg + span {
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0; }
+body.viewer .package-title {
   border-bottom: solid 1px #e6e6e6;
   font-size: 22px;
   margin-top: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding-bottom: 6px; }
+  body.viewer .package-title svg {
+    fill: currentColor;
+    width: 26px;
+    height: 26px;
+    float: left;
+    position: relative;
+    top: -1px; }
+    body.viewer .package-title svg + span {
+      display: block;
+      margin-left: 32px; }
 body.viewer .description {
   font-size: 15px;
   margin-bottom: 30px; }
@@ -8762,6 +8787,13 @@ body.viewer .table-view {
     font-size: 0.9em;
     color: rgba(255, 255, 255, 0.6);
     padding: 15px 30px 0 30px; }
+    .modal-content .modal-footer svg {
+      fill: currentColor;
+      width: 22px;
+      height: 22px;
+      position: relative;
+      display: inline-block;
+      top: 5px; }
   .modal-content .help-block {
     color: rgba(255, 255, 255, 0.6); }
   .modal-content .close {

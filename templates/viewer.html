@@ -1,17 +1,35 @@
 {% extends "app.html" %}
 {% block title %}Viewer - {{ this.title }}{% endblock %}
 {% block content %}
-<h2>{{ this.title }}</h2>
+<a class="share-page"><svg><use xlink:href="#icon-embed" /></svg> <span>Share</span></a>
+<h2 class="package-title"><svg><use xlink:href="#icon-box" /></svg> <span>{{ this.title }}</span></h2>
 {% if this.description %}
 <div class="description">
   {{ this.description }}
 </div>
 {% endif %}
 
-<a class="add first visulisation">
+<a class="add first visulisation" data-toggle="modal" data-target="#addVisulisation">
   <svg><use xlink:href="#icon-circle_plus" /></svg>
   <span>Add visulisation</span>
 </a>
+
+<div class="modal fade" id="addVisulisation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Available visualisations</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <svg><use xlink:href="#icon-bulb" /></svg> <a>Clear</a> existing visualisations to enable full range of visualisation types.
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="table-view">
   {% include 'includes/table.html' %}
