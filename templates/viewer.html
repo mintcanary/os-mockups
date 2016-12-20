@@ -9,12 +9,60 @@
 </div>
 {% endif %}
 
-<a class="add first visulisation" data-toggle="modal" data-target="#addVisulisation">
-  <svg><use xlink:href="#icon-circle_plus" /></svg>
-  <span>Add visulisation</span>
-</a>
+{% for c in this.charts %}
+<div class="chart">
+  {% include 'includes/add-visualisation.html' %}
+  <article>
+    <header class="chart-header">
+      <ul class="tools">
+        <li class="remove context">
+          <span>
+            <button type="button" class="btn btn-danger">Remove this visualisation</button>
+            <button type="button" class="btn btn-danger">Clear all visualisation</button>
+          </span>
+          <a>
+            <svg><use xlink:href="#icon-trashcan" /></svg>
+            <span>Delete</span>
+          </a>
+        </li>
+        <li class="context">
+          <span>
+            Share
+          </span>
+          <a>
+            <svg><use xlink:href="#icon-embed" /></svg>
+            <span>Share</span>
+          </a>
+        </li>
+      </ul>
+      <ol class="breadcrumb">
+        <li><a href="#">Activity</a></li>
+        <li class="active">001 - PUBLIC WORKS MANAGEMENT</li>
+      </ol>
+    </header>
+    <div class="chart-body">
+      <div class="chart-main">
+        <div>
+          <span style="display:block; padding-bottom:60%; background-color:#d33b0f; color:#fff;">Placeholder</span>
+        </div>
+      </div>
+      <div class="chart-info">
+        <div>
+          <h3 class="chart-title">{{ c }}</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere odio porta risus dapibus, a venenatis ipsum ullamcorper. Proin neque nunc, consequat rhoncus dui a, consectetur tincidunt dolor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+{% endfor %}
 
-<div class="modal fade" id="addVisulisation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+{% include 'includes/add-visualisation.html' %}
+
+<div class="modal fade" id="addVisualisation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

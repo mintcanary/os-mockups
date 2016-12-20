@@ -8284,7 +8284,7 @@ body.viewer .description {
   margin-bottom: 30px; }
   body.viewer .description :last-child {
     margin-bottom: 0; }
-body.viewer a.add.visulisation {
+body.viewer a.add.visualisation {
   display: block;
   border: dashed 2px #e6e6e6;
   text-align: center;
@@ -8296,15 +8296,188 @@ body.viewer a.add.visulisation {
   border-radius: 3px;
   margin-bottom: 30px;
   font-size: 14px; }
-  body.viewer a.add.visulisation svg {
+  body.viewer a.add.visualisation svg {
     width: 30px;
     height: 30px;
-    fill: currentColor; }
-  body.viewer a.add.visulisation:hover {
+    fill: currentColor;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    body.viewer a.add.visualisation svg + span {
+      margin-top: 3px; }
+  body.viewer a.add.visualisation:hover {
     color: #7d4e92;
     border-color: #7d4e92; }
-  body.viewer a.add.visulisation span {
+  body.viewer a.add.visualisation span {
     display: block; }
+body.viewer .chart {
+  margin-bottom: 30px; }
+  body.viewer .chart > article {
+    background-color: #fff;
+    border: solid 1px #e6e6e6;
+    border-radius: 3px; }
+    body.viewer .chart > article .chart-header {
+      padding: 15px;
+      border-bottom: solid 1px #e6e6e6; }
+      body.viewer .chart > article .chart-header .tools {
+        float: right;
+        position: relative;
+        top: -4px; }
+        body.viewer .chart > article .chart-header .tools li {
+          display: inline-block;
+          position: relative; }
+          body.viewer .chart > article .chart-header .tools li a {
+            color: #e6e6e6;
+            text-decoration: none; }
+            body.viewer .chart > article .chart-header .tools li a:hover {
+              color: #7d4e92; }
+          body.viewer .chart > article .chart-header .tools li svg {
+            width: 30px;
+            height: 30px;
+            fill: currentColor; }
+            body.viewer .chart > article .chart-header .tools li svg + span {
+              font: 0/0 a;
+              color: transparent;
+              text-shadow: none;
+              background-color: transparent;
+              border: 0; }
+          body.viewer .chart > article .chart-header .tools li > span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1060;
+            display: none;
+            max-width: 276px;
+            padding: 1px;
+            font-family: "Hind", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-break: auto;
+            line-height: 1.42857;
+            text-align: left;
+            text-align: start;
+            text-decoration: none;
+            text-shadow: none;
+            text-transform: none;
+            white-space: normal;
+            word-break: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            font-size: 16px;
+            background-color: #2a2d34;
+            background-clip: padding-box;
+            border: 1px solid #ccc;
+            border: 1px solid #22242a;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            left: auto;
+            right: 100%;
+            width: 230px;
+            padding: 10px; }
+            body.viewer .chart > article .chart-header .tools li > span a {
+              color: inherit; }
+            body.viewer .chart > article .chart-header .tools li > span:before, body.viewer .chart > article .chart-header .tools li > span:after {
+              border-width: 8px 0 8px 8px;
+              left: auto; }
+            body.viewer .chart > article .chart-header .tools li > span:before {
+              border-color: transparent transparent transparent #007bff;
+              right: -8px; }
+            body.viewer .chart > article .chart-header .tools li > span:after {
+              border-color: transparent transparent transparent #2a2d34;
+              right: -7px; }
+            body.viewer .chart > article .chart-header .tools li > span.active {
+              display: block; }
+            body.viewer .chart > article .chart-header .tools li > span > * {
+              padding: 9px 14px; }
+            body.viewer .chart > article .chart-header .tools li > span:before, body.viewer .chart > article .chart-header .tools li > span:after {
+              content: '';
+              width: 0;
+              height: 0;
+              position: absolute;
+              border-style: solid;
+              border-width: 8px 8px 8px 0;
+              top: 12px; }
+            body.viewer .chart > article .chart-header .tools li > span:before {
+              border-color: transparent #22242a transparent transparent;
+              left: -8px; }
+            body.viewer .chart > article .chart-header .tools li > span:after {
+              border-color: transparent #2a2d34 transparent transparent;
+              left: -7px; }
+            body.viewer .chart > article .chart-header .tools li > span:before, body.viewer .chart > article .chart-header .tools li > span:after {
+              border-width: 8px 0 8px 8px;
+              left: auto; }
+            body.viewer .chart > article .chart-header .tools li > span:before {
+              border-color: transparent transparent transparent #22242a;
+              right: -8px; }
+            body.viewer .chart > article .chart-header .tools li > span:after {
+              border-color: transparent transparent transparent #2a2d34;
+              right: -7px; }
+            body.viewer .chart > article .chart-header .tools li > span.active ~ a {
+              color: #2a2d34; }
+          body.viewer .chart > article .chart-header .tools li.remove > span button {
+            display: block;
+            width: 100%; }
+            body.viewer .chart > article .chart-header .tools li.remove > span button + button {
+              margin-top: 10px; }
+      body.viewer .chart > article .chart-header .breadcrumb {
+        padding: 0;
+        margin: 0; }
+    body.viewer .chart > article .chart-body .chart-main > div,
+    body.viewer .chart > article .chart-body .chart-info > div {
+      padding: 15px; }
+    body.viewer .chart > article .chart-body .chart-main > div {
+      padding-bottom: 7.5px; }
+    body.viewer .chart > article .chart-body .chart-info > div {
+      padding-top: 7.5px; }
+      body.viewer .chart > article .chart-body .chart-info > div .chart-title {
+        font-size: 17px;
+        margin-bottom: 0.1em; }
+      body.viewer .chart > article .chart-body .chart-info > div p {
+        font-size: 13px; }
+      body.viewer .chart > article .chart-body .chart-info > div :last-child {
+        margin-bottom: 0; }
+    @media (min-width: 1200px) {
+      body.viewer .chart > article .chart-body {
+        display: table;
+        width: 100%; }
+        body.viewer .chart > article .chart-body .chart-main,
+        body.viewer .chart > article .chart-body .chart-info {
+          display: table-cell; }
+        body.viewer .chart > article .chart-body .chart-main {
+          width: 70%; }
+          body.viewer .chart > article .chart-body .chart-main > div {
+            padding: 2px 7.5px 15px 15px; }
+        body.viewer .chart > article .chart-body .chart-info {
+          vertical-align: bottom; }
+          body.viewer .chart > article .chart-body .chart-info > div {
+            padding: 15px 15px 15px 7.5px; } }
+  body.viewer .chart + a.add.visualisation,
+  body.viewer .chart a.add.visualisation {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    background-color: transparent;
+    -webkit-transition: padding, 0.3s;
+    -o-transition: padding, 0.3s;
+    transition: padding, 0.3s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s; }
+    body.viewer .chart + a.add.visualisation .verbose,
+    body.viewer .chart a.add.visualisation .verbose {
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0; }
+    body.viewer .chart + a.add.visualisation:hover,
+    body.viewer .chart a.add.visualisation:hover {
+      padding-top: 15px;
+      padding-bottom: 15px; }
 body.viewer .table-view {
   max-width: 100%;
   overflow-x: auto;
