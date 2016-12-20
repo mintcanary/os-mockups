@@ -11,4 +11,5 @@ The mockups below are built from this codebase.
 - [Admin](https://smth.github.io/os-mockup-admin/)
 - [Packager - Describe your data](https://smth.github.io/os-mockup-packager/packager/describe-data/)
 - [Viewer (WIP)](https://smth.github.io/os-mockup-viewer/viewer/)
+- [Viewer with visualisation (WIP)](https://smth.github.io/os-mockup-viewer/viewer/vis/)
 - [Explorer (TO DO)](https://smth.github.io/os-mockup-explorer/explorer/)
