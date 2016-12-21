@@ -8305,7 +8305,10 @@ body.viewer a.add.visualisation {
       cursor: pointer;
       border-radius: 3px;
       margin-bottom: 30px;
-      font-size: 14px; }
+      font-size: 14px;
+      -webkit-transition: padding, 0.3s;
+      -o-transition: padding, 0.3s;
+      transition: padding, 0.3s; }
       body.viewer a.add.visualisation svg {
         width: 30px;
         height: 30px;
@@ -8319,7 +8322,10 @@ body.viewer a.add.visualisation {
         color: #3a99d9;
         border-color: #3a99d9; }
       body.viewer a.add.visualisation span {
-        display: block; } }
+        display: block; }
+      body.viewer a.add.visualisation:hover {
+        padding-top: 45px;
+        padding-bottom: 45px; } }
 body.viewer .chart {
   margin-bottom: 30px;
   display: none; }
@@ -8476,9 +8482,6 @@ body.viewer .chart {
     padding-top: 7.5px;
     padding-bottom: 7.5px;
     background-color: transparent;
-    -webkit-transition: padding, 0.3s;
-    -o-transition: padding, 0.3s;
-    transition: padding, 0.3s;
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s; }
     body.viewer .chart + a.add.visualisation .verbose,
