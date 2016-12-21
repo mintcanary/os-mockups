@@ -8502,17 +8502,19 @@ body.viewer .table-view {
   background-color: #fcfcfc;
   border: solid 1px #e6e6e6;
   border-radius: 3px; }
-  body.viewer .table-view table thead {
-    background-color: #fff; }
-  body.viewer .table-view table th {
-    padding: 15px;
-    font-size: 14px; }
-  body.viewer .table-view table td {
-    padding: 6px 15px;
-    border-top: solid 1px #e6e6e6;
-    font-size: 13px; }
-  body.viewer .table-view table tr:hover td {
-    background-color: rgba(58, 153, 217, 0.1); }
+  body.viewer .table-view table {
+    min-width: 100%; }
+    body.viewer .table-view table thead {
+      background-color: #fff; }
+    body.viewer .table-view table th {
+      padding: 15px;
+      font-size: 14px; }
+    body.viewer .table-view table td {
+      padding: 6px 15px;
+      border-top: solid 1px #e6e6e6;
+      font-size: 13px; }
+    body.viewer .table-view table tr:hover td {
+      background-color: rgba(58, 153, 217, 0.1); }
 
 .visualisation-selection {
   display: block;
