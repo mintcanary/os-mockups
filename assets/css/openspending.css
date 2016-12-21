@@ -8248,6 +8248,11 @@ aside .accordion {
         .describe-columns > div.add > div > a:hover {
           color: #32a6ba; }
 
+body.viewer .sidebar {
+  display: none; }
+  @media (min-width: 768px) {
+    body.viewer .sidebar {
+      display: block; } }
 body.viewer .share-page {
   float: right;
   width: 26px;
@@ -8284,33 +8289,40 @@ body.viewer .description {
   body.viewer .description :last-child {
     margin-bottom: 0; }
 body.viewer a.add.visualisation {
-  display: block;
-  border: dashed 2px #e6e6e6;
-  text-align: center;
-  text-decoration: none;
-  color: #b3b3b3;
-  padding: 30px;
-  background-color: #fcfcfc;
-  cursor: pointer;
-  border-radius: 3px;
-  margin-bottom: 30px;
-  font-size: 14px; }
-  body.viewer a.add.visualisation svg {
-    width: 30px;
-    height: 30px;
-    fill: currentColor;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-    body.viewer a.add.visualisation svg + span {
-      margin-top: 3px; }
-  body.viewer a.add.visualisation:hover {
-    color: #32a6ba;
-    border-color: #32a6ba; }
-  body.viewer a.add.visualisation span {
-    display: block; }
+  display: none; }
+  @media (min-width: 768px) {
+    body.viewer a.add.visualisation {
+      display: block;
+      border: dashed 2px #e6e6e6;
+      text-align: center;
+      text-decoration: none;
+      color: #b3b3b3;
+      padding: 30px;
+      background-color: #fcfcfc;
+      cursor: pointer;
+      border-radius: 3px;
+      margin-bottom: 30px;
+      font-size: 14px; }
+      body.viewer a.add.visualisation svg {
+        width: 30px;
+        height: 30px;
+        fill: currentColor;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+        body.viewer a.add.visualisation svg + span {
+          margin-top: 3px; }
+      body.viewer a.add.visualisation:hover {
+        color: #32a6ba;
+        border-color: #32a6ba; }
+      body.viewer a.add.visualisation span {
+        display: block; } }
 body.viewer .chart {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: none; }
+  @media (min-width: 768px) {
+    body.viewer .chart {
+      display: block; } }
   body.viewer .chart > article {
     background-color: #fff;
     border: solid 1px #e6e6e6;
