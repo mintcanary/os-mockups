@@ -7840,20 +7840,22 @@ aside .accordion {
       display: table-cell;
       width: 215px;
       vertical-align: top;
-      padding-bottom: 2em; } }
+      padding-bottom: 2em; }
+      .app-container > aside:before {
+        content: '';
+        display: block;
+        height: 52px;
+        position: absolute;
+        top: -52px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #22242a; } }
   @media (min-width: 992px) {
     .app-container > aside {
       width: 230px; } }
-  .app-container > aside:before {
-    content: '';
-    display: block;
-    height: 52px;
-    position: absolute;
-    top: -52px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #22242a; }
+  .app-container > aside:empty {
+    width: 0; }
   .app-container > aside * {
     max-width: 100%; }
   .app-container > aside > footer {

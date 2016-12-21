@@ -2,11 +2,7 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 <div class="app-container">
-  <aside>
-    {% block aside %}
-    {{ this.aside }}
-    {% endblock %}
-  </aside>
+  <aside>{% block aside %}{{ this.aside }}{% endblock %}</aside>
   <div class="content">
     <div>
       {% block content %}
