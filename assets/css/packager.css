@@ -8378,7 +8378,10 @@ body.viewer .page-tools {
     body.viewer .page-tools li a {
       color: #2a2d34;
       text-decoration: none;
-      cursor: pointer; }
+      cursor: pointer;
+      display: block;
+      height: 26px;
+      overflow: hidden; }
       body.viewer .page-tools li a:hover {
         color: #2abb9c; }
     body.viewer .page-tools li svg {
