@@ -1,7 +1,18 @@
 {% extends "app.html" %}
 {% block title %}Viewer - {{ this.title }}{% endblock %}
 {% block content %}
-<a class="share-page"><svg><use xlink:href="#icon-embed" /></svg> <span>Share</span></a>
+{% import 'macros/app-elements.html' as app_elements %}
+<ul class="page-tools">
+  <li class="share context">
+    <span>
+      {{ app_elements.share('page') }}
+    </span>
+    <a>
+      <svg><use xlink:href="#icon-embed" /></svg>
+      <span>Share</span>
+    </a>
+  </li>
+</ul>
 <h2 class="package-title"><svg><use xlink:href="#icon-box" /></svg> <span>{{ this.title }}</span></h2>
 {% if this.description %}
 <div class="description">
@@ -25,9 +36,9 @@
             <span>Delete</span>
           </a>
         </li>
-        <li class="context">
+        <li class="share context">
           <span>
-            Share
+            {{ app_elements.share('visualisation') }}
           </span>
           <a>
             <svg><use xlink:href="#icon-embed" /></svg>

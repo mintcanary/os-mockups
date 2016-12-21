@@ -2453,6 +2453,7 @@ output {
 .form input[type="url"],
 .form input[type="week"],
 .form input:not([type]),
+.form textarea,
 .form .select, .app-container .app-search .search-field {
   display: block;
   width: 100%;
@@ -2485,6 +2486,7 @@ output {
   .form input[type="url"]:focus,
   .form input[type="week"]:focus,
   .form input:focus:not([type]),
+  .form textarea:focus,
   .form .select:focus, .app-container .app-search .search-field:focus {
     border-color: #32a6ba;
     outline: 0;
@@ -2505,6 +2507,7 @@ output {
   .form input[type="url"]::-moz-placeholder,
   .form input[type="week"]::-moz-placeholder,
   .form input:not([type])::-moz-placeholder,
+  .form textarea::-moz-placeholder,
   .form .select::-moz-placeholder, .app-container .app-search .search-field::-moz-placeholder {
     color: #b3b3b3;
     opacity: 1; }
@@ -2523,6 +2526,7 @@ output {
   .form input[type="url"]:-ms-input-placeholder,
   .form input[type="week"]:-ms-input-placeholder,
   .form input:-ms-input-placeholder:not([type]),
+  .form textarea:-ms-input-placeholder,
   .form .select:-ms-input-placeholder, .app-container .app-search .search-field:-ms-input-placeholder {
     color: #b3b3b3; }
   .form-control::-webkit-input-placeholder, .form input[type="color"]::-webkit-input-placeholder,
@@ -2540,6 +2544,7 @@ output {
   .form input[type="url"]::-webkit-input-placeholder,
   .form input[type="week"]::-webkit-input-placeholder,
   .form input:not([type])::-webkit-input-placeholder,
+  .form textarea::-webkit-input-placeholder,
   .form .select::-webkit-input-placeholder, .app-container .app-search .search-field::-webkit-input-placeholder {
     color: #b3b3b3; }
   .form-control::-ms-expand, .form input[type="color"]::-ms-expand,
@@ -2557,6 +2562,7 @@ output {
   .form input[type="url"]::-ms-expand,
   .form input[type="week"]::-ms-expand,
   .form input:not([type])::-ms-expand,
+  .form textarea::-ms-expand,
   .form .select::-ms-expand, .app-container .app-search .search-field::-ms-expand {
     border: 0;
     background-color: transparent; }
@@ -2575,6 +2581,7 @@ output {
   .form input[disabled][type="url"],
   .form input[disabled][type="week"],
   .form input[disabled]:not([type]),
+  .form textarea[disabled],
   .form [disabled].select, .app-container .app-search [disabled].search-field, .form-control[readonly], .form input[readonly][type="color"],
   .form input[readonly][type="date"],
   .form input[readonly][type="datetime"],
@@ -2590,6 +2597,7 @@ output {
   .form input[readonly][type="url"],
   .form input[readonly][type="week"],
   .form input[readonly]:not([type]),
+  .form textarea[readonly],
   .form [readonly].select, .app-container .app-search [readonly].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
   fieldset[disabled] .form input[type="date"],
   .form fieldset[disabled] input[type="date"],
@@ -2619,6 +2627,8 @@ output {
   .form fieldset[disabled] input[type="week"],
   fieldset[disabled] .form input:not([type]),
   .form fieldset[disabled] input:not([type]),
+  fieldset[disabled] .form textarea,
+  .form fieldset[disabled] textarea,
   fieldset[disabled] .form .select,
   .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     background-color: #f7f7f7;
@@ -2638,6 +2648,7 @@ output {
   .form input[disabled][type="url"],
   .form input[disabled][type="week"],
   .form input[disabled]:not([type]),
+  .form textarea[disabled],
   .form [disabled].select, .app-container .app-search [disabled].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
   fieldset[disabled] .form input[type="date"],
   .form fieldset[disabled] input[type="date"],
@@ -2667,11 +2678,14 @@ output {
   .form fieldset[disabled] input[type="week"],
   fieldset[disabled] .form input:not([type]),
   .form fieldset[disabled] input:not([type]),
+  fieldset[disabled] .form textarea,
+  .form fieldset[disabled] textarea,
   fieldset[disabled] .form .select,
   .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     cursor: not-allowed; }
 
 textarea.form-control,
+.form textarea,
 .form textarea.select, .app-container .app-search textarea.search-field {
   height: auto; }
 
@@ -2831,6 +2845,7 @@ input[type="checkbox"] {
   .form .input-group-lg > input.form-control-static[type="url"],
   .form .input-group-lg > input.form-control-static[type="week"],
   .form .input-group-lg > input.form-control-static:not([type]),
+  .form .input-group-lg > textarea.form-control-static,
   .form .input-group-lg > .form-control-static.select,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
@@ -2849,6 +2864,7 @@ input[type="checkbox"] {
   .form .input-group-sm > input.form-control-static[type="url"],
   .form .input-group-sm > input.form-control-static[type="week"],
   .form .input-group-sm > input.form-control-static:not([type]),
+  .form .input-group-sm > textarea.form-control-static,
   .form .input-group-sm > .form-control-static.select, .app-container .app-search .input-group-sm > .form-control-static.search-field,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
@@ -2871,6 +2887,7 @@ input[type="checkbox"] {
 .form .input-group-sm > input[type="url"],
 .form .input-group-sm > input[type="week"],
 .form .input-group-sm > input:not([type]),
+.form .input-group-sm > textarea,
 .form .input-group-sm > .select, .app-container .app-search .input-group-sm > .search-field,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
@@ -2890,7 +2907,7 @@ select.input-sm, .input-group-sm > select.form-control,
   line-height: 33px; }
 
 textarea.input-sm, .input-group-sm > textarea.form-control,
-.form .input-group-sm > textarea.select, .app-container .app-search .input-group-sm > textarea.search-field,
+.form .input-group-sm > textarea, .app-container .app-search .input-group-sm > textarea.search-field,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 .banner .input-group-sm > .input-group-btn > textarea.cta,
@@ -2932,6 +2949,8 @@ select[multiple].input-sm,
 .form .form-group-sm input[type="week"],
 .form-group-sm .form input:not([type]),
 .form .form-group-sm input:not([type]),
+.form-group-sm .form textarea,
+.form .form-group-sm textarea,
 .form-group-sm .form .select,
 .form .form-group-sm .select, .form-group-sm .app-container .app-search .search-field, .app-container .app-search .form-group-sm .search-field {
   height: 33px;
@@ -2945,8 +2964,8 @@ select[multiple].input-sm,
   height: 33px;
   line-height: 33px; }
 .form-group-sm textarea.form-control,
-.form-group-sm .form textarea.select,
-.form .form-group-sm textarea.select, .form-group-sm .app-container .app-search textarea.search-field, .app-container .app-search .form-group-sm textarea.search-field,
+.form-group-sm .form textarea,
+.form .form-group-sm textarea, .form-group-sm .app-container .app-search textarea.search-field, .app-container .app-search .form-group-sm textarea.search-field,
 .form-group-sm select[multiple].form-control,
 .form-group-sm .form select[multiple].select,
 .form .form-group-sm select[multiple].select,
@@ -2975,6 +2994,7 @@ select[multiple].input-sm,
 .form .input-group-lg > input[type="url"],
 .form .input-group-lg > input[type="week"],
 .form .input-group-lg > input:not([type]),
+.form .input-group-lg > textarea,
 .form .input-group-lg > .select,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
@@ -2994,7 +3014,7 @@ select.input-lg, .input-group-lg > select.form-control,
   line-height: 49px; }
 
 textarea.input-lg, .input-group-lg > textarea.form-control,
-.form .input-group-lg > textarea.select,
+.form .input-group-lg > textarea,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 .banner .input-group-lg > .input-group-btn > textarea.cta, .app-container .app-search textarea.search-field,
@@ -3036,6 +3056,8 @@ select[multiple].input-lg,
 .form .form-group-lg input[type="week"],
 .form-group-lg .form input:not([type]),
 .form .form-group-lg input:not([type]),
+.form-group-lg .form textarea,
+.form .form-group-lg textarea,
 .form-group-lg .form .select,
 .form .form-group-lg .select, .form-group-lg .app-container .app-search .search-field, .app-container .app-search .form-group-lg .search-field {
   height: 49px;
@@ -3049,8 +3071,8 @@ select[multiple].input-lg,
   height: 49px;
   line-height: 49px; }
 .form-group-lg textarea.form-control,
-.form-group-lg .form textarea.select,
-.form .form-group-lg textarea.select, .form-group-lg .app-container .app-search textarea.search-field, .app-container .app-search .form-group-lg textarea.search-field,
+.form-group-lg .form textarea,
+.form .form-group-lg textarea, .form-group-lg .app-container .app-search textarea.search-field, .app-container .app-search .form-group-lg textarea.search-field,
 .form-group-lg select[multiple].form-control,
 .form-group-lg .form select[multiple].select,
 .form .form-group-lg select[multiple].select,
@@ -3095,6 +3117,8 @@ select[multiple].input-lg,
   .form .has-feedback input[type="week"],
   .has-feedback .form input:not([type]),
   .form .has-feedback input:not([type]),
+  .has-feedback .form textarea,
+  .form .has-feedback textarea,
   .has-feedback .form .select,
   .form .has-feedback .select, .has-feedback .app-container .app-search .search-field, .app-container .app-search .has-feedback .search-field {
     padding-right: 45px; }
@@ -3126,6 +3150,7 @@ select[multiple].input-lg,
 .form .input-group-lg > input[type="url"] + .form-control-feedback,
 .form .input-group-lg > input[type="week"] + .form-control-feedback,
 .form .input-group-lg > input:not([type]) + .form-control-feedback,
+.form .input-group-lg > textarea + .form-control-feedback,
 .form .input-group-lg > .select + .form-control-feedback, .app-container .app-search .input-group-lg > .search-field + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
@@ -3162,6 +3187,8 @@ select[multiple].input-lg,
 .form .form-group-lg input[type="week"] + .form-control-feedback,
 .form-group-lg .form input:not([type]) + .form-control-feedback,
 .form .form-group-lg input:not([type]) + .form-control-feedback,
+.form-group-lg .form textarea + .form-control-feedback,
+.form .form-group-lg textarea + .form-control-feedback,
 .form-group-lg .form .select + .form-control-feedback,
 .form .form-group-lg .select + .form-control-feedback,
 .form-group-lg .app-container .app-search .search-field + .form-control-feedback,
@@ -3185,6 +3212,7 @@ select[multiple].input-lg,
 .form .input-group-sm > input[type="url"] + .form-control-feedback,
 .form .input-group-sm > input[type="week"] + .form-control-feedback,
 .form .input-group-sm > input:not([type]) + .form-control-feedback,
+.form .input-group-sm > textarea + .form-control-feedback,
 .form .input-group-sm > .select + .form-control-feedback, .app-container .app-search .input-group-sm > .search-field + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
@@ -3221,6 +3249,8 @@ select[multiple].input-lg,
 .form .form-group-sm input[type="week"] + .form-control-feedback,
 .form-group-sm .form input:not([type]) + .form-control-feedback,
 .form .form-group-sm input:not([type]) + .form-control-feedback,
+.form-group-sm .form textarea + .form-control-feedback,
+.form .form-group-sm textarea + .form-control-feedback,
 .form-group-sm .form .select + .form-control-feedback,
 .form .form-group-sm .select + .form-control-feedback,
 .form-group-sm .app-container .app-search .search-field + .form-control-feedback,
@@ -3265,6 +3295,8 @@ select[multiple].input-lg,
 .form .has-success input[type="week"],
 .has-success .form input:not([type]),
 .form .has-success input:not([type]),
+.has-success .form textarea,
+.form .has-success textarea,
 .has-success .form .select,
 .form .has-success .select, .has-success .app-container .app-search .search-field, .app-container .app-search .has-success .search-field {
   border-color: #3c763d;
@@ -3299,6 +3331,8 @@ select[multiple].input-lg,
   .form .has-success input[type="week"]:focus,
   .has-success .form input:focus:not([type]),
   .form .has-success input:focus:not([type]),
+  .has-success .form textarea:focus,
+  .form .has-success textarea:focus,
   .has-success .form .select:focus,
   .form .has-success .select:focus, .has-success .app-container .app-search .search-field:focus, .app-container .app-search .has-success .search-field:focus {
     border-color: #2b542c;
@@ -3347,6 +3381,8 @@ select[multiple].input-lg,
 .form .has-warning input[type="week"],
 .has-warning .form input:not([type]),
 .form .has-warning input:not([type]),
+.has-warning .form textarea,
+.form .has-warning textarea,
 .has-warning .form .select,
 .form .has-warning .select, .has-warning .app-container .app-search .search-field, .app-container .app-search .has-warning .search-field {
   border-color: #8a6d3b;
@@ -3381,6 +3417,8 @@ select[multiple].input-lg,
   .form .has-warning input[type="week"]:focus,
   .has-warning .form input:focus:not([type]),
   .form .has-warning input:focus:not([type]),
+  .has-warning .form textarea:focus,
+  .form .has-warning textarea:focus,
   .has-warning .form .select:focus,
   .form .has-warning .select:focus, .has-warning .app-container .app-search .search-field:focus, .app-container .app-search .has-warning .search-field:focus {
     border-color: #66512c;
@@ -3429,6 +3467,8 @@ select[multiple].input-lg,
 .form .has-error input[type="week"],
 .has-error .form input:not([type]),
 .form .has-error input:not([type]),
+.has-error .form textarea,
+.form .has-error textarea,
 .has-error .form .select,
 .form .has-error .select, .has-error .app-container .app-search .search-field, .app-container .app-search .has-error .search-field {
   border-color: #a94442;
@@ -3463,6 +3503,8 @@ select[multiple].input-lg,
   .form .has-error input[type="week"]:focus,
   .has-error .form input:focus:not([type]),
   .form .has-error input:focus:not([type]),
+  .has-error .form textarea:focus,
+  .form .has-error textarea:focus,
   .has-error .form .select:focus,
   .form .has-error .select:focus, .has-error .app-container .app-search .search-field:focus, .app-container .app-search .has-error .search-field:focus {
     border-color: #843534;
@@ -3520,6 +3562,8 @@ select[multiple].input-lg,
   .form .form-inline input[type="week"],
   .form-inline .form input:not([type]),
   .form .form-inline input:not([type]),
+  .form-inline .form textarea,
+  .form .form-inline textarea,
   .form-inline .form .select,
   .form .form-inline .select, .form-inline .app-container .app-search .search-field, .app-container .app-search .form-inline .search-field {
     display: inline-block;
@@ -3563,6 +3607,8 @@ select[multiple].input-lg,
     .form .form-inline .input-group input[type="week"],
     .form-inline .input-group .form input:not([type]),
     .form .form-inline .input-group input:not([type]),
+    .form-inline .input-group .form textarea,
+    .form .form-inline .input-group textarea,
     .form-inline .input-group .form .select,
     .form .form-inline .input-group .select,
     .form-inline .input-group .app-container .app-search .search-field,
@@ -3597,6 +3643,8 @@ select[multiple].input-lg,
   .form .form-inline .input-group > input[type="week"],
   .form-inline .form .input-group > input:not([type]),
   .form .form-inline .input-group > input:not([type]),
+  .form-inline .form .input-group > textarea,
+  .form .form-inline .input-group > textarea,
   .form-inline .form .input-group > .select,
   .form .form-inline .input-group > .select, .form-inline .app-container .app-search .input-group > .search-field, .app-container .app-search .form-inline .input-group > .search-field {
     width: 100%; }
@@ -4289,6 +4337,8 @@ tbody.collapse.in {
   .form .input-group input[type="week"],
   .input-group .form input:not([type]),
   .form .input-group input:not([type]),
+  .input-group .form textarea,
+  .form .input-group textarea,
   .input-group .form .select,
   .form .input-group .select, .input-group .app-container .app-search .search-field, .app-container .app-search .input-group .search-field {
     position: relative;
@@ -4325,6 +4375,8 @@ tbody.collapse.in {
     .form .input-group input[type="week"]:focus,
     .input-group .form input:focus:not([type]),
     .form .input-group input:focus:not([type]),
+    .input-group .form textarea:focus,
+    .form .input-group textarea:focus,
     .input-group .form .select:focus,
     .form .input-group .select:focus, .input-group .app-container .app-search .search-field:focus, .app-container .app-search .input-group .search-field:focus {
       z-index: 3; }
@@ -4362,6 +4414,8 @@ tbody.collapse.in {
 .form .input-group input[type="week"],
 .input-group .form input:not([type]),
 .form .input-group input:not([type]),
+.input-group .form textarea,
+.form .input-group textarea,
 .input-group .form .select,
 .form .input-group .select,
 .input-group .app-container .app-search .search-field,
@@ -4400,6 +4454,8 @@ tbody.collapse.in {
   .form .input-group input[type="week"]:not(:first-child):not(:last-child),
   .input-group .form input:not(:first-child):not(:last-child):not([type]),
   .form .input-group input:not(:first-child):not(:last-child):not([type]),
+  .input-group .form textarea:not(:first-child):not(:last-child),
+  .form .input-group textarea:not(:first-child):not(:last-child),
   .input-group .form .select:not(:first-child):not(:last-child),
   .form .input-group .select:not(:first-child):not(:last-child),
   .input-group .app-container .app-search .search-field:not(:first-child):not(:last-child),
@@ -4437,6 +4493,7 @@ tbody.collapse.in {
   .form .input-group-sm > input.input-group-addon[type="url"],
   .form .input-group-sm > input.input-group-addon[type="week"],
   .form .input-group-sm > input.input-group-addon:not([type]),
+  .form .input-group-sm > textarea.input-group-addon,
   .form .input-group-sm > .input-group-addon.select, .app-container .app-search .input-group-sm > .input-group-addon.search-field,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
@@ -4459,6 +4516,7 @@ tbody.collapse.in {
   .form .input-group-lg > input.input-group-addon[type="url"],
   .form .input-group-lg > input.input-group-addon[type="week"],
   .form .input-group-lg > input.input-group-addon:not([type]),
+  .form .input-group-lg > textarea.input-group-addon,
   .form .input-group-lg > .input-group-addon.select,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
@@ -4499,6 +4557,8 @@ tbody.collapse.in {
 .form .input-group input[type="week"]:first-child,
 .input-group .form input:first-child:not([type]),
 .form .input-group input:first-child:not([type]),
+.input-group .form textarea:first-child,
+.form .input-group textarea:first-child,
 .input-group .form .select:first-child,
 .form .input-group .select:first-child, .input-group .app-container .app-search .search-field:first-child, .app-container .app-search .input-group .search-field:first-child,
 .input-group-addon:first-child,
@@ -4546,6 +4606,8 @@ tbody.collapse.in {
 .form .input-group input[type="week"]:last-child,
 .input-group .form input:last-child:not([type]),
 .form .input-group input:last-child:not([type]),
+.input-group .form textarea:last-child,
+.form .input-group textarea:last-child,
 .input-group .form .select:last-child,
 .form .input-group .select:last-child, .input-group .app-container .app-search .search-field:last-child, .app-container .app-search .input-group .search-field:last-child,
 .input-group-addon:last-child,
@@ -4919,6 +4981,8 @@ tbody.collapse.in {
     .form .navbar-form input[type="week"],
     .navbar-form .form input:not([type]),
     .form .navbar-form input:not([type]),
+    .navbar-form .form textarea,
+    .form .navbar-form textarea,
     .navbar-form .form .select,
     .form .navbar-form .select, .navbar-form .app-container .app-search .search-field, .app-container .app-search .navbar-form .search-field {
       display: inline-block;
@@ -4962,6 +5026,8 @@ tbody.collapse.in {
       .form .navbar-form .input-group input[type="week"],
       .navbar-form .input-group .form input:not([type]),
       .form .navbar-form .input-group input:not([type]),
+      .navbar-form .input-group .form textarea,
+      .form .navbar-form .input-group textarea,
       .navbar-form .input-group .form .select,
       .form .navbar-form .input-group .select,
       .navbar-form .input-group .app-container .app-search .search-field,
@@ -4996,6 +5062,8 @@ tbody.collapse.in {
     .form .navbar-form .input-group > input[type="week"],
     .navbar-form .form .input-group > input:not([type]),
     .form .navbar-form .input-group > input:not([type]),
+    .navbar-form .form .input-group > textarea,
+    .form .navbar-form .input-group > textarea,
     .navbar-form .form .input-group > .select,
     .form .navbar-form .input-group > .select, .navbar-form .app-container .app-search .input-group > .search-field, .app-container .app-search .navbar-form .input-group > .search-field {
       width: 100%; }
@@ -7519,9 +7587,9 @@ p a {
 .form input[type="url"],
 .form input[type="week"],
 .form input:not([type]),
+.form textarea,
 .form .select, .app-container .app-search .search-field {
   padding: .65em 1em .45em 1em;
-  height: 2.6em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   .form-control:focus, .form input[type="color"]:focus,
@@ -7539,6 +7607,7 @@ p a {
   .form input[type="url"]:focus,
   .form input[type="week"]:focus,
   .form input:focus:not([type]),
+  .form textarea:focus,
   .form .select:focus, .app-container .app-search .search-field:focus {
     box-shadow: none; }
 
@@ -7566,6 +7635,7 @@ label {
 .form input[type="url"].alert,
 .form input[type="week"].alert,
 .form input:not([type]).alert,
+.form textarea.alert,
 .form .select.alert {
   border-color: #d93d3a;
   box-shadow: 0 0 6px rgba(217, 61, 58, 0.2); }
@@ -7584,6 +7654,7 @@ label {
 .form input[type="url"][required],
 .form input[type="week"][required],
 .form input:not([type])[required],
+.form textarea[required],
 .form .select[required] {
   background: url("../img/form/icon-required.svg") no-repeat top right; }
 .form input[type="color"].success,
@@ -7601,6 +7672,7 @@ label {
 .form input[type="url"].success,
 .form input[type="week"].success,
 .form input:not([type]).success,
+.form textarea.success,
 .form .select.success {
   background: url("../img/form/icon-success.svg") no-repeat top right; }
 .form input[type="color"][disabled],
@@ -7618,9 +7690,27 @@ label {
 .form input[type="url"][disabled],
 .form input[type="week"][disabled],
 .form input:not([type])[disabled],
+.form textarea[disabled],
 .form .select[disabled] {
   opacity: 0.8;
   background-color: #fafafa; }
+.form input[type="color"],
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="email"],
+.form input[type="month"],
+.form input[type="number"],
+.form input[type="password"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="text"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type="week"],
+.form input:not([type]),
+.form .select {
+  height: 2.6em; }
 .form .input-group {
   position: relative; }
   .form .input-group .input-group-addon {
@@ -8248,25 +8338,131 @@ aside .accordion {
         .describe-columns > div.add > div > a:hover {
           color: #32a6ba; }
 
+.share.context > span {
+  min-width: 230px; }
+  .share.context > span .share-heading {
+    margin-top: 5px;
+    margin-bottom: 0; }
+  .share.context > span .form {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .share.context > span .form label {
+      font-size: 0.9em;
+      margin-top: 0.1em; }
+    .share.context > span .form input,
+    .share.context > span .form textarea {
+      font-size: 0.8em; }
+
 body.viewer .sidebar {
   display: none; }
   @media (min-width: 768px) {
     body.viewer .sidebar {
       display: block; } }
-body.viewer .share-page {
+body.viewer .page-tools {
   float: right;
-  width: 26px;
-  color: #2a2d34; }
-  body.viewer .share-page svg {
+  display: block; }
+  body.viewer .page-tools li {
+    display: inline-block;
     width: 26px;
-    height: 26px;
-    fill: currentColor; }
-    body.viewer .share-page svg + span {
-      font: 0/0 a;
-      color: transparent;
+    position: relative; }
+    body.viewer .page-tools li a {
+      color: #2a2d34;
+      text-decoration: none;
+      cursor: pointer; }
+      body.viewer .page-tools li a:hover {
+        color: #32a6ba; }
+    body.viewer .page-tools li svg {
+      width: 26px;
+      height: 26px;
+      fill: currentColor; }
+      body.viewer .page-tools li svg + span {
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0; }
+    body.viewer .page-tools li > span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1060;
+      display: none;
+      max-width: 276px;
+      padding: 1px;
+      font-family: "Hind", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-break: auto;
+      line-height: 1.42857;
+      text-align: left;
+      text-align: start;
+      text-decoration: none;
       text-shadow: none;
-      background-color: transparent;
-      border: 0; }
+      text-transform: none;
+      white-space: normal;
+      word-break: normal;
+      word-spacing: normal;
+      word-wrap: normal;
+      font-size: 16px;
+      background-color: #2a2d34;
+      background-clip: padding-box;
+      border: 1px solid #ccc;
+      border: 1px solid #22242a;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0;
+      left: auto;
+      right: 100%; }
+      body.viewer .page-tools li > span a {
+        color: inherit; }
+      body.viewer .page-tools li > span:before, body.viewer .page-tools li > span:after {
+        border-width: 8px 0 8px 8px;
+        left: auto; }
+      body.viewer .page-tools li > span:before {
+        border-color: transparent transparent transparent #007bff;
+        right: -8px; }
+      body.viewer .page-tools li > span:after {
+        border-color: transparent transparent transparent #2a2d34;
+        right: -7px; }
+      body.viewer .page-tools li > span.active {
+        display: block; }
+      body.viewer .page-tools li > span > * {
+        padding: 9px 14px; }
+      body.viewer .page-tools li > span:before, body.viewer .page-tools li > span:after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-style: solid;
+        border-width: 8px 8px 8px 0;
+        top: 12px; }
+      body.viewer .page-tools li > span:before {
+        border-color: transparent #22242a transparent transparent;
+        left: -8px; }
+      body.viewer .page-tools li > span:after {
+        border-color: transparent #2a2d34 transparent transparent;
+        left: -7px; }
+      body.viewer .page-tools li > span:before, body.viewer .page-tools li > span:after {
+        border-width: 8px 0 8px 8px;
+        left: auto; }
+      body.viewer .page-tools li > span:before {
+        border-color: transparent transparent transparent #22242a;
+        right: -8px; }
+      body.viewer .page-tools li > span:after {
+        border-color: transparent transparent transparent #2a2d34;
+        right: -7px; }
+      body.viewer .page-tools li > span > header {
+        margin: 0 0 10px 0;
+        padding: 8px 14px;
+        font-size: 16px;
+        background-color: #23262c;
+        border-bottom: 1px solid #18191d;
+        border-radius: 3px 3px 0 0; }
 body.viewer .package-title {
   border-bottom: solid 1px #e6e6e6;
   font-size: 22px;
@@ -8345,7 +8541,8 @@ body.viewer .chart {
           position: relative; }
           body.viewer .chart > article .chart-header .tools li a {
             color: #e6e6e6;
-            text-decoration: none; }
+            text-decoration: none;
+            cursor: pointer; }
             body.viewer .chart > article .chart-header .tools li a:hover {
               color: #32a6ba; }
           body.viewer .chart > article .chart-header .tools li svg {
@@ -8435,6 +8632,13 @@ body.viewer .chart {
             body.viewer .chart > article .chart-header .tools li > span:after {
               border-color: transparent transparent transparent #2a2d34;
               right: -7px; }
+            body.viewer .chart > article .chart-header .tools li > span > header {
+              margin: 0 0 10px 0;
+              padding: 8px 14px;
+              font-size: 16px;
+              background-color: #23262c;
+              border-bottom: 1px solid #18191d;
+              border-radius: 3px 3px 0 0; }
             body.viewer .chart > article .chart-header .tools li > span.active ~ a {
               color: #2a2d34; }
           body.viewer .chart > article .chart-header .tools li.remove > span button {
@@ -8442,6 +8646,11 @@ body.viewer .chart {
             width: 100%; }
             body.viewer .chart > article .chart-header .tools li.remove > span button + button {
               margin-top: 10px; }
+          body.viewer .chart > article .chart-header .tools li.share > span {
+            padding: 0; }
+            body.viewer .chart > article .chart-header .tools li.share > span .form {
+              padding-top: 0;
+              padding-bottom: 0; }
       body.viewer .chart > article .chart-header .breadcrumb {
         padding: 0;
         margin: 0; }
@@ -8944,6 +9153,13 @@ body.viewer .table-view {
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul:after {
                         border-color: transparent transparent transparent #2a2d34;
                         right: -7px; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul > header {
+                        margin: 0 0 10px 0;
+                        padding: 8px 14px;
+                        font-size: 16px;
+                        background-color: #23262c;
+                        border-bottom: 1px solid #18191d;
+                        border-radius: 3px 3px 0 0; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul li {
                         display: block;
                         white-space: nowrap; } }

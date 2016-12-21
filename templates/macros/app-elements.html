@@ -4,3 +4,19 @@
   <input id="{{ name }}" class="search-field" placeholder="{{ placeholder }}" type="text">
 </div>
 {%- endmacro %}
+
+{% macro share(name) -%}
+<header>
+  <h5 class="share-heading">Share this {{ name }}</h5>
+</header>
+<form class="form">
+  <div class="form-group">
+    <label for="shareUrl">Link</label>
+    <input id="shareUrl" value="http://next.openspending.org:80/viewer/embed/treemap/boost:boost-paraguay-central-and-decentralized-entities?lang=en&amp;measure=APPROVED.sum&amp;groups[]=activity_PROGRAM1.PROGRAM1&amp;filters[date_2.YEAR][]=2014&amp;order=APPROVED.sum|desc" readonly="readonly" type="text">
+  </div>
+  <div class="form-group">
+    <label for="shareEmbed">Embed</label>
+    <textarea type="text" id="shareEmbed" readonly="readonly">&lt;iframe src="http://next.openspending.org:80/viewer/embed/treemap/boost:boost-paraguay-central-and-decentralized-entities?lang=en&amp;measure=APPROVED.sum&amp;groups[]=activity_PROGRAM1.PROGRAM1&amp;filters[date_2.YEAR][]=2014&amp;order=APPROVED.sum|desc" width="960" height="450" border="0" frameborder="0" seamless="on" style="border: 0px; margin: 0px; padding: 0px;"&gt;&lt;/iframe&gt;</textarea>
+  </div>
+</form>
+{%- endmacro %}
