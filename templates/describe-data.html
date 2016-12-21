@@ -46,7 +46,7 @@
   <div id="column_{{ counter  + loop.index0 }}"{% if c['complete'] %} class="complete"{% endif %}>
     <div>
       <header>
-        <button type="button" class="close" aria-label="Remove"><span aria-hidden="true">×</span></button>
+        <button type="button" class="remove" aria-label="Remove"><svg><use xlink:href="#icon-trashcan" /></svg></button>
 
         <h3>{% if c['heading'] %}{{ c['heading'] }}{% else %}&nbsp;{% endif %}</h3>
       </header>
