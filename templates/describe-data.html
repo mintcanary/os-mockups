@@ -6,7 +6,7 @@
   {% for c in bag('provided')['data'] %}
   {% if c['preview'] %}
   <div id="column_{{ counter  + loop.index0 }}"{% if c['complete'] %} class="complete"{% endif %}>
-    <div>
+    <div class="inner">
       <header>
         <div class="toggle">
           <input type="checkbox" name="onoffswitch" id="switch_{{ counter  + loop.index0 }}" checked>
@@ -41,10 +41,125 @@
       </div>
 
     </div>
+
+    <div class="data-type-select" id="data_type_select_{{ counter  + loop.index0 }}">
+      <ul>
+         <li>
+            <span>Date</span>
+            <ul>
+              <li>
+                <a>Fiscal year <em class="separator">-</em> <small>The fiscal-year for which the values in this record are relevant</small></a>
+              </li>
+              <li>
+                <span>Fiscal dates <em class="separator">-</em> <small>Specific dates related to fiscal events</small></span>
+                <ul>
+                  <li>
+                    <a>Approval date <em class="separator">-</em> <small>The approval date of a specific activity</small></a>
+                  </li>
+                  <li>
+                    <a>Ending Date <em class="separator">-</em> <small>The ending date of a specific activity</small></a>
+                  </li>
+                  <li>
+                    <a>Start Date <em class="separator">-</em> <small>The starting date of a specific activity</small></a>
+                  </li>
+                  <li>
+                    <a>Final Payment Date <em class="separator">-</em> <small>Final Payment Date</small></a>
+                  </li>
+                  <li>
+                    <a>First Payment Date <em class="separator">-</em> <small>The date of the first payment for a specific activity</small></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Other date <em class="separator">-</em> <small>An non-specific date related to the values in this record (e.g. transaction date etc.)</small></a>
+              </li>
+            </ul>
+         </li>
+         <li>
+           <span>Classification</span>
+           <ul>
+              <li>
+                <span>Administrative <em class="separator">-</em> <small>The entity responsible for managing the public funds</small></span>
+                <ul>
+                  <li>
+                    <a>Non-standard Administrative Classification <em class="separator">-</em> <small>Administrative Classification that does not adhere to a specific standard</small></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Economic <em class="separator">-</em> <small>The type of budget and expenditure incurred (e.g.salaries, goods and services, interest payments, or capital spending etc.)</small></span>
+              </li>
+              <li>
+                <span>Functional <em class="separator">-</em> <small>Classification of expenditure according to the purposes and objectives for which they are intended</small></span>
+              </li>
+           </ul>
+          </li>
+         <li>
+           <span>Activity</span>
+           <ul>
+             <li>
+               <span>Non-standard Activity <em class="separator">-</em> <small>Activity codes or labels that do not adhere to a specific standard</small></span>
+             </li>
+           </ul>
+         </li>
+         <li>
+           <span>Participating Entities</span>
+           <ul>
+             <li>
+               <span>Administrator <em class="separator">-</em> <small>The body that is authorized to spend the money</small></span>
+             </li>
+             <li>
+               <span>Procurer <em class="separator">-</em> <small>The government entity acting as procurer for the transaction</small></span>
+             </li>
+           </ul>
+         </li>
+         <li>
+           <span>Fiscal Attributes</span>
+           <ul>
+             <li>
+               <span>Budgetary Transfers <em class="separator">-</em> <small>Extra properties regarding whether the expenditure contains budgetary transfers</small></span>
+             </li>
+           </ul>
+         </li>
+         <li>
+           <span>Geographic</span>
+           <ul>
+             <li>
+               <span>Geographic information <em class="separator">-</em> <small>Geographic information related to the record (e.g. related city, region etc.)</small></span>
+             </li>
+           </ul>
+         </li>
+         <li>
+           <span>Identifiers</span>
+           <ul>
+             <li>
+               <span>Budget Line Identifier <em class="separator">-</em> <small>A unique identifier for this budget line</small></span>
+             </li>
+           </ul>
+         </li>
+         <li>
+           <span>Amount</span>
+           <ul>
+             <li>
+               <span>Amount <em class="separator">-</em> <small>Numeric value depicting a fiscal amount related to the budget item, spending transaction etc.</small></span>
+             </li>
+           </ul>
+         </li>
+         <li>
+           <span>Other</span>
+           <ul>
+             <li>
+               <span>Unknown Mapping <em class="separator">-</em> <small>Use when no other data type applies to the column</small></span>
+             </li>
+           </ul>
+         </li>
+      </ul>
+    </div>
+
   </div>
   {% elif c['constant'] %}
   <div id="column_{{ counter  + loop.index0 }}"{% if c['complete'] %} class="complete"{% endif %}>
-    <div>
+    <div class="inner">
       <header>
         <button type="button" class="remove" aria-label="Remove"><svg><use xlink:href="#icon-trashcan" /></svg></button>
 
@@ -70,7 +185,7 @@
   {% endif %}
   {% endfor %}
   <div class="add">
-    <div>
+    <div class="inner">
       <a>
         <svg><use xlink:href="#icon-circle_plus" /></svg> Add a dimension
       </a>
@@ -80,7 +195,7 @@
   {% if c['preview'] is not defined %}
   {% if c['constant'] is not defined %}
   <div class="disabled" id="column_{{ counter  + loop.index0 }}">
-    <div>
+    <div class="inner">
       <header>
         <div class="toggle">
           <input type="checkbox" name="onoffswitch" id="switch_{{ counter  + loop.index0 }}" >

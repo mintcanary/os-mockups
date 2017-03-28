@@ -8100,19 +8100,19 @@ aside .accordion {
     @media (min-width: 2436px) {
       .describe-columns > div {
         width: 400px; } }
-    .describe-columns > div > div {
+    .describe-columns > div > .inner {
       height: 320px;
       overflow: hidden;
       position: relative;
       -webkit-box-shadow: 0px 0px 0px 2px rgba(42, 45, 52, 0.1);
       box-shadow: 0px 0px 0px 2px rgba(42, 45, 52, 0.1); }
-      .describe-columns > div > div header {
+      .describe-columns > div > .inner header {
         background-color: #2a2d34;
         color: #fff;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         padding: 10px 15px; }
-        .describe-columns > div > div header .toggle {
+        .describe-columns > div > .inner header .toggle {
           float: right;
           position: relative;
           width: 36px;
@@ -8121,9 +8121,9 @@ aside .accordion {
           -ms-user-select: none;
           margin-top: 2px;
           margin-right: -2px; }
-          .describe-columns > div > div header .toggle input {
+          .describe-columns > div > .inner header .toggle input {
             display: none; }
-          .describe-columns > div > div header .toggle label {
+          .describe-columns > div > .inner header .toggle label {
             display: block;
             overflow: hidden;
             cursor: pointer;
@@ -8131,14 +8131,14 @@ aside .accordion {
             border-radius: 0px;
             padding: 0;
             margin: 0; }
-            .describe-columns > div > div header .toggle label .inner {
+            .describe-columns > div > .inner header .toggle label .inner {
               display: block;
               width: 200%;
               margin-left: -100%;
               -webkit-transition: margin 0.3s ease-in 0s;
               -o-transition: margin 0.3s ease-in 0s;
               transition: margin 0.3s ease-in 0s; }
-              .describe-columns > div > div header .toggle label .inner:before, .describe-columns > div > div header .toggle label .inner:after {
+              .describe-columns > div > .inner header .toggle label .inner:before, .describe-columns > div > .inner header .toggle label .inner:after {
                 display: block;
                 float: left;
                 width: 50%;
@@ -8147,14 +8147,14 @@ aside .accordion {
                 box-sizing: border-box;
                 border: 2px solid transparent;
                 background-clip: padding-box; }
-              .describe-columns > div > div header .toggle label .inner:before {
+              .describe-columns > div > .inner header .toggle label .inner:before {
                 content: "";
                 padding-left: 10px; }
-              .describe-columns > div > div header .toggle label .inner:after {
+              .describe-columns > div > .inner header .toggle label .inner:after {
                 content: "";
                 padding-right: 10px;
                 text-align: right; }
-            .describe-columns > div > div header .toggle label .switch {
+            .describe-columns > div > .inner header .toggle label .switch {
               display: block;
               width: 18px;
               margin: 0px;
@@ -8166,12 +8166,12 @@ aside .accordion {
               -webkit-transition: all 0.3s ease-in 0s;
               -o-transition: all 0.3s ease-in 0s;
               transition: all 0.3s ease-in 0s; }
-          .describe-columns > div > div header .toggle input:checked + .label .inner {
+          .describe-columns > div > .inner header .toggle input:checked + .label .inner {
             margin-left: 0; }
-          .describe-columns > div > div header .toggle input:checked + .label .switch {
+          .describe-columns > div > .inner header .toggle input:checked + .label .switch {
             right: 0px;
             background-color: #3a99d9; }
-        .describe-columns > div > div header .remove {
+        .describe-columns > div > .inner header .remove {
           color: #fff;
           background-color: transparent;
           border: none;
@@ -8180,24 +8180,24 @@ aside .accordion {
           float: right;
           margin-right: -3px;
           margin-top: -1px; }
-          .describe-columns > div > div header .remove svg {
+          .describe-columns > div > .inner header .remove svg {
             width: 22px;
             height: 22px;
             fill: currentColor; }
-        .describe-columns > div > div header h3 {
+        .describe-columns > div > .inner header h3 {
           margin: 0;
           font-size: 17px;
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden; }
-        .describe-columns > div > div header .description {
+        .describe-columns > div > .inner header .description {
           display: block;
           font-size: 14px;
           color: inherit;
           opacity: 0.8; }
-          .describe-columns > div > div header .description.add {
+          .describe-columns > div > .inner header .description.add {
             opacity: 0.5; }
-      .describe-columns > div > div .preview {
+      .describe-columns > div > .inner .preview {
         background-color: #22242a;
         font-size: 14px;
         padding: 10px 10px 0 10px;
@@ -8205,11 +8205,11 @@ aside .accordion {
         -webkit-transition: opacity, 0.5s, ease-out;
         -o-transition: opacity, 0.5s, ease-out;
         transition: opacity, 0.5s, ease-out; }
-        .describe-columns > div > div .preview:not(.empty):hover {
+        .describe-columns > div > .inner .preview:not(.empty):hover {
           opacity: 1; }
-          .describe-columns > div > div .preview:not(.empty):hover + .field-info {
+          .describe-columns > div > .inner .preview:not(.empty):hover + .field-info {
             bottom: -120px; }
-        .describe-columns > div > div .preview ol {
+        .describe-columns > div > .inner .preview ol {
           display: table;
           width: 100%;
           padding: 0;
@@ -8218,9 +8218,9 @@ aside .accordion {
           border: solid 1px #dedede;
           border-radius: 3px;
           background-color: rgba(255, 255, 255, 0.9); }
-        .describe-columns > div > div .preview li {
+        .describe-columns > div > .inner .preview li {
           display: table-row; }
-          .describe-columns > div > div .preview li:before {
+          .describe-columns > div > .inner .preview li:before {
             display: table-cell;
             counter-increment: section;
             content: counter(section);
@@ -8229,21 +8229,21 @@ aside .accordion {
             border-bottom: solid 1px #dedede;
             border-right: solid 1px #dedede;
             color: rgba(42, 45, 52, 0.7); }
-          .describe-columns > div > div .preview li span {
+          .describe-columns > div > .inner .preview li span {
             display: table-cell;
             border-bottom: solid 1px #dedede;
             padding: 3px 8px 1px 8px;
             color: rgba(42, 45, 52, 0.7); }
-          .describe-columns > div > div .preview li:first-child span {
+          .describe-columns > div > .inner .preview li:first-child span {
             padding-top: 6px; }
-        .describe-columns > div > div .preview.empty {
+        .describe-columns > div > .inner .preview.empty {
           width: 100%;
           text-align: center; }
-          .describe-columns > div > div .preview.empty span {
+          .describe-columns > div > .inner .preview.empty span {
             color: rgba(255, 255, 255, 0.5);
             display: block;
             padding-top: 30px; }
-      .describe-columns > div > div .constant textarea {
+      .describe-columns > div > .inner .constant textarea {
         width: 100%;
         padding: 36px 10px 0 10px;
         text-align: center;
@@ -8256,11 +8256,11 @@ aside .accordion {
         -webkit-transition: background-color, 0.5s, ease-out;
         -o-transition: background-color, 0.5s, ease-out;
         transition: background-color, 0.5s, ease-out; }
-        .describe-columns > div > div .constant textarea:hover {
+        .describe-columns > div > .inner .constant textarea:hover {
           background-color: rgba(34, 36, 42, 0.8); }
-        .describe-columns > div > div .constant textarea:focus {
+        .describe-columns > div > .inner .constant textarea:focus {
           background-color: #22242a; }
-      .describe-columns > div > div .field-info {
+      .describe-columns > div > .inner .field-info {
         padding: 10px;
         position: absolute;
         bottom: 0;
@@ -8270,7 +8270,7 @@ aside .accordion {
         -webkit-transition: bottom, 0.5s, ease-out;
         -o-transition: bottom, 0.5s, ease-out;
         transition: bottom, 0.5s, ease-out; }
-        .describe-columns > div > div .field-info label {
+        .describe-columns > div > .inner .field-info label {
           display: block;
           font-size: 12px;
           opacity: 0.5;
@@ -8278,17 +8278,17 @@ aside .accordion {
           margin-bottom: 0;
           padding-left: 5px;
           padding-right: 5px; }
-          .describe-columns > div > div .field-info label:first-child {
+          .describe-columns > div > .inner .field-info label:first-child {
             margin-top: 5px; }
-        .describe-columns > div > div .field-info input {
+        .describe-columns > div > .inner .field-info input {
           width: 100%;
           outline: 0;
           border-width: 0 0 1px 0;
           padding: 0 5px;
           font-size: 15px; }
-          .describe-columns > div > div .field-info input:focus {
+          .describe-columns > div > .inner .field-info input:focus {
             border-color: #3a99d9; }
-        .describe-columns > div > div .field-info textarea {
+        .describe-columns > div > .inner .field-info textarea {
           width: 100%;
           outline: 0;
           border-width: 0 0 1px 0;
@@ -8301,12 +8301,12 @@ aside .accordion {
           transition: height, 0.5s, ease-out;
           padding: 0 5px;
           font-size: 15px; }
-          .describe-columns > div > div .field-info textarea:focus {
+          .describe-columns > div > .inner .field-info textarea:focus {
             border-color: #3a99d9;
             height: 120px;
             overflow: auto;
             padding: 5px; }
-        .describe-columns > div > div .field-info:before {
+        .describe-columns > div > .inner .field-info:before {
           content: '';
           display: block;
           height: 15px;
@@ -8320,6 +8320,38 @@ aside .accordion {
           top: -15px;
           left: 0;
           pointer-events: none; }
+    .describe-columns > div .data-type-select {
+      visibility: hidden;
+      top: 100%;
+      bottom: auto;
+      left: 20px;
+      right: 20px;
+      margin-top: -21px;
+      z-index: 999;
+      position: absolute !important;
+      background-color: #fff;
+      border: solid 1px #3a99d9;
+      border-top-width: 2px;
+      border-radius: 0 0 3px 3px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+      .describe-columns > div .data-type-select .mm-navbar {
+        border-color: #e6e6e6;
+        font-size: 12px;
+        font-weight: 500; }
+      .describe-columns > div .data-type-select .mm-panel:after {
+        height: 0; }
+      .describe-columns > div .data-type-select .mm-listview {
+        margin-bottom: 0;
+        font-weight: 500; }
+        .describe-columns > div .data-type-select .mm-listview li:after {
+          left: 0; }
+        .describe-columns > div .data-type-select .mm-listview .separator {
+          display: none; }
+        .describe-columns > div .data-type-select .mm-listview small {
+          font-size: 12px;
+          display: block;
+          font-weight: 400; }
     .describe-columns > div.disabled {
       opacity: 0.5; }
       .describe-columns > div.disabled > div {
@@ -8347,6 +8379,10 @@ aside .accordion {
           fill: currentColor; }
         .describe-columns > div.add > div > a:hover {
           color: #3a99d9; }
+    .describe-columns > div.data-type-select-active .data-type-select {
+      visibility: visible; }
+    .describe-columns > div.mm-wrapper {
+      overflow: visible; }
 
 .share.context > span {
   min-width: 230px; }

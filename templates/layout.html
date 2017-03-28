@@ -9,6 +9,9 @@
     <link href='//fonts.googleapis.com/css?family=Hind:400,500,600' rel='stylesheet' type='text/css'>
     {% if this._model == 'describe-data' %}
     <link rel="stylesheet" href="{{ '/css/bootstrap-tour.min.css'|url }}">
+    <link rel="stylesheet" href="{{ '/css/jquery.mmenu.css'|url }}">
+    <link rel="stylesheet" href="{{ '/css/jquery.mmenu.autoheight.css'|url }}">
+    <link rel="stylesheet" href="{{ '/css/jquery.mmenu.multiline.css'|url }}">
     {% endif %}
     {% if bag('brand.brand') == 'Packager' %}
     <link rel="stylesheet" href="{{ '/css/packager.css'|url }}">
@@ -153,7 +156,23 @@
   <script src="{{ '/js/style-guide.js'|url }}"></script>
   {% elif this._model == 'describe-data' %}
   <script src="{{ '/js/bootstrap-tour.min.js'|url }}"></script>
+  <script src="{{ '/js/jquery.mmenu.min.js'|url }}"></script>
+  <script src="{{ '/js/jquery.mmenu.autoheight.min.js'|url }}"></script>
   <script src="{{ '/js/describe-data.js'|url }}"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#data_type_select_6").mmenu({
+         offCanvas: false,
+         autoHeight: true,
+         navbar: {
+           title: false
+         },
+         extensions: ["multiline"]
+      });
+
+      $( "#column_6" ).addClass( "data-type-select-active" );
+    });
+  </script>
   {% endif %}
 
 </body>
