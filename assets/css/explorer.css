@@ -9379,6 +9379,69 @@ body.viewer .table-view {
   border-radius: 2px;
   padding-bottom: 5px; }
 
+.aside-panel {
+  margin-bottom: 0;
+  display: table;
+  width: 100%;
+  font-size: 0.9em; }
+  .aside-panel > div {
+    padding: 0.375em 0.75em; }
+    .aside-panel > div:first-child {
+      padding-top: 0.75em; }
+    .aside-panel > div:last-child {
+      padding-bottom: 0.75em; }
+  .aside-panel .icon {
+    width: 36px; }
+    .aside-panel .icon svg {
+      fill: currentColor;
+      width: 36px;
+      height: 36px; }
+  .aside-panel .heading {
+    display: inline;
+    font-size: inherit;
+    font-weight: 600; }
+  .aside-panel .action a {
+    color: #2a2d34;
+    background-color: #fff;
+    border-color: #2a2d34;
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em; }
+    .aside-panel .action a:focus, .aside-panel .action a.focus {
+      color: #2a2d34;
+      background-color: #e6e6e6;
+      border-color: black; }
+    .aside-panel .action a:hover {
+      color: #2a2d34;
+      background-color: #e6e6e6;
+      border-color: #0f1012; }
+    .aside-panel .action a:active, .aside-panel .action a.active, .open > .aside-panel .action a.dropdown-toggle {
+      color: #2a2d34;
+      background-color: #e6e6e6;
+      border-color: #0f1012; }
+      .aside-panel .action a:active:hover, .aside-panel .action a:active:focus, .aside-panel .action a:active.focus, .aside-panel .action a.active:hover, .aside-panel .action a.active:focus, .aside-panel .action a.active.focus, .open > .aside-panel .action a.dropdown-toggle:hover, .open > .aside-panel .action a.dropdown-toggle:focus, .open > .aside-panel .action a.dropdown-toggle.focus {
+        color: #2a2d34;
+        background-color: #d4d4d4;
+        border-color: black; }
+    .aside-panel .action a:active, .aside-panel .action a.active, .open > .aside-panel .action a.dropdown-toggle {
+      background-image: none; }
+    .aside-panel .action a.disabled:hover, .aside-panel .action a.disabled:focus, .aside-panel .action a.disabled.focus, .aside-panel .action a[disabled]:hover, .aside-panel .action a[disabled]:focus, .aside-panel .action a[disabled].focus, fieldset[disabled] .aside-panel .action a:hover, fieldset[disabled] .aside-panel .action a:focus, fieldset[disabled] .aside-panel .action a.focus {
+      background-color: #fff;
+      border-color: #2a2d34; }
+    .aside-panel .action a .badge {
+      color: #fff;
+      background-color: #2a2d34; }
+  @media (min-width: 768px) {
+    .aside-panel > div {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 1.5em 0.75em; }
+      .aside-panel > div:first-child {
+        padding: 1.5em 0.75em 1.5em 1.5em; }
+      .aside-panel > div:last-child {
+        text-align: right;
+        padding: 1.5em 1.5em 1.5em 0.75em; } }
+
 .subscribe-footer {
   background-color: #2a2d34;
   color: rgba(255, 255, 255, 0.7);
