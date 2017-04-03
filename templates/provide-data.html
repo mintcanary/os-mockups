@@ -1,7 +1,16 @@
 {% extends "process.html" %}
 
 {% block content %}
-  TODO: Provide Data page
+  <section class="provide-data-form form has-group-actions">
+    <form>
+      <div class="form-group">
+        <a class="form-group-action"><svg><use xlink:href="#icon-remove" /></svg></a>
+        <input class="success" type="text" placeholder="Input with success">
+      </div>
+
+      <input class="alert" type="text" placeholder="Input with error">
+    </form>
+  </section>
 
   {% include 'includes/help-panel.html' %}
 {% endblock %}

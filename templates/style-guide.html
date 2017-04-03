@@ -135,7 +135,11 @@
           <input type="text" placeholder="Required input" required>
           <div class="input-group">
             <div class="user input-group-addon"></div>
-            <input class="user icon" type="text" placeholder="Input with icon">
+            <input class="icon" type="text" placeholder="Input with icon">
+          </div>
+          <div class="input-group">
+            <input class="icon" type="text" placeholder="Input with icon">
+            <div class="user input-group-addon"></div>
           </div>
           <input class="success" type="text" placeholder="Input with success">
           <input class="alert" type="text" placeholder="Input with error" required>
@@ -186,7 +190,19 @@
     <h2>Containers</h2>
     <div class="box">
       <p>Here is a <a data-toggle="modal" data-target="#myModal">modal</a>.</p>
+
+      <p>
+        Tooltip on left <i class="icon" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><svg><use xlink:href="#icon-tip" /></svg></i> Tooltip on top <i class="icon" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><svg><use xlink:href="#icon-tip" /></svg></i> Tooltip on bottom <i class="icon" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><svg><use xlink:href="#icon-tip" /></svg></i> Tooltip on right <i class="icon" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><svg><use xlink:href="#icon-tip" /></svg></i>
+      </p>
+
+      <div class="rev">
+        <p>
+          Tooltip on left <i class="icon" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><svg><use xlink:href="#icon-tip" /></svg></i> Tooltip on top <i class="icon" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><svg><use xlink:href="#icon-tip" /></svg></i> Tooltip on bottom <i class="icon" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><svg><use xlink:href="#icon-tip" /></svg></i> Tooltip on right <i class="icon" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><svg><use xlink:href="#icon-tip" /></svg></i>
+        </p>
+      </div>
+
     </div>
+
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">

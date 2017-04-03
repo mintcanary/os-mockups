@@ -7076,6 +7076,15 @@ button.close {
     .app-header .secondary-nav {
       top: 19px; } }
 
+i.icon {
+  display: inline-block; }
+  i.icon svg {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+    position: relative;
+    bottom: -0.25em; }
+
 @font-face {
   font-family: 'os-icons';
   src: url("../fonts/os-icons/os-icons.eot?73z96q");
@@ -7642,6 +7651,41 @@ label {
 .form .select.alert {
   border-color: #d93d3a;
   box-shadow: 0 0 6px rgba(217, 61, 58, 0.2); }
+.form input[type="color"][required], .form input[type="color"].success,
+.form input[type="date"][required],
+.form input[type="date"].success,
+.form input[type="datetime"][required],
+.form input[type="datetime"].success,
+.form input[type="datetime-local"][required],
+.form input[type="datetime-local"].success,
+.form input[type="email"][required],
+.form input[type="email"].success,
+.form input[type="month"][required],
+.form input[type="month"].success,
+.form input[type="number"][required],
+.form input[type="number"].success,
+.form input[type="password"][required],
+.form input[type="password"].success,
+.form input[type="search"][required],
+.form input[type="search"].success,
+.form input[type="tel"][required],
+.form input[type="tel"].success,
+.form input[type="text"][required],
+.form input[type="text"].success,
+.form input[type="time"][required],
+.form input[type="time"].success,
+.form input[type="url"][required],
+.form input[type="url"].success,
+.form input[type="week"][required],
+.form input[type="week"].success,
+.form input:not([type])[required],
+.form input:not([type]).success,
+.form textarea[required],
+.form textarea.success,
+.form .select[required],
+.form .select.success {
+  background-repeat: no-repeat;
+  background-position: top right; }
 .form input[type="color"][required],
 .form input[type="date"][required],
 .form input[type="datetime"][required],
@@ -7659,7 +7703,7 @@ label {
 .form input:not([type])[required],
 .form textarea[required],
 .form .select[required] {
-  background: url("../img/form/icon-required.svg") no-repeat top right; }
+  background-image: url("../img/form/icon-required.svg"); }
 .form input[type="color"].success,
 .form input[type="date"].success,
 .form input[type="datetime"].success,
@@ -7677,7 +7721,7 @@ label {
 .form input:not([type]).success,
 .form textarea.success,
 .form .select.success {
-  background: url("../img/form/icon-success.svg") no-repeat top right; }
+  background-image: url("../img/form/icon-success.svg"); }
 .form input[type="color"][disabled],
 .form input[type="date"][disabled],
 .form input[type="datetime"][disabled],
@@ -7823,6 +7867,20 @@ label {
     height: 12px;
     background: url("../img/form/icon-select.svg") no-repeat center center;
     pointer-events: none; }
+.form.has-group-actions {
+  padding-right: 42px; }
+  .form.has-group-actions .form-group {
+    position: relative; }
+  .form.has-group-actions .form-group-action {
+    position: absolute;
+    top: 5px;
+    right: -34px;
+    width: 32px;
+    opacity: 0.5; }
+    .form.has-group-actions .form-group-action svg {
+      width: 32px;
+      height: 32px;
+      fill: #2a2d34; }
 
 aside .accordion {
   padding: 1.5em 0;
@@ -8063,6 +8121,12 @@ aside .accordion {
         .process .banner .info {
           float: left;
           width: 33.33333%; } }
+
+.provide-data-form {
+  padding: 1.5em;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .describe-columns {
   margin: 10px; }
@@ -9721,15 +9785,13 @@ html,
     color: #d1d1d1; }
   .style-guide p {
     font-size: 1.4rem;
-    line-height: 1.32857;
-    color: #2a2d34; }
+    line-height: 1.42857; }
     .style-guide p a {
       color: #2abb9c;
       text-decoration: underline; }
     @media (min-width: 768px) {
       .style-guide p {
-        font-size: 1.6rem;
-        line-height: 1.52857; } }
+        font-size: 1.6rem; } }
   .style-guide .icons ul li {
     width: 32px;
     height: 32px;
@@ -9972,5 +10034,10 @@ html,
     margin: 1em; }
   .style-guide .side .sidebar {
     max-width: 210px; }
+  .style-guide .rev {
+    background-color: #2a2d34;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
 
 /*# sourceMappingURL=packager.css.map */
