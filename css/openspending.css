@@ -2453,6 +2453,7 @@ output {
 .form input[type="url"],
 .form input[type="week"],
 .form input:not([type]),
+.form textarea,
 .form .select, .app-container .app-search .search-field {
   display: block;
   width: 100%;
@@ -2485,6 +2486,7 @@ output {
   .form input[type="url"]:focus,
   .form input[type="week"]:focus,
   .form input:focus:not([type]),
+  .form textarea:focus,
   .form .select:focus, .app-container .app-search .search-field:focus {
     border-color: #32a6ba;
     outline: 0;
@@ -2505,6 +2507,7 @@ output {
   .form input[type="url"]::-moz-placeholder,
   .form input[type="week"]::-moz-placeholder,
   .form input:not([type])::-moz-placeholder,
+  .form textarea::-moz-placeholder,
   .form .select::-moz-placeholder, .app-container .app-search .search-field::-moz-placeholder {
     color: #b3b3b3;
     opacity: 1; }
@@ -2523,6 +2526,7 @@ output {
   .form input[type="url"]:-ms-input-placeholder,
   .form input[type="week"]:-ms-input-placeholder,
   .form input:-ms-input-placeholder:not([type]),
+  .form textarea:-ms-input-placeholder,
   .form .select:-ms-input-placeholder, .app-container .app-search .search-field:-ms-input-placeholder {
     color: #b3b3b3; }
   .form-control::-webkit-input-placeholder, .form input[type="color"]::-webkit-input-placeholder,
@@ -2540,6 +2544,7 @@ output {
   .form input[type="url"]::-webkit-input-placeholder,
   .form input[type="week"]::-webkit-input-placeholder,
   .form input:not([type])::-webkit-input-placeholder,
+  .form textarea::-webkit-input-placeholder,
   .form .select::-webkit-input-placeholder, .app-container .app-search .search-field::-webkit-input-placeholder {
     color: #b3b3b3; }
   .form-control::-ms-expand, .form input[type="color"]::-ms-expand,
@@ -2557,6 +2562,7 @@ output {
   .form input[type="url"]::-ms-expand,
   .form input[type="week"]::-ms-expand,
   .form input:not([type])::-ms-expand,
+  .form textarea::-ms-expand,
   .form .select::-ms-expand, .app-container .app-search .search-field::-ms-expand {
     border: 0;
     background-color: transparent; }
@@ -2575,6 +2581,7 @@ output {
   .form input[disabled][type="url"],
   .form input[disabled][type="week"],
   .form input[disabled]:not([type]),
+  .form textarea[disabled],
   .form [disabled].select, .app-container .app-search [disabled].search-field, .form-control[readonly], .form input[readonly][type="color"],
   .form input[readonly][type="date"],
   .form input[readonly][type="datetime"],
@@ -2590,6 +2597,7 @@ output {
   .form input[readonly][type="url"],
   .form input[readonly][type="week"],
   .form input[readonly]:not([type]),
+  .form textarea[readonly],
   .form [readonly].select, .app-container .app-search [readonly].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
   fieldset[disabled] .form input[type="date"],
   .form fieldset[disabled] input[type="date"],
@@ -2619,6 +2627,8 @@ output {
   .form fieldset[disabled] input[type="week"],
   fieldset[disabled] .form input:not([type]),
   .form fieldset[disabled] input:not([type]),
+  fieldset[disabled] .form textarea,
+  .form fieldset[disabled] textarea,
   fieldset[disabled] .form .select,
   .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     background-color: #f7f7f7;
@@ -2638,6 +2648,7 @@ output {
   .form input[disabled][type="url"],
   .form input[disabled][type="week"],
   .form input[disabled]:not([type]),
+  .form textarea[disabled],
   .form [disabled].select, .app-container .app-search [disabled].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
   fieldset[disabled] .form input[type="date"],
   .form fieldset[disabled] input[type="date"],
@@ -2667,11 +2678,14 @@ output {
   .form fieldset[disabled] input[type="week"],
   fieldset[disabled] .form input:not([type]),
   .form fieldset[disabled] input:not([type]),
+  fieldset[disabled] .form textarea,
+  .form fieldset[disabled] textarea,
   fieldset[disabled] .form .select,
   .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     cursor: not-allowed; }
 
 textarea.form-control,
+.form textarea,
 .form textarea.select, .app-container .app-search textarea.search-field {
   height: auto; }
 
@@ -2831,6 +2845,7 @@ input[type="checkbox"] {
   .form .input-group-lg > input.form-control-static[type="url"],
   .form .input-group-lg > input.form-control-static[type="week"],
   .form .input-group-lg > input.form-control-static:not([type]),
+  .form .input-group-lg > textarea.form-control-static,
   .form .input-group-lg > .form-control-static.select,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
@@ -2849,6 +2864,7 @@ input[type="checkbox"] {
   .form .input-group-sm > input.form-control-static[type="url"],
   .form .input-group-sm > input.form-control-static[type="week"],
   .form .input-group-sm > input.form-control-static:not([type]),
+  .form .input-group-sm > textarea.form-control-static,
   .form .input-group-sm > .form-control-static.select, .app-container .app-search .input-group-sm > .form-control-static.search-field,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
@@ -2871,6 +2887,7 @@ input[type="checkbox"] {
 .form .input-group-sm > input[type="url"],
 .form .input-group-sm > input[type="week"],
 .form .input-group-sm > input:not([type]),
+.form .input-group-sm > textarea,
 .form .input-group-sm > .select, .app-container .app-search .input-group-sm > .search-field,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
@@ -2890,7 +2907,7 @@ select.input-sm, .input-group-sm > select.form-control,
   line-height: 33px; }
 
 textarea.input-sm, .input-group-sm > textarea.form-control,
-.form .input-group-sm > textarea.select, .app-container .app-search .input-group-sm > textarea.search-field,
+.form .input-group-sm > textarea, .app-container .app-search .input-group-sm > textarea.search-field,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 .banner .input-group-sm > .input-group-btn > textarea.cta,
@@ -2932,6 +2949,8 @@ select[multiple].input-sm,
 .form .form-group-sm input[type="week"],
 .form-group-sm .form input:not([type]),
 .form .form-group-sm input:not([type]),
+.form-group-sm .form textarea,
+.form .form-group-sm textarea,
 .form-group-sm .form .select,
 .form .form-group-sm .select, .form-group-sm .app-container .app-search .search-field, .app-container .app-search .form-group-sm .search-field {
   height: 33px;
@@ -2945,8 +2964,8 @@ select[multiple].input-sm,
   height: 33px;
   line-height: 33px; }
 .form-group-sm textarea.form-control,
-.form-group-sm .form textarea.select,
-.form .form-group-sm textarea.select, .form-group-sm .app-container .app-search textarea.search-field, .app-container .app-search .form-group-sm textarea.search-field,
+.form-group-sm .form textarea,
+.form .form-group-sm textarea, .form-group-sm .app-container .app-search textarea.search-field, .app-container .app-search .form-group-sm textarea.search-field,
 .form-group-sm select[multiple].form-control,
 .form-group-sm .form select[multiple].select,
 .form .form-group-sm select[multiple].select,
@@ -2975,6 +2994,7 @@ select[multiple].input-sm,
 .form .input-group-lg > input[type="url"],
 .form .input-group-lg > input[type="week"],
 .form .input-group-lg > input:not([type]),
+.form .input-group-lg > textarea,
 .form .input-group-lg > .select,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
@@ -2994,7 +3014,7 @@ select.input-lg, .input-group-lg > select.form-control,
   line-height: 49px; }
 
 textarea.input-lg, .input-group-lg > textarea.form-control,
-.form .input-group-lg > textarea.select,
+.form .input-group-lg > textarea,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 .banner .input-group-lg > .input-group-btn > textarea.cta, .app-container .app-search textarea.search-field,
@@ -3036,6 +3056,8 @@ select[multiple].input-lg,
 .form .form-group-lg input[type="week"],
 .form-group-lg .form input:not([type]),
 .form .form-group-lg input:not([type]),
+.form-group-lg .form textarea,
+.form .form-group-lg textarea,
 .form-group-lg .form .select,
 .form .form-group-lg .select, .form-group-lg .app-container .app-search .search-field, .app-container .app-search .form-group-lg .search-field {
   height: 49px;
@@ -3049,8 +3071,8 @@ select[multiple].input-lg,
   height: 49px;
   line-height: 49px; }
 .form-group-lg textarea.form-control,
-.form-group-lg .form textarea.select,
-.form .form-group-lg textarea.select, .form-group-lg .app-container .app-search textarea.search-field, .app-container .app-search .form-group-lg textarea.search-field,
+.form-group-lg .form textarea,
+.form .form-group-lg textarea, .form-group-lg .app-container .app-search textarea.search-field, .app-container .app-search .form-group-lg textarea.search-field,
 .form-group-lg select[multiple].form-control,
 .form-group-lg .form select[multiple].select,
 .form .form-group-lg select[multiple].select,
@@ -3095,6 +3117,8 @@ select[multiple].input-lg,
   .form .has-feedback input[type="week"],
   .has-feedback .form input:not([type]),
   .form .has-feedback input:not([type]),
+  .has-feedback .form textarea,
+  .form .has-feedback textarea,
   .has-feedback .form .select,
   .form .has-feedback .select, .has-feedback .app-container .app-search .search-field, .app-container .app-search .has-feedback .search-field {
     padding-right: 45px; }
@@ -3126,6 +3150,7 @@ select[multiple].input-lg,
 .form .input-group-lg > input[type="url"] + .form-control-feedback,
 .form .input-group-lg > input[type="week"] + .form-control-feedback,
 .form .input-group-lg > input:not([type]) + .form-control-feedback,
+.form .input-group-lg > textarea + .form-control-feedback,
 .form .input-group-lg > .select + .form-control-feedback, .app-container .app-search .input-group-lg > .search-field + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
@@ -3162,6 +3187,8 @@ select[multiple].input-lg,
 .form .form-group-lg input[type="week"] + .form-control-feedback,
 .form-group-lg .form input:not([type]) + .form-control-feedback,
 .form .form-group-lg input:not([type]) + .form-control-feedback,
+.form-group-lg .form textarea + .form-control-feedback,
+.form .form-group-lg textarea + .form-control-feedback,
 .form-group-lg .form .select + .form-control-feedback,
 .form .form-group-lg .select + .form-control-feedback,
 .form-group-lg .app-container .app-search .search-field + .form-control-feedback,
@@ -3185,6 +3212,7 @@ select[multiple].input-lg,
 .form .input-group-sm > input[type="url"] + .form-control-feedback,
 .form .input-group-sm > input[type="week"] + .form-control-feedback,
 .form .input-group-sm > input:not([type]) + .form-control-feedback,
+.form .input-group-sm > textarea + .form-control-feedback,
 .form .input-group-sm > .select + .form-control-feedback, .app-container .app-search .input-group-sm > .search-field + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
@@ -3221,6 +3249,8 @@ select[multiple].input-lg,
 .form .form-group-sm input[type="week"] + .form-control-feedback,
 .form-group-sm .form input:not([type]) + .form-control-feedback,
 .form .form-group-sm input:not([type]) + .form-control-feedback,
+.form-group-sm .form textarea + .form-control-feedback,
+.form .form-group-sm textarea + .form-control-feedback,
 .form-group-sm .form .select + .form-control-feedback,
 .form .form-group-sm .select + .form-control-feedback,
 .form-group-sm .app-container .app-search .search-field + .form-control-feedback,
@@ -3265,6 +3295,8 @@ select[multiple].input-lg,
 .form .has-success input[type="week"],
 .has-success .form input:not([type]),
 .form .has-success input:not([type]),
+.has-success .form textarea,
+.form .has-success textarea,
 .has-success .form .select,
 .form .has-success .select, .has-success .app-container .app-search .search-field, .app-container .app-search .has-success .search-field {
   border-color: #3c763d;
@@ -3299,6 +3331,8 @@ select[multiple].input-lg,
   .form .has-success input[type="week"]:focus,
   .has-success .form input:focus:not([type]),
   .form .has-success input:focus:not([type]),
+  .has-success .form textarea:focus,
+  .form .has-success textarea:focus,
   .has-success .form .select:focus,
   .form .has-success .select:focus, .has-success .app-container .app-search .search-field:focus, .app-container .app-search .has-success .search-field:focus {
     border-color: #2b542c;
@@ -3347,6 +3381,8 @@ select[multiple].input-lg,
 .form .has-warning input[type="week"],
 .has-warning .form input:not([type]),
 .form .has-warning input:not([type]),
+.has-warning .form textarea,
+.form .has-warning textarea,
 .has-warning .form .select,
 .form .has-warning .select, .has-warning .app-container .app-search .search-field, .app-container .app-search .has-warning .search-field {
   border-color: #8a6d3b;
@@ -3381,6 +3417,8 @@ select[multiple].input-lg,
   .form .has-warning input[type="week"]:focus,
   .has-warning .form input:focus:not([type]),
   .form .has-warning input:focus:not([type]),
+  .has-warning .form textarea:focus,
+  .form .has-warning textarea:focus,
   .has-warning .form .select:focus,
   .form .has-warning .select:focus, .has-warning .app-container .app-search .search-field:focus, .app-container .app-search .has-warning .search-field:focus {
     border-color: #66512c;
@@ -3429,6 +3467,8 @@ select[multiple].input-lg,
 .form .has-error input[type="week"],
 .has-error .form input:not([type]),
 .form .has-error input:not([type]),
+.has-error .form textarea,
+.form .has-error textarea,
 .has-error .form .select,
 .form .has-error .select, .has-error .app-container .app-search .search-field, .app-container .app-search .has-error .search-field {
   border-color: #a94442;
@@ -3463,6 +3503,8 @@ select[multiple].input-lg,
   .form .has-error input[type="week"]:focus,
   .has-error .form input:focus:not([type]),
   .form .has-error input:focus:not([type]),
+  .has-error .form textarea:focus,
+  .form .has-error textarea:focus,
   .has-error .form .select:focus,
   .form .has-error .select:focus, .has-error .app-container .app-search .search-field:focus, .app-container .app-search .has-error .search-field:focus {
     border-color: #843534;
@@ -3520,6 +3562,8 @@ select[multiple].input-lg,
   .form .form-inline input[type="week"],
   .form-inline .form input:not([type]),
   .form .form-inline input:not([type]),
+  .form-inline .form textarea,
+  .form .form-inline textarea,
   .form-inline .form .select,
   .form .form-inline .select, .form-inline .app-container .app-search .search-field, .app-container .app-search .form-inline .search-field {
     display: inline-block;
@@ -3563,6 +3607,8 @@ select[multiple].input-lg,
     .form .form-inline .input-group input[type="week"],
     .form-inline .input-group .form input:not([type]),
     .form .form-inline .input-group input:not([type]),
+    .form-inline .input-group .form textarea,
+    .form .form-inline .input-group textarea,
     .form-inline .input-group .form .select,
     .form .form-inline .input-group .select,
     .form-inline .input-group .app-container .app-search .search-field,
@@ -3597,6 +3643,8 @@ select[multiple].input-lg,
   .form .form-inline .input-group > input[type="week"],
   .form-inline .form .input-group > input:not([type]),
   .form .form-inline .input-group > input:not([type]),
+  .form-inline .form .input-group > textarea,
+  .form .form-inline .input-group > textarea,
   .form-inline .form .input-group > .select,
   .form .form-inline .input-group > .select, .form-inline .app-container .app-search .input-group > .search-field, .app-container .app-search .form-inline .input-group > .search-field {
     width: 100%; }
@@ -4289,6 +4337,8 @@ tbody.collapse.in {
   .form .input-group input[type="week"],
   .input-group .form input:not([type]),
   .form .input-group input:not([type]),
+  .input-group .form textarea,
+  .form .input-group textarea,
   .input-group .form .select,
   .form .input-group .select, .input-group .app-container .app-search .search-field, .app-container .app-search .input-group .search-field {
     position: relative;
@@ -4325,6 +4375,8 @@ tbody.collapse.in {
     .form .input-group input[type="week"]:focus,
     .input-group .form input:focus:not([type]),
     .form .input-group input:focus:not([type]),
+    .input-group .form textarea:focus,
+    .form .input-group textarea:focus,
     .input-group .form .select:focus,
     .form .input-group .select:focus, .input-group .app-container .app-search .search-field:focus, .app-container .app-search .input-group .search-field:focus {
       z-index: 3; }
@@ -4362,6 +4414,8 @@ tbody.collapse.in {
 .form .input-group input[type="week"],
 .input-group .form input:not([type]),
 .form .input-group input:not([type]),
+.input-group .form textarea,
+.form .input-group textarea,
 .input-group .form .select,
 .form .input-group .select,
 .input-group .app-container .app-search .search-field,
@@ -4400,6 +4454,8 @@ tbody.collapse.in {
   .form .input-group input[type="week"]:not(:first-child):not(:last-child),
   .input-group .form input:not(:first-child):not(:last-child):not([type]),
   .form .input-group input:not(:first-child):not(:last-child):not([type]),
+  .input-group .form textarea:not(:first-child):not(:last-child),
+  .form .input-group textarea:not(:first-child):not(:last-child),
   .input-group .form .select:not(:first-child):not(:last-child),
   .form .input-group .select:not(:first-child):not(:last-child),
   .input-group .app-container .app-search .search-field:not(:first-child):not(:last-child),
@@ -4437,6 +4493,7 @@ tbody.collapse.in {
   .form .input-group-sm > input.input-group-addon[type="url"],
   .form .input-group-sm > input.input-group-addon[type="week"],
   .form .input-group-sm > input.input-group-addon:not([type]),
+  .form .input-group-sm > textarea.input-group-addon,
   .form .input-group-sm > .input-group-addon.select, .app-container .app-search .input-group-sm > .input-group-addon.search-field,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
@@ -4459,6 +4516,7 @@ tbody.collapse.in {
   .form .input-group-lg > input.input-group-addon[type="url"],
   .form .input-group-lg > input.input-group-addon[type="week"],
   .form .input-group-lg > input.input-group-addon:not([type]),
+  .form .input-group-lg > textarea.input-group-addon,
   .form .input-group-lg > .input-group-addon.select,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
@@ -4499,6 +4557,8 @@ tbody.collapse.in {
 .form .input-group input[type="week"]:first-child,
 .input-group .form input:first-child:not([type]),
 .form .input-group input:first-child:not([type]),
+.input-group .form textarea:first-child,
+.form .input-group textarea:first-child,
 .input-group .form .select:first-child,
 .form .input-group .select:first-child, .input-group .app-container .app-search .search-field:first-child, .app-container .app-search .input-group .search-field:first-child,
 .input-group-addon:first-child,
@@ -4546,6 +4606,8 @@ tbody.collapse.in {
 .form .input-group input[type="week"]:last-child,
 .input-group .form input:last-child:not([type]),
 .form .input-group input:last-child:not([type]),
+.input-group .form textarea:last-child,
+.form .input-group textarea:last-child,
 .input-group .form .select:last-child,
 .form .input-group .select:last-child, .input-group .app-container .app-search .search-field:last-child, .app-container .app-search .input-group .search-field:last-child,
 .input-group-addon:last-child,
@@ -4919,6 +4981,8 @@ tbody.collapse.in {
     .form .navbar-form input[type="week"],
     .navbar-form .form input:not([type]),
     .form .navbar-form input:not([type]),
+    .navbar-form .form textarea,
+    .form .navbar-form textarea,
     .navbar-form .form .select,
     .form .navbar-form .select, .navbar-form .app-container .app-search .search-field, .app-container .app-search .navbar-form .search-field {
       display: inline-block;
@@ -4962,6 +5026,8 @@ tbody.collapse.in {
       .form .navbar-form .input-group input[type="week"],
       .navbar-form .input-group .form input:not([type]),
       .form .navbar-form .input-group input:not([type]),
+      .navbar-form .input-group .form textarea,
+      .form .navbar-form .input-group textarea,
       .navbar-form .input-group .form .select,
       .form .navbar-form .input-group .select,
       .navbar-form .input-group .app-container .app-search .search-field,
@@ -4996,6 +5062,8 @@ tbody.collapse.in {
     .form .navbar-form .input-group > input[type="week"],
     .navbar-form .form .input-group > input:not([type]),
     .form .navbar-form .input-group > input:not([type]),
+    .navbar-form .form .input-group > textarea,
+    .form .navbar-form .input-group > textarea,
     .navbar-form .form .input-group > .select,
     .form .navbar-form .input-group > .select, .navbar-form .app-container .app-search .input-group > .search-field, .app-container .app-search .navbar-form .input-group > .search-field {
       width: 100%; }
@@ -7005,6 +7073,15 @@ button.close {
     .app-header .secondary-nav {
       top: 19px; } }
 
+i.icon {
+  display: inline-block; }
+  i.icon svg {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+    position: relative;
+    bottom: -0.25em; }
+
 @font-face {
   font-family: 'os-icons';
   src: url("../fonts/os-icons/os-icons.eot?73z96q");
@@ -7373,10 +7450,58 @@ p a {
     margin-top: 0;
     margin-bottom: 0.3em; }
 
+.steps {
+  padding: 0;
+  margin: 0;
+  display: block;
+  padding-left: 32px; }
+  .steps li {
+    display: inline-block;
+    min-width: 40px;
+    position: relative;
+    text-align: left; }
+    .steps li a {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      line-height: 26px;
+      color: #32a6ba;
+      border: solid 2px #32a6ba;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: -32px; }
+    .steps li:before {
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      top: 13px;
+      left: -4px;
+      right: 26px;
+      background-color: #32a6ba; }
+    .steps li:last-child {
+      width: auto; }
+      .steps li:last-child:before {
+        display: none; }
+    .steps li.current:before {
+      background-color: #8a90a0; }
+    .steps li.current a {
+      color: #2a2d34;
+      border-color: #2a2d34; }
+    .steps li.current ~ li:not(.passed):before {
+      background-color: #8a90a0; }
+    .steps li.current ~ li:not(.passed) a {
+      color: #8a90a0;
+      border-color: #8a90a0; }
+
 .banner {
   background-color: #22242a;
   color: #fff;
-  padding: 3em 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 2.25em 1.5em;
   position: relative; }
   .banner h1, .banner h2 {
     color: inherit; }
@@ -7441,6 +7566,16 @@ p a {
       .banner .cta:hover .badge {
         color: #fff;
         background-color: #2a2d34; }
+  .banner .steps li.current:before {
+    background-color: #414550; }
+  .banner .steps li.current a {
+    color: #fff;
+    border-color: #fff; }
+  .banner .steps li.current ~ li:not(.passed):before {
+    background-color: #414550; }
+  .banner .steps li.current ~ li:not(.passed) a {
+    color: #414550;
+    border-color: #414550; }
 
 .breadcrumb {
   text-transform: uppercase;
@@ -7461,9 +7596,9 @@ p a {
 .form input[type="url"],
 .form input[type="week"],
 .form input:not([type]),
+.form textarea,
 .form .select, .app-container .app-search .search-field {
   padding: .65em 1em .45em 1em;
-  height: 2.6em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   .form-control:focus, .form input[type="color"]:focus,
@@ -7481,6 +7616,7 @@ p a {
   .form input[type="url"]:focus,
   .form input[type="week"]:focus,
   .form input:focus:not([type]),
+  .form textarea:focus,
   .form .select:focus, .app-container .app-search .search-field:focus {
     box-shadow: none; }
 
@@ -7508,9 +7644,45 @@ label {
 .form input[type="url"].alert,
 .form input[type="week"].alert,
 .form input:not([type]).alert,
+.form textarea.alert,
 .form .select.alert {
   border-color: #d93d3a;
   box-shadow: 0 0 6px rgba(217, 61, 58, 0.2); }
+.form input[type="color"][required], .form input[type="color"].success,
+.form input[type="date"][required],
+.form input[type="date"].success,
+.form input[type="datetime"][required],
+.form input[type="datetime"].success,
+.form input[type="datetime-local"][required],
+.form input[type="datetime-local"].success,
+.form input[type="email"][required],
+.form input[type="email"].success,
+.form input[type="month"][required],
+.form input[type="month"].success,
+.form input[type="number"][required],
+.form input[type="number"].success,
+.form input[type="password"][required],
+.form input[type="password"].success,
+.form input[type="search"][required],
+.form input[type="search"].success,
+.form input[type="tel"][required],
+.form input[type="tel"].success,
+.form input[type="text"][required],
+.form input[type="text"].success,
+.form input[type="time"][required],
+.form input[type="time"].success,
+.form input[type="url"][required],
+.form input[type="url"].success,
+.form input[type="week"][required],
+.form input[type="week"].success,
+.form input:not([type])[required],
+.form input:not([type]).success,
+.form textarea[required],
+.form textarea.success,
+.form .select[required],
+.form .select.success {
+  background-repeat: no-repeat;
+  background-position: top right; }
 .form input[type="color"][required],
 .form input[type="date"][required],
 .form input[type="datetime"][required],
@@ -7526,8 +7698,9 @@ label {
 .form input[type="url"][required],
 .form input[type="week"][required],
 .form input:not([type])[required],
+.form textarea[required],
 .form .select[required] {
-  background: url("../img/form/icon-required.svg") no-repeat top right; }
+  background-image: url("../img/form/icon-required.svg"); }
 .form input[type="color"].success,
 .form input[type="date"].success,
 .form input[type="datetime"].success,
@@ -7543,8 +7716,9 @@ label {
 .form input[type="url"].success,
 .form input[type="week"].success,
 .form input:not([type]).success,
+.form textarea.success,
 .form .select.success {
-  background: url("../img/form/icon-success.svg") no-repeat top right; }
+  background-image: url("../img/form/icon-success.svg"); }
 .form input[type="color"][disabled],
 .form input[type="date"][disabled],
 .form input[type="datetime"][disabled],
@@ -7560,9 +7734,27 @@ label {
 .form input[type="url"][disabled],
 .form input[type="week"][disabled],
 .form input:not([type])[disabled],
+.form textarea[disabled],
 .form .select[disabled] {
   opacity: 0.8;
   background-color: #fafafa; }
+.form input[type="color"],
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="email"],
+.form input[type="month"],
+.form input[type="number"],
+.form input[type="password"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="text"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type="week"],
+.form input:not([type]),
+.form .select {
+  height: 2.6em; }
 .form .input-group {
   position: relative; }
   .form .input-group .input-group-addon {
@@ -7672,6 +7864,20 @@ label {
     height: 12px;
     background: url("../img/form/icon-select.svg") no-repeat center center;
     pointer-events: none; }
+.form.has-group-actions {
+  padding-right: 42px; }
+  .form.has-group-actions .form-group {
+    position: relative; }
+  .form.has-group-actions .form-group-action {
+    position: absolute;
+    top: 5px;
+    right: -34px;
+    width: 32px;
+    opacity: 0.5; }
+    .form.has-group-actions .form-group-action svg {
+      width: 32px;
+      height: 32px;
+      fill: #2a2d34; }
 
 aside .accordion {
   padding: 1.5em 0;
@@ -7782,20 +7988,22 @@ aside .accordion {
       display: table-cell;
       width: 215px;
       vertical-align: top;
-      padding-bottom: 2em; } }
+      padding-bottom: 2em; }
+      .app-container > aside:before {
+        content: '';
+        display: block;
+        height: 52px;
+        position: absolute;
+        top: -52px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #22242a; } }
   @media (min-width: 992px) {
     .app-container > aside {
       width: 230px; } }
-  .app-container > aside:before {
-    content: '';
-    display: block;
-    height: 52px;
-    position: absolute;
-    top: -52px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #22242a; }
+  .app-container > aside:empty {
+    width: 0; }
   .app-container > aside * {
     max-width: 100%; }
   .app-container > aside > footer {
@@ -7824,11 +8032,848 @@ aside .accordion {
   background-color: #f7f7f7; }
   @media (min-width: 768px) {
     .app-container .content {
-      display: table-cell; } }
+      display: table-cell;
+      max-width: 1vw; } }
   .app-container .content > div {
-    padding: 30px; }
+    padding: 30px 0; }
+    .app-container .content > div > * {
+      margin-left: 30px;
+      margin-right: 30px; }
 .app-container .app-search label {
   font-size: 20px; }
+
+.process {
+  background-color: #f7f7f7;
+  overflow-x: hidden; }
+  .process .banner {
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center; }
+    .process .banner:before, .process .banner:after {
+      content: " ";
+      display: table; }
+    .process .banner:after {
+      clear: both; }
+    .process .banner .process-steps {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .process .banner .process-steps {
+          float: left;
+          width: 50%; } }
+      @media (min-width: 768px) {
+        .process .banner .process-steps {
+          text-align: left; } }
+      @media (min-width: 992px) {
+        .process .banner .process-steps {
+          float: left;
+          width: 33.33333%; } }
+      @media (min-width: 768px) {
+        .process .banner .process-steps .steps li {
+          width: 30%; }
+          .process .banner .process-steps .steps li:last-child {
+            width: auto;
+            min-width: 0; } }
+    .process .banner .step-title {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .process .banner .step-title {
+          position: absolute;
+          left: 0;
+          bottom: 100%;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        .process .banner .step-title {
+          float: left;
+          width: 33.33333%; } }
+    .process .banner .info {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .process .banner .info {
+          float: left;
+          width: 50%; } }
+      @media (min-width: 768px) {
+        .process .banner .info {
+          text-align: right; } }
+      @media (min-width: 992px) {
+        .process .banner .info {
+          float: left;
+          width: 33.33333%; } }
+
+.provide-data-form {
+  padding: 1.5em;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.describe-columns {
+  margin: 10px; }
+  .describe-columns:before, .describe-columns:after {
+    content: " ";
+    display: table; }
+  .describe-columns:after {
+    clear: both; }
+  .describe-columns > div {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px; }
+    @media (min-width: 768px) {
+      .describe-columns > div {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .describe-columns > div {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 1200px) {
+      .describe-columns > div {
+        float: left;
+        width: 25%; } }
+    @media (min-width: 2436px) {
+      .describe-columns > div {
+        width: 400px; } }
+    .describe-columns > div > .inner {
+      height: 320px;
+      overflow: hidden;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 0px 2px rgba(42, 45, 52, 0.1);
+      box-shadow: 0px 0px 0px 2px rgba(42, 45, 52, 0.1); }
+      .describe-columns > div > .inner header {
+        background-color: #2a2d34;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 10px 15px; }
+        .describe-columns > div > .inner header .toggle {
+          float: right;
+          position: relative;
+          width: 36px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          margin-top: 2px;
+          margin-right: -2px; }
+          .describe-columns > div > .inner header .toggle input {
+            display: none; }
+          .describe-columns > div > .inner header .toggle label {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid rgba(230, 230, 230, 0.2);
+            border-radius: 0px;
+            padding: 0;
+            margin: 0; }
+            .describe-columns > div > .inner header .toggle label .inner {
+              display: block;
+              width: 200%;
+              margin-left: -100%;
+              -webkit-transition: margin 0.3s ease-in 0s;
+              -o-transition: margin 0.3s ease-in 0s;
+              transition: margin 0.3s ease-in 0s; }
+              .describe-columns > div > .inner header .toggle label .inner:before, .describe-columns > div > .inner header .toggle label .inner:after {
+                display: block;
+                float: left;
+                width: 50%;
+                height: 14px;
+                padding: 0;
+                box-sizing: border-box;
+                border: 2px solid transparent;
+                background-clip: padding-box; }
+              .describe-columns > div > .inner header .toggle label .inner:before {
+                content: "";
+                padding-left: 10px; }
+              .describe-columns > div > .inner header .toggle label .inner:after {
+                content: "";
+                padding-right: 10px;
+                text-align: right; }
+            .describe-columns > div > .inner header .toggle label .switch {
+              display: block;
+              width: 18px;
+              margin: 0px;
+              background: #585e6c;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 18px;
+              -webkit-transition: all 0.3s ease-in 0s;
+              -o-transition: all 0.3s ease-in 0s;
+              transition: all 0.3s ease-in 0s; }
+          .describe-columns > div > .inner header .toggle input:checked + .label .inner {
+            margin-left: 0; }
+          .describe-columns > div > .inner header .toggle input:checked + .label .switch {
+            right: 0px;
+            background-color: #32a6ba; }
+        .describe-columns > div > .inner header .remove {
+          color: #fff;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          padding: 0;
+          float: right;
+          margin-right: -3px;
+          margin-top: -1px; }
+          .describe-columns > div > .inner header .remove svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor; }
+        .describe-columns > div > .inner header h3 {
+          margin: 0;
+          font-size: 17px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+        .describe-columns > div > .inner header .description {
+          display: block;
+          font-size: 14px;
+          color: inherit;
+          opacity: 0.8; }
+          .describe-columns > div > .inner header .description.add {
+            opacity: 0.5; }
+      .describe-columns > div > .inner .preview {
+        background-color: #22242a;
+        font-size: 14px;
+        padding: 10px 10px 0 10px;
+        opacity: 0.75;
+        -webkit-transition: opacity, 0.5s, ease-out;
+        -o-transition: opacity, 0.5s, ease-out;
+        transition: opacity, 0.5s, ease-out; }
+        .describe-columns > div > .inner .preview:not(.empty):hover {
+          opacity: 1; }
+          .describe-columns > div > .inner .preview:not(.empty):hover + .field-info {
+            bottom: -120px; }
+        .describe-columns > div > .inner .preview ol {
+          display: table;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          counter-reset: section;
+          border: solid 1px #dedede;
+          border-radius: 3px;
+          background-color: rgba(255, 255, 255, 0.9); }
+        .describe-columns > div > .inner .preview li {
+          display: table-row; }
+          .describe-columns > div > .inner .preview li:before {
+            display: table-cell;
+            counter-increment: section;
+            content: counter(section);
+            width: 30px;
+            text-align: center;
+            border-bottom: solid 1px #dedede;
+            border-right: solid 1px #dedede;
+            color: rgba(42, 45, 52, 0.7); }
+          .describe-columns > div > .inner .preview li span {
+            display: table-cell;
+            border-bottom: solid 1px #dedede;
+            padding: 3px 8px 1px 8px;
+            color: rgba(42, 45, 52, 0.7); }
+          .describe-columns > div > .inner .preview li:first-child span {
+            padding-top: 6px; }
+        .describe-columns > div > .inner .preview.empty {
+          width: 100%;
+          text-align: center; }
+          .describe-columns > div > .inner .preview.empty span {
+            color: rgba(255, 255, 255, 0.5);
+            display: block;
+            padding-top: 30px; }
+      .describe-columns > div > .inner .constant textarea {
+        width: 100%;
+        padding: 36px 10px 0 10px;
+        text-align: center;
+        background-color: rgba(34, 36, 42, 0.75);
+        outline: 0;
+        border: none;
+        resize: none;
+        color: #fff;
+        height: 100px;
+        -webkit-transition: background-color, 0.5s, ease-out;
+        -o-transition: background-color, 0.5s, ease-out;
+        transition: background-color, 0.5s, ease-out; }
+        .describe-columns > div > .inner .constant textarea:hover {
+          background-color: rgba(34, 36, 42, 0.8); }
+        .describe-columns > div > .inner .constant textarea:focus {
+          background-color: #22242a; }
+      .describe-columns > div > .inner .field-info {
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        -webkit-transition: bottom, 0.5s, ease-out;
+        -o-transition: bottom, 0.5s, ease-out;
+        transition: bottom, 0.5s, ease-out; }
+        .describe-columns > div > .inner .field-info label {
+          display: block;
+          font-size: 12px;
+          opacity: 0.5;
+          margin-top: 15px;
+          margin-bottom: 0;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .describe-columns > div > .inner .field-info label:first-child {
+            margin-top: 5px; }
+        .describe-columns > div > .inner .field-info input {
+          width: 100%;
+          outline: 0;
+          border-width: 0 0 1px 0;
+          padding: 0 5px;
+          font-size: 15px; }
+          .describe-columns > div > .inner .field-info input:focus {
+            border-color: #32a6ba; }
+        .describe-columns > div > .inner .field-info textarea {
+          width: 100%;
+          outline: 0;
+          border-width: 0 0 1px 0;
+          height: 26px;
+          resize: none;
+          overflow: hidden;
+          border-color: #e6e6e6;
+          -webkit-transition: height, 0.5s, ease-out;
+          -o-transition: height, 0.5s, ease-out;
+          transition: height, 0.5s, ease-out;
+          padding: 0 5px;
+          font-size: 15px; }
+          .describe-columns > div > .inner .field-info textarea:focus {
+            border-color: #32a6ba;
+            height: 120px;
+            overflow: auto;
+            padding: 5px; }
+        .describe-columns > div > .inner .field-info:before {
+          content: '';
+          display: block;
+          height: 15px;
+          background-image: -webkit-linear-gradient(top, transparent 0%, rgba(34, 36, 42, 0.1) 100%);
+          background-image: -o-linear-gradient(top, transparent 0%, rgba(34, 36, 42, 0.1) 100%);
+          background-image: linear-gradient(to bottom, transparent 0%, rgba(34, 36, 42, 0.1) 100%);
+          background-repeat: repeat-x;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1A22242A', GradientType=0);
+          position: absolute;
+          width: 100%;
+          top: -15px;
+          left: 0;
+          pointer-events: none; }
+    .describe-columns > div .data-type-select {
+      visibility: hidden;
+      top: 100%;
+      bottom: auto;
+      left: 20px;
+      right: 20px;
+      margin-top: -21px;
+      z-index: 999;
+      position: absolute !important;
+      background-color: #fff;
+      border: solid 1px #32a6ba;
+      border-top-width: 2px;
+      border-radius: 0 0 3px 3px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+      .describe-columns > div .data-type-select .mm-navbar {
+        border-color: #e6e6e6;
+        font-size: 12px;
+        font-weight: 500; }
+      .describe-columns > div .data-type-select .mm-panel:after {
+        height: 0; }
+      .describe-columns > div .data-type-select .mm-listview {
+        margin-bottom: 0;
+        font-weight: 500; }
+        .describe-columns > div .data-type-select .mm-listview li:after {
+          left: 0; }
+        .describe-columns > div .data-type-select .mm-listview .separator {
+          display: none; }
+        .describe-columns > div .data-type-select .mm-listview small {
+          font-size: 12px;
+          display: block;
+          font-weight: 400; }
+    .describe-columns > div.disabled {
+      opacity: 0.5; }
+      .describe-columns > div.disabled > div {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: #22242a; }
+    .describe-columns > div.add > div {
+      display: table;
+      border: dashed 2px #e6e6e6;
+      text-align: center;
+      width: 100%;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .describe-columns > div.add > div:hover {
+        border-color: #32a6ba; }
+      .describe-columns > div.add > div > a {
+        display: table-cell;
+        vertical-align: middle;
+        color: #cdcdcd;
+        text-decoration: none; }
+        .describe-columns > div.add > div > a svg {
+          width: 100%;
+          height: 30px;
+          fill: currentColor; }
+        .describe-columns > div.add > div > a:hover {
+          color: #32a6ba; }
+    .describe-columns > div.data-type-select-active .data-type-select {
+      visibility: visible; }
+    .describe-columns > div.mm-wrapper {
+      overflow: visible; }
+
+.share.context > span {
+  min-width: 230px; }
+  .share.context > span .share-heading {
+    margin-top: 5px;
+    margin-bottom: 0; }
+  .share.context > span .form {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .share.context > span .form label {
+      font-size: 0.9em;
+      margin-top: 0.1em; }
+    .share.context > span .form input,
+    .share.context > span .form textarea {
+      font-size: 0.8em; }
+
+body.viewer .sidebar {
+  display: none; }
+  @media (min-width: 768px) {
+    body.viewer .sidebar {
+      display: block; } }
+body.viewer .page-tools {
+  float: right;
+  display: block; }
+  body.viewer .page-tools li {
+    display: inline-block;
+    width: 26px;
+    position: relative; }
+    body.viewer .page-tools li a {
+      color: #2a2d34;
+      text-decoration: none;
+      cursor: pointer;
+      display: block;
+      height: 26px;
+      overflow: hidden; }
+      body.viewer .page-tools li a:hover {
+        color: #32a6ba; }
+    body.viewer .page-tools li svg {
+      width: 26px;
+      height: 26px;
+      fill: currentColor; }
+      body.viewer .page-tools li svg + span {
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0; }
+    body.viewer .page-tools li > span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1060;
+      display: none;
+      max-width: 276px;
+      padding: 1px;
+      font-family: "Hind", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-break: auto;
+      line-height: 1.42857;
+      text-align: left;
+      text-align: start;
+      text-decoration: none;
+      text-shadow: none;
+      text-transform: none;
+      white-space: normal;
+      word-break: normal;
+      word-spacing: normal;
+      word-wrap: normal;
+      font-size: 16px;
+      background-color: #2a2d34;
+      background-clip: padding-box;
+      border: 1px solid #ccc;
+      border: 1px solid #22242a;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0;
+      left: auto;
+      right: 100%; }
+      body.viewer .page-tools li > span a {
+        color: inherit; }
+      body.viewer .page-tools li > span:before, body.viewer .page-tools li > span:after {
+        border-width: 8px 0 8px 8px;
+        left: auto; }
+      body.viewer .page-tools li > span:before {
+        border-color: transparent transparent transparent #007bff;
+        right: -8px; }
+      body.viewer .page-tools li > span:after {
+        border-color: transparent transparent transparent #2a2d34;
+        right: -7px; }
+      body.viewer .page-tools li > span.active {
+        display: block; }
+      body.viewer .page-tools li > span > * {
+        padding: 9px 14px; }
+      body.viewer .page-tools li > span:before, body.viewer .page-tools li > span:after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-style: solid;
+        border-width: 8px 8px 8px 0;
+        top: 12px; }
+      body.viewer .page-tools li > span:before {
+        border-color: transparent #22242a transparent transparent;
+        left: -8px; }
+      body.viewer .page-tools li > span:after {
+        border-color: transparent #2a2d34 transparent transparent;
+        left: -7px; }
+      body.viewer .page-tools li > span:before, body.viewer .page-tools li > span:after {
+        border-width: 8px 0 8px 8px;
+        left: auto; }
+      body.viewer .page-tools li > span:before {
+        border-color: transparent transparent transparent #22242a;
+        right: -8px; }
+      body.viewer .page-tools li > span:after {
+        border-color: transparent transparent transparent #2a2d34;
+        right: -7px; }
+      body.viewer .page-tools li > span > header {
+        margin: 0 0 10px 0;
+        padding: 8px 14px;
+        font-size: 16px;
+        background-color: #23262c;
+        border-bottom: 1px solid #18191d;
+        border-radius: 3px 3px 0 0; }
+body.viewer .package-title {
+  border-bottom: solid 1px #e6e6e6;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-bottom: 6px; }
+  body.viewer .package-title svg {
+    fill: currentColor;
+    width: 26px;
+    height: 26px;
+    float: left;
+    position: relative;
+    top: -1px; }
+    body.viewer .package-title svg + span {
+      display: block;
+      margin-left: 32px; }
+body.viewer .description {
+  font-size: 15px;
+  margin-bottom: 30px; }
+  body.viewer .description :last-child {
+    margin-bottom: 0; }
+body.viewer a.add.visualisation {
+  display: none; }
+  @media (min-width: 768px) {
+    body.viewer a.add.visualisation {
+      display: block;
+      border: dashed 2px #e6e6e6;
+      text-align: center;
+      text-decoration: none;
+      color: #b3b3b3;
+      padding: 30px;
+      background-color: #fcfcfc;
+      cursor: pointer;
+      border-radius: 3px;
+      margin-bottom: 30px;
+      font-size: 14px;
+      -webkit-transition: padding, 0.3s;
+      -o-transition: padding, 0.3s;
+      transition: padding, 0.3s; }
+      body.viewer a.add.visualisation svg {
+        width: 30px;
+        height: 30px;
+        fill: currentColor;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+        body.viewer a.add.visualisation svg + span {
+          margin-top: 3px; }
+      body.viewer a.add.visualisation:hover {
+        color: #32a6ba;
+        border-color: #32a6ba; }
+      body.viewer a.add.visualisation span {
+        display: block; }
+      body.viewer a.add.visualisation:hover {
+        padding-top: 45px;
+        padding-bottom: 45px; } }
+body.viewer .chart {
+  margin-bottom: 30px;
+  display: none; }
+  @media (min-width: 768px) {
+    body.viewer .chart {
+      display: block; } }
+  body.viewer .chart > article {
+    background-color: #fff;
+    border: solid 1px #e6e6e6;
+    border-radius: 3px; }
+    body.viewer .chart > article .chart-header {
+      padding: 15px;
+      border-bottom: solid 1px #e6e6e6; }
+      body.viewer .chart > article .chart-header .tools {
+        float: right;
+        position: relative;
+        top: -4px; }
+        body.viewer .chart > article .chart-header .tools li {
+          display: inline-block;
+          position: relative; }
+          body.viewer .chart > article .chart-header .tools li a {
+            color: #e6e6e6;
+            text-decoration: none;
+            cursor: pointer; }
+            body.viewer .chart > article .chart-header .tools li a:hover {
+              color: #32a6ba; }
+          body.viewer .chart > article .chart-header .tools li svg {
+            width: 30px;
+            height: 30px;
+            fill: currentColor; }
+            body.viewer .chart > article .chart-header .tools li svg + span {
+              font: 0/0 a;
+              color: transparent;
+              text-shadow: none;
+              background-color: transparent;
+              border: 0; }
+          body.viewer .chart > article .chart-header .tools li > span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1060;
+            display: none;
+            max-width: 276px;
+            padding: 1px;
+            font-family: "Hind", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-break: auto;
+            line-height: 1.42857;
+            text-align: left;
+            text-align: start;
+            text-decoration: none;
+            text-shadow: none;
+            text-transform: none;
+            white-space: normal;
+            word-break: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            font-size: 16px;
+            background-color: #2a2d34;
+            background-clip: padding-box;
+            border: 1px solid #ccc;
+            border: 1px solid #22242a;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            left: auto;
+            right: 100%;
+            width: 230px;
+            padding: 10px; }
+            body.viewer .chart > article .chart-header .tools li > span a {
+              color: inherit; }
+            body.viewer .chart > article .chart-header .tools li > span:before, body.viewer .chart > article .chart-header .tools li > span:after {
+              border-width: 8px 0 8px 8px;
+              left: auto; }
+            body.viewer .chart > article .chart-header .tools li > span:before {
+              border-color: transparent transparent transparent #007bff;
+              right: -8px; }
+            body.viewer .chart > article .chart-header .tools li > span:after {
+              border-color: transparent transparent transparent #2a2d34;
+              right: -7px; }
+            body.viewer .chart > article .chart-header .tools li > span.active {
+              display: block; }
+            body.viewer .chart > article .chart-header .tools li > span > * {
+              padding: 9px 14px; }
+            body.viewer .chart > article .chart-header .tools li > span:before, body.viewer .chart > article .chart-header .tools li > span:after {
+              content: '';
+              width: 0;
+              height: 0;
+              position: absolute;
+              border-style: solid;
+              border-width: 8px 8px 8px 0;
+              top: 12px; }
+            body.viewer .chart > article .chart-header .tools li > span:before {
+              border-color: transparent #22242a transparent transparent;
+              left: -8px; }
+            body.viewer .chart > article .chart-header .tools li > span:after {
+              border-color: transparent #2a2d34 transparent transparent;
+              left: -7px; }
+            body.viewer .chart > article .chart-header .tools li > span:before, body.viewer .chart > article .chart-header .tools li > span:after {
+              border-width: 8px 0 8px 8px;
+              left: auto; }
+            body.viewer .chart > article .chart-header .tools li > span:before {
+              border-color: transparent transparent transparent #22242a;
+              right: -8px; }
+            body.viewer .chart > article .chart-header .tools li > span:after {
+              border-color: transparent transparent transparent #2a2d34;
+              right: -7px; }
+            body.viewer .chart > article .chart-header .tools li > span > header {
+              margin: 0 0 10px 0;
+              padding: 8px 14px;
+              font-size: 16px;
+              background-color: #23262c;
+              border-bottom: 1px solid #18191d;
+              border-radius: 3px 3px 0 0; }
+            body.viewer .chart > article .chart-header .tools li > span.active ~ a {
+              color: #2a2d34; }
+          body.viewer .chart > article .chart-header .tools li.remove > span button {
+            display: block;
+            width: 100%; }
+            body.viewer .chart > article .chart-header .tools li.remove > span button + button {
+              margin-top: 10px; }
+          body.viewer .chart > article .chart-header .tools li.share > span {
+            padding: 0; }
+            body.viewer .chart > article .chart-header .tools li.share > span .form {
+              padding-top: 0;
+              padding-bottom: 0; }
+      body.viewer .chart > article .chart-header .breadcrumb {
+        padding: 0;
+        margin: 0; }
+    body.viewer .chart > article .chart-body .chart-main > div,
+    body.viewer .chart > article .chart-body .chart-info > div {
+      padding: 15px; }
+    body.viewer .chart > article .chart-body .chart-main > div {
+      padding-bottom: 7.5px; }
+    body.viewer .chart > article .chart-body .chart-info > div {
+      padding-top: 7.5px; }
+      body.viewer .chart > article .chart-body .chart-info > div .chart-title {
+        font-size: 17px;
+        margin-bottom: 0.1em; }
+      body.viewer .chart > article .chart-body .chart-info > div p {
+        font-size: 13px; }
+      body.viewer .chart > article .chart-body .chart-info > div :last-child {
+        margin-bottom: 0; }
+    @media (min-width: 1200px) {
+      body.viewer .chart > article .chart-body {
+        display: table;
+        width: 100%; }
+        body.viewer .chart > article .chart-body .chart-main,
+        body.viewer .chart > article .chart-body .chart-info {
+          display: table-cell; }
+        body.viewer .chart > article .chart-body .chart-main {
+          width: 70%; }
+          body.viewer .chart > article .chart-body .chart-main > div {
+            padding: 2px 7.5px 15px 15px; }
+        body.viewer .chart > article .chart-body .chart-info {
+          vertical-align: bottom; }
+          body.viewer .chart > article .chart-body .chart-info > div {
+            padding: 15px 15px 15px 7.5px; } }
+  body.viewer .chart + a.add.visualisation,
+  body.viewer .chart a.add.visualisation {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    background-color: transparent;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s; }
+    body.viewer .chart + a.add.visualisation .verbose,
+    body.viewer .chart a.add.visualisation .verbose {
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0; }
+    body.viewer .chart + a.add.visualisation:hover,
+    body.viewer .chart a.add.visualisation:hover {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+body.viewer .table-view {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #fcfcfc;
+  border: solid 1px #e6e6e6;
+  border-radius: 3px; }
+  body.viewer .table-view table {
+    min-width: 100%; }
+    body.viewer .table-view table thead {
+      background-color: #fff; }
+    body.viewer .table-view table th {
+      padding: 15px;
+      font-size: 14px; }
+    body.viewer .table-view table td {
+      padding: 6px 15px;
+      border-top: solid 1px #e6e6e6;
+      font-size: 13px; }
+    body.viewer .table-view table tr:hover td {
+      background-color: rgba(50, 166, 186, 0.1); }
+
+.visualisation-selection {
+  display: block;
+  padding: 0;
+  margin: 0 -10px; }
+  .visualisation-selection:before, .visualisation-selection:after {
+    content: " ";
+    display: table; }
+  .visualisation-selection:after {
+    clear: both; }
+  .visualisation-selection li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    line-height: 1; }
+    @media (min-width: 768px) {
+      .visualisation-selection li {
+        float: left;
+        width: 20%; } }
+    .visualisation-selection li svg {
+      fill: currentColor;
+      width: 100%;
+      height: 64px;
+      display: block;
+      margin-bottom: 4px; }
+    .visualisation-selection li a {
+      display: block;
+      border: solid 1px rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      text-decoration: none;
+      overflow: hidden;
+      font-weight: normal; }
+      @media (min-width: 768px) {
+        .visualisation-selection li a {
+          height: 113px;
+          padding-bottom: 0; } }
+      .visualisation-selection li a.disabled {
+        color: rgba(255, 255, 255, 0.3); }
+        .visualisation-selection li a.disabled svg {
+          fill: rgba(255, 255, 255, 0.1); }
+      .visualisation-selection li a:not(.disabled):hover {
+        color: #32a6ba;
+        border-color: #32a6ba; }
 
 .admin .app-container > aside .user {
   padding: 30px 20px;
@@ -7859,7 +8904,7 @@ aside .accordion {
   .admin .app-container > aside .user .name {
     margin-bottom: 0; }
 .admin .app-container .dataset-list {
-  margin: 6px -30px 0; }
+  margin: 6px 0 0 0; }
   .admin .app-container .dataset-list > table {
     display: block; }
     .admin .app-container .dataset-list > table th span {
@@ -8218,6 +9263,13 @@ aside .accordion {
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul:after {
                         border-color: transparent transparent transparent #2a2d34;
                         right: -7px; }
+                      .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul > header {
+                        margin: 0 0 10px 0;
+                        padding: 8px 14px;
+                        font-size: 16px;
+                        background-color: #23262c;
+                        border-bottom: 1px solid #18191d;
+                        border-radius: 3px 3px 0 0; }
                       .admin .app-container .dataset-list > table tbody tr td.actions > ul > li ul li {
                         display: block;
                         white-space: nowrap; } }
@@ -8293,6 +9345,13 @@ aside .accordion {
     font-size: 0.9em;
     color: rgba(255, 255, 255, 0.6);
     padding: 15px 30px 0 30px; }
+    .modal-content .modal-footer svg {
+      fill: currentColor;
+      width: 22px;
+      height: 22px;
+      position: relative;
+      display: inline-block;
+      top: 5px; }
   .modal-content .help-block {
     color: rgba(255, 255, 255, 0.6); }
   .modal-content .close {
@@ -8315,12 +9374,134 @@ aside .accordion {
   -moz-osx-font-smoothing: grayscale; }
   .popover a {
     color: inherit; }
+  .popover[class*=tour-] .btn, .popover[class*=tour-] .banner .cta, .banner .popover[class*=tour-] .cta {
+    outline: none; }
+  .popover[class*=tour-] .popover-navigation .btn-group {
+    margin-bottom: 5px;
+    display: block; }
+    .popover[class*=tour-] .popover-navigation .btn-group:before, .popover[class*=tour-] .popover-navigation .btn-group:after {
+      content: " ";
+      display: table; }
+    .popover[class*=tour-] .popover-navigation .btn-group:after {
+      clear: both; }
+    .popover[class*=tour-] .popover-navigation .btn-group .btn, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta {
+      width: 100%;
+      color: #fff;
+      background-color: #32a6ba;
+      border-color: #2a2d34; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .focus.cta {
+        color: #fff;
+        background-color: #278292;
+        border-color: black; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:hover {
+        color: #fff;
+        background-color: #278292;
+        border-color: #0f1012; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:active, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active, .popover[class*=tour-] .popover-navigation .btn-group .btn.active, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta {
+        color: #fff;
+        background-color: #278292;
+        border-color: #0f1012; }
+        .popover[class*=tour-] .popover-navigation .btn-group .btn:active:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn:active:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn:active.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active.focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active.focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.active:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn.active:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.active.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.focus.cta, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle:hover, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta:hover, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta:hover, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle:focus, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta:focus, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta:focus, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle.focus, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.focus.cta, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.focus.cta {
+          color: #fff;
+          background-color: #206976;
+          border-color: black; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn:active, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:active, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta:active, .popover[class*=tour-] .popover-navigation .btn-group .btn.active, .popover[class*=tour-] .popover-navigation .btn-group .banner .active.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .active.cta, .open > .popover[class*=tour-] .popover-navigation .btn-group .btn.dropdown-toggle, .open > .popover[class*=tour-] .popover-navigation .btn-group .banner .dropdown-toggle.cta, .banner .open > .popover[class*=tour-] .popover-navigation .btn-group .dropdown-toggle.cta {
+        background-image: none; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn.disabled:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner .disabled.cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group .disabled.cta:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn.disabled:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .disabled.cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group .disabled.cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn.disabled.focus, .popover[class*=tour-] .popover-navigation .btn-group .banner .disabled.focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .disabled.focus.cta, .popover[class*=tour-] .popover-navigation .btn-group .btn[disabled]:hover, .popover[class*=tour-] .popover-navigation .btn-group .banner [disabled].cta:hover, .banner .popover[class*=tour-] .popover-navigation .btn-group [disabled].cta:hover, .popover[class*=tour-] .popover-navigation .btn-group .btn[disabled]:focus, .popover[class*=tour-] .popover-navigation .btn-group .banner [disabled].cta:focus, .banner .popover[class*=tour-] .popover-navigation .btn-group [disabled].cta:focus, .popover[class*=tour-] .popover-navigation .btn-group .btn[disabled].focus, .popover[class*=tour-] .popover-navigation .btn-group .banner [disabled].focus.cta, .banner .popover[class*=tour-] .popover-navigation .btn-group [disabled].focus.cta, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .btn:hover, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:hover, .banner fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .cta:hover, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .btn:focus, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .banner .cta:focus, .banner fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .cta:focus, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .btn.focus, fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .banner .focus.cta, .banner fieldset[disabled] .popover[class*=tour-] .popover-navigation .btn-group .focus.cta {
+        background-color: #32a6ba;
+        border-color: #2a2d34; }
+      .popover[class*=tour-] .popover-navigation .btn-group .btn .badge, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta .badge, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta .badge {
+        color: #32a6ba;
+        background-color: #fff; }
+      @media (min-width: 768px) {
+        .popover[class*=tour-] .popover-navigation .btn-group .btn, .popover[class*=tour-] .popover-navigation .btn-group .banner .cta, .banner .popover[class*=tour-] .popover-navigation .btn-group .cta {
+          width: 50%; } }
+  .popover[class*=tour-] .popover-navigation > .btn, .popover[class*=tour-] .banner .popover-navigation > .cta, .banner .popover[class*=tour-] .popover-navigation > .cta {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #22242a;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    padding: 6px;
+    line-height: 20px;
+    border: none; }
+    .popover[class*=tour-] .popover-navigation > .btn:before, .popover[class*=tour-] .banner .popover-navigation > .cta:before, .banner .popover[class*=tour-] .popover-navigation > .cta:before {
+      content: '×';
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      font-size: 30px; }
 
 .pagination > li > a {
   margin-left: 6px;
   margin-right: 6px;
   border-radius: 2px;
   padding-bottom: 5px; }
+
+.aside-panel {
+  margin-bottom: 0;
+  display: table;
+  width: 100%;
+  font-size: 0.9em; }
+  .aside-panel > div {
+    padding: 0.375em 0.75em; }
+    .aside-panel > div:first-child {
+      padding-top: 0.75em; }
+    .aside-panel > div:last-child {
+      padding-bottom: 0.75em; }
+  .aside-panel .icon {
+    width: 36px; }
+    .aside-panel .icon svg {
+      fill: currentColor;
+      width: 36px;
+      height: 36px; }
+  .aside-panel .heading {
+    display: inline;
+    font-size: inherit;
+    font-weight: 600; }
+  .aside-panel .action a {
+    color: #2a2d34;
+    background-color: #fff;
+    border-color: #2a2d34;
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em; }
+    .aside-panel .action a:focus, .aside-panel .action a.focus {
+      color: #2a2d34;
+      background-color: #e6e6e6;
+      border-color: black; }
+    .aside-panel .action a:hover {
+      color: #2a2d34;
+      background-color: #e6e6e6;
+      border-color: #0f1012; }
+    .aside-panel .action a:active, .aside-panel .action a.active, .open > .aside-panel .action a.dropdown-toggle {
+      color: #2a2d34;
+      background-color: #e6e6e6;
+      border-color: #0f1012; }
+      .aside-panel .action a:active:hover, .aside-panel .action a:active:focus, .aside-panel .action a:active.focus, .aside-panel .action a.active:hover, .aside-panel .action a.active:focus, .aside-panel .action a.active.focus, .open > .aside-panel .action a.dropdown-toggle:hover, .open > .aside-panel .action a.dropdown-toggle:focus, .open > .aside-panel .action a.dropdown-toggle.focus {
+        color: #2a2d34;
+        background-color: #d4d4d4;
+        border-color: black; }
+    .aside-panel .action a:active, .aside-panel .action a.active, .open > .aside-panel .action a.dropdown-toggle {
+      background-image: none; }
+    .aside-panel .action a.disabled:hover, .aside-panel .action a.disabled:focus, .aside-panel .action a.disabled.focus, .aside-panel .action a[disabled]:hover, .aside-panel .action a[disabled]:focus, .aside-panel .action a[disabled].focus, fieldset[disabled] .aside-panel .action a:hover, fieldset[disabled] .aside-panel .action a:focus, fieldset[disabled] .aside-panel .action a.focus {
+      background-color: #fff;
+      border-color: #2a2d34; }
+    .aside-panel .action a .badge {
+      color: #fff;
+      background-color: #2a2d34; }
+  @media (min-width: 768px) {
+    .aside-panel > div {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 1.5em 0.75em; }
+      .aside-panel > div:first-child {
+        padding: 1.5em 0.75em 1.5em 1.5em; }
+      .aside-panel > div:last-child {
+        text-align: right;
+        padding: 1.5em 1.5em 1.5em 0.75em; } }
 
 .subscribe-footer {
   background-color: #2a2d34;
@@ -8506,7 +9687,9 @@ html,
   background-image: url("../img/next/banner.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-color: #232429; }
+  background-color: #232429;
+  padding-top: 3em;
+  padding-bottom: 3em; }
   .next .banner .next-logo {
     width: 108px;
     display: inline-block;
@@ -8599,15 +9782,13 @@ html,
     color: #d1d1d1; }
   .style-guide p {
     font-size: 1.4rem;
-    line-height: 1.32857;
-    color: #2a2d34; }
+    line-height: 1.42857; }
     .style-guide p a {
       color: #32a6ba;
       text-decoration: underline; }
     @media (min-width: 768px) {
       .style-guide p {
-        font-size: 1.6rem;
-        line-height: 1.52857; } }
+        font-size: 1.6rem; } }
   .style-guide .icons ul li {
     width: 32px;
     height: 32px;
@@ -8830,7 +10011,7 @@ html,
     .style-guide .buttons button {
       margin: 1em; } }
   .style-guide .form fieldset > *,
-  .style-guide .form .progress {
+  .style-guide .form .box > div {
     margin: 1em; }
   .style-guide .form fieldset > input[type=text],
   .style-guide .form .input-group,
@@ -8850,5 +10031,10 @@ html,
     margin: 1em; }
   .style-guide .side .sidebar {
     max-width: 210px; }
+  .style-guide .rev {
+    background-color: #2a2d34;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
 
 /*# sourceMappingURL=openspending.css.map */

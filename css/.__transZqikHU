@@ -5454,7 +5454,7 @@ a.label:hover, a.label:focus {
   vertical-align: middle;
   white-space: nowrap;
   text-align: center;
-  background-color: #e6e6e6;
+  background-color: rgba(42, 45, 52, 0.5);
   border-radius: 10px; }
   .badge:empty {
     display: none; }
@@ -7002,6 +7002,10 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
+  .site-header .badge,
+  .app-header .badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #2a2d34; }
   .site-header a,
   .app-header a {
     color: inherit; }
@@ -7076,15 +7080,6 @@ button.close {
     .app-header .secondary-nav {
       top: 19px; } }
 
-i.icon {
-  display: inline-block; }
-  i.icon svg {
-    width: 1.2em;
-    height: 1.2em;
-    fill: currentColor;
-    position: relative;
-    bottom: -0.25em; }
-
 @font-face {
   font-family: 'os-icons';
   src: url("../fonts/os-icons/os-icons.eot?73z96q");
@@ -7127,6 +7122,12 @@ i.icon {
 
 .icon-checkmark:before {
   content: "\e906"; }
+
+i.icon {
+  display: inline-block; }
+  i.icon svg {
+    width: 1.6em;
+    height: 1.6em; }
 
 .dropdown {
   position: relative; }
@@ -7506,6 +7507,9 @@ p a {
   -moz-osx-font-smoothing: grayscale;
   padding: 2.25em 1.5em;
   position: relative; }
+  .banner .badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #22242a; }
   .banner h1, .banner h2 {
     color: inherit; }
   .banner p {
@@ -7986,6 +7990,9 @@ aside .accordion {
   position: relative;
   font-size: 0.9em;
   z-index: 1; }
+  .app-container > aside .badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #2a2d34; }
   @media (min-width: 768px) {
     .app-container > aside {
       display: table-cell;
@@ -8176,6 +8183,9 @@ aside .accordion {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         padding: 10px 15px; }
+        .describe-columns > div > .inner header .badge {
+          background-color: rgba(255, 255, 255, 0.7);
+          color: #2a2d34; }
         .describe-columns > div > .inner header .toggle {
           float: right;
           position: relative;
@@ -9332,6 +9342,9 @@ body.viewer .table-view {
   -moz-osx-font-smoothing: grayscale;
   padding-top: 30px;
   padding-bottom: 30px; }
+  .modal-content .badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #2a2d34; }
   .modal-content a {
     color: inherit;
     font-weight: 600; }
@@ -9505,6 +9518,11 @@ body.viewer .table-view {
       .aside-panel > div:last-child {
         text-align: right;
         padding: 1.5em 1.5em 1.5em 0.75em; } }
+
+.badge {
+  padding: 3px 6px 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .subscribe-footer {
   background-color: #2a2d34;
@@ -9785,13 +9803,14 @@ html,
     color: #d1d1d1; }
   .style-guide p {
     font-size: 1.4rem;
-    line-height: 1.42857; }
+    line-height: 1.32857; }
     .style-guide p a {
       color: #7d4e92;
       text-decoration: underline; }
     @media (min-width: 768px) {
       .style-guide p {
-        font-size: 1.6rem; } }
+        font-size: 1.6rem;
+        line-height: 1.52857; } }
   .style-guide .icons ul li {
     width: 32px;
     height: 32px;
@@ -9998,6 +10017,9 @@ html,
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     font-size: 0.9em; }
+    .style-guide .accordion .badge {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #2a2d34; }
   .style-guide .typography h1::before {
     content: 'Aa - ';
     color: #7d4e92; }
@@ -10039,5 +10061,8 @@ html,
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+    .style-guide .rev .badge {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #2a2d34; }
 
 /*# sourceMappingURL=explorer.css.map */
