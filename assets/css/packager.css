@@ -1301,11 +1301,11 @@ a.text-warning:focus {
   color: #66512c; }
 
 .text-danger {
-  color: #a94442; }
+  color: #fff; }
 
 a.text-danger:hover,
 a.text-danger:focus {
-  color: #843534; }
+  color: #e6e6e6; }
 
 .bg-primary {
   color: #fff; }
@@ -1339,11 +1339,11 @@ a.bg-warning:focus {
   background-color: #f7ecb5; }
 
 .bg-danger {
-  background-color: #f2dede; }
+  background-color: #d93d3a; }
 
 a.bg-danger:hover,
 a.bg-danger:focus {
-  background-color: #e4b9b9; }
+  background-color: #bc2724; }
 
 .page-header {
   padding-bottom: 10px;
@@ -2333,11 +2333,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.danger,
 .table > tfoot > tr.danger > td,
 .table > tfoot > tr.danger > th {
-  background-color: #f2dede; }
+  background-color: #d93d3a; }
 
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th {
-  background-color: #ebcccc; }
+  background-color: #d12c28; }
 
 .table-responsive {
   overflow-x: auto;
@@ -2454,7 +2454,8 @@ output {
 .form input[type="week"],
 .form input:not([type]),
 .form textarea,
-.form .select, .app-container .app-search .search-field {
+.form .select,
+.form .upload-input, .app-container .app-search .search-field {
   display: block;
   width: 100%;
   height: 36px;
@@ -2487,7 +2488,8 @@ output {
   .form input[type="week"]:focus,
   .form input:focus:not([type]),
   .form textarea:focus,
-  .form .select:focus, .app-container .app-search .search-field:focus {
+  .form .select:focus,
+  .form .upload-input:focus, .app-container .app-search .search-field:focus {
     border-color: #2abb9c;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(42, 187, 156, 0.6);
@@ -2508,7 +2510,8 @@ output {
   .form input[type="week"]::-moz-placeholder,
   .form input:not([type])::-moz-placeholder,
   .form textarea::-moz-placeholder,
-  .form .select::-moz-placeholder, .app-container .app-search .search-field::-moz-placeholder {
+  .form .select::-moz-placeholder,
+  .form .upload-input::-moz-placeholder, .app-container .app-search .search-field::-moz-placeholder {
     color: #b3b3b3;
     opacity: 1; }
   .form-control:-ms-input-placeholder, .form input[type="color"]:-ms-input-placeholder,
@@ -2527,7 +2530,8 @@ output {
   .form input[type="week"]:-ms-input-placeholder,
   .form input:-ms-input-placeholder:not([type]),
   .form textarea:-ms-input-placeholder,
-  .form .select:-ms-input-placeholder, .app-container .app-search .search-field:-ms-input-placeholder {
+  .form .select:-ms-input-placeholder,
+  .form .upload-input:-ms-input-placeholder, .app-container .app-search .search-field:-ms-input-placeholder {
     color: #b3b3b3; }
   .form-control::-webkit-input-placeholder, .form input[type="color"]::-webkit-input-placeholder,
   .form input[type="date"]::-webkit-input-placeholder,
@@ -2545,7 +2549,8 @@ output {
   .form input[type="week"]::-webkit-input-placeholder,
   .form input:not([type])::-webkit-input-placeholder,
   .form textarea::-webkit-input-placeholder,
-  .form .select::-webkit-input-placeholder, .app-container .app-search .search-field::-webkit-input-placeholder {
+  .form .select::-webkit-input-placeholder,
+  .form .upload-input::-webkit-input-placeholder, .app-container .app-search .search-field::-webkit-input-placeholder {
     color: #b3b3b3; }
   .form-control::-ms-expand, .form input[type="color"]::-ms-expand,
   .form input[type="date"]::-ms-expand,
@@ -2563,7 +2568,8 @@ output {
   .form input[type="week"]::-ms-expand,
   .form input:not([type])::-ms-expand,
   .form textarea::-ms-expand,
-  .form .select::-ms-expand, .app-container .app-search .search-field::-ms-expand {
+  .form .select::-ms-expand,
+  .form .upload-input::-ms-expand, .app-container .app-search .search-field::-ms-expand {
     border: 0;
     background-color: transparent; }
   .form-control[disabled], .form input[disabled][type="color"],
@@ -2582,7 +2588,8 @@ output {
   .form input[disabled][type="week"],
   .form input[disabled]:not([type]),
   .form textarea[disabled],
-  .form [disabled].select, .app-container .app-search [disabled].search-field, .form-control[readonly], .form input[readonly][type="color"],
+  .form [disabled].select,
+  .form [disabled].upload-input, .app-container .app-search [disabled].search-field, .form-control[readonly], .form input[readonly][type="color"],
   .form input[readonly][type="date"],
   .form input[readonly][type="datetime"],
   .form input[readonly][type="datetime-local"],
@@ -2598,7 +2605,8 @@ output {
   .form input[readonly][type="week"],
   .form input[readonly]:not([type]),
   .form textarea[readonly],
-  .form [readonly].select, .app-container .app-search [readonly].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
+  .form [readonly].select,
+  .form [readonly].upload-input, .app-container .app-search [readonly].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
   fieldset[disabled] .form input[type="date"],
   .form fieldset[disabled] input[type="date"],
   fieldset[disabled] .form input[type="datetime"],
@@ -2630,7 +2638,9 @@ output {
   fieldset[disabled] .form textarea,
   .form fieldset[disabled] textarea,
   fieldset[disabled] .form .select,
-  .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
+  .form fieldset[disabled] .select,
+  fieldset[disabled] .form .upload-input,
+  .form fieldset[disabled] .upload-input, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     background-color: #f7f7f7;
     opacity: 1; }
   .form-control[disabled], .form input[disabled][type="color"],
@@ -2649,7 +2659,8 @@ output {
   .form input[disabled][type="week"],
   .form input[disabled]:not([type]),
   .form textarea[disabled],
-  .form [disabled].select, .app-container .app-search [disabled].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
+  .form [disabled].select,
+  .form [disabled].upload-input, .app-container .app-search [disabled].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
   fieldset[disabled] .form input[type="date"],
   .form fieldset[disabled] input[type="date"],
   fieldset[disabled] .form input[type="datetime"],
@@ -2681,12 +2692,15 @@ output {
   fieldset[disabled] .form textarea,
   .form fieldset[disabled] textarea,
   fieldset[disabled] .form .select,
-  .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
+  .form fieldset[disabled] .select,
+  fieldset[disabled] .form .upload-input,
+  .form fieldset[disabled] .upload-input, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     cursor: not-allowed; }
 
 textarea.form-control,
 .form textarea,
-.form textarea.select, .app-container .app-search textarea.search-field {
+.form textarea.select,
+.form textarea.upload-input, .app-container .app-search textarea.search-field {
   height: auto; }
 
 input[type="search"] {
@@ -2847,6 +2861,7 @@ input[type="checkbox"] {
   .form .input-group-lg > input.form-control-static:not([type]),
   .form .input-group-lg > textarea.form-control-static,
   .form .input-group-lg > .form-control-static.select,
+  .form .input-group-lg > .form-control-static.upload-input,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
   .banner .input-group-lg > .input-group-btn > .form-control-static.cta, .app-container .app-search .form-control-static.search-field, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .form .input-group-sm > input.form-control-static[type="color"],
@@ -2865,7 +2880,8 @@ input[type="checkbox"] {
   .form .input-group-sm > input.form-control-static[type="week"],
   .form .input-group-sm > input.form-control-static:not([type]),
   .form .input-group-sm > textarea.form-control-static,
-  .form .input-group-sm > .form-control-static.select, .app-container .app-search .input-group-sm > .form-control-static.search-field,
+  .form .input-group-sm > .form-control-static.select,
+  .form .input-group-sm > .form-control-static.upload-input, .app-container .app-search .input-group-sm > .form-control-static.search-field,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
   .banner .input-group-sm > .input-group-btn > .form-control-static.cta {
@@ -2888,7 +2904,8 @@ input[type="checkbox"] {
 .form .input-group-sm > input[type="week"],
 .form .input-group-sm > input:not([type]),
 .form .input-group-sm > textarea,
-.form .input-group-sm > .select, .app-container .app-search .input-group-sm > .search-field,
+.form .input-group-sm > .select,
+.form .input-group-sm > .upload-input, .app-container .app-search .input-group-sm > .search-field,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .banner .input-group-sm > .input-group-btn > .cta {
@@ -2899,7 +2916,8 @@ input[type="checkbox"] {
   border-radius: 2px; }
 
 select.input-sm, .input-group-sm > select.form-control,
-.form .input-group-sm > select.select, .app-container .app-search .input-group-sm > select.search-field,
+.form .input-group-sm > select.select,
+.form .input-group-sm > select.upload-input, .app-container .app-search .input-group-sm > select.search-field,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
 .banner .input-group-sm > .input-group-btn > select.cta {
@@ -2914,6 +2932,7 @@ textarea.input-sm, .input-group-sm > textarea.form-control,
 select[multiple].input-sm,
 .input-group-sm > select[multiple].form-control,
 .form .input-group-sm > select[multiple].select,
+.form .input-group-sm > select[multiple].upload-input,
 .app-container .app-search .input-group-sm > select[multiple].search-field,
 .input-group-sm > select[multiple].input-group-addon,
 .input-group-sm > .input-group-btn > select[multiple].btn,
@@ -2952,7 +2971,9 @@ select[multiple].input-sm,
 .form-group-sm .form textarea,
 .form .form-group-sm textarea,
 .form-group-sm .form .select,
-.form .form-group-sm .select, .form-group-sm .app-container .app-search .search-field, .app-container .app-search .form-group-sm .search-field {
+.form .form-group-sm .select,
+.form-group-sm .form .upload-input,
+.form .form-group-sm .upload-input, .form-group-sm .app-container .app-search .search-field, .app-container .app-search .form-group-sm .search-field {
   height: 33px;
   padding: 5px 10px;
   font-size: 14px;
@@ -2960,7 +2981,9 @@ select[multiple].input-sm,
   border-radius: 2px; }
 .form-group-sm select.form-control,
 .form-group-sm .form select.select,
-.form .form-group-sm select.select, .form-group-sm .app-container .app-search select.search-field, .app-container .app-search .form-group-sm select.search-field {
+.form .form-group-sm select.select,
+.form-group-sm .form select.upload-input,
+.form .form-group-sm select.upload-input, .form-group-sm .app-container .app-search select.search-field, .app-container .app-search .form-group-sm select.search-field {
   height: 33px;
   line-height: 33px; }
 .form-group-sm textarea.form-control,
@@ -2969,6 +2992,8 @@ select[multiple].input-sm,
 .form-group-sm select[multiple].form-control,
 .form-group-sm .form select[multiple].select,
 .form .form-group-sm select[multiple].select,
+.form-group-sm .form select[multiple].upload-input,
+.form .form-group-sm select[multiple].upload-input,
 .form-group-sm .app-container .app-search select[multiple].search-field,
 .app-container .app-search .form-group-sm select[multiple].search-field {
   height: auto; }
@@ -2996,6 +3021,7 @@ select[multiple].input-sm,
 .form .input-group-lg > input:not([type]),
 .form .input-group-lg > textarea,
 .form .input-group-lg > .select,
+.form .input-group-lg > .upload-input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .banner .input-group-lg > .input-group-btn > .cta, .app-container .app-search .search-field {
@@ -3007,6 +3033,7 @@ select[multiple].input-sm,
 
 select.input-lg, .input-group-lg > select.form-control,
 .form .input-group-lg > select.select,
+.form .input-group-lg > select.upload-input,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
 .banner .input-group-lg > .input-group-btn > select.cta, .app-container .app-search select.search-field {
@@ -3021,6 +3048,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 select[multiple].input-lg,
 .input-group-lg > select[multiple].form-control,
 .form .input-group-lg > select[multiple].select,
+.form .input-group-lg > select[multiple].upload-input,
 .input-group-lg > select[multiple].input-group-addon,
 .input-group-lg > .input-group-btn > select[multiple].btn,
 .banner .input-group-lg > .input-group-btn > select[multiple].cta,
@@ -3059,7 +3087,9 @@ select[multiple].input-lg,
 .form-group-lg .form textarea,
 .form .form-group-lg textarea,
 .form-group-lg .form .select,
-.form .form-group-lg .select, .form-group-lg .app-container .app-search .search-field, .app-container .app-search .form-group-lg .search-field {
+.form .form-group-lg .select,
+.form-group-lg .form .upload-input,
+.form .form-group-lg .upload-input, .form-group-lg .app-container .app-search .search-field, .app-container .app-search .form-group-lg .search-field {
   height: 49px;
   padding: 10px 16px;
   font-size: 20px;
@@ -3067,7 +3097,9 @@ select[multiple].input-lg,
   border-radius: 4px; }
 .form-group-lg select.form-control,
 .form-group-lg .form select.select,
-.form .form-group-lg select.select, .form-group-lg .app-container .app-search select.search-field, .app-container .app-search .form-group-lg select.search-field {
+.form .form-group-lg select.select,
+.form-group-lg .form select.upload-input,
+.form .form-group-lg select.upload-input, .form-group-lg .app-container .app-search select.search-field, .app-container .app-search .form-group-lg select.search-field {
   height: 49px;
   line-height: 49px; }
 .form-group-lg textarea.form-control,
@@ -3076,6 +3108,8 @@ select[multiple].input-lg,
 .form-group-lg select[multiple].form-control,
 .form-group-lg .form select[multiple].select,
 .form .form-group-lg select[multiple].select,
+.form-group-lg .form select[multiple].upload-input,
+.form .form-group-lg select[multiple].upload-input,
 .form-group-lg .app-container .app-search select[multiple].search-field,
 .app-container .app-search .form-group-lg select[multiple].search-field {
   height: auto; }
@@ -3120,7 +3154,9 @@ select[multiple].input-lg,
   .has-feedback .form textarea,
   .form .has-feedback textarea,
   .has-feedback .form .select,
-  .form .has-feedback .select, .has-feedback .app-container .app-search .search-field, .app-container .app-search .has-feedback .search-field {
+  .form .has-feedback .select,
+  .has-feedback .form .upload-input,
+  .form .has-feedback .upload-input, .has-feedback .app-container .app-search .search-field, .app-container .app-search .has-feedback .search-field {
     padding-right: 45px; }
 
 .form-control-feedback {
@@ -3151,7 +3187,8 @@ select[multiple].input-lg,
 .form .input-group-lg > input[type="week"] + .form-control-feedback,
 .form .input-group-lg > input:not([type]) + .form-control-feedback,
 .form .input-group-lg > textarea + .form-control-feedback,
-.form .input-group-lg > .select + .form-control-feedback, .app-container .app-search .input-group-lg > .search-field + .form-control-feedback,
+.form .input-group-lg > .select + .form-control-feedback,
+.form .input-group-lg > .upload-input + .form-control-feedback, .app-container .app-search .input-group-lg > .search-field + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .banner .input-group-lg > .input-group-btn > .cta + .form-control-feedback, .app-container .app-search .search-field + .form-control-feedback,
@@ -3191,6 +3228,8 @@ select[multiple].input-lg,
 .form .form-group-lg textarea + .form-control-feedback,
 .form-group-lg .form .select + .form-control-feedback,
 .form .form-group-lg .select + .form-control-feedback,
+.form-group-lg .form .upload-input + .form-control-feedback,
+.form .form-group-lg .upload-input + .form-control-feedback,
 .form-group-lg .app-container .app-search .search-field + .form-control-feedback,
 .app-container .app-search .form-group-lg .search-field + .form-control-feedback {
   width: 49px;
@@ -3213,7 +3252,8 @@ select[multiple].input-lg,
 .form .input-group-sm > input[type="week"] + .form-control-feedback,
 .form .input-group-sm > input:not([type]) + .form-control-feedback,
 .form .input-group-sm > textarea + .form-control-feedback,
-.form .input-group-sm > .select + .form-control-feedback, .app-container .app-search .input-group-sm > .search-field + .form-control-feedback,
+.form .input-group-sm > .select + .form-control-feedback,
+.form .input-group-sm > .upload-input + .form-control-feedback, .app-container .app-search .input-group-sm > .search-field + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .banner .input-group-sm > .input-group-btn > .cta + .form-control-feedback,
@@ -3253,6 +3293,8 @@ select[multiple].input-lg,
 .form .form-group-sm textarea + .form-control-feedback,
 .form-group-sm .form .select + .form-control-feedback,
 .form .form-group-sm .select + .form-control-feedback,
+.form-group-sm .form .upload-input + .form-control-feedback,
+.form .form-group-sm .upload-input + .form-control-feedback,
 .form-group-sm .app-container .app-search .search-field + .form-control-feedback,
 .app-container .app-search .form-group-sm .search-field + .form-control-feedback {
   width: 33px;
@@ -3298,7 +3340,9 @@ select[multiple].input-lg,
 .has-success .form textarea,
 .form .has-success textarea,
 .has-success .form .select,
-.form .has-success .select, .has-success .app-container .app-search .search-field, .app-container .app-search .has-success .search-field {
+.form .has-success .select,
+.has-success .form .upload-input,
+.form .has-success .upload-input, .has-success .app-container .app-search .search-field, .app-container .app-search .has-success .search-field {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
@@ -3334,7 +3378,9 @@ select[multiple].input-lg,
   .has-success .form textarea:focus,
   .form .has-success textarea:focus,
   .has-success .form .select:focus,
-  .form .has-success .select:focus, .has-success .app-container .app-search .search-field:focus, .app-container .app-search .has-success .search-field:focus {
+  .form .has-success .select:focus,
+  .has-success .form .upload-input:focus,
+  .form .has-success .upload-input:focus, .has-success .app-container .app-search .search-field:focus, .app-container .app-search .has-success .search-field:focus {
     border-color: #2b542c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
@@ -3384,7 +3430,9 @@ select[multiple].input-lg,
 .has-warning .form textarea,
 .form .has-warning textarea,
 .has-warning .form .select,
-.form .has-warning .select, .has-warning .app-container .app-search .search-field, .app-container .app-search .has-warning .search-field {
+.form .has-warning .select,
+.has-warning .form .upload-input,
+.form .has-warning .upload-input, .has-warning .app-container .app-search .search-field, .app-container .app-search .has-warning .search-field {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
@@ -3420,7 +3468,9 @@ select[multiple].input-lg,
   .has-warning .form textarea:focus,
   .form .has-warning textarea:focus,
   .has-warning .form .select:focus,
-  .form .has-warning .select:focus, .has-warning .app-container .app-search .search-field:focus, .app-container .app-search .has-warning .search-field:focus {
+  .form .has-warning .select:focus,
+  .has-warning .form .upload-input:focus,
+  .form .has-warning .upload-input:focus, .has-warning .app-container .app-search .search-field:focus, .app-container .app-search .has-warning .search-field:focus {
     border-color: #66512c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
@@ -3437,7 +3487,7 @@ select[multiple].input-lg,
 .has-error .checkbox,
 .has-error .radio-inline,
 .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
-  color: #a94442; }
+  color: #fff; }
 .has-error .form-control, .has-error .form input[type="color"], .form .has-error input[type="color"],
 .has-error .form input[type="date"],
 .form .has-error input[type="date"],
@@ -3470,8 +3520,10 @@ select[multiple].input-lg,
 .has-error .form textarea,
 .form .has-error textarea,
 .has-error .form .select,
-.form .has-error .select, .has-error .app-container .app-search .search-field, .app-container .app-search .has-error .search-field {
-  border-color: #a94442;
+.form .has-error .select,
+.has-error .form .upload-input,
+.form .has-error .upload-input, .has-error .app-container .app-search .search-field, .app-container .app-search .has-error .search-field {
+  border-color: #fff;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .has-error .form-control:focus, .has-error .form input[type="color"]:focus, .form .has-error input[type="color"]:focus,
@@ -3506,16 +3558,18 @@ select[multiple].input-lg,
   .has-error .form textarea:focus,
   .form .has-error textarea:focus,
   .has-error .form .select:focus,
-  .form .has-error .select:focus, .has-error .app-container .app-search .search-field:focus, .app-container .app-search .has-error .search-field:focus {
-    border-color: #843534;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+  .form .has-error .select:focus,
+  .has-error .form .upload-input:focus,
+  .form .has-error .upload-input:focus, .has-error .app-container .app-search .search-field:focus, .app-container .app-search .has-error .search-field:focus {
+    border-color: #e6e6e6;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
 .has-error .input-group-addon {
-  color: #a94442;
-  border-color: #a94442;
-  background-color: #f2dede; }
+  color: #fff;
+  border-color: #fff;
+  background-color: #d93d3a; }
 .has-error .form-control-feedback {
-  color: #a94442; }
+  color: #fff; }
 
 .has-feedback label ~ .form-control-feedback {
   top: 27px; }
@@ -3565,7 +3619,9 @@ select[multiple].input-lg,
   .form-inline .form textarea,
   .form .form-inline textarea,
   .form-inline .form .select,
-  .form .form-inline .select, .form-inline .app-container .app-search .search-field, .app-container .app-search .form-inline .search-field {
+  .form .form-inline .select,
+  .form-inline .form .upload-input,
+  .form .form-inline .upload-input, .form-inline .app-container .app-search .search-field, .app-container .app-search .form-inline .search-field {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -3611,6 +3667,8 @@ select[multiple].input-lg,
     .form .form-inline .input-group textarea,
     .form-inline .input-group .form .select,
     .form .form-inline .input-group .select,
+    .form-inline .input-group .form .upload-input,
+    .form .form-inline .input-group .upload-input,
     .form-inline .input-group .app-container .app-search .search-field,
     .app-container .app-search .form-inline .input-group .search-field {
       width: auto; }
@@ -3646,7 +3704,9 @@ select[multiple].input-lg,
   .form-inline .form .input-group > textarea,
   .form .form-inline .input-group > textarea,
   .form-inline .form .input-group > .select,
-  .form .form-inline .input-group > .select, .form-inline .app-container .app-search .input-group > .search-field, .app-container .app-search .form-inline .input-group > .search-field {
+  .form .form-inline .input-group > .select,
+  .form-inline .form .input-group > .upload-input,
+  .form .form-inline .input-group > .upload-input, .form-inline .app-container .app-search .input-group > .search-field, .app-container .app-search .form-inline .input-group > .search-field {
     width: 100%; }
   .form-inline .control-label {
     margin-bottom: 0;
@@ -4340,7 +4400,9 @@ tbody.collapse.in {
   .input-group .form textarea,
   .form .input-group textarea,
   .input-group .form .select,
-  .form .input-group .select, .input-group .app-container .app-search .search-field, .app-container .app-search .input-group .search-field {
+  .form .input-group .select,
+  .input-group .form .upload-input,
+  .form .input-group .upload-input, .input-group .app-container .app-search .search-field, .app-container .app-search .input-group .search-field {
     position: relative;
     z-index: 2;
     float: left;
@@ -4378,7 +4440,9 @@ tbody.collapse.in {
     .input-group .form textarea:focus,
     .form .input-group textarea:focus,
     .input-group .form .select:focus,
-    .form .input-group .select:focus, .input-group .app-container .app-search .search-field:focus, .app-container .app-search .input-group .search-field:focus {
+    .form .input-group .select:focus,
+    .input-group .form .upload-input:focus,
+    .form .input-group .upload-input:focus, .input-group .app-container .app-search .search-field:focus, .app-container .app-search .input-group .search-field:focus {
       z-index: 3; }
 
 .input-group-addon,
@@ -4418,6 +4482,8 @@ tbody.collapse.in {
 .form .input-group textarea,
 .input-group .form .select,
 .form .input-group .select,
+.input-group .form .upload-input,
+.form .input-group .upload-input,
 .input-group .app-container .app-search .search-field,
 .app-container .app-search .input-group .search-field {
   display: table-cell; }
@@ -4458,6 +4524,8 @@ tbody.collapse.in {
   .form .input-group textarea:not(:first-child):not(:last-child),
   .input-group .form .select:not(:first-child):not(:last-child),
   .form .input-group .select:not(:first-child):not(:last-child),
+  .input-group .form .upload-input:not(:first-child):not(:last-child),
+  .form .input-group .upload-input:not(:first-child):not(:last-child),
   .input-group .app-container .app-search .search-field:not(:first-child):not(:last-child),
   .app-container .app-search .input-group .search-field:not(:first-child):not(:last-child) {
     border-radius: 0; }
@@ -4494,7 +4562,8 @@ tbody.collapse.in {
   .form .input-group-sm > input.input-group-addon[type="week"],
   .form .input-group-sm > input.input-group-addon:not([type]),
   .form .input-group-sm > textarea.input-group-addon,
-  .form .input-group-sm > .input-group-addon.select, .app-container .app-search .input-group-sm > .input-group-addon.search-field,
+  .form .input-group-sm > .input-group-addon.select,
+  .form .input-group-sm > .input-group-addon.upload-input, .app-container .app-search .input-group-sm > .input-group-addon.search-field,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
   .banner .input-group-sm > .input-group-btn > .input-group-addon.cta {
@@ -4518,6 +4587,7 @@ tbody.collapse.in {
   .form .input-group-lg > input.input-group-addon:not([type]),
   .form .input-group-lg > textarea.input-group-addon,
   .form .input-group-lg > .input-group-addon.select,
+  .form .input-group-lg > .input-group-addon.upload-input,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
   .banner .input-group-lg > .input-group-btn > .input-group-addon.cta, .app-container .app-search .input-group-addon.search-field {
@@ -4560,7 +4630,9 @@ tbody.collapse.in {
 .input-group .form textarea:first-child,
 .form .input-group textarea:first-child,
 .input-group .form .select:first-child,
-.form .input-group .select:first-child, .input-group .app-container .app-search .search-field:first-child, .app-container .app-search .input-group .search-field:first-child,
+.form .input-group .select:first-child,
+.input-group .form .upload-input:first-child,
+.form .input-group .upload-input:first-child, .input-group .app-container .app-search .search-field:first-child, .app-container .app-search .input-group .search-field:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .banner .input-group-btn:first-child > .cta,
@@ -4609,7 +4681,9 @@ tbody.collapse.in {
 .input-group .form textarea:last-child,
 .form .input-group textarea:last-child,
 .input-group .form .select:last-child,
-.form .input-group .select:last-child, .input-group .app-container .app-search .search-field:last-child, .app-container .app-search .input-group .search-field:last-child,
+.form .input-group .select:last-child,
+.input-group .form .upload-input:last-child,
+.form .input-group .upload-input:last-child, .input-group .app-container .app-search .search-field:last-child, .app-container .app-search .input-group .search-field:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .banner .input-group-btn:last-child > .cta,
@@ -4984,7 +5058,9 @@ tbody.collapse.in {
     .navbar-form .form textarea,
     .form .navbar-form textarea,
     .navbar-form .form .select,
-    .form .navbar-form .select, .navbar-form .app-container .app-search .search-field, .app-container .app-search .navbar-form .search-field {
+    .form .navbar-form .select,
+    .navbar-form .form .upload-input,
+    .form .navbar-form .upload-input, .navbar-form .app-container .app-search .search-field, .app-container .app-search .navbar-form .search-field {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -5030,6 +5106,8 @@ tbody.collapse.in {
       .form .navbar-form .input-group textarea,
       .navbar-form .input-group .form .select,
       .form .navbar-form .input-group .select,
+      .navbar-form .input-group .form .upload-input,
+      .form .navbar-form .input-group .upload-input,
       .navbar-form .input-group .app-container .app-search .search-field,
       .app-container .app-search .navbar-form .input-group .search-field {
         width: auto; }
@@ -5065,7 +5143,9 @@ tbody.collapse.in {
     .navbar-form .form .input-group > textarea,
     .form .navbar-form .input-group > textarea,
     .navbar-form .form .input-group > .select,
-    .form .navbar-form .input-group > .select, .navbar-form .app-container .app-search .input-group > .search-field, .app-container .app-search .navbar-form .input-group > .search-field {
+    .form .navbar-form .input-group > .select,
+    .navbar-form .form .input-group > .upload-input,
+    .form .navbar-form .input-group > .upload-input, .navbar-form .app-container .app-search .input-group > .search-field, .app-container .app-search .navbar-form .input-group > .search-field {
       width: 100%; }
     .navbar-form .control-label {
       margin-bottom: 0;
@@ -5539,7 +5619,7 @@ a.thumbnail.active {
   border-color: #2abb9c; }
 
 .alert {
-  padding: 15px;
+  padding: 12px 15px 10px;
   margin-bottom: 22px;
   border: 1px solid transparent;
   border-radius: 3px; }
@@ -5556,7 +5636,7 @@ a.thumbnail.active {
 
 .alert-dismissable,
 .alert-dismissible {
-  padding-right: 35px; }
+  padding-right: 12px 15px 10px20; }
   .alert-dismissable .close,
   .alert-dismissible .close {
     position: relative;
@@ -5592,13 +5672,13 @@ a.thumbnail.active {
     color: #66512c; }
 
 .alert-danger {
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442; }
+  background-color: #d93d3a;
+  border-color: #d12841;
+  color: #fff; }
   .alert-danger hr {
-    border-top-color: #e4b9c0; }
+    border-top-color: #bc243b; }
   .alert-danger .alert-link {
-    color: #843534; }
+    color: #e6e6e6; }
 
 @-webkit-keyframes progress-bar-stripes {
   from {
@@ -5851,27 +5931,27 @@ button.list-group-item-warning {
     border-color: #8a6d3b; }
 
 .list-group-item-danger {
-  color: #a94442;
-  background-color: #f2dede; }
+  color: #fff;
+  background-color: #d93d3a; }
 
 a.list-group-item-danger,
 button.list-group-item-danger {
-  color: #a94442; }
+  color: #fff; }
   a.list-group-item-danger .list-group-item-heading,
   button.list-group-item-danger .list-group-item-heading {
     color: inherit; }
   a.list-group-item-danger:hover, a.list-group-item-danger:focus,
   button.list-group-item-danger:hover,
   button.list-group-item-danger:focus {
-    color: #a94442;
-    background-color: #ebcccc; }
+    color: #fff;
+    background-color: #d12c28; }
   a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus,
   button.list-group-item-danger.active,
   button.list-group-item-danger.active:hover,
   button.list-group-item-danger.active:focus {
     color: #fff;
-    background-color: #a94442;
-    border-color: #a94442; }
+    background-color: #fff;
+    border-color: #fff; }
 
 .list-group-item-heading {
   margin-top: 0;
@@ -6163,18 +6243,18 @@ button.list-group-item-danger {
     border-bottom-color: #faebcc; }
 
 .panel-danger {
-  border-color: #ebccd1; }
+  border-color: #d12841; }
   .panel-danger > .panel-heading {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1; }
+    color: #fff;
+    background-color: #d93d3a;
+    border-color: #d12841; }
     .panel-danger > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #ebccd1; }
+      border-top-color: #d12841; }
     .panel-danger > .panel-heading .badge {
-      color: #f2dede;
-      background-color: #a94442; }
+      color: #d93d3a;
+      background-color: #fff; }
   .panel-danger > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #ebccd1; }
+    border-bottom-color: #d12841; }
 
 .embed-responsive {
   position: relative;
@@ -7077,13 +7157,15 @@ button.close {
       top: 19px; } }
 
 i.icon {
-  display: inline-block; }
+  display: inline-block;
+  position: relative;
+  width: 1.2em; }
   i.icon svg {
     width: 1.2em;
     height: 1.2em;
     fill: currentColor;
-    position: relative;
-    bottom: -0.25em; }
+    position: absolute;
+    bottom: -0.35em; }
 
 @font-face {
   font-family: 'os-icons';
@@ -7600,7 +7682,8 @@ p a {
 .form input[type="week"],
 .form input:not([type]),
 .form textarea,
-.form .select, .app-container .app-search .search-field {
+.form .select,
+.form .upload-input, .app-container .app-search .search-field {
   padding: .65em 1em .45em 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -7620,14 +7703,16 @@ p a {
   .form input[type="week"]:focus,
   .form input:focus:not([type]),
   .form textarea:focus,
-  .form .select:focus, .app-container .app-search .search-field:focus {
+  .form .select:focus,
+  .form .upload-input:focus, .app-container .app-search .search-field:focus {
     box-shadow: none; }
 
 .btn, .banner .cta {
   padding: .65em 2em .45em 2em; }
 
 label {
-  font-weight: 500; }
+  font-weight: 500;
+  font-size: 0.9em; }
 
 .form .input-wrapper {
   position: relative;
@@ -7648,7 +7733,8 @@ label {
 .form input[type="week"].alert,
 .form input:not([type]).alert,
 .form textarea.alert,
-.form .select.alert {
+.form .select.alert,
+.form .upload-input.alert {
   border-color: #d93d3a;
   box-shadow: 0 0 6px rgba(217, 61, 58, 0.2); }
 .form input[type="color"][required], .form input[type="color"].success,
@@ -7683,7 +7769,9 @@ label {
 .form textarea[required],
 .form textarea.success,
 .form .select[required],
-.form .select.success {
+.form .select.success,
+.form .upload-input[required],
+.form .upload-input.success {
   background-repeat: no-repeat;
   background-position: top right; }
 .form input[type="color"][required],
@@ -7702,7 +7790,8 @@ label {
 .form input[type="week"][required],
 .form input:not([type])[required],
 .form textarea[required],
-.form .select[required] {
+.form .select[required],
+.form .upload-input[required] {
   background-image: url("../img/form/icon-required.svg"); }
 .form input[type="color"].success,
 .form input[type="date"].success,
@@ -7720,7 +7809,8 @@ label {
 .form input[type="week"].success,
 .form input:not([type]).success,
 .form textarea.success,
-.form .select.success {
+.form .select.success,
+.form .upload-input.success {
   background-image: url("../img/form/icon-success.svg"); }
 .form input[type="color"][disabled],
 .form input[type="date"][disabled],
@@ -7738,9 +7828,35 @@ label {
 .form input[type="week"][disabled],
 .form input:not([type])[disabled],
 .form textarea[disabled],
-.form .select[disabled] {
+.form .select[disabled],
+.form .upload-input[disabled] {
   opacity: 0.8;
   background-color: #fafafa; }
+.form input[type="color"] + div.alert,
+.form input[type="date"] + div.alert,
+.form input[type="datetime"] + div.alert,
+.form input[type="datetime-local"] + div.alert,
+.form input[type="email"] + div.alert,
+.form input[type="month"] + div.alert,
+.form input[type="number"] + div.alert,
+.form input[type="password"] + div.alert,
+.form input[type="search"] + div.alert,
+.form input[type="tel"] + div.alert,
+.form input[type="text"] + div.alert,
+.form input[type="time"] + div.alert,
+.form input[type="url"] + div.alert,
+.form input[type="week"] + div.alert,
+.form input:not([type]) + div.alert,
+.form textarea + div.alert,
+.form .select + div.alert,
+.form .upload-input + div.alert {
+  margin-top: -23px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 0.8em;
+  padding: 4px 10px 2px; }
 .form input[type="color"],
 .form input[type="date"],
 .form input[type="datetime"],
@@ -7876,11 +7992,53 @@ label {
     top: 5px;
     right: -34px;
     width: 32px;
-    opacity: 0.5; }
+    opacity: 0.3;
+    cursor: pointer;
+    padding: 4px; }
     .form.has-group-actions .form-group-action svg {
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       fill: #2a2d34; }
+    .form.has-group-actions .form-group-action:hover {
+      opacity: 1; }
+.form .upload-input {
+  display: table;
+  padding: 0; }
+  .form .upload-input input[type="file"] {
+    display: none; }
+  .form .upload-input .file-select,
+  .form .upload-input .file-display {
+    display: table-cell;
+    vertical-align: middle; }
+  .form .upload-input .file-select {
+    width: 1%;
+    padding-left: 4px; }
+    .form .upload-input .file-select .btn, .form .upload-input .file-select .banner .cta, .banner .form .upload-input .file-select .cta {
+      text-transform: uppercase;
+      font-size: 12px; }
+  .form .upload-input .file-display {
+    height: auto;
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+    opacity: 1; }
+.form .form-group.choice .or {
+  text-align: center;
+  opacity: 0.7;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+  .form .form-group.choice .or:before, .form .form-group.choice .or:after {
+    content: '-'; }
+@media (min-width: 768px) {
+  .form .form-group.choice {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    .form .form-group.choice > div {
+      display: table-cell;
+      vertical-align: middle; }
+    .form .form-group.choice .or {
+      width: 5%; } }
 
 aside .accordion {
   padding: 1.5em 0;
@@ -8123,7 +8281,7 @@ aside .accordion {
           width: 33.33333%; } }
 
 .provide-data-form {
-  padding: 1.5em;
+  padding: 3em 1.5em;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto; }
@@ -9505,6 +9663,10 @@ body.viewer .table-view {
       .aside-panel > div:last-child {
         text-align: right;
         padding: 1.5em 1.5em 1.5em 0.75em; } }
+
+.alert a {
+  color: inherit;
+  font-weight: bold; }
 
 .subscribe-footer {
   background-color: #2a2d34;

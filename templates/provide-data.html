@@ -3,12 +3,53 @@
 {% block content %}
   <section class="provide-data-form form has-group-actions">
     <form>
+      <label>Add one or more data file(s)</label>
       <div class="form-group">
-        <a class="form-group-action"><svg><use xlink:href="#icon-remove" /></svg></a>
-        <input class="success" type="text" placeholder="Input with success">
+        <a class="form-group-action"><svg><use xlink:href="#icon-trashcan" /></svg></a>
+
+        <div class="upload-input success">
+          <input type="file">
+          <span class="file-select">
+            <a class="btn btn-info">Replace file</a>
+          </span>
+          <input class="file-display" type="text" placeholder="e.g csv, xls" value="my_first_file.csv" disabled>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <a class="form-group-action"><svg><use xlink:href="#icon-trashcan" /></svg></a>
+        <input class="alert" type="text" placeholder="http://" value="http://my-website/my_second_file.xls">
+        <div class="alert alert-danger" role="alert">
+          We encountered some problems with this file. Click <a href="#">here</a> for a breakdown of the issues.
+        </div>
+      </div>
+      <div class="form-group">
+        <a class="form-group-action"><svg><use xlink:href="#icon-trashcan" /></svg></a>
+        <input class="success" type="text" placeholder="http://" value="http://my-website/my_third_file.csv">
       </div>
 
-      <input class="alert" type="text" placeholder="Input with error">
+      <div class="form-group choice">
+        <div>
+          <div class="upload-input">
+            <input type="file">
+            <span class="file-select">
+              <a class="btn btn-info">Upload a file</a>
+            </span>
+            <input class="file-display" type="text" placeholder="e.g csv, xls" disabled>
+          </div>
+        </div>
+        <div class="or">
+          or
+        </div>
+        <div>
+          <input type="text" placeholder="http://">
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary" disabled="disabled">Waiting for file or URL</button>
+
+      <button type="button" class="btn btn-primary">Next</button>
+
     </form>
   </section>
 
