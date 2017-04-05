@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="{{ '/css/jquery.mmenu.autoheight.css'|url }}">
     <link rel="stylesheet" href="{{ '/css/jquery.mmenu.multiline.css'|url }}">
     {% endif %}
+    {% if this._model == 'map-data' %}
+    <link rel="stylesheet" href="{{ '/css/jquery.mmenu.css'|url }}">
+    <link rel="stylesheet" href="{{ '/css/jquery.mmenu.autoheight.css'|url }}">
+    <link rel="stylesheet" href="{{ '/css/jquery.mmenu.multiline.css'|url }}">
+    {% endif %}
     {% if bag('brand.brand') == 'Packager' %}
     <link rel="stylesheet" href="{{ '/css/packager.css'|url }}">
     {% elif bag('brand.brand') == 'Viewer' %}
@@ -171,6 +176,26 @@
       });
 
       $( "#column_6" ).addClass( "data-type-select-active" );
+    });
+  </script>
+  {% elif this._model == 'map-data' %}
+  <script src="{{ '/js/jquery.mmenu.min.js'|url }}"></script>
+  <script src="{{ '/js/jquery.mmenu.autoheight.min.js'|url }}"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $( "#column_edit_3" ).addClass( "active" );
+      $( "#column_3" ).addClass( "active" );
+      $("#data_type_select_3").mmenu({
+         offCanvas: false,
+         autoHeight: {
+           height: 'highest'
+         },
+         navbar: {
+           title: false
+         },
+         extensions: ["multiline"]
+      });
+      $( "#column_edit_3" ).addClass( "data-type-select-active" );
     });
   </script>
   {% endif %}
