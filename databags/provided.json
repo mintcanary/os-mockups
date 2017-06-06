@@ -190,7 +190,8 @@
         "line_eight": "2008-07-02",
         "line_nine": "2008-07-02",
         "line_ten": "2008-07-02"
-      }
+      },
+      "datatype_cat": "type-1"
     },
     {
       "heading": "first_payment_date"

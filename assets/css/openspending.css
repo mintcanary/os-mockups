@@ -7811,6 +7811,8 @@ aside .accordion {
     .data-column .toggle input:checked + .label .switch {
       right: -2px;
       background-color: #32a6ba; }
+  .data-column.data-type-1 {
+    background-color: #3262ba; }
 
 .data-edit {
   position: absolute;
@@ -7832,8 +7834,60 @@ aside .accordion {
       width: 400px;
       margin-left: -200px;
       margin-top: -430px;
-      background-color: #3262ba;
+      background-color: rgba(255, 255, 255, 0.7);
       border-radius: 3px; }
+      .data-edit .data-column.active.data-type-1 {
+        background-color: rgba(50, 98, 186, 0.9); }
+      .data-edit .data-column.active.data-type-2 {
+        background-color: rgba(70, 50, 186, 0.9); }
+      .data-edit .data-column.active.data-type-3 {
+        background-color: rgba(138, 50, 186, 0.9); }
+      .data-edit .data-column.active.data-type-4 {
+        background-color: rgba(186, 50, 166, 0.9); }
+      .data-edit .data-column.active.data-type-5 {
+        background-color: rgba(186, 50, 121, 0.9); }
+      .data-edit .data-column.active.data-type-6 {
+        background-color: rgba(186, 50, 53, 0.9); }
+      .data-edit .data-column.active.data-type-7 {
+        background-color: rgba(186, 115, 50, 0.9); }
+      .data-edit .data-column.active.data-type-8 {
+        background-color: rgba(186, 183, 50, 0.9); }
+      .data-edit .data-column.active.data-type-9 {
+        background-color: rgba(121, 186, 50, 0.9); }
+    .data-edit .data-column .navigation {
+      height: 0;
+      margin: 0;
+      padding: 0; }
+      .data-edit .data-column .navigation li {
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 64px;
+        height: 64px;
+        margin-top: -32px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: solid 2px #fff;
+        padding-top: 8px; }
+        .data-edit .data-column .navigation li svg {
+          width: 100%;
+          height: 50px;
+          fill: #fff; }
+        .data-edit .data-column .navigation li.prev {
+          left: -84px;
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          transform: rotate(90deg); }
+        .data-edit .data-column .navigation li.next {
+          right: -84px;
+          opacity: 0.2;
+          -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -o-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+    .data-edit .data-column.ready .navigation li.next {
+      opacity: 1; }
     .data-edit .data-column .data-type-select {
       display: block;
       background-color: #fff; }
