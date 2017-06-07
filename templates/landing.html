@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div id="fullpage">
+  <section class="search section">
+    <div class="inner">
+      Search
+    </div>
+  </section>
+  <section class="what section">
+    <div class="inner">
+      {{ this.what }}
+    </div>
+  </section>
+  <section class="publishers section">
+    <div class="inner">
+      {{ this.publishers }}
+    </div>
+  </section>
+  <section class="hackers section">
+    <div class="inner">
+      {{ this.hackers }}
+    </div>
+  </section>
+  <section class="society section">
+    <div class="inner">
+      {{ this.society }}
+    </div>
+  </section>
+  <section class="involved section">
+    <div class="inner">
+      {{ this.involved }}
+    </div>
+  </section>
+  <section class="fp-auto-height section">
+  {% include 'includes/footer.html' %}
+  </section>
+</div>
+{% endblock %}

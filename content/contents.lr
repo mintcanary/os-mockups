@@ -1,4 +1,39 @@
-_model: admin
+_model: landing
 ---
-title: Admin
+title: OpenSpending
 ---
+what:
+
+## What is OpenSpending?
+
+OpenSpending is a free, open and global platform to search, visualise and analyse fiscal data in the public sphere. Start searching, or read on to contribute data, code, or domain expertise.
+
+---
+publishers:
+
+## Publishers
+
+Get started publishing your fiscal data today with the interactive [Packager](https://next.openspending.org/packager/), and explore the possibilities of the platform’s rich API, advanced visualisations, and options for integration.
+
+---
+hackers:
+
+## Hackers
+
+OpenSpending is a modern stack designed to liberate fiscal data for good, and we’d love your help! Start with the [docs](http://docs.openspending.org/en/latest/), [chat with us](http://gitter.im/openspending/chat), or just [start hacking](http://github.com/openspending).
+
+---
+society:
+
+## Civil society
+
+Access a powerful suite of visualisation and analysis tools, running on top of a huge database of open fiscal data. Discover facts, generate insights, and develop stories.
+
+---
+involved:
+
+## Get involved
+
+Do you want to get involved with the OpenSpending project, so we can work together towards a future of fiscal transparency from governments and other public bodies?
+
+If you are a journalist, a developer, a publisher, a CSO or just someone who wants to be part of the change, we would love to hear from you. Please introduce yourself in our discussion forum, and get started with a range of tutorials on using OpenSpending.
