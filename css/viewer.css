@@ -1301,11 +1301,11 @@ a.text-warning:focus {
   color: #66512c; }
 
 .text-danger {
-  color: #a94442; }
+  color: #fff; }
 
 a.text-danger:hover,
 a.text-danger:focus {
-  color: #843534; }
+  color: #e6e6e6; }
 
 .bg-primary {
   color: #fff; }
@@ -1339,11 +1339,11 @@ a.bg-warning:focus {
   background-color: #f7ecb5; }
 
 .bg-danger {
-  background-color: #f2dede; }
+  background-color: #d93d3a; }
 
 a.bg-danger:hover,
 a.bg-danger:focus {
-  background-color: #e4b9b9; }
+  background-color: #bc2724; }
 
 .page-header {
   padding-bottom: 10px;
@@ -2333,11 +2333,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.danger,
 .table > tfoot > tr.danger > td,
 .table > tfoot > tr.danger > th {
-  background-color: #f2dede; }
+  background-color: #d93d3a; }
 
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th {
-  background-color: #ebcccc; }
+  background-color: #d12c28; }
 
 .table-responsive {
   overflow-x: auto;
@@ -2438,23 +2438,7 @@ output {
   line-height: 1.42857;
   color: #2a2d34; }
 
-.form-control, .form input[type="color"],
-.form input[type="date"],
-.form input[type="datetime"],
-.form input[type="datetime-local"],
-.form input[type="email"],
-.form input[type="month"],
-.form input[type="number"],
-.form input[type="password"],
-.form input[type="search"],
-.form input[type="tel"],
-.form input[type="text"],
-.form input[type="time"],
-.form input[type="url"],
-.form input[type="week"],
-.form input:not([type]),
-.form textarea,
-.form .select, .app-container .app-search .search-field {
+.form-control, .form input[type="color"], .form input[type="date"], .form input[type="datetime"], .form input[type="datetime-local"], .form input[type="email"], .form input[type="month"], .form input[type="number"], .form input[type="password"], .form input[type="search"], .form input[type="tel"], .form input[type="text"], .form input[type="time"], .form input[type="url"], .form input[type="week"], .form input:not([type]), .form textarea, .form .select, .form .upload-input, .app-container .app-search .search-field {
   display: block;
   width: 100%;
   height: 36px;
@@ -2471,230 +2455,35 @@ output {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
-  .form-control:focus, .form input[type="color"]:focus,
-  .form input[type="date"]:focus,
-  .form input[type="datetime"]:focus,
-  .form input[type="datetime-local"]:focus,
-  .form input[type="email"]:focus,
-  .form input[type="month"]:focus,
-  .form input[type="number"]:focus,
-  .form input[type="password"]:focus,
-  .form input[type="search"]:focus,
-  .form input[type="tel"]:focus,
-  .form input[type="text"]:focus,
-  .form input[type="time"]:focus,
-  .form input[type="url"]:focus,
-  .form input[type="week"]:focus,
-  .form input:focus:not([type]),
-  .form textarea:focus,
-  .form .select:focus, .app-container .app-search .search-field:focus {
+  .form-control:focus, .form input[type="color"]:focus, .form input[type="date"]:focus, .form input[type="datetime"]:focus, .form input[type="datetime-local"]:focus, .form input[type="email"]:focus, .form input[type="month"]:focus, .form input[type="number"]:focus, .form input[type="password"]:focus, .form input[type="search"]:focus, .form input[type="tel"]:focus, .form input[type="text"]:focus, .form input[type="time"]:focus, .form input[type="url"]:focus, .form input[type="week"]:focus, .form input:focus:not([type]), .form textarea:focus, .form .select:focus, .form .upload-input:focus, .app-container .app-search .search-field:focus {
     border-color: #3a99d9;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 153, 217, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 153, 217, 0.6); }
-  .form-control::-moz-placeholder, .form input[type="color"]::-moz-placeholder,
-  .form input[type="date"]::-moz-placeholder,
-  .form input[type="datetime"]::-moz-placeholder,
-  .form input[type="datetime-local"]::-moz-placeholder,
-  .form input[type="email"]::-moz-placeholder,
-  .form input[type="month"]::-moz-placeholder,
-  .form input[type="number"]::-moz-placeholder,
-  .form input[type="password"]::-moz-placeholder,
-  .form input[type="search"]::-moz-placeholder,
-  .form input[type="tel"]::-moz-placeholder,
-  .form input[type="text"]::-moz-placeholder,
-  .form input[type="time"]::-moz-placeholder,
-  .form input[type="url"]::-moz-placeholder,
-  .form input[type="week"]::-moz-placeholder,
-  .form input:not([type])::-moz-placeholder,
-  .form textarea::-moz-placeholder,
-  .form .select::-moz-placeholder, .app-container .app-search .search-field::-moz-placeholder {
+  .form-control::-moz-placeholder, .form input[type="color"]::-moz-placeholder, .form input[type="date"]::-moz-placeholder, .form input[type="datetime"]::-moz-placeholder, .form input[type="datetime-local"]::-moz-placeholder, .form input[type="email"]::-moz-placeholder, .form input[type="month"]::-moz-placeholder, .form input[type="number"]::-moz-placeholder, .form input[type="password"]::-moz-placeholder, .form input[type="search"]::-moz-placeholder, .form input[type="tel"]::-moz-placeholder, .form input[type="text"]::-moz-placeholder, .form input[type="time"]::-moz-placeholder, .form input[type="url"]::-moz-placeholder, .form input[type="week"]::-moz-placeholder, .form input:not([type])::-moz-placeholder, .form textarea::-moz-placeholder, .form .select::-moz-placeholder, .form .upload-input::-moz-placeholder, .app-container .app-search .search-field::-moz-placeholder {
     color: #b3b3b3;
     opacity: 1; }
-  .form-control:-ms-input-placeholder, .form input[type="color"]:-ms-input-placeholder,
-  .form input[type="date"]:-ms-input-placeholder,
-  .form input[type="datetime"]:-ms-input-placeholder,
-  .form input[type="datetime-local"]:-ms-input-placeholder,
-  .form input[type="email"]:-ms-input-placeholder,
-  .form input[type="month"]:-ms-input-placeholder,
-  .form input[type="number"]:-ms-input-placeholder,
-  .form input[type="password"]:-ms-input-placeholder,
-  .form input[type="search"]:-ms-input-placeholder,
-  .form input[type="tel"]:-ms-input-placeholder,
-  .form input[type="text"]:-ms-input-placeholder,
-  .form input[type="time"]:-ms-input-placeholder,
-  .form input[type="url"]:-ms-input-placeholder,
-  .form input[type="week"]:-ms-input-placeholder,
-  .form input:-ms-input-placeholder:not([type]),
-  .form textarea:-ms-input-placeholder,
-  .form .select:-ms-input-placeholder, .app-container .app-search .search-field:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, .form input[type="color"]:-ms-input-placeholder, .form input[type="date"]:-ms-input-placeholder, .form input[type="datetime"]:-ms-input-placeholder, .form input[type="datetime-local"]:-ms-input-placeholder, .form input[type="email"]:-ms-input-placeholder, .form input[type="month"]:-ms-input-placeholder, .form input[type="number"]:-ms-input-placeholder, .form input[type="password"]:-ms-input-placeholder, .form input[type="search"]:-ms-input-placeholder, .form input[type="tel"]:-ms-input-placeholder, .form input[type="text"]:-ms-input-placeholder, .form input[type="time"]:-ms-input-placeholder, .form input[type="url"]:-ms-input-placeholder, .form input[type="week"]:-ms-input-placeholder, .form input:-ms-input-placeholder:not([type]), .form textarea:-ms-input-placeholder, .form .select:-ms-input-placeholder, .form .upload-input:-ms-input-placeholder, .app-container .app-search .search-field:-ms-input-placeholder {
     color: #b3b3b3; }
-  .form-control::-webkit-input-placeholder, .form input[type="color"]::-webkit-input-placeholder,
-  .form input[type="date"]::-webkit-input-placeholder,
-  .form input[type="datetime"]::-webkit-input-placeholder,
-  .form input[type="datetime-local"]::-webkit-input-placeholder,
-  .form input[type="email"]::-webkit-input-placeholder,
-  .form input[type="month"]::-webkit-input-placeholder,
-  .form input[type="number"]::-webkit-input-placeholder,
-  .form input[type="password"]::-webkit-input-placeholder,
-  .form input[type="search"]::-webkit-input-placeholder,
-  .form input[type="tel"]::-webkit-input-placeholder,
-  .form input[type="text"]::-webkit-input-placeholder,
-  .form input[type="time"]::-webkit-input-placeholder,
-  .form input[type="url"]::-webkit-input-placeholder,
-  .form input[type="week"]::-webkit-input-placeholder,
-  .form input:not([type])::-webkit-input-placeholder,
-  .form textarea::-webkit-input-placeholder,
-  .form .select::-webkit-input-placeholder, .app-container .app-search .search-field::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, .form input[type="color"]::-webkit-input-placeholder, .form input[type="date"]::-webkit-input-placeholder, .form input[type="datetime"]::-webkit-input-placeholder, .form input[type="datetime-local"]::-webkit-input-placeholder, .form input[type="email"]::-webkit-input-placeholder, .form input[type="month"]::-webkit-input-placeholder, .form input[type="number"]::-webkit-input-placeholder, .form input[type="password"]::-webkit-input-placeholder, .form input[type="search"]::-webkit-input-placeholder, .form input[type="tel"]::-webkit-input-placeholder, .form input[type="text"]::-webkit-input-placeholder, .form input[type="time"]::-webkit-input-placeholder, .form input[type="url"]::-webkit-input-placeholder, .form input[type="week"]::-webkit-input-placeholder, .form input:not([type])::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder, .form .select::-webkit-input-placeholder, .form .upload-input::-webkit-input-placeholder, .app-container .app-search .search-field::-webkit-input-placeholder {
     color: #b3b3b3; }
-  .form-control::-ms-expand, .form input[type="color"]::-ms-expand,
-  .form input[type="date"]::-ms-expand,
-  .form input[type="datetime"]::-ms-expand,
-  .form input[type="datetime-local"]::-ms-expand,
-  .form input[type="email"]::-ms-expand,
-  .form input[type="month"]::-ms-expand,
-  .form input[type="number"]::-ms-expand,
-  .form input[type="password"]::-ms-expand,
-  .form input[type="search"]::-ms-expand,
-  .form input[type="tel"]::-ms-expand,
-  .form input[type="text"]::-ms-expand,
-  .form input[type="time"]::-ms-expand,
-  .form input[type="url"]::-ms-expand,
-  .form input[type="week"]::-ms-expand,
-  .form input:not([type])::-ms-expand,
-  .form textarea::-ms-expand,
-  .form .select::-ms-expand, .app-container .app-search .search-field::-ms-expand {
+  .form-control::-ms-expand, .form input[type="color"]::-ms-expand, .form input[type="date"]::-ms-expand, .form input[type="datetime"]::-ms-expand, .form input[type="datetime-local"]::-ms-expand, .form input[type="email"]::-ms-expand, .form input[type="month"]::-ms-expand, .form input[type="number"]::-ms-expand, .form input[type="password"]::-ms-expand, .form input[type="search"]::-ms-expand, .form input[type="tel"]::-ms-expand, .form input[type="text"]::-ms-expand, .form input[type="time"]::-ms-expand, .form input[type="url"]::-ms-expand, .form input[type="week"]::-ms-expand, .form input:not([type])::-ms-expand, .form textarea::-ms-expand, .form .select::-ms-expand, .form .upload-input::-ms-expand, .app-container .app-search .search-field::-ms-expand {
     border: 0;
     background-color: transparent; }
-  .form-control[disabled], .form input[disabled][type="color"],
-  .form input[disabled][type="date"],
-  .form input[disabled][type="datetime"],
-  .form input[disabled][type="datetime-local"],
-  .form input[disabled][type="email"],
-  .form input[disabled][type="month"],
-  .form input[disabled][type="number"],
-  .form input[disabled][type="password"],
-  .form input[disabled][type="search"],
-  .form input[disabled][type="tel"],
-  .form input[disabled][type="text"],
-  .form input[disabled][type="time"],
-  .form input[disabled][type="url"],
-  .form input[disabled][type="week"],
-  .form input[disabled]:not([type]),
-  .form textarea[disabled],
-  .form [disabled].select, .app-container .app-search [disabled].search-field, .form-control[readonly], .form input[readonly][type="color"],
-  .form input[readonly][type="date"],
-  .form input[readonly][type="datetime"],
-  .form input[readonly][type="datetime-local"],
-  .form input[readonly][type="email"],
-  .form input[readonly][type="month"],
-  .form input[readonly][type="number"],
-  .form input[readonly][type="password"],
-  .form input[readonly][type="search"],
-  .form input[readonly][type="tel"],
-  .form input[readonly][type="text"],
-  .form input[readonly][type="time"],
-  .form input[readonly][type="url"],
-  .form input[readonly][type="week"],
-  .form input[readonly]:not([type]),
-  .form textarea[readonly],
-  .form [readonly].select, .app-container .app-search [readonly].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
-  fieldset[disabled] .form input[type="date"],
-  .form fieldset[disabled] input[type="date"],
-  fieldset[disabled] .form input[type="datetime"],
-  .form fieldset[disabled] input[type="datetime"],
-  fieldset[disabled] .form input[type="datetime-local"],
-  .form fieldset[disabled] input[type="datetime-local"],
-  fieldset[disabled] .form input[type="email"],
-  .form fieldset[disabled] input[type="email"],
-  fieldset[disabled] .form input[type="month"],
-  .form fieldset[disabled] input[type="month"],
-  fieldset[disabled] .form input[type="number"],
-  .form fieldset[disabled] input[type="number"],
-  fieldset[disabled] .form input[type="password"],
-  .form fieldset[disabled] input[type="password"],
-  fieldset[disabled] .form input[type="search"],
-  .form fieldset[disabled] input[type="search"],
-  fieldset[disabled] .form input[type="tel"],
-  .form fieldset[disabled] input[type="tel"],
-  fieldset[disabled] .form input[type="text"],
-  .form fieldset[disabled] input[type="text"],
-  fieldset[disabled] .form input[type="time"],
-  .form fieldset[disabled] input[type="time"],
-  fieldset[disabled] .form input[type="url"],
-  .form fieldset[disabled] input[type="url"],
-  fieldset[disabled] .form input[type="week"],
-  .form fieldset[disabled] input[type="week"],
-  fieldset[disabled] .form input:not([type]),
-  .form fieldset[disabled] input:not([type]),
-  fieldset[disabled] .form textarea,
-  .form fieldset[disabled] textarea,
-  fieldset[disabled] .form .select,
-  .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
+  .form-control[disabled], .form input[disabled][type="color"], .form input[disabled][type="date"], .form input[disabled][type="datetime"], .form input[disabled][type="datetime-local"], .form input[disabled][type="email"], .form input[disabled][type="month"], .form input[disabled][type="number"], .form input[disabled][type="password"], .form input[disabled][type="search"], .form input[disabled][type="tel"], .form input[disabled][type="text"], .form input[disabled][type="time"], .form input[disabled][type="url"], .form input[disabled][type="week"], .form input[disabled]:not([type]), .form textarea[disabled], .form [disabled].select, .form [disabled].upload-input, .app-container .app-search [disabled].search-field, .form-control[readonly], .form input[readonly][type="color"], .form input[readonly][type="date"], .form input[readonly][type="datetime"], .form input[readonly][type="datetime-local"], .form input[readonly][type="email"], .form input[readonly][type="month"], .form input[readonly][type="number"], .form input[readonly][type="password"], .form input[readonly][type="search"], .form input[readonly][type="tel"], .form input[readonly][type="text"], .form input[readonly][type="time"], .form input[readonly][type="url"], .form input[readonly][type="week"], .form input[readonly]:not([type]), .form textarea[readonly], .form [readonly].select, .form [readonly].upload-input, .app-container .app-search [readonly].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"], fieldset[disabled] .form input[type="date"], .form fieldset[disabled] input[type="date"], fieldset[disabled] .form input[type="datetime"], .form fieldset[disabled] input[type="datetime"], fieldset[disabled] .form input[type="datetime-local"], .form fieldset[disabled] input[type="datetime-local"], fieldset[disabled] .form input[type="email"], .form fieldset[disabled] input[type="email"], fieldset[disabled] .form input[type="month"], .form fieldset[disabled] input[type="month"], fieldset[disabled] .form input[type="number"], .form fieldset[disabled] input[type="number"], fieldset[disabled] .form input[type="password"], .form fieldset[disabled] input[type="password"], fieldset[disabled] .form input[type="search"], .form fieldset[disabled] input[type="search"], fieldset[disabled] .form input[type="tel"], .form fieldset[disabled] input[type="tel"], fieldset[disabled] .form input[type="text"], .form fieldset[disabled] input[type="text"], fieldset[disabled] .form input[type="time"], .form fieldset[disabled] input[type="time"], fieldset[disabled] .form input[type="url"], .form fieldset[disabled] input[type="url"], fieldset[disabled] .form input[type="week"], .form fieldset[disabled] input[type="week"], fieldset[disabled] .form input:not([type]), .form fieldset[disabled] input:not([type]), fieldset[disabled] .form textarea, .form fieldset[disabled] textarea, fieldset[disabled] .form .select, .form fieldset[disabled] .select, fieldset[disabled] .form .upload-input, .form fieldset[disabled] .upload-input, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     background-color: #f7f7f7;
     opacity: 1; }
-  .form-control[disabled], .form input[disabled][type="color"],
-  .form input[disabled][type="date"],
-  .form input[disabled][type="datetime"],
-  .form input[disabled][type="datetime-local"],
-  .form input[disabled][type="email"],
-  .form input[disabled][type="month"],
-  .form input[disabled][type="number"],
-  .form input[disabled][type="password"],
-  .form input[disabled][type="search"],
-  .form input[disabled][type="tel"],
-  .form input[disabled][type="text"],
-  .form input[disabled][type="time"],
-  .form input[disabled][type="url"],
-  .form input[disabled][type="week"],
-  .form input[disabled]:not([type]),
-  .form textarea[disabled],
-  .form [disabled].select, .app-container .app-search [disabled].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"],
-  fieldset[disabled] .form input[type="date"],
-  .form fieldset[disabled] input[type="date"],
-  fieldset[disabled] .form input[type="datetime"],
-  .form fieldset[disabled] input[type="datetime"],
-  fieldset[disabled] .form input[type="datetime-local"],
-  .form fieldset[disabled] input[type="datetime-local"],
-  fieldset[disabled] .form input[type="email"],
-  .form fieldset[disabled] input[type="email"],
-  fieldset[disabled] .form input[type="month"],
-  .form fieldset[disabled] input[type="month"],
-  fieldset[disabled] .form input[type="number"],
-  .form fieldset[disabled] input[type="number"],
-  fieldset[disabled] .form input[type="password"],
-  .form fieldset[disabled] input[type="password"],
-  fieldset[disabled] .form input[type="search"],
-  .form fieldset[disabled] input[type="search"],
-  fieldset[disabled] .form input[type="tel"],
-  .form fieldset[disabled] input[type="tel"],
-  fieldset[disabled] .form input[type="text"],
-  .form fieldset[disabled] input[type="text"],
-  fieldset[disabled] .form input[type="time"],
-  .form fieldset[disabled] input[type="time"],
-  fieldset[disabled] .form input[type="url"],
-  .form fieldset[disabled] input[type="url"],
-  fieldset[disabled] .form input[type="week"],
-  .form fieldset[disabled] input[type="week"],
-  fieldset[disabled] .form input:not([type]),
-  .form fieldset[disabled] input:not([type]),
-  fieldset[disabled] .form textarea,
-  .form fieldset[disabled] textarea,
-  fieldset[disabled] .form .select,
-  .form fieldset[disabled] .select, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
+  .form-control[disabled], .form input[disabled][type="color"], .form input[disabled][type="date"], .form input[disabled][type="datetime"], .form input[disabled][type="datetime-local"], .form input[disabled][type="email"], .form input[disabled][type="month"], .form input[disabled][type="number"], .form input[disabled][type="password"], .form input[disabled][type="search"], .form input[disabled][type="tel"], .form input[disabled][type="text"], .form input[disabled][type="time"], .form input[disabled][type="url"], .form input[disabled][type="week"], .form input[disabled]:not([type]), .form textarea[disabled], .form [disabled].select, .form [disabled].upload-input, .app-container .app-search [disabled].search-field, fieldset[disabled] .form-control, fieldset[disabled] .form input[type="color"], .form fieldset[disabled] input[type="color"], fieldset[disabled] .form input[type="date"], .form fieldset[disabled] input[type="date"], fieldset[disabled] .form input[type="datetime"], .form fieldset[disabled] input[type="datetime"], fieldset[disabled] .form input[type="datetime-local"], .form fieldset[disabled] input[type="datetime-local"], fieldset[disabled] .form input[type="email"], .form fieldset[disabled] input[type="email"], fieldset[disabled] .form input[type="month"], .form fieldset[disabled] input[type="month"], fieldset[disabled] .form input[type="number"], .form fieldset[disabled] input[type="number"], fieldset[disabled] .form input[type="password"], .form fieldset[disabled] input[type="password"], fieldset[disabled] .form input[type="search"], .form fieldset[disabled] input[type="search"], fieldset[disabled] .form input[type="tel"], .form fieldset[disabled] input[type="tel"], fieldset[disabled] .form input[type="text"], .form fieldset[disabled] input[type="text"], fieldset[disabled] .form input[type="time"], .form fieldset[disabled] input[type="time"], fieldset[disabled] .form input[type="url"], .form fieldset[disabled] input[type="url"], fieldset[disabled] .form input[type="week"], .form fieldset[disabled] input[type="week"], fieldset[disabled] .form input:not([type]), .form fieldset[disabled] input:not([type]), fieldset[disabled] .form textarea, .form fieldset[disabled] textarea, fieldset[disabled] .form .select, .form fieldset[disabled] .select, fieldset[disabled] .form .upload-input, .form fieldset[disabled] .upload-input, fieldset[disabled] .app-container .app-search .search-field, .app-container .app-search fieldset[disabled] .search-field {
     cursor: not-allowed; }
 
-textarea.form-control,
-.form textarea,
-.form textarea.select, .app-container .app-search textarea.search-field {
+textarea.form-control, .form textarea, .form textarea.select, .form textarea.upload-input, .app-container .app-search textarea.search-field {
   height: auto; }
 
 input[type="search"] {
   -webkit-appearance: none; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type="date"].form-control,
-  .form input[type="date"], .app-container .app-search input[type="date"].search-field,
+  input[type="date"].form-control, .form input[type="date"], .app-container .app-search input[type="date"].search-field,
   input[type="time"].form-control,
   .form input[type="time"],
   .app-container .app-search input[type="time"].search-field,
@@ -2705,8 +2494,7 @@ input[type="search"] {
   .form input[type="month"],
   .app-container .app-search input[type="month"].search-field {
     line-height: 36px; }
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
-  .form .input-group-sm > input[type="date"], .app-container .app-search .input-group-sm > input[type="date"].search-field,
+  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .form .input-group-sm > input[type="date"], .app-container .app-search .input-group-sm > input[type="date"].search-field,
   .input-group-sm > input[type="date"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="date"].btn,
   .banner .input-group-sm > .input-group-btn > input[type="date"].cta, .input-group-sm input[type="date"],
@@ -2735,8 +2523,7 @@ input[type="search"] {
   .banner .input-group-sm > .input-group-btn > input[type="month"].cta, .input-group-sm
   input[type="month"] {
     line-height: 33px; }
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
-  .form .input-group-lg > input[type="date"],
+  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .form .input-group-lg > input[type="date"],
   .input-group-lg > input[type="date"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="date"].btn,
   .banner .input-group-lg > .input-group-btn > input[type="date"].cta, .app-container .app-search input[type="date"].search-field, .input-group-lg input[type="date"],
@@ -2830,65 +2617,17 @@ input[type="checkbox"] {
   padding-bottom: 7px;
   margin-bottom: 0;
   min-height: 38px; }
-  .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .form .input-group-lg > input.form-control-static[type="color"],
-  .form .input-group-lg > input.form-control-static[type="date"],
-  .form .input-group-lg > input.form-control-static[type="datetime"],
-  .form .input-group-lg > input.form-control-static[type="datetime-local"],
-  .form .input-group-lg > input.form-control-static[type="email"],
-  .form .input-group-lg > input.form-control-static[type="month"],
-  .form .input-group-lg > input.form-control-static[type="number"],
-  .form .input-group-lg > input.form-control-static[type="password"],
-  .form .input-group-lg > input.form-control-static[type="search"],
-  .form .input-group-lg > input.form-control-static[type="tel"],
-  .form .input-group-lg > input.form-control-static[type="text"],
-  .form .input-group-lg > input.form-control-static[type="time"],
-  .form .input-group-lg > input.form-control-static[type="url"],
-  .form .input-group-lg > input.form-control-static[type="week"],
-  .form .input-group-lg > input.form-control-static:not([type]),
-  .form .input-group-lg > textarea.form-control-static,
-  .form .input-group-lg > .form-control-static.select,
+  .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .form .input-group-lg > input.form-control-static[type="color"], .form .input-group-lg > input.form-control-static[type="date"], .form .input-group-lg > input.form-control-static[type="datetime"], .form .input-group-lg > input.form-control-static[type="datetime-local"], .form .input-group-lg > input.form-control-static[type="email"], .form .input-group-lg > input.form-control-static[type="month"], .form .input-group-lg > input.form-control-static[type="number"], .form .input-group-lg > input.form-control-static[type="password"], .form .input-group-lg > input.form-control-static[type="search"], .form .input-group-lg > input.form-control-static[type="tel"], .form .input-group-lg > input.form-control-static[type="text"], .form .input-group-lg > input.form-control-static[type="time"], .form .input-group-lg > input.form-control-static[type="url"], .form .input-group-lg > input.form-control-static[type="week"], .form .input-group-lg > input.form-control-static:not([type]), .form .input-group-lg > textarea.form-control-static, .form .input-group-lg > .form-control-static.select, .form .input-group-lg > .form-control-static.upload-input,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
-  .banner .input-group-lg > .input-group-btn > .form-control-static.cta, .app-container .app-search .form-control-static.search-field, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .form .input-group-sm > input.form-control-static[type="color"],
-  .form .input-group-sm > input.form-control-static[type="date"],
-  .form .input-group-sm > input.form-control-static[type="datetime"],
-  .form .input-group-sm > input.form-control-static[type="datetime-local"],
-  .form .input-group-sm > input.form-control-static[type="email"],
-  .form .input-group-sm > input.form-control-static[type="month"],
-  .form .input-group-sm > input.form-control-static[type="number"],
-  .form .input-group-sm > input.form-control-static[type="password"],
-  .form .input-group-sm > input.form-control-static[type="search"],
-  .form .input-group-sm > input.form-control-static[type="tel"],
-  .form .input-group-sm > input.form-control-static[type="text"],
-  .form .input-group-sm > input.form-control-static[type="time"],
-  .form .input-group-sm > input.form-control-static[type="url"],
-  .form .input-group-sm > input.form-control-static[type="week"],
-  .form .input-group-sm > input.form-control-static:not([type]),
-  .form .input-group-sm > textarea.form-control-static,
-  .form .input-group-sm > .form-control-static.select, .app-container .app-search .input-group-sm > .form-control-static.search-field,
+  .banner .input-group-lg > .input-group-btn > .form-control-static.cta, .app-container .app-search .form-control-static.search-field, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .form .input-group-sm > input.form-control-static[type="color"], .form .input-group-sm > input.form-control-static[type="date"], .form .input-group-sm > input.form-control-static[type="datetime"], .form .input-group-sm > input.form-control-static[type="datetime-local"], .form .input-group-sm > input.form-control-static[type="email"], .form .input-group-sm > input.form-control-static[type="month"], .form .input-group-sm > input.form-control-static[type="number"], .form .input-group-sm > input.form-control-static[type="password"], .form .input-group-sm > input.form-control-static[type="search"], .form .input-group-sm > input.form-control-static[type="tel"], .form .input-group-sm > input.form-control-static[type="text"], .form .input-group-sm > input.form-control-static[type="time"], .form .input-group-sm > input.form-control-static[type="url"], .form .input-group-sm > input.form-control-static[type="week"], .form .input-group-sm > input.form-control-static:not([type]), .form .input-group-sm > textarea.form-control-static, .form .input-group-sm > .form-control-static.select, .form .input-group-sm > .form-control-static.upload-input, .app-container .app-search .input-group-sm > .form-control-static.search-field,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
   .banner .input-group-sm > .input-group-btn > .form-control-static.cta {
     padding-left: 0;
     padding-right: 0; }
 
-.input-sm, .input-group-sm > .form-control, .form .input-group-sm > input[type="color"],
-.form .input-group-sm > input[type="date"],
-.form .input-group-sm > input[type="datetime"],
-.form .input-group-sm > input[type="datetime-local"],
-.form .input-group-sm > input[type="email"],
-.form .input-group-sm > input[type="month"],
-.form .input-group-sm > input[type="number"],
-.form .input-group-sm > input[type="password"],
-.form .input-group-sm > input[type="search"],
-.form .input-group-sm > input[type="tel"],
-.form .input-group-sm > input[type="text"],
-.form .input-group-sm > input[type="time"],
-.form .input-group-sm > input[type="url"],
-.form .input-group-sm > input[type="week"],
-.form .input-group-sm > input:not([type]),
-.form .input-group-sm > textarea,
-.form .input-group-sm > .select, .app-container .app-search .input-group-sm > .search-field,
+.input-sm, .input-group-sm > .form-control, .form .input-group-sm > input[type="color"], .form .input-group-sm > input[type="date"], .form .input-group-sm > input[type="datetime"], .form .input-group-sm > input[type="datetime-local"], .form .input-group-sm > input[type="email"], .form .input-group-sm > input[type="month"], .form .input-group-sm > input[type="number"], .form .input-group-sm > input[type="password"], .form .input-group-sm > input[type="search"], .form .input-group-sm > input[type="tel"], .form .input-group-sm > input[type="text"], .form .input-group-sm > input[type="time"], .form .input-group-sm > input[type="url"], .form .input-group-sm > input[type="week"], .form .input-group-sm > input:not([type]), .form .input-group-sm > textarea, .form .input-group-sm > .select, .form .input-group-sm > .upload-input, .app-container .app-search .input-group-sm > .search-field,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .banner .input-group-sm > .input-group-btn > .cta {
@@ -2898,77 +2637,42 @@ input[type="checkbox"] {
   line-height: 1.5;
   border-radius: 2px; }
 
-select.input-sm, .input-group-sm > select.form-control,
-.form .input-group-sm > select.select, .app-container .app-search .input-group-sm > select.search-field,
+select.input-sm, .input-group-sm > select.form-control, .form .input-group-sm > select.select, .form .input-group-sm > select.upload-input, .app-container .app-search .input-group-sm > select.search-field,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
 .banner .input-group-sm > .input-group-btn > select.cta {
   height: 33px;
   line-height: 33px; }
 
-textarea.input-sm, .input-group-sm > textarea.form-control,
-.form .input-group-sm > textarea, .app-container .app-search .input-group-sm > textarea.search-field,
+textarea.input-sm, .input-group-sm > textarea.form-control, .form .input-group-sm > textarea, .app-container .app-search .input-group-sm > textarea.search-field,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 .banner .input-group-sm > .input-group-btn > textarea.cta,
 select[multiple].input-sm,
 .input-group-sm > select[multiple].form-control,
 .form .input-group-sm > select[multiple].select,
+.form .input-group-sm > select[multiple].upload-input,
 .app-container .app-search .input-group-sm > select[multiple].search-field,
 .input-group-sm > select[multiple].input-group-addon,
 .input-group-sm > .input-group-btn > select[multiple].btn,
 .banner .input-group-sm > .input-group-btn > select[multiple].cta {
   height: auto; }
 
-.form-group-sm .form-control, .form-group-sm .form input[type="color"], .form .form-group-sm input[type="color"],
-.form-group-sm .form input[type="date"],
-.form .form-group-sm input[type="date"],
-.form-group-sm .form input[type="datetime"],
-.form .form-group-sm input[type="datetime"],
-.form-group-sm .form input[type="datetime-local"],
-.form .form-group-sm input[type="datetime-local"],
-.form-group-sm .form input[type="email"],
-.form .form-group-sm input[type="email"],
-.form-group-sm .form input[type="month"],
-.form .form-group-sm input[type="month"],
-.form-group-sm .form input[type="number"],
-.form .form-group-sm input[type="number"],
-.form-group-sm .form input[type="password"],
-.form .form-group-sm input[type="password"],
-.form-group-sm .form input[type="search"],
-.form .form-group-sm input[type="search"],
-.form-group-sm .form input[type="tel"],
-.form .form-group-sm input[type="tel"],
-.form-group-sm .form input[type="text"],
-.form .form-group-sm input[type="text"],
-.form-group-sm .form input[type="time"],
-.form .form-group-sm input[type="time"],
-.form-group-sm .form input[type="url"],
-.form .form-group-sm input[type="url"],
-.form-group-sm .form input[type="week"],
-.form .form-group-sm input[type="week"],
-.form-group-sm .form input:not([type]),
-.form .form-group-sm input:not([type]),
-.form-group-sm .form textarea,
-.form .form-group-sm textarea,
-.form-group-sm .form .select,
-.form .form-group-sm .select, .form-group-sm .app-container .app-search .search-field, .app-container .app-search .form-group-sm .search-field {
+.form-group-sm .form-control, .form-group-sm .form input[type="color"], .form .form-group-sm input[type="color"], .form-group-sm .form input[type="date"], .form .form-group-sm input[type="date"], .form-group-sm .form input[type="datetime"], .form .form-group-sm input[type="datetime"], .form-group-sm .form input[type="datetime-local"], .form .form-group-sm input[type="datetime-local"], .form-group-sm .form input[type="email"], .form .form-group-sm input[type="email"], .form-group-sm .form input[type="month"], .form .form-group-sm input[type="month"], .form-group-sm .form input[type="number"], .form .form-group-sm input[type="number"], .form-group-sm .form input[type="password"], .form .form-group-sm input[type="password"], .form-group-sm .form input[type="search"], .form .form-group-sm input[type="search"], .form-group-sm .form input[type="tel"], .form .form-group-sm input[type="tel"], .form-group-sm .form input[type="text"], .form .form-group-sm input[type="text"], .form-group-sm .form input[type="time"], .form .form-group-sm input[type="time"], .form-group-sm .form input[type="url"], .form .form-group-sm input[type="url"], .form-group-sm .form input[type="week"], .form .form-group-sm input[type="week"], .form-group-sm .form input:not([type]), .form .form-group-sm input:not([type]), .form-group-sm .form textarea, .form .form-group-sm textarea, .form-group-sm .form .select, .form .form-group-sm .select, .form-group-sm .form .upload-input, .form .form-group-sm .upload-input, .form-group-sm .app-container .app-search .search-field, .app-container .app-search .form-group-sm .search-field {
   height: 33px;
   padding: 5px 10px;
   font-size: 14px;
   line-height: 1.5;
   border-radius: 2px; }
-.form-group-sm select.form-control,
-.form-group-sm .form select.select,
-.form .form-group-sm select.select, .form-group-sm .app-container .app-search select.search-field, .app-container .app-search .form-group-sm select.search-field {
+.form-group-sm select.form-control, .form-group-sm .form select.select, .form .form-group-sm select.select, .form-group-sm .form select.upload-input, .form .form-group-sm select.upload-input, .form-group-sm .app-container .app-search select.search-field, .app-container .app-search .form-group-sm select.search-field {
   height: 33px;
   line-height: 33px; }
-.form-group-sm textarea.form-control,
-.form-group-sm .form textarea,
-.form .form-group-sm textarea, .form-group-sm .app-container .app-search textarea.search-field, .app-container .app-search .form-group-sm textarea.search-field,
+.form-group-sm textarea.form-control, .form-group-sm .form textarea, .form .form-group-sm textarea, .form-group-sm .app-container .app-search textarea.search-field, .app-container .app-search .form-group-sm textarea.search-field,
 .form-group-sm select[multiple].form-control,
 .form-group-sm .form select[multiple].select,
 .form .form-group-sm select[multiple].select,
+.form-group-sm .form select[multiple].upload-input,
+.form .form-group-sm select[multiple].upload-input,
 .form-group-sm .app-container .app-search select[multiple].search-field,
 .app-container .app-search .form-group-sm select[multiple].search-field {
   height: auto; }
@@ -2979,23 +2683,7 @@ select[multiple].input-sm,
   font-size: 14px;
   line-height: 1.5; }
 
-.input-lg, .input-group-lg > .form-control, .form .input-group-lg > input[type="color"],
-.form .input-group-lg > input[type="date"],
-.form .input-group-lg > input[type="datetime"],
-.form .input-group-lg > input[type="datetime-local"],
-.form .input-group-lg > input[type="email"],
-.form .input-group-lg > input[type="month"],
-.form .input-group-lg > input[type="number"],
-.form .input-group-lg > input[type="password"],
-.form .input-group-lg > input[type="search"],
-.form .input-group-lg > input[type="tel"],
-.form .input-group-lg > input[type="text"],
-.form .input-group-lg > input[type="time"],
-.form .input-group-lg > input[type="url"],
-.form .input-group-lg > input[type="week"],
-.form .input-group-lg > input:not([type]),
-.form .input-group-lg > textarea,
-.form .input-group-lg > .select,
+.input-lg, .input-group-lg > .form-control, .form .input-group-lg > input[type="color"], .form .input-group-lg > input[type="date"], .form .input-group-lg > input[type="datetime"], .form .input-group-lg > input[type="datetime-local"], .form .input-group-lg > input[type="email"], .form .input-group-lg > input[type="month"], .form .input-group-lg > input[type="number"], .form .input-group-lg > input[type="password"], .form .input-group-lg > input[type="search"], .form .input-group-lg > input[type="tel"], .form .input-group-lg > input[type="text"], .form .input-group-lg > input[type="time"], .form .input-group-lg > input[type="url"], .form .input-group-lg > input[type="week"], .form .input-group-lg > input:not([type]), .form .input-group-lg > textarea, .form .input-group-lg > .select, .form .input-group-lg > .upload-input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .banner .input-group-lg > .input-group-btn > .cta, .app-container .app-search .search-field {
@@ -3005,77 +2693,42 @@ select[multiple].input-sm,
   line-height: 1.33333;
   border-radius: 4px; }
 
-select.input-lg, .input-group-lg > select.form-control,
-.form .input-group-lg > select.select,
+select.input-lg, .input-group-lg > select.form-control, .form .input-group-lg > select.select, .form .input-group-lg > select.upload-input,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
 .banner .input-group-lg > .input-group-btn > select.cta, .app-container .app-search select.search-field {
   height: 49px;
   line-height: 49px; }
 
-textarea.input-lg, .input-group-lg > textarea.form-control,
-.form .input-group-lg > textarea,
+textarea.input-lg, .input-group-lg > textarea.form-control, .form .input-group-lg > textarea,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 .banner .input-group-lg > .input-group-btn > textarea.cta, .app-container .app-search textarea.search-field,
 select[multiple].input-lg,
 .input-group-lg > select[multiple].form-control,
 .form .input-group-lg > select[multiple].select,
+.form .input-group-lg > select[multiple].upload-input,
 .input-group-lg > select[multiple].input-group-addon,
 .input-group-lg > .input-group-btn > select[multiple].btn,
 .banner .input-group-lg > .input-group-btn > select[multiple].cta,
 .app-container .app-search select[multiple].search-field {
   height: auto; }
 
-.form-group-lg .form-control, .form-group-lg .form input[type="color"], .form .form-group-lg input[type="color"],
-.form-group-lg .form input[type="date"],
-.form .form-group-lg input[type="date"],
-.form-group-lg .form input[type="datetime"],
-.form .form-group-lg input[type="datetime"],
-.form-group-lg .form input[type="datetime-local"],
-.form .form-group-lg input[type="datetime-local"],
-.form-group-lg .form input[type="email"],
-.form .form-group-lg input[type="email"],
-.form-group-lg .form input[type="month"],
-.form .form-group-lg input[type="month"],
-.form-group-lg .form input[type="number"],
-.form .form-group-lg input[type="number"],
-.form-group-lg .form input[type="password"],
-.form .form-group-lg input[type="password"],
-.form-group-lg .form input[type="search"],
-.form .form-group-lg input[type="search"],
-.form-group-lg .form input[type="tel"],
-.form .form-group-lg input[type="tel"],
-.form-group-lg .form input[type="text"],
-.form .form-group-lg input[type="text"],
-.form-group-lg .form input[type="time"],
-.form .form-group-lg input[type="time"],
-.form-group-lg .form input[type="url"],
-.form .form-group-lg input[type="url"],
-.form-group-lg .form input[type="week"],
-.form .form-group-lg input[type="week"],
-.form-group-lg .form input:not([type]),
-.form .form-group-lg input:not([type]),
-.form-group-lg .form textarea,
-.form .form-group-lg textarea,
-.form-group-lg .form .select,
-.form .form-group-lg .select, .form-group-lg .app-container .app-search .search-field, .app-container .app-search .form-group-lg .search-field {
+.form-group-lg .form-control, .form-group-lg .form input[type="color"], .form .form-group-lg input[type="color"], .form-group-lg .form input[type="date"], .form .form-group-lg input[type="date"], .form-group-lg .form input[type="datetime"], .form .form-group-lg input[type="datetime"], .form-group-lg .form input[type="datetime-local"], .form .form-group-lg input[type="datetime-local"], .form-group-lg .form input[type="email"], .form .form-group-lg input[type="email"], .form-group-lg .form input[type="month"], .form .form-group-lg input[type="month"], .form-group-lg .form input[type="number"], .form .form-group-lg input[type="number"], .form-group-lg .form input[type="password"], .form .form-group-lg input[type="password"], .form-group-lg .form input[type="search"], .form .form-group-lg input[type="search"], .form-group-lg .form input[type="tel"], .form .form-group-lg input[type="tel"], .form-group-lg .form input[type="text"], .form .form-group-lg input[type="text"], .form-group-lg .form input[type="time"], .form .form-group-lg input[type="time"], .form-group-lg .form input[type="url"], .form .form-group-lg input[type="url"], .form-group-lg .form input[type="week"], .form .form-group-lg input[type="week"], .form-group-lg .form input:not([type]), .form .form-group-lg input:not([type]), .form-group-lg .form textarea, .form .form-group-lg textarea, .form-group-lg .form .select, .form .form-group-lg .select, .form-group-lg .form .upload-input, .form .form-group-lg .upload-input, .form-group-lg .app-container .app-search .search-field, .app-container .app-search .form-group-lg .search-field {
   height: 49px;
   padding: 10px 16px;
   font-size: 20px;
   line-height: 1.33333;
   border-radius: 4px; }
-.form-group-lg select.form-control,
-.form-group-lg .form select.select,
-.form .form-group-lg select.select, .form-group-lg .app-container .app-search select.search-field, .app-container .app-search .form-group-lg select.search-field {
+.form-group-lg select.form-control, .form-group-lg .form select.select, .form .form-group-lg select.select, .form-group-lg .form select.upload-input, .form .form-group-lg select.upload-input, .form-group-lg .app-container .app-search select.search-field, .app-container .app-search .form-group-lg select.search-field {
   height: 49px;
   line-height: 49px; }
-.form-group-lg textarea.form-control,
-.form-group-lg .form textarea,
-.form .form-group-lg textarea, .form-group-lg .app-container .app-search textarea.search-field, .app-container .app-search .form-group-lg textarea.search-field,
+.form-group-lg textarea.form-control, .form-group-lg .form textarea, .form .form-group-lg textarea, .form-group-lg .app-container .app-search textarea.search-field, .app-container .app-search .form-group-lg textarea.search-field,
 .form-group-lg select[multiple].form-control,
 .form-group-lg .form select[multiple].select,
 .form .form-group-lg select[multiple].select,
+.form-group-lg .form select[multiple].upload-input,
+.form .form-group-lg select[multiple].upload-input,
 .form-group-lg .app-container .app-search select[multiple].search-field,
 .app-container .app-search .form-group-lg select[multiple].search-field {
   height: auto; }
@@ -3088,39 +2741,7 @@ select[multiple].input-lg,
 
 .has-feedback {
   position: relative; }
-  .has-feedback .form-control, .has-feedback .form input[type="color"], .form .has-feedback input[type="color"],
-  .has-feedback .form input[type="date"],
-  .form .has-feedback input[type="date"],
-  .has-feedback .form input[type="datetime"],
-  .form .has-feedback input[type="datetime"],
-  .has-feedback .form input[type="datetime-local"],
-  .form .has-feedback input[type="datetime-local"],
-  .has-feedback .form input[type="email"],
-  .form .has-feedback input[type="email"],
-  .has-feedback .form input[type="month"],
-  .form .has-feedback input[type="month"],
-  .has-feedback .form input[type="number"],
-  .form .has-feedback input[type="number"],
-  .has-feedback .form input[type="password"],
-  .form .has-feedback input[type="password"],
-  .has-feedback .form input[type="search"],
-  .form .has-feedback input[type="search"],
-  .has-feedback .form input[type="tel"],
-  .form .has-feedback input[type="tel"],
-  .has-feedback .form input[type="text"],
-  .form .has-feedback input[type="text"],
-  .has-feedback .form input[type="time"],
-  .form .has-feedback input[type="time"],
-  .has-feedback .form input[type="url"],
-  .form .has-feedback input[type="url"],
-  .has-feedback .form input[type="week"],
-  .form .has-feedback input[type="week"],
-  .has-feedback .form input:not([type]),
-  .form .has-feedback input:not([type]),
-  .has-feedback .form textarea,
-  .form .has-feedback textarea,
-  .has-feedback .form .select,
-  .form .has-feedback .select, .has-feedback .app-container .app-search .search-field, .app-container .app-search .has-feedback .search-field {
+  .has-feedback .form-control, .has-feedback .form input[type="color"], .form .has-feedback input[type="color"], .has-feedback .form input[type="date"], .form .has-feedback input[type="date"], .has-feedback .form input[type="datetime"], .form .has-feedback input[type="datetime"], .has-feedback .form input[type="datetime-local"], .form .has-feedback input[type="datetime-local"], .has-feedback .form input[type="email"], .form .has-feedback input[type="email"], .has-feedback .form input[type="month"], .form .has-feedback input[type="month"], .has-feedback .form input[type="number"], .form .has-feedback input[type="number"], .has-feedback .form input[type="password"], .form .has-feedback input[type="password"], .has-feedback .form input[type="search"], .form .has-feedback input[type="search"], .has-feedback .form input[type="tel"], .form .has-feedback input[type="tel"], .has-feedback .form input[type="text"], .form .has-feedback input[type="text"], .has-feedback .form input[type="time"], .form .has-feedback input[type="time"], .has-feedback .form input[type="url"], .form .has-feedback input[type="url"], .has-feedback .form input[type="week"], .form .has-feedback input[type="week"], .has-feedback .form input:not([type]), .form .has-feedback input:not([type]), .has-feedback .form textarea, .form .has-feedback textarea, .has-feedback .form .select, .form .has-feedback .select, .has-feedback .form .upload-input, .form .has-feedback .upload-input, .has-feedback .app-container .app-search .search-field, .app-container .app-search .has-feedback .search-field {
     padding-right: 45px; }
 
 .form-control-feedback {
@@ -3135,23 +2756,7 @@ select[multiple].input-lg,
   text-align: center;
   pointer-events: none; }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .form .input-group-lg > input[type="color"] + .form-control-feedback,
-.form .input-group-lg > input[type="date"] + .form-control-feedback,
-.form .input-group-lg > input[type="datetime"] + .form-control-feedback,
-.form .input-group-lg > input[type="datetime-local"] + .form-control-feedback,
-.form .input-group-lg > input[type="email"] + .form-control-feedback,
-.form .input-group-lg > input[type="month"] + .form-control-feedback,
-.form .input-group-lg > input[type="number"] + .form-control-feedback,
-.form .input-group-lg > input[type="password"] + .form-control-feedback,
-.form .input-group-lg > input[type="search"] + .form-control-feedback,
-.form .input-group-lg > input[type="tel"] + .form-control-feedback,
-.form .input-group-lg > input[type="text"] + .form-control-feedback,
-.form .input-group-lg > input[type="time"] + .form-control-feedback,
-.form .input-group-lg > input[type="url"] + .form-control-feedback,
-.form .input-group-lg > input[type="week"] + .form-control-feedback,
-.form .input-group-lg > input:not([type]) + .form-control-feedback,
-.form .input-group-lg > textarea + .form-control-feedback,
-.form .input-group-lg > .select + .form-control-feedback, .app-container .app-search .input-group-lg > .search-field + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .form .input-group-lg > input[type="color"] + .form-control-feedback, .form .input-group-lg > input[type="date"] + .form-control-feedback, .form .input-group-lg > input[type="datetime"] + .form-control-feedback, .form .input-group-lg > input[type="datetime-local"] + .form-control-feedback, .form .input-group-lg > input[type="email"] + .form-control-feedback, .form .input-group-lg > input[type="month"] + .form-control-feedback, .form .input-group-lg > input[type="number"] + .form-control-feedback, .form .input-group-lg > input[type="password"] + .form-control-feedback, .form .input-group-lg > input[type="search"] + .form-control-feedback, .form .input-group-lg > input[type="tel"] + .form-control-feedback, .form .input-group-lg > input[type="text"] + .form-control-feedback, .form .input-group-lg > input[type="time"] + .form-control-feedback, .form .input-group-lg > input[type="url"] + .form-control-feedback, .form .input-group-lg > input[type="week"] + .form-control-feedback, .form .input-group-lg > input:not([type]) + .form-control-feedback, .form .input-group-lg > textarea + .form-control-feedback, .form .input-group-lg > .select + .form-control-feedback, .form .input-group-lg > .upload-input + .form-control-feedback, .app-container .app-search .input-group-lg > .search-field + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .banner .input-group-lg > .input-group-btn > .cta + .form-control-feedback, .app-container .app-search .search-field + .form-control-feedback,
@@ -3191,29 +2796,15 @@ select[multiple].input-lg,
 .form .form-group-lg textarea + .form-control-feedback,
 .form-group-lg .form .select + .form-control-feedback,
 .form .form-group-lg .select + .form-control-feedback,
+.form-group-lg .form .upload-input + .form-control-feedback,
+.form .form-group-lg .upload-input + .form-control-feedback,
 .form-group-lg .app-container .app-search .search-field + .form-control-feedback,
 .app-container .app-search .form-group-lg .search-field + .form-control-feedback {
   width: 49px;
   height: 49px;
   line-height: 49px; }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .form .input-group-sm > input[type="color"] + .form-control-feedback,
-.form .input-group-sm > input[type="date"] + .form-control-feedback,
-.form .input-group-sm > input[type="datetime"] + .form-control-feedback,
-.form .input-group-sm > input[type="datetime-local"] + .form-control-feedback,
-.form .input-group-sm > input[type="email"] + .form-control-feedback,
-.form .input-group-sm > input[type="month"] + .form-control-feedback,
-.form .input-group-sm > input[type="number"] + .form-control-feedback,
-.form .input-group-sm > input[type="password"] + .form-control-feedback,
-.form .input-group-sm > input[type="search"] + .form-control-feedback,
-.form .input-group-sm > input[type="tel"] + .form-control-feedback,
-.form .input-group-sm > input[type="text"] + .form-control-feedback,
-.form .input-group-sm > input[type="time"] + .form-control-feedback,
-.form .input-group-sm > input[type="url"] + .form-control-feedback,
-.form .input-group-sm > input[type="week"] + .form-control-feedback,
-.form .input-group-sm > input:not([type]) + .form-control-feedback,
-.form .input-group-sm > textarea + .form-control-feedback,
-.form .input-group-sm > .select + .form-control-feedback, .app-container .app-search .input-group-sm > .search-field + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .form .input-group-sm > input[type="color"] + .form-control-feedback, .form .input-group-sm > input[type="date"] + .form-control-feedback, .form .input-group-sm > input[type="datetime"] + .form-control-feedback, .form .input-group-sm > input[type="datetime-local"] + .form-control-feedback, .form .input-group-sm > input[type="email"] + .form-control-feedback, .form .input-group-sm > input[type="month"] + .form-control-feedback, .form .input-group-sm > input[type="number"] + .form-control-feedback, .form .input-group-sm > input[type="password"] + .form-control-feedback, .form .input-group-sm > input[type="search"] + .form-control-feedback, .form .input-group-sm > input[type="tel"] + .form-control-feedback, .form .input-group-sm > input[type="text"] + .form-control-feedback, .form .input-group-sm > input[type="time"] + .form-control-feedback, .form .input-group-sm > input[type="url"] + .form-control-feedback, .form .input-group-sm > input[type="week"] + .form-control-feedback, .form .input-group-sm > input:not([type]) + .form-control-feedback, .form .input-group-sm > textarea + .form-control-feedback, .form .input-group-sm > .select + .form-control-feedback, .form .input-group-sm > .upload-input + .form-control-feedback, .app-container .app-search .input-group-sm > .search-field + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .banner .input-group-sm > .input-group-btn > .cta + .form-control-feedback,
@@ -3253,6 +2844,8 @@ select[multiple].input-lg,
 .form .form-group-sm textarea + .form-control-feedback,
 .form-group-sm .form .select + .form-control-feedback,
 .form .form-group-sm .select + .form-control-feedback,
+.form-group-sm .form .upload-input + .form-control-feedback,
+.form .form-group-sm .upload-input + .form-control-feedback,
 .form-group-sm .app-container .app-search .search-field + .form-control-feedback,
 .app-container .app-search .form-group-sm .search-field + .form-control-feedback {
   width: 33px;
@@ -3266,75 +2859,11 @@ select[multiple].input-lg,
 .has-success .radio-inline,
 .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
   color: #3c763d; }
-.has-success .form-control, .has-success .form input[type="color"], .form .has-success input[type="color"],
-.has-success .form input[type="date"],
-.form .has-success input[type="date"],
-.has-success .form input[type="datetime"],
-.form .has-success input[type="datetime"],
-.has-success .form input[type="datetime-local"],
-.form .has-success input[type="datetime-local"],
-.has-success .form input[type="email"],
-.form .has-success input[type="email"],
-.has-success .form input[type="month"],
-.form .has-success input[type="month"],
-.has-success .form input[type="number"],
-.form .has-success input[type="number"],
-.has-success .form input[type="password"],
-.form .has-success input[type="password"],
-.has-success .form input[type="search"],
-.form .has-success input[type="search"],
-.has-success .form input[type="tel"],
-.form .has-success input[type="tel"],
-.has-success .form input[type="text"],
-.form .has-success input[type="text"],
-.has-success .form input[type="time"],
-.form .has-success input[type="time"],
-.has-success .form input[type="url"],
-.form .has-success input[type="url"],
-.has-success .form input[type="week"],
-.form .has-success input[type="week"],
-.has-success .form input:not([type]),
-.form .has-success input:not([type]),
-.has-success .form textarea,
-.form .has-success textarea,
-.has-success .form .select,
-.form .has-success .select, .has-success .app-container .app-search .search-field, .app-container .app-search .has-success .search-field {
+.has-success .form-control, .has-success .form input[type="color"], .form .has-success input[type="color"], .has-success .form input[type="date"], .form .has-success input[type="date"], .has-success .form input[type="datetime"], .form .has-success input[type="datetime"], .has-success .form input[type="datetime-local"], .form .has-success input[type="datetime-local"], .has-success .form input[type="email"], .form .has-success input[type="email"], .has-success .form input[type="month"], .form .has-success input[type="month"], .has-success .form input[type="number"], .form .has-success input[type="number"], .has-success .form input[type="password"], .form .has-success input[type="password"], .has-success .form input[type="search"], .form .has-success input[type="search"], .has-success .form input[type="tel"], .form .has-success input[type="tel"], .has-success .form input[type="text"], .form .has-success input[type="text"], .has-success .form input[type="time"], .form .has-success input[type="time"], .has-success .form input[type="url"], .form .has-success input[type="url"], .has-success .form input[type="week"], .form .has-success input[type="week"], .has-success .form input:not([type]), .form .has-success input:not([type]), .has-success .form textarea, .form .has-success textarea, .has-success .form .select, .form .has-success .select, .has-success .form .upload-input, .form .has-success .upload-input, .has-success .app-container .app-search .search-field, .app-container .app-search .has-success .search-field {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-success .form-control:focus, .has-success .form input[type="color"]:focus, .form .has-success input[type="color"]:focus,
-  .has-success .form input[type="date"]:focus,
-  .form .has-success input[type="date"]:focus,
-  .has-success .form input[type="datetime"]:focus,
-  .form .has-success input[type="datetime"]:focus,
-  .has-success .form input[type="datetime-local"]:focus,
-  .form .has-success input[type="datetime-local"]:focus,
-  .has-success .form input[type="email"]:focus,
-  .form .has-success input[type="email"]:focus,
-  .has-success .form input[type="month"]:focus,
-  .form .has-success input[type="month"]:focus,
-  .has-success .form input[type="number"]:focus,
-  .form .has-success input[type="number"]:focus,
-  .has-success .form input[type="password"]:focus,
-  .form .has-success input[type="password"]:focus,
-  .has-success .form input[type="search"]:focus,
-  .form .has-success input[type="search"]:focus,
-  .has-success .form input[type="tel"]:focus,
-  .form .has-success input[type="tel"]:focus,
-  .has-success .form input[type="text"]:focus,
-  .form .has-success input[type="text"]:focus,
-  .has-success .form input[type="time"]:focus,
-  .form .has-success input[type="time"]:focus,
-  .has-success .form input[type="url"]:focus,
-  .form .has-success input[type="url"]:focus,
-  .has-success .form input[type="week"]:focus,
-  .form .has-success input[type="week"]:focus,
-  .has-success .form input:focus:not([type]),
-  .form .has-success input:focus:not([type]),
-  .has-success .form textarea:focus,
-  .form .has-success textarea:focus,
-  .has-success .form .select:focus,
-  .form .has-success .select:focus, .has-success .app-container .app-search .search-field:focus, .app-container .app-search .has-success .search-field:focus {
+  .has-success .form-control:focus, .has-success .form input[type="color"]:focus, .form .has-success input[type="color"]:focus, .has-success .form input[type="date"]:focus, .form .has-success input[type="date"]:focus, .has-success .form input[type="datetime"]:focus, .form .has-success input[type="datetime"]:focus, .has-success .form input[type="datetime-local"]:focus, .form .has-success input[type="datetime-local"]:focus, .has-success .form input[type="email"]:focus, .form .has-success input[type="email"]:focus, .has-success .form input[type="month"]:focus, .form .has-success input[type="month"]:focus, .has-success .form input[type="number"]:focus, .form .has-success input[type="number"]:focus, .has-success .form input[type="password"]:focus, .form .has-success input[type="password"]:focus, .has-success .form input[type="search"]:focus, .form .has-success input[type="search"]:focus, .has-success .form input[type="tel"]:focus, .form .has-success input[type="tel"]:focus, .has-success .form input[type="text"]:focus, .form .has-success input[type="text"]:focus, .has-success .form input[type="time"]:focus, .form .has-success input[type="time"]:focus, .has-success .form input[type="url"]:focus, .form .has-success input[type="url"]:focus, .has-success .form input[type="week"]:focus, .form .has-success input[type="week"]:focus, .has-success .form input:focus:not([type]), .form .has-success input:focus:not([type]), .has-success .form textarea:focus, .form .has-success textarea:focus, .has-success .form .select:focus, .form .has-success .select:focus, .has-success .form .upload-input:focus, .form .has-success .upload-input:focus, .has-success .app-container .app-search .search-field:focus, .app-container .app-search .has-success .search-field:focus {
     border-color: #2b542c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
@@ -3352,75 +2881,11 @@ select[multiple].input-lg,
 .has-warning .radio-inline,
 .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label {
   color: #8a6d3b; }
-.has-warning .form-control, .has-warning .form input[type="color"], .form .has-warning input[type="color"],
-.has-warning .form input[type="date"],
-.form .has-warning input[type="date"],
-.has-warning .form input[type="datetime"],
-.form .has-warning input[type="datetime"],
-.has-warning .form input[type="datetime-local"],
-.form .has-warning input[type="datetime-local"],
-.has-warning .form input[type="email"],
-.form .has-warning input[type="email"],
-.has-warning .form input[type="month"],
-.form .has-warning input[type="month"],
-.has-warning .form input[type="number"],
-.form .has-warning input[type="number"],
-.has-warning .form input[type="password"],
-.form .has-warning input[type="password"],
-.has-warning .form input[type="search"],
-.form .has-warning input[type="search"],
-.has-warning .form input[type="tel"],
-.form .has-warning input[type="tel"],
-.has-warning .form input[type="text"],
-.form .has-warning input[type="text"],
-.has-warning .form input[type="time"],
-.form .has-warning input[type="time"],
-.has-warning .form input[type="url"],
-.form .has-warning input[type="url"],
-.has-warning .form input[type="week"],
-.form .has-warning input[type="week"],
-.has-warning .form input:not([type]),
-.form .has-warning input:not([type]),
-.has-warning .form textarea,
-.form .has-warning textarea,
-.has-warning .form .select,
-.form .has-warning .select, .has-warning .app-container .app-search .search-field, .app-container .app-search .has-warning .search-field {
+.has-warning .form-control, .has-warning .form input[type="color"], .form .has-warning input[type="color"], .has-warning .form input[type="date"], .form .has-warning input[type="date"], .has-warning .form input[type="datetime"], .form .has-warning input[type="datetime"], .has-warning .form input[type="datetime-local"], .form .has-warning input[type="datetime-local"], .has-warning .form input[type="email"], .form .has-warning input[type="email"], .has-warning .form input[type="month"], .form .has-warning input[type="month"], .has-warning .form input[type="number"], .form .has-warning input[type="number"], .has-warning .form input[type="password"], .form .has-warning input[type="password"], .has-warning .form input[type="search"], .form .has-warning input[type="search"], .has-warning .form input[type="tel"], .form .has-warning input[type="tel"], .has-warning .form input[type="text"], .form .has-warning input[type="text"], .has-warning .form input[type="time"], .form .has-warning input[type="time"], .has-warning .form input[type="url"], .form .has-warning input[type="url"], .has-warning .form input[type="week"], .form .has-warning input[type="week"], .has-warning .form input:not([type]), .form .has-warning input:not([type]), .has-warning .form textarea, .form .has-warning textarea, .has-warning .form .select, .form .has-warning .select, .has-warning .form .upload-input, .form .has-warning .upload-input, .has-warning .app-container .app-search .search-field, .app-container .app-search .has-warning .search-field {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-warning .form-control:focus, .has-warning .form input[type="color"]:focus, .form .has-warning input[type="color"]:focus,
-  .has-warning .form input[type="date"]:focus,
-  .form .has-warning input[type="date"]:focus,
-  .has-warning .form input[type="datetime"]:focus,
-  .form .has-warning input[type="datetime"]:focus,
-  .has-warning .form input[type="datetime-local"]:focus,
-  .form .has-warning input[type="datetime-local"]:focus,
-  .has-warning .form input[type="email"]:focus,
-  .form .has-warning input[type="email"]:focus,
-  .has-warning .form input[type="month"]:focus,
-  .form .has-warning input[type="month"]:focus,
-  .has-warning .form input[type="number"]:focus,
-  .form .has-warning input[type="number"]:focus,
-  .has-warning .form input[type="password"]:focus,
-  .form .has-warning input[type="password"]:focus,
-  .has-warning .form input[type="search"]:focus,
-  .form .has-warning input[type="search"]:focus,
-  .has-warning .form input[type="tel"]:focus,
-  .form .has-warning input[type="tel"]:focus,
-  .has-warning .form input[type="text"]:focus,
-  .form .has-warning input[type="text"]:focus,
-  .has-warning .form input[type="time"]:focus,
-  .form .has-warning input[type="time"]:focus,
-  .has-warning .form input[type="url"]:focus,
-  .form .has-warning input[type="url"]:focus,
-  .has-warning .form input[type="week"]:focus,
-  .form .has-warning input[type="week"]:focus,
-  .has-warning .form input:focus:not([type]),
-  .form .has-warning input:focus:not([type]),
-  .has-warning .form textarea:focus,
-  .form .has-warning textarea:focus,
-  .has-warning .form .select:focus,
-  .form .has-warning .select:focus, .has-warning .app-container .app-search .search-field:focus, .app-container .app-search .has-warning .search-field:focus {
+  .has-warning .form-control:focus, .has-warning .form input[type="color"]:focus, .form .has-warning input[type="color"]:focus, .has-warning .form input[type="date"]:focus, .form .has-warning input[type="date"]:focus, .has-warning .form input[type="datetime"]:focus, .form .has-warning input[type="datetime"]:focus, .has-warning .form input[type="datetime-local"]:focus, .form .has-warning input[type="datetime-local"]:focus, .has-warning .form input[type="email"]:focus, .form .has-warning input[type="email"]:focus, .has-warning .form input[type="month"]:focus, .form .has-warning input[type="month"]:focus, .has-warning .form input[type="number"]:focus, .form .has-warning input[type="number"]:focus, .has-warning .form input[type="password"]:focus, .form .has-warning input[type="password"]:focus, .has-warning .form input[type="search"]:focus, .form .has-warning input[type="search"]:focus, .has-warning .form input[type="tel"]:focus, .form .has-warning input[type="tel"]:focus, .has-warning .form input[type="text"]:focus, .form .has-warning input[type="text"]:focus, .has-warning .form input[type="time"]:focus, .form .has-warning input[type="time"]:focus, .has-warning .form input[type="url"]:focus, .form .has-warning input[type="url"]:focus, .has-warning .form input[type="week"]:focus, .form .has-warning input[type="week"]:focus, .has-warning .form input:focus:not([type]), .form .has-warning input:focus:not([type]), .has-warning .form textarea:focus, .form .has-warning textarea:focus, .has-warning .form .select:focus, .form .has-warning .select:focus, .has-warning .form .upload-input:focus, .form .has-warning .upload-input:focus, .has-warning .app-container .app-search .search-field:focus, .app-container .app-search .has-warning .search-field:focus {
     border-color: #66512c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
@@ -3437,85 +2902,21 @@ select[multiple].input-lg,
 .has-error .checkbox,
 .has-error .radio-inline,
 .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
-  color: #a94442; }
-.has-error .form-control, .has-error .form input[type="color"], .form .has-error input[type="color"],
-.has-error .form input[type="date"],
-.form .has-error input[type="date"],
-.has-error .form input[type="datetime"],
-.form .has-error input[type="datetime"],
-.has-error .form input[type="datetime-local"],
-.form .has-error input[type="datetime-local"],
-.has-error .form input[type="email"],
-.form .has-error input[type="email"],
-.has-error .form input[type="month"],
-.form .has-error input[type="month"],
-.has-error .form input[type="number"],
-.form .has-error input[type="number"],
-.has-error .form input[type="password"],
-.form .has-error input[type="password"],
-.has-error .form input[type="search"],
-.form .has-error input[type="search"],
-.has-error .form input[type="tel"],
-.form .has-error input[type="tel"],
-.has-error .form input[type="text"],
-.form .has-error input[type="text"],
-.has-error .form input[type="time"],
-.form .has-error input[type="time"],
-.has-error .form input[type="url"],
-.form .has-error input[type="url"],
-.has-error .form input[type="week"],
-.form .has-error input[type="week"],
-.has-error .form input:not([type]),
-.form .has-error input:not([type]),
-.has-error .form textarea,
-.form .has-error textarea,
-.has-error .form .select,
-.form .has-error .select, .has-error .app-container .app-search .search-field, .app-container .app-search .has-error .search-field {
-  border-color: #a94442;
+  color: #fff; }
+.has-error .form-control, .has-error .form input[type="color"], .form .has-error input[type="color"], .has-error .form input[type="date"], .form .has-error input[type="date"], .has-error .form input[type="datetime"], .form .has-error input[type="datetime"], .has-error .form input[type="datetime-local"], .form .has-error input[type="datetime-local"], .has-error .form input[type="email"], .form .has-error input[type="email"], .has-error .form input[type="month"], .form .has-error input[type="month"], .has-error .form input[type="number"], .form .has-error input[type="number"], .has-error .form input[type="password"], .form .has-error input[type="password"], .has-error .form input[type="search"], .form .has-error input[type="search"], .has-error .form input[type="tel"], .form .has-error input[type="tel"], .has-error .form input[type="text"], .form .has-error input[type="text"], .has-error .form input[type="time"], .form .has-error input[type="time"], .has-error .form input[type="url"], .form .has-error input[type="url"], .has-error .form input[type="week"], .form .has-error input[type="week"], .has-error .form input:not([type]), .form .has-error input:not([type]), .has-error .form textarea, .form .has-error textarea, .has-error .form .select, .form .has-error .select, .has-error .form .upload-input, .form .has-error .upload-input, .has-error .app-container .app-search .search-field, .app-container .app-search .has-error .search-field {
+  border-color: #fff;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-error .form-control:focus, .has-error .form input[type="color"]:focus, .form .has-error input[type="color"]:focus,
-  .has-error .form input[type="date"]:focus,
-  .form .has-error input[type="date"]:focus,
-  .has-error .form input[type="datetime"]:focus,
-  .form .has-error input[type="datetime"]:focus,
-  .has-error .form input[type="datetime-local"]:focus,
-  .form .has-error input[type="datetime-local"]:focus,
-  .has-error .form input[type="email"]:focus,
-  .form .has-error input[type="email"]:focus,
-  .has-error .form input[type="month"]:focus,
-  .form .has-error input[type="month"]:focus,
-  .has-error .form input[type="number"]:focus,
-  .form .has-error input[type="number"]:focus,
-  .has-error .form input[type="password"]:focus,
-  .form .has-error input[type="password"]:focus,
-  .has-error .form input[type="search"]:focus,
-  .form .has-error input[type="search"]:focus,
-  .has-error .form input[type="tel"]:focus,
-  .form .has-error input[type="tel"]:focus,
-  .has-error .form input[type="text"]:focus,
-  .form .has-error input[type="text"]:focus,
-  .has-error .form input[type="time"]:focus,
-  .form .has-error input[type="time"]:focus,
-  .has-error .form input[type="url"]:focus,
-  .form .has-error input[type="url"]:focus,
-  .has-error .form input[type="week"]:focus,
-  .form .has-error input[type="week"]:focus,
-  .has-error .form input:focus:not([type]),
-  .form .has-error input:focus:not([type]),
-  .has-error .form textarea:focus,
-  .form .has-error textarea:focus,
-  .has-error .form .select:focus,
-  .form .has-error .select:focus, .has-error .app-container .app-search .search-field:focus, .app-container .app-search .has-error .search-field:focus {
-    border-color: #843534;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+  .has-error .form-control:focus, .has-error .form input[type="color"]:focus, .form .has-error input[type="color"]:focus, .has-error .form input[type="date"]:focus, .form .has-error input[type="date"]:focus, .has-error .form input[type="datetime"]:focus, .form .has-error input[type="datetime"]:focus, .has-error .form input[type="datetime-local"]:focus, .form .has-error input[type="datetime-local"]:focus, .has-error .form input[type="email"]:focus, .form .has-error input[type="email"]:focus, .has-error .form input[type="month"]:focus, .form .has-error input[type="month"]:focus, .has-error .form input[type="number"]:focus, .form .has-error input[type="number"]:focus, .has-error .form input[type="password"]:focus, .form .has-error input[type="password"]:focus, .has-error .form input[type="search"]:focus, .form .has-error input[type="search"]:focus, .has-error .form input[type="tel"]:focus, .form .has-error input[type="tel"]:focus, .has-error .form input[type="text"]:focus, .form .has-error input[type="text"]:focus, .has-error .form input[type="time"]:focus, .form .has-error input[type="time"]:focus, .has-error .form input[type="url"]:focus, .form .has-error input[type="url"]:focus, .has-error .form input[type="week"]:focus, .form .has-error input[type="week"]:focus, .has-error .form input:focus:not([type]), .form .has-error input:focus:not([type]), .has-error .form textarea:focus, .form .has-error textarea:focus, .has-error .form .select:focus, .form .has-error .select:focus, .has-error .form .upload-input:focus, .form .has-error .upload-input:focus, .has-error .app-container .app-search .search-field:focus, .app-container .app-search .has-error .search-field:focus {
+    border-color: #e6e6e6;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
 .has-error .input-group-addon {
-  color: #a94442;
-  border-color: #a94442;
-  background-color: #f2dede; }
+  color: #fff;
+  border-color: #fff;
+  background-color: #d93d3a; }
 .has-error .form-control-feedback {
-  color: #a94442; }
+  color: #fff; }
 
 .has-feedback label ~ .form-control-feedback {
   top: 27px; }
@@ -3533,39 +2934,7 @@ select[multiple].input-lg,
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
-  .form-inline .form-control, .form-inline .form input[type="color"], .form .form-inline input[type="color"],
-  .form-inline .form input[type="date"],
-  .form .form-inline input[type="date"],
-  .form-inline .form input[type="datetime"],
-  .form .form-inline input[type="datetime"],
-  .form-inline .form input[type="datetime-local"],
-  .form .form-inline input[type="datetime-local"],
-  .form-inline .form input[type="email"],
-  .form .form-inline input[type="email"],
-  .form-inline .form input[type="month"],
-  .form .form-inline input[type="month"],
-  .form-inline .form input[type="number"],
-  .form .form-inline input[type="number"],
-  .form-inline .form input[type="password"],
-  .form .form-inline input[type="password"],
-  .form-inline .form input[type="search"],
-  .form .form-inline input[type="search"],
-  .form-inline .form input[type="tel"],
-  .form .form-inline input[type="tel"],
-  .form-inline .form input[type="text"],
-  .form .form-inline input[type="text"],
-  .form-inline .form input[type="time"],
-  .form .form-inline input[type="time"],
-  .form-inline .form input[type="url"],
-  .form .form-inline input[type="url"],
-  .form-inline .form input[type="week"],
-  .form .form-inline input[type="week"],
-  .form-inline .form input:not([type]),
-  .form .form-inline input:not([type]),
-  .form-inline .form textarea,
-  .form .form-inline textarea,
-  .form-inline .form .select,
-  .form .form-inline .select, .form-inline .app-container .app-search .search-field, .app-container .app-search .form-inline .search-field {
+  .form-inline .form-control, .form-inline .form input[type="color"], .form .form-inline input[type="color"], .form-inline .form input[type="date"], .form .form-inline input[type="date"], .form-inline .form input[type="datetime"], .form .form-inline input[type="datetime"], .form-inline .form input[type="datetime-local"], .form .form-inline input[type="datetime-local"], .form-inline .form input[type="email"], .form .form-inline input[type="email"], .form-inline .form input[type="month"], .form .form-inline input[type="month"], .form-inline .form input[type="number"], .form .form-inline input[type="number"], .form-inline .form input[type="password"], .form .form-inline input[type="password"], .form-inline .form input[type="search"], .form .form-inline input[type="search"], .form-inline .form input[type="tel"], .form .form-inline input[type="tel"], .form-inline .form input[type="text"], .form .form-inline input[type="text"], .form-inline .form input[type="time"], .form .form-inline input[type="time"], .form-inline .form input[type="url"], .form .form-inline input[type="url"], .form-inline .form input[type="week"], .form .form-inline input[type="week"], .form-inline .form input:not([type]), .form .form-inline input:not([type]), .form-inline .form textarea, .form .form-inline textarea, .form-inline .form .select, .form .form-inline .select, .form-inline .form .upload-input, .form .form-inline .upload-input, .form-inline .app-container .app-search .search-field, .app-container .app-search .form-inline .search-field {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -3611,42 +2980,12 @@ select[multiple].input-lg,
     .form .form-inline .input-group textarea,
     .form-inline .input-group .form .select,
     .form .form-inline .input-group .select,
+    .form-inline .input-group .form .upload-input,
+    .form .form-inline .input-group .upload-input,
     .form-inline .input-group .app-container .app-search .search-field,
     .app-container .app-search .form-inline .input-group .search-field {
       width: auto; }
-  .form-inline .input-group > .form-control, .form-inline .form .input-group > input[type="color"], .form .form-inline .input-group > input[type="color"],
-  .form-inline .form .input-group > input[type="date"],
-  .form .form-inline .input-group > input[type="date"],
-  .form-inline .form .input-group > input[type="datetime"],
-  .form .form-inline .input-group > input[type="datetime"],
-  .form-inline .form .input-group > input[type="datetime-local"],
-  .form .form-inline .input-group > input[type="datetime-local"],
-  .form-inline .form .input-group > input[type="email"],
-  .form .form-inline .input-group > input[type="email"],
-  .form-inline .form .input-group > input[type="month"],
-  .form .form-inline .input-group > input[type="month"],
-  .form-inline .form .input-group > input[type="number"],
-  .form .form-inline .input-group > input[type="number"],
-  .form-inline .form .input-group > input[type="password"],
-  .form .form-inline .input-group > input[type="password"],
-  .form-inline .form .input-group > input[type="search"],
-  .form .form-inline .input-group > input[type="search"],
-  .form-inline .form .input-group > input[type="tel"],
-  .form .form-inline .input-group > input[type="tel"],
-  .form-inline .form .input-group > input[type="text"],
-  .form .form-inline .input-group > input[type="text"],
-  .form-inline .form .input-group > input[type="time"],
-  .form .form-inline .input-group > input[type="time"],
-  .form-inline .form .input-group > input[type="url"],
-  .form .form-inline .input-group > input[type="url"],
-  .form-inline .form .input-group > input[type="week"],
-  .form .form-inline .input-group > input[type="week"],
-  .form-inline .form .input-group > input:not([type]),
-  .form .form-inline .input-group > input:not([type]),
-  .form-inline .form .input-group > textarea,
-  .form .form-inline .input-group > textarea,
-  .form-inline .form .input-group > .select,
-  .form .form-inline .input-group > .select, .form-inline .app-container .app-search .input-group > .search-field, .app-container .app-search .form-inline .input-group > .search-field {
+  .form-inline .input-group > .form-control, .form-inline .form .input-group > input[type="color"], .form .form-inline .input-group > input[type="color"], .form-inline .form .input-group > input[type="date"], .form .form-inline .input-group > input[type="date"], .form-inline .form .input-group > input[type="datetime"], .form .form-inline .input-group > input[type="datetime"], .form-inline .form .input-group > input[type="datetime-local"], .form .form-inline .input-group > input[type="datetime-local"], .form-inline .form .input-group > input[type="email"], .form .form-inline .input-group > input[type="email"], .form-inline .form .input-group > input[type="month"], .form .form-inline .input-group > input[type="month"], .form-inline .form .input-group > input[type="number"], .form .form-inline .input-group > input[type="number"], .form-inline .form .input-group > input[type="password"], .form .form-inline .input-group > input[type="password"], .form-inline .form .input-group > input[type="search"], .form .form-inline .input-group > input[type="search"], .form-inline .form .input-group > input[type="tel"], .form .form-inline .input-group > input[type="tel"], .form-inline .form .input-group > input[type="text"], .form .form-inline .input-group > input[type="text"], .form-inline .form .input-group > input[type="time"], .form .form-inline .input-group > input[type="time"], .form-inline .form .input-group > input[type="url"], .form .form-inline .input-group > input[type="url"], .form-inline .form .input-group > input[type="week"], .form .form-inline .input-group > input[type="week"], .form-inline .form .input-group > input:not([type]), .form .form-inline .input-group > input:not([type]), .form-inline .form .input-group > textarea, .form .form-inline .input-group > textarea, .form-inline .form .input-group > .select, .form .form-inline .input-group > .select, .form-inline .form .input-group > .upload-input, .form .form-inline .input-group > .upload-input, .form-inline .app-container .app-search .input-group > .search-field, .app-container .app-search .form-inline .input-group > .search-field {
     width: 100%; }
   .form-inline .control-label {
     margin-bottom: 0;
@@ -4308,77 +3647,13 @@ tbody.collapse.in {
     float: none;
     padding-left: 0;
     padding-right: 0; }
-  .input-group .form-control, .input-group .form input[type="color"], .form .input-group input[type="color"],
-  .input-group .form input[type="date"],
-  .form .input-group input[type="date"],
-  .input-group .form input[type="datetime"],
-  .form .input-group input[type="datetime"],
-  .input-group .form input[type="datetime-local"],
-  .form .input-group input[type="datetime-local"],
-  .input-group .form input[type="email"],
-  .form .input-group input[type="email"],
-  .input-group .form input[type="month"],
-  .form .input-group input[type="month"],
-  .input-group .form input[type="number"],
-  .form .input-group input[type="number"],
-  .input-group .form input[type="password"],
-  .form .input-group input[type="password"],
-  .input-group .form input[type="search"],
-  .form .input-group input[type="search"],
-  .input-group .form input[type="tel"],
-  .form .input-group input[type="tel"],
-  .input-group .form input[type="text"],
-  .form .input-group input[type="text"],
-  .input-group .form input[type="time"],
-  .form .input-group input[type="time"],
-  .input-group .form input[type="url"],
-  .form .input-group input[type="url"],
-  .input-group .form input[type="week"],
-  .form .input-group input[type="week"],
-  .input-group .form input:not([type]),
-  .form .input-group input:not([type]),
-  .input-group .form textarea,
-  .form .input-group textarea,
-  .input-group .form .select,
-  .form .input-group .select, .input-group .app-container .app-search .search-field, .app-container .app-search .input-group .search-field {
+  .input-group .form-control, .input-group .form input[type="color"], .form .input-group input[type="color"], .input-group .form input[type="date"], .form .input-group input[type="date"], .input-group .form input[type="datetime"], .form .input-group input[type="datetime"], .input-group .form input[type="datetime-local"], .form .input-group input[type="datetime-local"], .input-group .form input[type="email"], .form .input-group input[type="email"], .input-group .form input[type="month"], .form .input-group input[type="month"], .input-group .form input[type="number"], .form .input-group input[type="number"], .input-group .form input[type="password"], .form .input-group input[type="password"], .input-group .form input[type="search"], .form .input-group input[type="search"], .input-group .form input[type="tel"], .form .input-group input[type="tel"], .input-group .form input[type="text"], .form .input-group input[type="text"], .input-group .form input[type="time"], .form .input-group input[type="time"], .input-group .form input[type="url"], .form .input-group input[type="url"], .input-group .form input[type="week"], .form .input-group input[type="week"], .input-group .form input:not([type]), .form .input-group input:not([type]), .input-group .form textarea, .form .input-group textarea, .input-group .form .select, .form .input-group .select, .input-group .form .upload-input, .form .input-group .upload-input, .input-group .app-container .app-search .search-field, .app-container .app-search .input-group .search-field {
     position: relative;
     z-index: 2;
     float: left;
     width: 100%;
     margin-bottom: 0; }
-    .input-group .form-control:focus, .input-group .form input[type="color"]:focus, .form .input-group input[type="color"]:focus,
-    .input-group .form input[type="date"]:focus,
-    .form .input-group input[type="date"]:focus,
-    .input-group .form input[type="datetime"]:focus,
-    .form .input-group input[type="datetime"]:focus,
-    .input-group .form input[type="datetime-local"]:focus,
-    .form .input-group input[type="datetime-local"]:focus,
-    .input-group .form input[type="email"]:focus,
-    .form .input-group input[type="email"]:focus,
-    .input-group .form input[type="month"]:focus,
-    .form .input-group input[type="month"]:focus,
-    .input-group .form input[type="number"]:focus,
-    .form .input-group input[type="number"]:focus,
-    .input-group .form input[type="password"]:focus,
-    .form .input-group input[type="password"]:focus,
-    .input-group .form input[type="search"]:focus,
-    .form .input-group input[type="search"]:focus,
-    .input-group .form input[type="tel"]:focus,
-    .form .input-group input[type="tel"]:focus,
-    .input-group .form input[type="text"]:focus,
-    .form .input-group input[type="text"]:focus,
-    .input-group .form input[type="time"]:focus,
-    .form .input-group input[type="time"]:focus,
-    .input-group .form input[type="url"]:focus,
-    .form .input-group input[type="url"]:focus,
-    .input-group .form input[type="week"]:focus,
-    .form .input-group input[type="week"]:focus,
-    .input-group .form input:focus:not([type]),
-    .form .input-group input:focus:not([type]),
-    .input-group .form textarea:focus,
-    .form .input-group textarea:focus,
-    .input-group .form .select:focus,
-    .form .input-group .select:focus, .input-group .app-container .app-search .search-field:focus, .app-container .app-search .input-group .search-field:focus {
+    .input-group .form-control:focus, .input-group .form input[type="color"]:focus, .form .input-group input[type="color"]:focus, .input-group .form input[type="date"]:focus, .form .input-group input[type="date"]:focus, .input-group .form input[type="datetime"]:focus, .form .input-group input[type="datetime"]:focus, .input-group .form input[type="datetime-local"]:focus, .form .input-group input[type="datetime-local"]:focus, .input-group .form input[type="email"]:focus, .form .input-group input[type="email"]:focus, .input-group .form input[type="month"]:focus, .form .input-group input[type="month"]:focus, .input-group .form input[type="number"]:focus, .form .input-group input[type="number"]:focus, .input-group .form input[type="password"]:focus, .form .input-group input[type="password"]:focus, .input-group .form input[type="search"]:focus, .form .input-group input[type="search"]:focus, .input-group .form input[type="tel"]:focus, .form .input-group input[type="tel"]:focus, .input-group .form input[type="text"]:focus, .form .input-group input[type="text"]:focus, .input-group .form input[type="time"]:focus, .form .input-group input[type="time"]:focus, .input-group .form input[type="url"]:focus, .form .input-group input[type="url"]:focus, .input-group .form input[type="week"]:focus, .form .input-group input[type="week"]:focus, .input-group .form input:focus:not([type]), .form .input-group input:focus:not([type]), .input-group .form textarea:focus, .form .input-group textarea:focus, .input-group .form .select:focus, .form .input-group .select:focus, .input-group .form .upload-input:focus, .form .input-group .upload-input:focus, .input-group .app-container .app-search .search-field:focus, .app-container .app-search .input-group .search-field:focus {
       z-index: 3; }
 
 .input-group-addon,
@@ -4418,6 +3693,8 @@ tbody.collapse.in {
 .form .input-group textarea,
 .input-group .form .select,
 .form .input-group .select,
+.input-group .form .upload-input,
+.form .input-group .upload-input,
 .input-group .app-container .app-search .search-field,
 .app-container .app-search .input-group .search-field {
   display: table-cell; }
@@ -4458,6 +3735,8 @@ tbody.collapse.in {
   .form .input-group textarea:not(:first-child):not(:last-child),
   .input-group .form .select:not(:first-child):not(:last-child),
   .form .input-group .select:not(:first-child):not(:last-child),
+  .input-group .form .upload-input:not(:first-child):not(:last-child),
+  .form .input-group .upload-input:not(:first-child):not(:last-child),
   .input-group .app-container .app-search .search-field:not(:first-child):not(:last-child),
   .app-container .app-search .input-group .search-field:not(:first-child):not(:last-child) {
     border-radius: 0; }
@@ -4478,46 +3757,14 @@ tbody.collapse.in {
   background-color: transparent;
   border: 1px solid #ccc;
   border-radius: 3px; }
-  .input-group-addon.input-sm, .form .input-group-sm > input.input-group-addon[type="color"],
-  .form .input-group-sm > input.input-group-addon[type="date"],
-  .form .input-group-sm > input.input-group-addon[type="datetime"],
-  .form .input-group-sm > input.input-group-addon[type="datetime-local"],
-  .form .input-group-sm > input.input-group-addon[type="email"],
-  .form .input-group-sm > input.input-group-addon[type="month"],
-  .form .input-group-sm > input.input-group-addon[type="number"],
-  .form .input-group-sm > input.input-group-addon[type="password"],
-  .form .input-group-sm > input.input-group-addon[type="search"],
-  .form .input-group-sm > input.input-group-addon[type="tel"],
-  .form .input-group-sm > input.input-group-addon[type="text"],
-  .form .input-group-sm > input.input-group-addon[type="time"],
-  .form .input-group-sm > input.input-group-addon[type="url"],
-  .form .input-group-sm > input.input-group-addon[type="week"],
-  .form .input-group-sm > input.input-group-addon:not([type]),
-  .form .input-group-sm > textarea.input-group-addon,
-  .form .input-group-sm > .input-group-addon.select, .app-container .app-search .input-group-sm > .input-group-addon.search-field,
+  .input-group-addon.input-sm, .form .input-group-sm > input.input-group-addon[type="color"], .form .input-group-sm > input.input-group-addon[type="date"], .form .input-group-sm > input.input-group-addon[type="datetime"], .form .input-group-sm > input.input-group-addon[type="datetime-local"], .form .input-group-sm > input.input-group-addon[type="email"], .form .input-group-sm > input.input-group-addon[type="month"], .form .input-group-sm > input.input-group-addon[type="number"], .form .input-group-sm > input.input-group-addon[type="password"], .form .input-group-sm > input.input-group-addon[type="search"], .form .input-group-sm > input.input-group-addon[type="tel"], .form .input-group-sm > input.input-group-addon[type="text"], .form .input-group-sm > input.input-group-addon[type="time"], .form .input-group-sm > input.input-group-addon[type="url"], .form .input-group-sm > input.input-group-addon[type="week"], .form .input-group-sm > input.input-group-addon:not([type]), .form .input-group-sm > textarea.input-group-addon, .form .input-group-sm > .input-group-addon.select, .form .input-group-sm > .input-group-addon.upload-input, .app-container .app-search .input-group-sm > .input-group-addon.search-field,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
   .banner .input-group-sm > .input-group-btn > .input-group-addon.cta {
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 2px; }
-  .input-group-addon.input-lg, .form .input-group-lg > input.input-group-addon[type="color"],
-  .form .input-group-lg > input.input-group-addon[type="date"],
-  .form .input-group-lg > input.input-group-addon[type="datetime"],
-  .form .input-group-lg > input.input-group-addon[type="datetime-local"],
-  .form .input-group-lg > input.input-group-addon[type="email"],
-  .form .input-group-lg > input.input-group-addon[type="month"],
-  .form .input-group-lg > input.input-group-addon[type="number"],
-  .form .input-group-lg > input.input-group-addon[type="password"],
-  .form .input-group-lg > input.input-group-addon[type="search"],
-  .form .input-group-lg > input.input-group-addon[type="tel"],
-  .form .input-group-lg > input.input-group-addon[type="text"],
-  .form .input-group-lg > input.input-group-addon[type="time"],
-  .form .input-group-lg > input.input-group-addon[type="url"],
-  .form .input-group-lg > input.input-group-addon[type="week"],
-  .form .input-group-lg > input.input-group-addon:not([type]),
-  .form .input-group-lg > textarea.input-group-addon,
-  .form .input-group-lg > .input-group-addon.select,
+  .input-group-addon.input-lg, .form .input-group-lg > input.input-group-addon[type="color"], .form .input-group-lg > input.input-group-addon[type="date"], .form .input-group-lg > input.input-group-addon[type="datetime"], .form .input-group-lg > input.input-group-addon[type="datetime-local"], .form .input-group-lg > input.input-group-addon[type="email"], .form .input-group-lg > input.input-group-addon[type="month"], .form .input-group-lg > input.input-group-addon[type="number"], .form .input-group-lg > input.input-group-addon[type="password"], .form .input-group-lg > input.input-group-addon[type="search"], .form .input-group-lg > input.input-group-addon[type="tel"], .form .input-group-lg > input.input-group-addon[type="text"], .form .input-group-lg > input.input-group-addon[type="time"], .form .input-group-lg > input.input-group-addon[type="url"], .form .input-group-lg > input.input-group-addon[type="week"], .form .input-group-lg > input.input-group-addon:not([type]), .form .input-group-lg > textarea.input-group-addon, .form .input-group-lg > .input-group-addon.select, .form .input-group-lg > .input-group-addon.upload-input,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
   .banner .input-group-lg > .input-group-btn > .input-group-addon.cta, .app-container .app-search .input-group-addon.search-field {
@@ -4528,39 +3775,7 @@ tbody.collapse.in {
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group .form-control:first-child, .input-group .form input[type="color"]:first-child, .form .input-group input[type="color"]:first-child,
-.input-group .form input[type="date"]:first-child,
-.form .input-group input[type="date"]:first-child,
-.input-group .form input[type="datetime"]:first-child,
-.form .input-group input[type="datetime"]:first-child,
-.input-group .form input[type="datetime-local"]:first-child,
-.form .input-group input[type="datetime-local"]:first-child,
-.input-group .form input[type="email"]:first-child,
-.form .input-group input[type="email"]:first-child,
-.input-group .form input[type="month"]:first-child,
-.form .input-group input[type="month"]:first-child,
-.input-group .form input[type="number"]:first-child,
-.form .input-group input[type="number"]:first-child,
-.input-group .form input[type="password"]:first-child,
-.form .input-group input[type="password"]:first-child,
-.input-group .form input[type="search"]:first-child,
-.form .input-group input[type="search"]:first-child,
-.input-group .form input[type="tel"]:first-child,
-.form .input-group input[type="tel"]:first-child,
-.input-group .form input[type="text"]:first-child,
-.form .input-group input[type="text"]:first-child,
-.input-group .form input[type="time"]:first-child,
-.form .input-group input[type="time"]:first-child,
-.input-group .form input[type="url"]:first-child,
-.form .input-group input[type="url"]:first-child,
-.input-group .form input[type="week"]:first-child,
-.form .input-group input[type="week"]:first-child,
-.input-group .form input:first-child:not([type]),
-.form .input-group input:first-child:not([type]),
-.input-group .form textarea:first-child,
-.form .input-group textarea:first-child,
-.input-group .form .select:first-child,
-.form .input-group .select:first-child, .input-group .app-container .app-search .search-field:first-child, .app-container .app-search .input-group .search-field:first-child,
+.input-group .form-control:first-child, .input-group .form input[type="color"]:first-child, .form .input-group input[type="color"]:first-child, .input-group .form input[type="date"]:first-child, .form .input-group input[type="date"]:first-child, .input-group .form input[type="datetime"]:first-child, .form .input-group input[type="datetime"]:first-child, .input-group .form input[type="datetime-local"]:first-child, .form .input-group input[type="datetime-local"]:first-child, .input-group .form input[type="email"]:first-child, .form .input-group input[type="email"]:first-child, .input-group .form input[type="month"]:first-child, .form .input-group input[type="month"]:first-child, .input-group .form input[type="number"]:first-child, .form .input-group input[type="number"]:first-child, .input-group .form input[type="password"]:first-child, .form .input-group input[type="password"]:first-child, .input-group .form input[type="search"]:first-child, .form .input-group input[type="search"]:first-child, .input-group .form input[type="tel"]:first-child, .form .input-group input[type="tel"]:first-child, .input-group .form input[type="text"]:first-child, .form .input-group input[type="text"]:first-child, .input-group .form input[type="time"]:first-child, .form .input-group input[type="time"]:first-child, .input-group .form input[type="url"]:first-child, .form .input-group input[type="url"]:first-child, .input-group .form input[type="week"]:first-child, .form .input-group input[type="week"]:first-child, .input-group .form input:first-child:not([type]), .form .input-group input:first-child:not([type]), .input-group .form textarea:first-child, .form .input-group textarea:first-child, .input-group .form .select:first-child, .form .input-group .select:first-child, .input-group .form .upload-input:first-child, .form .input-group .upload-input:first-child, .input-group .app-container .app-search .search-field:first-child, .app-container .app-search .input-group .search-field:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .banner .input-group-btn:first-child > .cta,
@@ -4577,39 +3792,7 @@ tbody.collapse.in {
 .input-group-addon:first-child {
   border-right: 0; }
 
-.input-group .form-control:last-child, .input-group .form input[type="color"]:last-child, .form .input-group input[type="color"]:last-child,
-.input-group .form input[type="date"]:last-child,
-.form .input-group input[type="date"]:last-child,
-.input-group .form input[type="datetime"]:last-child,
-.form .input-group input[type="datetime"]:last-child,
-.input-group .form input[type="datetime-local"]:last-child,
-.form .input-group input[type="datetime-local"]:last-child,
-.input-group .form input[type="email"]:last-child,
-.form .input-group input[type="email"]:last-child,
-.input-group .form input[type="month"]:last-child,
-.form .input-group input[type="month"]:last-child,
-.input-group .form input[type="number"]:last-child,
-.form .input-group input[type="number"]:last-child,
-.input-group .form input[type="password"]:last-child,
-.form .input-group input[type="password"]:last-child,
-.input-group .form input[type="search"]:last-child,
-.form .input-group input[type="search"]:last-child,
-.input-group .form input[type="tel"]:last-child,
-.form .input-group input[type="tel"]:last-child,
-.input-group .form input[type="text"]:last-child,
-.form .input-group input[type="text"]:last-child,
-.input-group .form input[type="time"]:last-child,
-.form .input-group input[type="time"]:last-child,
-.input-group .form input[type="url"]:last-child,
-.form .input-group input[type="url"]:last-child,
-.input-group .form input[type="week"]:last-child,
-.form .input-group input[type="week"]:last-child,
-.input-group .form input:last-child:not([type]),
-.form .input-group input:last-child:not([type]),
-.input-group .form textarea:last-child,
-.form .input-group textarea:last-child,
-.input-group .form .select:last-child,
-.form .input-group .select:last-child, .input-group .app-container .app-search .search-field:last-child, .app-container .app-search .input-group .search-field:last-child,
+.input-group .form-control:last-child, .input-group .form input[type="color"]:last-child, .form .input-group input[type="color"]:last-child, .input-group .form input[type="date"]:last-child, .form .input-group input[type="date"]:last-child, .input-group .form input[type="datetime"]:last-child, .form .input-group input[type="datetime"]:last-child, .input-group .form input[type="datetime-local"]:last-child, .form .input-group input[type="datetime-local"]:last-child, .input-group .form input[type="email"]:last-child, .form .input-group input[type="email"]:last-child, .input-group .form input[type="month"]:last-child, .form .input-group input[type="month"]:last-child, .input-group .form input[type="number"]:last-child, .form .input-group input[type="number"]:last-child, .input-group .form input[type="password"]:last-child, .form .input-group input[type="password"]:last-child, .input-group .form input[type="search"]:last-child, .form .input-group input[type="search"]:last-child, .input-group .form input[type="tel"]:last-child, .form .input-group input[type="tel"]:last-child, .input-group .form input[type="text"]:last-child, .form .input-group input[type="text"]:last-child, .input-group .form input[type="time"]:last-child, .form .input-group input[type="time"]:last-child, .input-group .form input[type="url"]:last-child, .form .input-group input[type="url"]:last-child, .input-group .form input[type="week"]:last-child, .form .input-group input[type="week"]:last-child, .input-group .form input:last-child:not([type]), .form .input-group input:last-child:not([type]), .input-group .form textarea:last-child, .form .input-group textarea:last-child, .input-group .form .select:last-child, .form .input-group .select:last-child, .input-group .form .upload-input:last-child, .form .input-group .upload-input:last-child, .input-group .app-container .app-search .search-field:last-child, .app-container .app-search .input-group .search-field:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .banner .input-group-btn:last-child > .cta,
@@ -4952,39 +4135,7 @@ tbody.collapse.in {
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle; }
-    .navbar-form .form-control, .navbar-form .form input[type="color"], .form .navbar-form input[type="color"],
-    .navbar-form .form input[type="date"],
-    .form .navbar-form input[type="date"],
-    .navbar-form .form input[type="datetime"],
-    .form .navbar-form input[type="datetime"],
-    .navbar-form .form input[type="datetime-local"],
-    .form .navbar-form input[type="datetime-local"],
-    .navbar-form .form input[type="email"],
-    .form .navbar-form input[type="email"],
-    .navbar-form .form input[type="month"],
-    .form .navbar-form input[type="month"],
-    .navbar-form .form input[type="number"],
-    .form .navbar-form input[type="number"],
-    .navbar-form .form input[type="password"],
-    .form .navbar-form input[type="password"],
-    .navbar-form .form input[type="search"],
-    .form .navbar-form input[type="search"],
-    .navbar-form .form input[type="tel"],
-    .form .navbar-form input[type="tel"],
-    .navbar-form .form input[type="text"],
-    .form .navbar-form input[type="text"],
-    .navbar-form .form input[type="time"],
-    .form .navbar-form input[type="time"],
-    .navbar-form .form input[type="url"],
-    .form .navbar-form input[type="url"],
-    .navbar-form .form input[type="week"],
-    .form .navbar-form input[type="week"],
-    .navbar-form .form input:not([type]),
-    .form .navbar-form input:not([type]),
-    .navbar-form .form textarea,
-    .form .navbar-form textarea,
-    .navbar-form .form .select,
-    .form .navbar-form .select, .navbar-form .app-container .app-search .search-field, .app-container .app-search .navbar-form .search-field {
+    .navbar-form .form-control, .navbar-form .form input[type="color"], .form .navbar-form input[type="color"], .navbar-form .form input[type="date"], .form .navbar-form input[type="date"], .navbar-form .form input[type="datetime"], .form .navbar-form input[type="datetime"], .navbar-form .form input[type="datetime-local"], .form .navbar-form input[type="datetime-local"], .navbar-form .form input[type="email"], .form .navbar-form input[type="email"], .navbar-form .form input[type="month"], .form .navbar-form input[type="month"], .navbar-form .form input[type="number"], .form .navbar-form input[type="number"], .navbar-form .form input[type="password"], .form .navbar-form input[type="password"], .navbar-form .form input[type="search"], .form .navbar-form input[type="search"], .navbar-form .form input[type="tel"], .form .navbar-form input[type="tel"], .navbar-form .form input[type="text"], .form .navbar-form input[type="text"], .navbar-form .form input[type="time"], .form .navbar-form input[type="time"], .navbar-form .form input[type="url"], .form .navbar-form input[type="url"], .navbar-form .form input[type="week"], .form .navbar-form input[type="week"], .navbar-form .form input:not([type]), .form .navbar-form input:not([type]), .navbar-form .form textarea, .form .navbar-form textarea, .navbar-form .form .select, .form .navbar-form .select, .navbar-form .form .upload-input, .form .navbar-form .upload-input, .navbar-form .app-container .app-search .search-field, .app-container .app-search .navbar-form .search-field {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -5030,42 +4181,12 @@ tbody.collapse.in {
       .form .navbar-form .input-group textarea,
       .navbar-form .input-group .form .select,
       .form .navbar-form .input-group .select,
+      .navbar-form .input-group .form .upload-input,
+      .form .navbar-form .input-group .upload-input,
       .navbar-form .input-group .app-container .app-search .search-field,
       .app-container .app-search .navbar-form .input-group .search-field {
         width: auto; }
-    .navbar-form .input-group > .form-control, .navbar-form .form .input-group > input[type="color"], .form .navbar-form .input-group > input[type="color"],
-    .navbar-form .form .input-group > input[type="date"],
-    .form .navbar-form .input-group > input[type="date"],
-    .navbar-form .form .input-group > input[type="datetime"],
-    .form .navbar-form .input-group > input[type="datetime"],
-    .navbar-form .form .input-group > input[type="datetime-local"],
-    .form .navbar-form .input-group > input[type="datetime-local"],
-    .navbar-form .form .input-group > input[type="email"],
-    .form .navbar-form .input-group > input[type="email"],
-    .navbar-form .form .input-group > input[type="month"],
-    .form .navbar-form .input-group > input[type="month"],
-    .navbar-form .form .input-group > input[type="number"],
-    .form .navbar-form .input-group > input[type="number"],
-    .navbar-form .form .input-group > input[type="password"],
-    .form .navbar-form .input-group > input[type="password"],
-    .navbar-form .form .input-group > input[type="search"],
-    .form .navbar-form .input-group > input[type="search"],
-    .navbar-form .form .input-group > input[type="tel"],
-    .form .navbar-form .input-group > input[type="tel"],
-    .navbar-form .form .input-group > input[type="text"],
-    .form .navbar-form .input-group > input[type="text"],
-    .navbar-form .form .input-group > input[type="time"],
-    .form .navbar-form .input-group > input[type="time"],
-    .navbar-form .form .input-group > input[type="url"],
-    .form .navbar-form .input-group > input[type="url"],
-    .navbar-form .form .input-group > input[type="week"],
-    .form .navbar-form .input-group > input[type="week"],
-    .navbar-form .form .input-group > input:not([type]),
-    .form .navbar-form .input-group > input:not([type]),
-    .navbar-form .form .input-group > textarea,
-    .form .navbar-form .input-group > textarea,
-    .navbar-form .form .input-group > .select,
-    .form .navbar-form .input-group > .select, .navbar-form .app-container .app-search .input-group > .search-field, .app-container .app-search .navbar-form .input-group > .search-field {
+    .navbar-form .input-group > .form-control, .navbar-form .form .input-group > input[type="color"], .form .navbar-form .input-group > input[type="color"], .navbar-form .form .input-group > input[type="date"], .form .navbar-form .input-group > input[type="date"], .navbar-form .form .input-group > input[type="datetime"], .form .navbar-form .input-group > input[type="datetime"], .navbar-form .form .input-group > input[type="datetime-local"], .form .navbar-form .input-group > input[type="datetime-local"], .navbar-form .form .input-group > input[type="email"], .form .navbar-form .input-group > input[type="email"], .navbar-form .form .input-group > input[type="month"], .form .navbar-form .input-group > input[type="month"], .navbar-form .form .input-group > input[type="number"], .form .navbar-form .input-group > input[type="number"], .navbar-form .form .input-group > input[type="password"], .form .navbar-form .input-group > input[type="password"], .navbar-form .form .input-group > input[type="search"], .form .navbar-form .input-group > input[type="search"], .navbar-form .form .input-group > input[type="tel"], .form .navbar-form .input-group > input[type="tel"], .navbar-form .form .input-group > input[type="text"], .form .navbar-form .input-group > input[type="text"], .navbar-form .form .input-group > input[type="time"], .form .navbar-form .input-group > input[type="time"], .navbar-form .form .input-group > input[type="url"], .form .navbar-form .input-group > input[type="url"], .navbar-form .form .input-group > input[type="week"], .form .navbar-form .input-group > input[type="week"], .navbar-form .form .input-group > input:not([type]), .form .navbar-form .input-group > input:not([type]), .navbar-form .form .input-group > textarea, .form .navbar-form .input-group > textarea, .navbar-form .form .input-group > .select, .form .navbar-form .input-group > .select, .navbar-form .form .input-group > .upload-input, .form .navbar-form .input-group > .upload-input, .navbar-form .app-container .app-search .input-group > .search-field, .app-container .app-search .navbar-form .input-group > .search-field {
       width: 100%; }
     .navbar-form .control-label {
       margin-bottom: 0;
@@ -5539,7 +4660,7 @@ a.thumbnail.active {
   border-color: #3a99d9; }
 
 .alert {
-  padding: 15px;
+  padding: 12px 15px 10px;
   margin-bottom: 22px;
   border: 1px solid transparent;
   border-radius: 3px; }
@@ -5556,7 +4677,7 @@ a.thumbnail.active {
 
 .alert-dismissable,
 .alert-dismissible {
-  padding-right: 35px; }
+  padding-right: 12px 15px 10px20; }
   .alert-dismissable .close,
   .alert-dismissible .close {
     position: relative;
@@ -5592,13 +4713,13 @@ a.thumbnail.active {
     color: #66512c; }
 
 .alert-danger {
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442; }
+  background-color: #d93d3a;
+  border-color: #d12841;
+  color: #fff; }
   .alert-danger hr {
-    border-top-color: #e4b9c0; }
+    border-top-color: #bc243b; }
   .alert-danger .alert-link {
-    color: #843534; }
+    color: #e6e6e6; }
 
 @-webkit-keyframes progress-bar-stripes {
   from {
@@ -5851,27 +4972,27 @@ button.list-group-item-warning {
     border-color: #8a6d3b; }
 
 .list-group-item-danger {
-  color: #a94442;
-  background-color: #f2dede; }
+  color: #fff;
+  background-color: #d93d3a; }
 
 a.list-group-item-danger,
 button.list-group-item-danger {
-  color: #a94442; }
+  color: #fff; }
   a.list-group-item-danger .list-group-item-heading,
   button.list-group-item-danger .list-group-item-heading {
     color: inherit; }
   a.list-group-item-danger:hover, a.list-group-item-danger:focus,
   button.list-group-item-danger:hover,
   button.list-group-item-danger:focus {
-    color: #a94442;
-    background-color: #ebcccc; }
+    color: #fff;
+    background-color: #d12c28; }
   a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus,
   button.list-group-item-danger.active,
   button.list-group-item-danger.active:hover,
   button.list-group-item-danger.active:focus {
     color: #fff;
-    background-color: #a94442;
-    border-color: #a94442; }
+    background-color: #fff;
+    border-color: #fff; }
 
 .list-group-item-heading {
   margin-top: 0;
@@ -6163,18 +5284,18 @@ button.list-group-item-danger {
     border-bottom-color: #faebcc; }
 
 .panel-danger {
-  border-color: #ebccd1; }
+  border-color: #d12841; }
   .panel-danger > .panel-heading {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1; }
+    color: #fff;
+    background-color: #d93d3a;
+    border-color: #d12841; }
     .panel-danger > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #ebccd1; }
+      border-top-color: #d12841; }
     .panel-danger > .panel-heading .badge {
-      color: #f2dede;
-      background-color: #a94442; }
+      color: #d93d3a;
+      background-color: #fff; }
   .panel-danger > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #ebccd1; }
+    border-bottom-color: #d12841; }
 
 .embed-responsive {
   position: relative;
@@ -7002,6 +6123,26 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
+  .site-header input[type="color"], .site-header input[type="date"], .site-header input[type="datetime"], .site-header input[type="datetime-local"], .site-header input[type="email"], .site-header input[type="month"], .site-header input[type="number"], .site-header input[type="password"], .site-header input[type="search"], .site-header input[type="tel"], .site-header input[type="text"], .site-header input[type="time"], .site-header input[type="url"], .site-header input[type="week"], .site-header input:not([type]), .site-header textarea, .site-header .select, .site-header .upload-input,
+  .app-header input[type="color"],
+  .app-header input[type="date"],
+  .app-header input[type="datetime"],
+  .app-header input[type="datetime-local"],
+  .app-header input[type="email"],
+  .app-header input[type="month"],
+  .app-header input[type="number"],
+  .app-header input[type="password"],
+  .app-header input[type="search"],
+  .app-header input[type="tel"],
+  .app-header input[type="text"],
+  .app-header input[type="time"],
+  .app-header input[type="url"],
+  .app-header input[type="week"],
+  .app-header input:not([type]),
+  .app-header textarea,
+  .app-header .select,
+  .app-header .upload-input {
+    background-color: #2a2d34; }
   .site-header a,
   .app-header a {
     color: inherit; }
@@ -7040,14 +6181,18 @@ button.close {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2ABB9C', endColorstr='#FF3A99D9', GradientType=0); }
       .site-header .logo.small.adminbrand svg {
         fill: #fff; }
-    .site-header .logo.small + .logo {
-      display: none;
-      margin-top: 15px;
-      padding-left: 12px;
-      height: 26px; }
-      @media (min-width: 768px) {
-        .site-header .logo.small + .logo {
-          display: inline-block; } }
+  .site-header .logo.type {
+    margin-top: 15px;
+    padding-left: 12px;
+    height: 26px;
+    display: none; }
+    .site-header .logo.type svg {
+      fill: #fff;
+      height: 26px;
+      width: auto; }
+    @media (min-width: 768px) {
+      .site-header .logo.type {
+        display: inline-block; } }
 
 .app-header {
   height: 50px; }
@@ -7077,13 +6222,15 @@ button.close {
       top: 19px; } }
 
 i.icon {
-  display: inline-block; }
+  display: inline-block;
+  position: relative;
+  width: 1.2em; }
   i.icon svg {
     width: 1.2em;
     height: 1.2em;
     fill: currentColor;
-    position: relative;
-    bottom: -0.25em; }
+    position: absolute;
+    bottom: -0.35em; }
 
 @font-face {
   font-family: 'os-icons';
@@ -7153,6 +6300,7 @@ i.icon {
     text-align: left;
     z-index: 9;
     background-color: #3a99d9;
+    color: #fff;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     box-sizing: border-box;
@@ -7506,6 +6654,8 @@ p a {
   -moz-osx-font-smoothing: grayscale;
   padding: 2.25em 1.5em;
   position: relative; }
+  .banner input[type="color"], .banner input[type="date"], .banner input[type="datetime"], .banner input[type="datetime-local"], .banner input[type="email"], .banner input[type="month"], .banner input[type="number"], .banner input[type="password"], .banner input[type="search"], .banner input[type="tel"], .banner input[type="text"], .banner input[type="time"], .banner input[type="url"], .banner input[type="week"], .banner input:not([type]), .banner textarea, .banner .select, .banner .upload-input {
+    background-color: #22242a; }
   .banner h1, .banner h2 {
     color: inherit; }
   .banner p {
@@ -7584,179 +6734,45 @@ p a {
   text-transform: uppercase;
   font-size: 0.9em; }
 
-.form-control, .form input[type="color"],
-.form input[type="date"],
-.form input[type="datetime"],
-.form input[type="datetime-local"],
-.form input[type="email"],
-.form input[type="month"],
-.form input[type="number"],
-.form input[type="password"],
-.form input[type="search"],
-.form input[type="tel"],
-.form input[type="text"],
-.form input[type="time"],
-.form input[type="url"],
-.form input[type="week"],
-.form input:not([type]),
-.form textarea,
-.form .select, .app-container .app-search .search-field {
+.form-control, .form input[type="color"], .form input[type="date"], .form input[type="datetime"], .form input[type="datetime-local"], .form input[type="email"], .form input[type="month"], .form input[type="number"], .form input[type="password"], .form input[type="search"], .form input[type="tel"], .form input[type="text"], .form input[type="time"], .form input[type="url"], .form input[type="week"], .form input:not([type]), .form textarea, .form .select, .form .upload-input, .app-container .app-search .search-field {
   padding: .65em 1em .45em 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .form-control:focus, .form input[type="color"]:focus,
-  .form input[type="date"]:focus,
-  .form input[type="datetime"]:focus,
-  .form input[type="datetime-local"]:focus,
-  .form input[type="email"]:focus,
-  .form input[type="month"]:focus,
-  .form input[type="number"]:focus,
-  .form input[type="password"]:focus,
-  .form input[type="search"]:focus,
-  .form input[type="tel"]:focus,
-  .form input[type="text"]:focus,
-  .form input[type="time"]:focus,
-  .form input[type="url"]:focus,
-  .form input[type="week"]:focus,
-  .form input:focus:not([type]),
-  .form textarea:focus,
-  .form .select:focus, .app-container .app-search .search-field:focus {
+  .form-control:focus, .form input[type="color"]:focus, .form input[type="date"]:focus, .form input[type="datetime"]:focus, .form input[type="datetime-local"]:focus, .form input[type="email"]:focus, .form input[type="month"]:focus, .form input[type="number"]:focus, .form input[type="password"]:focus, .form input[type="search"]:focus, .form input[type="tel"]:focus, .form input[type="text"]:focus, .form input[type="time"]:focus, .form input[type="url"]:focus, .form input[type="week"]:focus, .form input:focus:not([type]), .form textarea:focus, .form .select:focus, .form .upload-input:focus, .app-container .app-search .search-field:focus {
     box-shadow: none; }
 
 .btn, .banner .cta {
   padding: .65em 2em .45em 2em; }
 
 label {
-  font-weight: 500; }
+  font-weight: 500;
+  font-size: 0.9em; }
 
 .form .input-wrapper {
   position: relative;
   display: inline-block; }
-.form input[type="color"].alert,
-.form input[type="date"].alert,
-.form input[type="datetime"].alert,
-.form input[type="datetime-local"].alert,
-.form input[type="email"].alert,
-.form input[type="month"].alert,
-.form input[type="number"].alert,
-.form input[type="password"].alert,
-.form input[type="search"].alert,
-.form input[type="tel"].alert,
-.form input[type="text"].alert,
-.form input[type="time"].alert,
-.form input[type="url"].alert,
-.form input[type="week"].alert,
-.form input:not([type]).alert,
-.form textarea.alert,
-.form .select.alert {
+.form input[type="color"].alert, .form input[type="date"].alert, .form input[type="datetime"].alert, .form input[type="datetime-local"].alert, .form input[type="email"].alert, .form input[type="month"].alert, .form input[type="number"].alert, .form input[type="password"].alert, .form input[type="search"].alert, .form input[type="tel"].alert, .form input[type="text"].alert, .form input[type="time"].alert, .form input[type="url"].alert, .form input[type="week"].alert, .form input:not([type]).alert, .form textarea.alert, .form .select.alert, .form .upload-input.alert {
   border-color: #d93d3a;
   box-shadow: 0 0 6px rgba(217, 61, 58, 0.2); }
-.form input[type="color"][required], .form input[type="color"].success,
-.form input[type="date"][required],
-.form input[type="date"].success,
-.form input[type="datetime"][required],
-.form input[type="datetime"].success,
-.form input[type="datetime-local"][required],
-.form input[type="datetime-local"].success,
-.form input[type="email"][required],
-.form input[type="email"].success,
-.form input[type="month"][required],
-.form input[type="month"].success,
-.form input[type="number"][required],
-.form input[type="number"].success,
-.form input[type="password"][required],
-.form input[type="password"].success,
-.form input[type="search"][required],
-.form input[type="search"].success,
-.form input[type="tel"][required],
-.form input[type="tel"].success,
-.form input[type="text"][required],
-.form input[type="text"].success,
-.form input[type="time"][required],
-.form input[type="time"].success,
-.form input[type="url"][required],
-.form input[type="url"].success,
-.form input[type="week"][required],
-.form input[type="week"].success,
-.form input:not([type])[required],
-.form input:not([type]).success,
-.form textarea[required],
-.form textarea.success,
-.form .select[required],
-.form .select.success {
+.form input[type="color"][required], .form input[type="color"].success, .form input[type="date"][required], .form input[type="date"].success, .form input[type="datetime"][required], .form input[type="datetime"].success, .form input[type="datetime-local"][required], .form input[type="datetime-local"].success, .form input[type="email"][required], .form input[type="email"].success, .form input[type="month"][required], .form input[type="month"].success, .form input[type="number"][required], .form input[type="number"].success, .form input[type="password"][required], .form input[type="password"].success, .form input[type="search"][required], .form input[type="search"].success, .form input[type="tel"][required], .form input[type="tel"].success, .form input[type="text"][required], .form input[type="text"].success, .form input[type="time"][required], .form input[type="time"].success, .form input[type="url"][required], .form input[type="url"].success, .form input[type="week"][required], .form input[type="week"].success, .form input:not([type])[required], .form input:not([type]).success, .form textarea[required], .form textarea.success, .form .select[required], .form .select.success, .form .upload-input[required], .form .upload-input.success {
   background-repeat: no-repeat;
   background-position: top right; }
-.form input[type="color"][required],
-.form input[type="date"][required],
-.form input[type="datetime"][required],
-.form input[type="datetime-local"][required],
-.form input[type="email"][required],
-.form input[type="month"][required],
-.form input[type="number"][required],
-.form input[type="password"][required],
-.form input[type="search"][required],
-.form input[type="tel"][required],
-.form input[type="text"][required],
-.form input[type="time"][required],
-.form input[type="url"][required],
-.form input[type="week"][required],
-.form input:not([type])[required],
-.form textarea[required],
-.form .select[required] {
+.form input[type="color"][required], .form input[type="date"][required], .form input[type="datetime"][required], .form input[type="datetime-local"][required], .form input[type="email"][required], .form input[type="month"][required], .form input[type="number"][required], .form input[type="password"][required], .form input[type="search"][required], .form input[type="tel"][required], .form input[type="text"][required], .form input[type="time"][required], .form input[type="url"][required], .form input[type="week"][required], .form input:not([type])[required], .form textarea[required], .form .select[required], .form .upload-input[required] {
   background-image: url("../img/form/icon-required.svg"); }
-.form input[type="color"].success,
-.form input[type="date"].success,
-.form input[type="datetime"].success,
-.form input[type="datetime-local"].success,
-.form input[type="email"].success,
-.form input[type="month"].success,
-.form input[type="number"].success,
-.form input[type="password"].success,
-.form input[type="search"].success,
-.form input[type="tel"].success,
-.form input[type="text"].success,
-.form input[type="time"].success,
-.form input[type="url"].success,
-.form input[type="week"].success,
-.form input:not([type]).success,
-.form textarea.success,
-.form .select.success {
+.form input[type="color"].success, .form input[type="date"].success, .form input[type="datetime"].success, .form input[type="datetime-local"].success, .form input[type="email"].success, .form input[type="month"].success, .form input[type="number"].success, .form input[type="password"].success, .form input[type="search"].success, .form input[type="tel"].success, .form input[type="text"].success, .form input[type="time"].success, .form input[type="url"].success, .form input[type="week"].success, .form input:not([type]).success, .form textarea.success, .form .select.success, .form .upload-input.success {
   background-image: url("../img/form/icon-success.svg"); }
-.form input[type="color"][disabled],
-.form input[type="date"][disabled],
-.form input[type="datetime"][disabled],
-.form input[type="datetime-local"][disabled],
-.form input[type="email"][disabled],
-.form input[type="month"][disabled],
-.form input[type="number"][disabled],
-.form input[type="password"][disabled],
-.form input[type="search"][disabled],
-.form input[type="tel"][disabled],
-.form input[type="text"][disabled],
-.form input[type="time"][disabled],
-.form input[type="url"][disabled],
-.form input[type="week"][disabled],
-.form input:not([type])[disabled],
-.form textarea[disabled],
-.form .select[disabled] {
+.form input[type="color"][disabled], .form input[type="date"][disabled], .form input[type="datetime"][disabled], .form input[type="datetime-local"][disabled], .form input[type="email"][disabled], .form input[type="month"][disabled], .form input[type="number"][disabled], .form input[type="password"][disabled], .form input[type="search"][disabled], .form input[type="tel"][disabled], .form input[type="text"][disabled], .form input[type="time"][disabled], .form input[type="url"][disabled], .form input[type="week"][disabled], .form input:not([type])[disabled], .form textarea[disabled], .form .select[disabled], .form .upload-input[disabled] {
   opacity: 0.8;
   background-color: #fafafa; }
-.form input[type="color"],
-.form input[type="date"],
-.form input[type="datetime"],
-.form input[type="datetime-local"],
-.form input[type="email"],
-.form input[type="month"],
-.form input[type="number"],
-.form input[type="password"],
-.form input[type="search"],
-.form input[type="tel"],
-.form input[type="text"],
-.form input[type="time"],
-.form input[type="url"],
-.form input[type="week"],
-.form input:not([type]),
-.form .select {
+.form input[type="color"] + div.alert, .form input[type="date"] + div.alert, .form input[type="datetime"] + div.alert, .form input[type="datetime-local"] + div.alert, .form input[type="email"] + div.alert, .form input[type="month"] + div.alert, .form input[type="number"] + div.alert, .form input[type="password"] + div.alert, .form input[type="search"] + div.alert, .form input[type="tel"] + div.alert, .form input[type="text"] + div.alert, .form input[type="time"] + div.alert, .form input[type="url"] + div.alert, .form input[type="week"] + div.alert, .form input:not([type]) + div.alert, .form textarea + div.alert, .form .select + div.alert, .form .upload-input + div.alert {
+  margin-top: -23px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 0.8em;
+  padding: 4px 10px 2px; }
+.form input[type="color"], .form input[type="date"], .form input[type="datetime"], .form input[type="datetime-local"], .form input[type="email"], .form input[type="month"], .form input[type="number"], .form input[type="password"], .form input[type="search"], .form input[type="tel"], .form input[type="text"], .form input[type="time"], .form input[type="url"], .form input[type="week"], .form input:not([type]), .form textarea, .form .select, .form .upload-input {
   height: 2.6em; }
 .form .input-group {
   position: relative; }
@@ -7876,11 +6892,53 @@ label {
     top: 5px;
     right: -34px;
     width: 32px;
-    opacity: 0.5; }
+    opacity: 0.3;
+    cursor: pointer;
+    padding: 4px; }
     .form.has-group-actions .form-group-action svg {
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       fill: #2a2d34; }
+    .form.has-group-actions .form-group-action:hover {
+      opacity: 1; }
+.form .upload-input {
+  display: table;
+  padding: 0; }
+  .form .upload-input input[type="file"] {
+    display: none; }
+  .form .upload-input .file-select,
+  .form .upload-input .file-display {
+    display: table-cell;
+    vertical-align: middle; }
+  .form .upload-input .file-select {
+    width: 1%;
+    padding-left: 4px; }
+    .form .upload-input .file-select .btn, .form .upload-input .file-select .banner .cta, .banner .form .upload-input .file-select .cta {
+      text-transform: uppercase;
+      font-size: 12px; }
+  .form .upload-input .file-display {
+    height: auto;
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+    opacity: 1; }
+.form .form-group.choice .or {
+  text-align: center;
+  opacity: 0.7;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+  .form .form-group.choice .or:before, .form .form-group.choice .or:after {
+    content: '-'; }
+@media (min-width: 768px) {
+  .form .form-group.choice {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    .form .form-group.choice > div {
+      display: table-cell;
+      vertical-align: middle; }
+    .form .form-group.choice .or {
+      width: 5%; } }
 
 aside .accordion {
   padding: 1.5em 0;
@@ -7986,6 +7044,8 @@ aside .accordion {
   position: relative;
   font-size: 0.9em;
   z-index: 1; }
+  .app-container > aside input[type="color"], .app-container > aside input[type="date"], .app-container > aside input[type="datetime"], .app-container > aside input[type="datetime-local"], .app-container > aside input[type="email"], .app-container > aside input[type="month"], .app-container > aside input[type="number"], .app-container > aside input[type="password"], .app-container > aside input[type="search"], .app-container > aside input[type="tel"], .app-container > aside input[type="text"], .app-container > aside input[type="time"], .app-container > aside input[type="url"], .app-container > aside input[type="week"], .app-container > aside input:not([type]), .app-container > aside textarea, .app-container > aside .select, .app-container > aside .upload-input {
+    background-color: #2a2d34; }
   @media (min-width: 768px) {
     .app-container > aside {
       display: table-cell;
@@ -8123,7 +7183,7 @@ aside .accordion {
           width: 33.33333%; } }
 
 .provide-data-form {
-  padding: 1.5em;
+  padding: 3em 1.5em;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto; }
@@ -8176,9 +7236,10 @@ aside .accordion {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         padding: 10px 15px; }
+        .describe-columns > div > .inner header input[type="color"], .describe-columns > div > .inner header input[type="date"], .describe-columns > div > .inner header input[type="datetime"], .describe-columns > div > .inner header input[type="datetime-local"], .describe-columns > div > .inner header input[type="email"], .describe-columns > div > .inner header input[type="month"], .describe-columns > div > .inner header input[type="number"], .describe-columns > div > .inner header input[type="password"], .describe-columns > div > .inner header input[type="search"], .describe-columns > div > .inner header input[type="tel"], .describe-columns > div > .inner header input[type="text"], .describe-columns > div > .inner header input[type="time"], .describe-columns > div > .inner header input[type="url"], .describe-columns > div > .inner header input[type="week"], .describe-columns > div > .inner header input:not([type]), .describe-columns > div > .inner header textarea, .describe-columns > div > .inner header .select, .describe-columns > div > .inner header .upload-input {
+          background-color: #2a2d34; }
         .describe-columns > div > .inner header .toggle {
           float: right;
-          position: relative;
           width: 36px;
           -webkit-user-select: none;
           -moz-user-select: none;
@@ -8189,12 +7250,13 @@ aside .accordion {
             display: none; }
           .describe-columns > div > .inner header .toggle label {
             display: block;
-            overflow: hidden;
+            height: 18px;
             cursor: pointer;
             border: 2px solid rgba(230, 230, 230, 0.2);
             border-radius: 0px;
             padding: 0;
-            margin: 0; }
+            margin: 0;
+            position: relative; }
             .describe-columns > div > .inner header .toggle label .inner {
               display: block;
               width: 200%;
@@ -8202,38 +7264,27 @@ aside .accordion {
               -webkit-transition: margin 0.3s ease-in 0s;
               -o-transition: margin 0.3s ease-in 0s;
               transition: margin 0.3s ease-in 0s; }
-              .describe-columns > div > .inner header .toggle label .inner:before, .describe-columns > div > .inner header .toggle label .inner:after {
-                display: block;
-                float: left;
-                width: 50%;
-                height: 14px;
-                padding: 0;
-                box-sizing: border-box;
-                border: 2px solid transparent;
-                background-clip: padding-box; }
-              .describe-columns > div > .inner header .toggle label .inner:before {
-                content: "";
-                padding-left: 10px; }
-              .describe-columns > div > .inner header .toggle label .inner:after {
-                content: "";
-                padding-right: 10px;
-                text-align: right; }
             .describe-columns > div > .inner header .toggle label .switch {
               display: block;
               width: 18px;
               margin: 0px;
               background: #585e6c;
               position: absolute;
-              top: 0;
-              bottom: 0;
+              top: -2px;
+              bottom: -2px;
               right: 18px;
               -webkit-transition: all 0.3s ease-in 0s;
               -o-transition: all 0.3s ease-in 0s;
               transition: all 0.3s ease-in 0s; }
+            .describe-columns > div > .inner header .toggle label .text {
+              position: absolute;
+              top: 0;
+              left: 45px;
+              line-height: 16px; }
           .describe-columns > div > .inner header .toggle input:checked + .label .inner {
             margin-left: 0; }
           .describe-columns > div > .inner header .toggle input:checked + .label .switch {
-            right: 0px;
+            right: -2px;
             background-color: #3a99d9; }
         .describe-columns > div > .inner header .remove {
           color: #fff;
@@ -9332,6 +8383,8 @@ body.viewer .table-view {
   -moz-osx-font-smoothing: grayscale;
   padding-top: 30px;
   padding-bottom: 30px; }
+  .modal-content input[type="color"], .modal-content input[type="date"], .modal-content input[type="datetime"], .modal-content input[type="datetime-local"], .modal-content input[type="email"], .modal-content input[type="month"], .modal-content input[type="number"], .modal-content input[type="password"], .modal-content input[type="search"], .modal-content input[type="tel"], .modal-content input[type="text"], .modal-content input[type="time"], .modal-content input[type="url"], .modal-content input[type="week"], .modal-content input:not([type]), .modal-content textarea, .modal-content .select, .modal-content .upload-input {
+    background-color: #2a2d34; }
   .modal-content a {
     color: inherit;
     font-weight: 600; }
@@ -9505,6 +8558,10 @@ body.viewer .table-view {
       .aside-panel > div:last-child {
         text-align: right;
         padding: 1.5em 1.5em 1.5em 0.75em; } }
+
+.alert a {
+  color: inherit;
+  font-weight: bold; }
 
 .subscribe-footer {
   background-color: #2a2d34;
@@ -9723,6 +8780,98 @@ html,
   @media (min-width: 1200px) {
     .next .wrapper {
       width: 1170px; } }
+
+.landing .wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .landing .wrapper:before, .landing .wrapper:after {
+    content: " ";
+    display: table; }
+  .landing .wrapper:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .landing .wrapper {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .landing .wrapper {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .landing .wrapper {
+      width: 1170px; } }
+.landing .site-header {
+  background-color: transparent;
+  color: #2a2d34;
+  position: fixed;
+  width: 100%;
+  z-index: 99; }
+.landing .section .inner {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 830px; }
+  .landing .section .inner:before, .landing .section .inner:after {
+    content: " ";
+    display: table; }
+  .landing .section .inner:after {
+    clear: both; }
+.landing .what .inner,
+.landing .publishers .inner,
+.landing .hackers .inner,
+.landing .society .inner {
+  font-size: 5vmin;
+  font-weight: 500; }
+  .landing .what .inner h2,
+  .landing .publishers .inner h2,
+  .landing .hackers .inner h2,
+  .landing .society .inner h2 {
+    font-size: 1.3em;
+    font-weight: 600; }
+  .landing .what .inner a,
+  .landing .publishers .inner a,
+  .landing .hackers .inner a,
+  .landing .society .inner a {
+    color: inherit; }
+.landing .search {
+  background-color: #f7f7f7; }
+.landing .what {
+  background-color: #2a2d34;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+.landing .publishers {
+  background-color: #2abb9c;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+.landing .hackers {
+  background-color: #7d4e92;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+.landing .society {
+  background-color: #3a99d9;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+.landing.fp-viewing-0 .logo svg, .landing.fp-viewing-5 .logo svg {
+  fill: #2a2d34; }
+.landing.fp-viewing-0 .logo.small, .landing.fp-viewing-5 .logo.small {
+  background-color: #2a2d34; }
+  .landing.fp-viewing-0 .logo.small svg, .landing.fp-viewing-5 .logo.small svg {
+    fill: #fff; }
+.landing.fp-viewing-1 .site-header, .landing.fp-viewing-2 .site-header, .landing.fp-viewing-3 .site-header, .landing.fp-viewing-4 .site-header {
+  color: #fff; }
+.landing.fp-viewing-2 .logo.small svg {
+  fill: #2abb9c; }
+.landing.fp-viewing-3 .logo.small svg {
+  fill: #7d4e92; }
+.landing.fp-viewing-4 .logo.small svg {
+  fill: #3a99d9; }
+.landing.fp-viewing-6 .site-header {
+  display: none; }
 
 .style-guide {
   /* --------------------------------
@@ -9998,6 +9147,8 @@ html,
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     font-size: 0.9em; }
+    .style-guide .accordion input[type="color"], .style-guide .accordion input[type="date"], .style-guide .accordion input[type="datetime"], .style-guide .accordion input[type="datetime-local"], .style-guide .accordion input[type="email"], .style-guide .accordion input[type="month"], .style-guide .accordion input[type="number"], .style-guide .accordion input[type="password"], .style-guide .accordion input[type="search"], .style-guide .accordion input[type="tel"], .style-guide .accordion input[type="text"], .style-guide .accordion input[type="time"], .style-guide .accordion input[type="url"], .style-guide .accordion input[type="week"], .style-guide .accordion input:not([type]), .style-guide .accordion textarea, .style-guide .accordion .select, .style-guide .accordion .upload-input {
+      background-color: #2a2d34; }
   .style-guide .typography h1::before {
     content: 'Aa - ';
     color: #3a99d9; }
@@ -10039,5 +9190,7 @@ html,
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+    .style-guide .rev input[type="color"], .style-guide .rev input[type="date"], .style-guide .rev input[type="datetime"], .style-guide .rev input[type="datetime-local"], .style-guide .rev input[type="email"], .style-guide .rev input[type="month"], .style-guide .rev input[type="number"], .style-guide .rev input[type="password"], .style-guide .rev input[type="search"], .style-guide .rev input[type="tel"], .style-guide .rev input[type="text"], .style-guide .rev input[type="time"], .style-guide .rev input[type="url"], .style-guide .rev input[type="week"], .style-guide .rev input:not([type]), .style-guide .rev textarea, .style-guide .rev .select, .style-guide .rev .upload-input {
+      background-color: #2a2d34; }
 
 /*# sourceMappingURL=viewer.css.map */

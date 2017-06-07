@@ -37,9 +37,28 @@ jQuery(document).ready(function($){
 
   /*******************
     initialize tooltips
-  ********************/  
+  ********************/
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
+  })
+
+
+  /*******************
+    upload input
+  ********************/
+
+  $('.upload-input').each(function () {
+    var $realInputField = $(this).children('input[type="file"]');
+    var $dummyInputField = $(this).children('input[type="text"]');
+    var $dummyInputBtn = $(this).find('.btn');
+
+    $dummyInputBtn.click(function() {
+      return $realInputField.click();
+    });
+    $realInputField.change(function() {
+      $dummyInputField.val($( this ).val().replace(/^.*[\\\/]/, ''));
+      $dummyInputBtn.text('Replace file');
+    });
   })
 
 });

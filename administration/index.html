@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Explorer</title>
+    <title>Admin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='//fonts.googleapis.com/css?family=Hind:400,500,600' rel='stylesheet' type='text/css'>
@@ -15,7 +15,7 @@
     
     <script src="../js/modernizr-2.8.3.min.js"></script>
   </head>
-<body class="app">
+<body class="admin">
   <div class="site-header">
     <div class="wrapper">
       <a class="small nonebrand logo">
@@ -47,40 +47,241 @@
 
   
 <div class="app-container">
-  <aside><div class="sidebar">
+  <aside>
+  <div class="user">
+    <span class="avatar" style="background-image: url('https://0.gravatar.com/avatar/679cd9ae2110a6b20c3c74ac6a6af97d%3F?s=512')"></span>
+    <h4 class="name">Sam Smith</h4>
+  </div>
 
   <ul class="accordion">
     <li class="filter is-expanded">
-      <a href="javascript:void(0)" class="js-accordion-trigger">Accordion Item</a>
+      <a href="javascript:void(0)" class="js-accordion-trigger">My Datasets</a>
       <ul class="submenu">
         <li>
-          <a class="active" href="javascript:void(0)">Sub Item 1</a>
+          <a class="active" href="javascript:void(0)">All datasets <span class="label">4</span></a>
         </li>
         <li>
-          <a href="javascript:void(0)">Sub Item 2</a>
-        </li>
-      </ul>
-    </li>
-    <li class="filter">
-      <a href="javascript:void(0)" class="js-accordion-trigger">Another Item</a>
-      <ul class="submenu">
-        <li>
-          <a href="javascript:void(0)">Sub Item 1</a>
+          <a href="javascript:void(0)">Published only <span class="label">1</span></a>
         </li>
         <li>
-          <a href="javascript:void(0)">Sub Item 2</a>
+          <a href="javascript:void(0)">Private only <span class="label">3</span></a>
         </li>
       </ul>
     </li>
   </ul>
 
-</div></aside>
+  <footer>
+    <a class="edit" data-toggle="modal" data-target="#edit_profile">
+      <svg><use xlink:href="#icon-cog" /></svg> <span>Edit profile</span>
+    </a>
+  </footer>
+</aside>
   <div class="content">
     <div>
       
-      <p>Explorer</p>
+  
+  <div class="app-search">
+  <label for="datasets">Search datasets</label>
+  <input id="datasets" class="search-field" placeholder="enter keywords from dataset title" type="text">
+</div>
 
-      
+  <div class="dataset-list">
+    <table>
+      <thead>
+        <tr>
+          <th class="title"><span>Title</span></th>
+          <th class="status"><span>Publication status</span></th>
+          <th class="actions"><span>Actions</span></th>
+        </tr>
+      </thead>
+       <tbody>
+         <tr>
+           <td class="title"><span>ESIF finance details</span></td>
+           <td class="status"><span class="label label-primary">Published</span></td>
+           <td class="actions">
+             <ul>
+               <li class="make-private">
+                 <a>Make private</a>
+               </li>
+               <li class="edit">
+                 <a data-toggle="tooltip" data-placement="top" title="Edit"><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+               </li>
+               <li class="view">
+                 <a data-toggle="tooltip" data-placement="top" title="View"><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+               </li>
+               <li class="download context">
+                 <a data-toggle="tooltip" data-placement="top" title="Download">
+                   <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+                 </a>
+                 <ul>
+                   <li class="package">
+                     <a>Data package</a>
+                   </li>
+                   <li class="raw">
+                     <a>Raw source data</a>
+                   </li>
+                 </ul>
+               </li>
+               <li class="more context">
+                 <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+                 <ul>
+                    <li class="run">
+                      <a>Run external hooks</a>
+                    </li>
+                  </ul>
+               </li>
+             </ul>
+           </td>
+         </tr>
+         <tr>
+           <td class="title"><span>Isreali Reserves over the years</span></td>
+           <td class="status"><span class="label label-warning">Private</span></td>
+           <td class="actions">
+             <ul>
+               <li class="publish">
+                 <a>Publish</a>
+               </li>
+               <li class="edit">
+                 <a data-toggle="tooltip" data-placement="top" title="Edit"><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+               </li>
+               <li class="view">
+                 <a data-toggle="tooltip" data-placement="top" title="View"><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+               </li>
+               <li class="download context">
+                 <a data-toggle="tooltip" data-placement="top" title="Download">
+                   <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+                 </a>
+                 <ul>
+                   <li class="package">
+                     <a>Data package</a>
+                   </li>
+                   <li class="raw">
+                     <a>Raw source data</a>
+                   </li>
+                 </ul>
+               </li>
+               <li class="more context">
+                 <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+                 <ul>
+                    <li class="run">
+                      <a>Run external hooks</a>
+                    </li>
+                  </ul>
+               </li>
+             </ul>
+           </td>
+         </tr>
+         <tr>
+           <td class="title"><span>ERDF Data for Niederösterreich 2007-2013</span></td>
+           <td class="status"><span class="label label-warning">Private</span></td>
+           <td class="actions">
+             <ul>
+               <li class="publish">
+                 <a>Publish</a>
+               </li>
+               <li class="edit">
+                 <a data-toggle="tooltip" data-placement="top" title="Edit"><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+               </li>
+               <li class="view">
+                 <a data-toggle="tooltip" data-placement="top" title="View"><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+               </li>
+               <li class="download context">
+                 <a data-toggle="tooltip" data-placement="top" title="Download">
+                   <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+                 </a>
+                 <ul>
+                   <li class="package">
+                     <a>Data package</a>
+                   </li>
+                   <li class="raw">
+                     <a>Raw source data</a>
+                   </li>
+                 </ul>
+               </li>
+               <li class="more context">
+                 <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+                 <ul>
+                    <li class="run">
+                      <a>Run external hooks</a>
+                    </li>
+                  </ul>
+               </li>
+             </ul>
+           </td>
+         </tr>
+         <tr>
+           <td class="title"><span>European ESIF Funds Beneficiaries 2000-2020</span></td>
+           <td class="status"><span class="label label-warning">Private</span></td>
+           <td class="actions">
+             <ul>
+               <li class="publish">
+                 <a>Publish</a>
+               </li>
+               <li class="edit">
+                 <a data-toggle="tooltip" data-placement="top" title="Edit"><svg><use xlink:href="#icon-edit" /></svg><span>Edit</span></a>
+               </li>
+               <li class="view">
+                 <a data-toggle="tooltip" data-placement="top" title="View"><svg><use xlink:href="#icon-open" /></svg><span>View</span></a>
+               </li>
+               <li class="download context">
+                 <a data-toggle="tooltip" data-placement="top" title="Download">
+                   <svg><use xlink:href="#icon-download"/></svg><span>Download</span>
+                 </a>
+                 <ul>
+                   <li class="package">
+                     <a>Data package</a>
+                   </li>
+                   <li class="raw">
+                     <a>Raw source data</a>
+                   </li>
+                 </ul>
+               </li>
+               <li class="more context">
+                 <a><svg><use xlink:href="#icon-more" /></svg><span>More</span></a>
+                 <ul>
+                    <li class="run">
+                      <a>Run external hooks</a>
+                    </li>
+                  </ul>
+               </li>
+             </ul>
+           </td>
+         </tr>
+       </tbody>
+
+     </table>
+
+     <!-- Modal -->
+     <div class="modal fade" id="edit_profile" tabindex="-1" role="dialog">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             <h4 class="modal-title">Edit Profile</h4>
+             <hr />
+           </div>
+           <div class="modal-body">
+             <div class="form">
+               <label for="profile-email">Email</label>
+               <input id="profile-email" placeholder="myem@il.address" type="email">
+               <p class="help-block">This is the email address which you use as login.</p>
+
+               <label for="profile-username">Username</label>
+               <input id="profile-username" placeholder="Sam Smith" type="text">
+
+               <p class="help-block ng-scope">You can change your username only once!</p>
+             </div>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+           </div>
+         </div>
+       </div>
+     </div>
+  </div>
+
+
     </div>
   </div>
 </div>
