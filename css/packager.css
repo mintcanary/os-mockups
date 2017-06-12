@@ -6169,7 +6169,8 @@ button.close {
     background-color: #2abb9c; }
     .site-header .logo.small svg {
       fill: #2a2d34;
-      width: 32px; }
+      width: 32px;
+      height: 19.776px; }
     .site-header .logo.small svg {
       fill: #fff; }
     .site-header .logo.small.adminbrand {
@@ -8716,6 +8717,8 @@ html,
       opacity: 0.8; }
       .site-footer .wrapper .footer-primary-links a:link:hover {
         opacity: 1; }
+    .site-footer .wrapper .footer-secondary-links p {
+      margin-top: 10px; }
   .site-footer hr {
     border-color: rgba(255, 255, 255, 0.4);
     clear: both; }
@@ -8821,13 +8824,18 @@ html,
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
-    padding-right: 15px;
-    max-width: 830px; }
+    padding-right: 15px; }
     .landing .section .inner:before, .landing .section .inner:after {
       content: " ";
       display: table; }
     .landing .section .inner:after {
       clear: both; }
+    @media (min-width: 768px) {
+      .landing .section .inner {
+        max-width: 750px; } }
+    @media (min-width: 992px) {
+      .landing .section .inner {
+        max-width: 830px; } }
   .landing .section nav {
     position: absolute;
     width: 100%;
@@ -8857,23 +8865,27 @@ html,
       .landing .section nav ul li {
         display: block;
         width: 50%; }
+        .landing .section nav ul li .icon {
+          display: inline-block;
+          width: 56px;
+          height: 56px; }
         .landing .section nav ul li svg {
           fill: #fff;
           background-color: #2a2d34;
-          width: 56px;
-          height: 56px;
+          width: 100%;
+          height: 100%;
           padding-top: 6px; }
-        .landing .section nav ul li span {
+        .landing .section nav ul li .text {
           display: none; }
           @media (min-width: 768px) {
-            .landing .section nav ul li span {
+            .landing .section nav ul li .text {
               display: inline-block;
               font-size: 20px;
               line-height: 56px;
               font-weight: 500; } }
         .landing .section nav ul li.prev {
           float: left; }
-          .landing .section nav ul li.prev svg {
+          .landing .section nav ul li.prev .icon {
             float: left;
             -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
@@ -8883,7 +8895,7 @@ html,
         .landing .section nav ul li.next {
           float: right;
           text-align: right; }
-          .landing .section nav ul li.next svg {
+          .landing .section nav ul li.next .icon {
             float: right;
             margin-left: 15px; }
         .landing .section nav ul li a {
@@ -8891,18 +8903,69 @@ html,
           text-decoration: none; }
   .landing .search {
     background-color: #f7f7f7; }
+    .landing .search h1 {
+      font-size: 1.5em; }
+      @media (min-width: 768px) {
+        .landing .search h1 {
+          font-size: 36px; } }
     .landing .search .form {
-      font-size: 1.7em;
-      margin-top: 8vh;
-      margin-left: -1em;
-      margin-right: -1em; }
+      font-size: 1.2em; }
+      @media (min-width: 768px) {
+        .landing .search .form {
+          margin-top: 8vh;
+          font-size: 1.7em;
+          margin-left: -1em;
+          margin-right: -1em; } }
       .landing .search .form .input-group {
         font-size: inherit; }
-    .landing .search aside {
+    .landing .search .featured {
       display: none; }
-      @media (min-width: 768px) {
-        .landing .search aside {
-          display: block; } }
+      @media (min-width: 768px) and (min-height: 500px) {
+        .landing .search .featured {
+          display: block;
+          float: left;
+          width: 50%;
+          margin-top: 8vh; }
+          .landing .search .featured h3 {
+            font-size: 15px;
+            border-bottom: solid 1px rgba(42, 45, 52, 0.1);
+            margin: 0.75em 0 1em 0;
+            padding: 6px 0;
+            color: rgba(42, 45, 52, 0.25);
+            position: relative; }
+            .landing .search .featured h3 .icon {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 2px;
+              right: 0; }
+              .landing .search .featured h3 .icon svg {
+                width: 100%;
+                height: 100%; }
+          .landing .search .featured a {
+            display: block;
+            margin-top: 3vh;
+            color: rgba(42, 45, 52, 0.75);
+            text-decoration: none; }
+            .landing .search .featured a:hover {
+              color: #2abb9c; }
+          .landing .search .featured svg {
+            float: left;
+            width: 32px;
+            height: 32px;
+            fill: currentColor; }
+          .landing .search .featured h4,
+          .landing .search .featured p {
+            margin-left: 45px; }
+          .landing .search .featured h4 {
+            font-size: 18px;
+            margin-bottom: 0.2em; }
+          .landing .search .featured p {
+            font-size: 15px; }
+          .landing .search .featured.data-package .inner {
+            padding-left: 0; }
+          .landing .search .featured.app .inner {
+            padding-right: 0; } }
   .landing .what .inner,
   .landing .publishers .inner,
   .landing .hackers .inner,
