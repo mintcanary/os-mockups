@@ -8,7 +8,7 @@ The mockups below are built from this codebase.
 
 - [Style guide](https://smth.github.io/os-mockups/style-guide/)
 - ["Next" holding page](https://smth.github.io/os-mockups/next/)
-- [Landing page (WIP)](https://smth.github.io/os-mockups/)
+- [Landing page](https://smth.github.io/os-mockups/)
 - [Admin](https://smth.github.io/os-mockup-admin/administration/)
 - [Packager - Provide your data](https://smth.github.io/os-mockup-packager/packager/provide-data/)
 - [Packager - Describe your data](https://smth.github.io/os-mockup-packager/packager/describe-data/)

@@ -86,7 +86,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-  	$('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+      anchors:['search', 'what', 'publishers', 'hackers', 'society', 'involved', 'footer']
+    });
   });
   </script>
   {% elif this._model == 'describe-data' %}
