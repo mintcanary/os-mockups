@@ -6169,7 +6169,8 @@ button.close {
     background-color: #3a99d9; }
     .site-header .logo.small svg {
       fill: #2a2d34;
-      width: 32px; }
+      width: 32px;
+      height: 19.776px; }
     .site-header .logo.small svg {
       fill: #fff; }
     .site-header .logo.small.adminbrand {
@@ -6193,6 +6194,8 @@ button.close {
     @media (min-width: 768px) {
       .site-header .logo.type {
         display: inline-block; } }
+    .site-header .logo.type.openspending svg {
+      width: 185.12px; }
 
 .app-header {
   height: 50px; }
@@ -8709,9 +8712,12 @@ html,
       .site-footer .wrapper .footer-primary-links li {
         padding-right: 0;
         padding-left: 0.75em; } }
+    .site-footer .wrapper .footer-primary-links .packager svg {
+      width: 96.48px; }
     .site-footer .wrapper .footer-primary-links .viewer svg {
       height: 13px;
-      top: 1px; }
+      top: 1px;
+      width: 78.26px; }
     .site-footer .wrapper .footer-primary-links a {
       opacity: 0.8; }
       .site-footer .wrapper .footer-primary-links a:link:hover {
