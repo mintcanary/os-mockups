@@ -7122,13 +7122,15 @@ aside .accordion {
   overflow-x: hidden; }
   .process .banner {
     margin-left: -15px;
-    margin-right: -15px;
-    text-align: center; }
+    margin-right: -15px; }
     .process .banner:before, .process .banner:after {
       content: " ";
       display: table; }
     .process .banner:after {
       clear: both; }
+    @media (min-width: 992px) {
+      .process .banner {
+        text-align: center; } }
     .process .banner .process-steps {
       position: relative;
       min-height: 1px;
@@ -7156,19 +7158,26 @@ aside .accordion {
             width: auto;
             min-width: 0; } }
     .process .banner .step-title {
-      margin: 0;
+      margin-bottom: 0;
       font-size: 24px;
       line-height: 1;
       position: relative;
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px; }
+      @media (min-width: 768px) {
+        .process .banner .step-title {
+          margin-top: 0; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .process .banner .step-title {
           position: absolute;
           left: 0;
           bottom: 100%;
-          width: 100%; } }
+          width: 100%;
+          text-align: center;
+          height: 52px;
+          line-height: 52px;
+          font-size: 20px; } }
       @media (min-width: 992px) {
         .process .banner .step-title {
           float: left;
