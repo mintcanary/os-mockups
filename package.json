@@ -4,6 +4,7 @@
   "description": "This repository contains: - [Lektor](https://www.getlektor.com/docs/) based templates, for mockup purposes. - An OpenSpending SCSS framework, built on Bootstrap, adapted from [previous](https://github.com/openspending/os-style-guide) [Bourbon](http://bourbon.io/) version.",
   "dependencies": {},
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "grunt": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
