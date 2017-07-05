@@ -7762,6 +7762,17 @@ aside .accordion {
           height: 120px;
           overflow: auto;
           padding: 5px; }
+      .data-column > .inner .field-info .select {
+        padding-left: 5px;
+        padding-right: 5px; }
+        .data-column > .inner .field-info .select select {
+          background: transparent;
+          border: none;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          font-size: 15px;
+          line-height: 1; }
       .data-column > .inner .field-info:before {
         content: '';
         display: block;
@@ -7786,6 +7797,17 @@ aside .accordion {
       height: 0; }
     .data-column .data-type-select .mm-listview {
       margin-bottom: 0; }
+      .data-column .data-type-select .mm-listview .field {
+        margin-top: 10px;
+        width: 100%; }
+        .data-column .data-type-select .mm-listview .field > * {
+          padding-left: 20px;
+          padding-right: 20px; }
+        .data-column .data-type-select .mm-listview .field.short {
+          width: 50%;
+          float: left; }
+        .data-column .data-type-select .mm-listview .field .select {
+          padding: 0 10px; }
       .data-column .data-type-select .mm-listview > li .mm-next:before {
         width: 26px;
         height: 26px;
@@ -7971,22 +7993,40 @@ aside .accordion {
       border-radius: 3px; }
       .data-edit .data-column.active.data-type-1 {
         background-color: rgba(42, 146, 187, 0.9); }
+        .data-edit .data-column.active.data-type-1 > .inner .field-info input:focus {
+          border-color: #2a92bb; }
       .data-edit .data-column.active.data-type-2 {
         background-color: rgba(42, 73, 187, 0.9); }
+        .data-edit .data-column.active.data-type-2 > .inner .field-info input:focus {
+          border-color: #2a49bb; }
       .data-edit .data-column.active.data-type-3 {
         background-color: rgba(84, 42, 187, 0.9); }
+        .data-edit .data-column.active.data-type-3 > .inner .field-info input:focus {
+          border-color: #542abb; }
       .data-edit .data-column.active.data-type-4 {
         background-color: rgba(156, 42, 187, 0.9); }
+        .data-edit .data-column.active.data-type-4 > .inner .field-info input:focus {
+          border-color: #9c2abb; }
       .data-edit .data-column.active.data-type-5 {
         background-color: rgba(187, 42, 170, 0.9); }
+        .data-edit .data-column.active.data-type-5 > .inner .field-info input:focus {
+          border-color: #bb2aaa; }
       .data-edit .data-column.active.data-type-6 {
         background-color: rgba(187, 42, 97, 0.9); }
+        .data-edit .data-column.active.data-type-6 > .inner .field-info input:focus {
+          border-color: #bb2a61; }
       .data-edit .data-column.active.data-type-7 {
         background-color: rgba(187, 59, 42, 0.9); }
+        .data-edit .data-column.active.data-type-7 > .inner .field-info input:focus {
+          border-color: #bb3b2a; }
       .data-edit .data-column.active.data-type-8 {
         background-color: rgba(187, 132, 42, 0.9); }
+        .data-edit .data-column.active.data-type-8 > .inner .field-info input:focus {
+          border-color: #bb842a; }
       .data-edit .data-column.active.data-type-9 {
         background-color: rgba(170, 187, 42, 0.9); }
+        .data-edit .data-column.active.data-type-9 > .inner .field-info input:focus {
+          border-color: #aabb2a; }
       .data-edit .data-column.active header .icon .tick {
         display: none; }
     .data-edit .data-column .navigation {

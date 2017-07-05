@@ -54,7 +54,13 @@
                       </ul>
                     </li>
                     <li class="type-1">
-                      <a>Other date <em class="separator">-</em> <small>An non-specific date related to the values in this record (e.g. transaction date etc.)</small></a>
+                      <span>Other date <em class="separator">-</em> <small>An non-specific date related to the values in this record (e.g. transaction date etc.)</small></span>
+                      <ul>
+                        <li class="field">
+                          <label>Format</label>
+                          <input type="text" value="%Y-%m-%d">
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                </li>
@@ -125,6 +131,52 @@
                  <ul>
                    <li class="type-8">
                      <span>Amount <em class="separator">-</em> <small>Numeric value depicting a fiscal amount related to the budget item, spending transaction etc.</small></span>
+                     <ul>
+                       <li class="short field">
+                         <label>Decimal Separator</label>
+                         <input type="text" value=".">
+                       </li>
+                       <li class="short field">
+                         <label>Grouping Character</label>
+                         <input type="text" value=",">
+                       </li>
+                       <li class="field">
+                         <label>Currency</label>
+                         <span class="select">
+                           <select>
+                             <option label="AED Dirham" value="string:AED">AED Dirham</option>
+                             <option label="AFN Afghani" value="string:AFN">AFN Afghani</option>
+                             <option label="ALL Lek" value="string:ALL">ALL Lek</option>
+                           </select>
+                         </span>
+                       </li>
+                       <li class="field">
+                         <label>Factor</label>
+                         <input type="text" value="0">
+                       </li>
+                       <li class="field">
+                         <label>Direction </label>
+                         <span class="select">
+                           <select>
+                             <option value="?" selected="selected"></option>
+                             <option label="Expenditure" value="string:expenditure">Expenditure</option>
+                             <option label="Revenue" value="string:revenue">Revenue</option>
+                           </select>
+                         </span>
+                       </li>
+                       <li class="field">
+                         <label>Phase</label>
+                         <span class="select">
+                           <select>
+                             <option value="?" selected="selected"></option>
+                             <option label="Adjusted" value="string:adjusted">Adjusted</option>
+                             <option label="Approved" value="string:approved">Approved</option>
+                             <option label="Executed" value="string:executed">Executed</option>
+                             <option label="Proposed" value="string:proposed">Proposed</option>
+                           </select>
+                         </span>
+                       </li>
+                     </ul>
                    </li>
                  </ul>
                </li>
@@ -136,7 +188,7 @@
                    </li>
                  </ul>
                </li>
-               <li>
+               <li class="type-0">
                  <a>Ignore</a>
                </li>
             </ul>
