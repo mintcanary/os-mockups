@@ -70,7 +70,8 @@
         "line_eight": "Správa železniční dopravní cesty, státní organizace",
         "line_nine": "Správa železniční dopravní cesty, státní organizace",
         "line_ten": "Správa železniční dopravní cesty, státní organizace"
-      }
+      },
+      "datatype_cat": "type-2"
     },
     {
       "heading": "beneficiary_postal_code"

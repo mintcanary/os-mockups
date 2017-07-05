@@ -1,0 +1,20 @@
+<div class="inner">
+  <header>
+    <button type="button" class="remove icon" aria-label="Remove"><svg><use xlink:href="#icon-trashcan" /></svg></button>
+
+    <h3>{% if c['heading'] %}{{ c['heading'] }}{% else %}&nbsp;{% endif %}</h3>
+  </header>
+
+  <div class="constant">
+    <textarea id="constant_{{ columnCounter + loop.index0 }}" placeholder="enter a constant value">{% if c['constant'] != "blank" %}{{ c['constant'] }}{% endif %}</textarea>
+  </div>
+
+  <div class="field-info">
+    <label for="title_{{ columnCounter + loop.index0 }}">Title</label>
+    <input type="text"{% if c['title'] %} value="{{ c['title'] }}"{% endif %} id="title_{{ columnCounter + loop.index0 }}">
+
+    <label for="description_{{ columnCounter + loop.index0 }}">Description</label>
+    <textarea id="description_{{ columnCounter + loop.index0 }}">{% if c['description'] %}{{ c['description'] }}{% endif %}</textarea>
+
+  </div>
+</div>

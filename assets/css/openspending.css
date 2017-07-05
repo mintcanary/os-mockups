@@ -7660,9 +7660,9 @@ aside .accordion {
       font-size: 14px;
       padding: 10px 10px 0 10px;
       opacity: 0.75;
-      -webkit-transition: opacity, 0.5s, ease-out;
-      -o-transition: opacity, 0.5s, ease-out;
-      transition: opacity, 0.5s, ease-out; }
+      -webkit-transition: opacity, 0.5s;
+      -o-transition: opacity, 0.5s;
+      transition: opacity, 0.5s; }
       .data-column > .inner .preview ol {
         display: table;
         width: 100%;
@@ -7707,17 +7707,17 @@ aside .accordion {
       resize: none;
       color: #fff;
       height: 100px;
-      -webkit-transition: background-color, 0.5s, ease-out;
-      -o-transition: background-color, 0.5s, ease-out;
-      transition: background-color, 0.5s, ease-out; }
+      -webkit-transition: background-color, 0.5s;
+      -o-transition: background-color, 0.5s;
+      transition: background-color, 0.5s; }
       .data-column > .inner .constant textarea:hover {
         background-color: #56575c; }
       .data-column > .inner .constant textarea:focus {
         background-color: #22242a; }
     .data-column > .inner .field-info {
-      -webkit-transition: bottom, 0.5s, ease-out;
-      -o-transition: bottom, 0.5s, ease-out;
-      transition: bottom, 0.5s, ease-out;
+      -webkit-transition: bottom, 0.5s;
+      -o-transition: bottom, 0.5s;
+      transition: bottom, 0.5s;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -7786,33 +7786,30 @@ aside .accordion {
       .data-column .data-type-select .mm-listview > li .mm-next:before {
         width: 26px;
         height: 26px;
-        background-color: #2a2d34;
         position: absolute;
         left: auto;
         right: 13px;
         top: 50%;
         margin-top: -13px;
         border-radius: 50%; }
-      .data-column .data-type-select .mm-listview > li .mm-next:after {
-        border-color: #fff; }
-      .data-column .data-type-select .mm-listview > li.type-1 .mm-next:before {
-        background-color: #3262ba; }
-      .data-column .data-type-select .mm-listview > li.type-2 .mm-next:before {
-        background-color: #4632ba; }
-      .data-column .data-type-select .mm-listview > li.type-3 .mm-next:before {
-        background-color: #8a32ba; }
-      .data-column .data-type-select .mm-listview > li.type-4 .mm-next:before {
-        background-color: #ba32a6; }
-      .data-column .data-type-select .mm-listview > li.type-5 .mm-next:before {
-        background-color: #ba3279; }
-      .data-column .data-type-select .mm-listview > li.type-6 .mm-next:before {
-        background-color: #ba3235; }
-      .data-column .data-type-select .mm-listview > li.type-7 .mm-next:before {
-        background-color: #ba7332; }
-      .data-column .data-type-select .mm-listview > li.type-8 .mm-next:before {
-        background-color: #bab732; }
-      .data-column .data-type-select .mm-listview > li.type-9 .mm-next:before {
-        background-color: #79ba32; }
+      .data-column .data-type-select .mm-listview > li.type-1 .mm-next:after {
+        border-color: #3262ba; }
+      .data-column .data-type-select .mm-listview > li.type-2 .mm-next:after {
+        border-color: #4632ba; }
+      .data-column .data-type-select .mm-listview > li.type-3 .mm-next:after {
+        border-color: #8a32ba; }
+      .data-column .data-type-select .mm-listview > li.type-4 .mm-next:after {
+        border-color: #ba32a6; }
+      .data-column .data-type-select .mm-listview > li.type-5 .mm-next:after {
+        border-color: #ba3279; }
+      .data-column .data-type-select .mm-listview > li.type-6 .mm-next:after {
+        border-color: #ba3235; }
+      .data-column .data-type-select .mm-listview > li.type-7 .mm-next:after {
+        border-color: #ba7332; }
+      .data-column .data-type-select .mm-listview > li.type-8 .mm-next:after {
+        border-color: #bab732; }
+      .data-column .data-type-select .mm-listview > li.type-9 .mm-next:after {
+        border-color: #79ba32; }
       .data-column .data-type-select .mm-listview li:after {
         left: 0; }
       .data-column .data-type-select .mm-listview .separator {
@@ -7893,7 +7890,59 @@ aside .accordion {
       right: -2px;
       background-color: #32a6ba; }
   .data-column.data-type-1 {
-    background-color: #3262ba; }
+    background-color: rgba(50, 98, 186, 0.5); }
+    .data-column.data-type-1 .data-type-select .mm-listview > li.type-1 .mm-next:before {
+      background-color: #3262ba; }
+    .data-column.data-type-1 .data-type-select .mm-listview > li.type-1 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-2 {
+    background-color: rgba(70, 50, 186, 0.5); }
+    .data-column.data-type-2 .data-type-select .mm-listview > li.type-2 .mm-next:before {
+      background-color: #4632ba; }
+    .data-column.data-type-2 .data-type-select .mm-listview > li.type-2 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-3 {
+    background-color: rgba(138, 50, 186, 0.5); }
+    .data-column.data-type-3 .data-type-select .mm-listview > li.type-3 .mm-next:before {
+      background-color: #8a32ba; }
+    .data-column.data-type-3 .data-type-select .mm-listview > li.type-3 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-4 {
+    background-color: rgba(186, 50, 166, 0.5); }
+    .data-column.data-type-4 .data-type-select .mm-listview > li.type-4 .mm-next:before {
+      background-color: #ba32a6; }
+    .data-column.data-type-4 .data-type-select .mm-listview > li.type-4 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-5 {
+    background-color: rgba(186, 50, 121, 0.5); }
+    .data-column.data-type-5 .data-type-select .mm-listview > li.type-5 .mm-next:before {
+      background-color: #ba3279; }
+    .data-column.data-type-5 .data-type-select .mm-listview > li.type-5 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-6 {
+    background-color: rgba(186, 50, 53, 0.5); }
+    .data-column.data-type-6 .data-type-select .mm-listview > li.type-6 .mm-next:before {
+      background-color: #ba3235; }
+    .data-column.data-type-6 .data-type-select .mm-listview > li.type-6 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-7 {
+    background-color: rgba(186, 115, 50, 0.5); }
+    .data-column.data-type-7 .data-type-select .mm-listview > li.type-7 .mm-next:before {
+      background-color: #ba7332; }
+    .data-column.data-type-7 .data-type-select .mm-listview > li.type-7 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-8 {
+    background-color: rgba(186, 183, 50, 0.5); }
+    .data-column.data-type-8 .data-type-select .mm-listview > li.type-8 .mm-next:before {
+      background-color: #bab732; }
+    .data-column.data-type-8 .data-type-select .mm-listview > li.type-8 .mm-next:after {
+      border-color: #fff; }
+  .data-column.data-type-9 {
+    background-color: rgba(121, 186, 50, 0.5); }
+    .data-column.data-type-9 .data-type-select .mm-listview > li.type-9 .mm-next:before {
+      background-color: #79ba32; }
+    .data-column.data-type-9 .data-type-select .mm-listview > li.type-9 .mm-next:after {
+      border-color: #fff; }
 
 .data-edit {
   position: absolute;
@@ -7935,6 +7984,8 @@ aside .accordion {
         background-color: rgba(186, 183, 50, 0.9); }
       .data-edit .data-column.active.data-type-9 {
         background-color: rgba(121, 186, 50, 0.9); }
+      .data-edit .data-column.active header .icon .tick {
+        display: none; }
     .data-edit .data-column .navigation {
       height: 0;
       margin: 0;
@@ -7967,6 +8018,10 @@ aside .accordion {
           -ms-transform: rotate(-90deg);
           -o-transform: rotate(-90deg);
           transform: rotate(-90deg); }
+    .data-edit .data-column.ready header .icon .tick {
+      display: block; }
+    .data-edit .data-column.ready header .icon .cross {
+      display: none; }
     .data-edit .data-column.ready .navigation li.next {
       opacity: 1; }
     .data-edit .data-column .data-type-select {

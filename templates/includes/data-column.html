@@ -1,0 +1,26 @@
+<div class="inner">
+  <header>
+    <button type="button" class="configure icon" aria-label="Configure"><svg><use xlink:href="#icon-cog" /></svg></button>
+
+    <h3>{{ c['heading'] }}</h3>
+  </header>
+
+  <div class="preview">
+    <ol>
+      {% for l, value in c['preview'].iteritems() %}
+      <li>
+        <span>{{ value }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  <div class="field-info">
+    <label for="title_{{ columnCounter + loop.index0 }}">Title</label>
+    <input type="text" value="{{ c['heading'] | replace("_", " ") }}" id="title_{{ columnCounter + loop.index0 }}">
+
+    <label for="description_{{ columnCounter + loop.index0 }}">Description</label>
+    <textarea id="description_{{ columnCounter + loop.index0 }}">{% if c['description'] %}{{ c['description'] }}{% endif %}</textarea>
+
+  </div>
+</div>
