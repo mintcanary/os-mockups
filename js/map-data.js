@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-  $( ".data-edit .data-column .data-type-select ul > li" ).click(function() {
+  $( ".data-edit .data-column .data-type-select ul > li[class^='type-']" ).click(function() {
     $( this ).parents(".data-column").removeClass( "data-type-1 data-type-2 data-type-3 data-type-4 data-type-5 data-type-6 data-type-7 data-type-8 data-type-9" );
   });
 
